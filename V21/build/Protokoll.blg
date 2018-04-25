@@ -1,17 +1,17 @@
 [0] Config.pm:354> INFO - This is Biber 2.7
 [0] Config.pm:357> INFO - Logfile is 'build/Protokoll.blg'
-[32] biber:303> INFO - === Mon Apr 23, 2018, 13:55:46
-[52] Biber.pm:359> INFO - Reading 'build/Protokoll.bcf'
-[134] Biber.pm:835> INFO - Found 1 citekeys in bib section 0
-[148] Biber.pm:3670> INFO - Processing section 0
-[162] Biber.pm:3840> INFO - Looking for bibtex format file 'Quellen.bib' for section 0
-[163] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
-[167] bibtex.pm:1292> INFO - Found BibTeX data source 'Quellen.bib'
-[169] Utils.pm:164> WARN - month field 'Mai' in entry 'skript' is not an integer - this will probably not sort properly.
-[178] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[179] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[179] Biber.pm:3499> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'de-DE'
-[179] Biber.pm:3505> INFO - No sort tailoring available for locale 'de-DE'
-[181] bbl.pm:608> INFO - Writing 'build/Protokoll.bbl' with encoding 'UTF-8'
-[181] bbl.pm:712> INFO - Output to build/Protokoll.bbl
-[181] Biber.pm:109> INFO - WARNINGS: 1
+[41] biber:303> INFO - === Wed Apr 25, 2018, 15:40:46
+[64] Biber.pm:359> INFO - Reading 'build/Protokoll.bcf'
+[165] Biber.pm:835> INFO - Found 1 citekeys in bib section 0
+[181] Biber.pm:3670> INFO - Processing section 0
+[196] Biber.pm:3840> INFO - Looking for bibtex format file 'Quellen.bib' for section 0
+[197] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
+[202] bibtex.pm:1292> INFO - Found BibTeX data source 'Quellen.bib'
+[204] Utils.pm:164> WARN - month field 'Mai' in entry 'skript' is not an integer - this will probably not sort properly.
+[215] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[216] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[216] Biber.pm:3499> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'de-DE'
+[216] Biber.pm:3505> INFO - No sort tailoring available for locale 'de-DE'
+[218] bbl.pm:608> INFO - Writing 'build/Protokoll.bbl' with encoding 'UTF-8'
+[219] bbl.pm:712> INFO - Output to build/Protokoll.bbl
+[219] Biber.pm:109> INFO - WARNINGS: 1

@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber build/Protokoll"] 1524484545 "build/Protokoll.bcf" "build/Protokoll.bbl" "build/Protokoll" 1524485149
+["biber build/Protokoll"] 1524663645 "build/Protokoll.bcf" "build/Protokoll.bbl" "build/Protokoll" 1524663671
   "Quellen.bib" 1524480109 1110 8bb5ff4bfe840459dcf181d38fffbcee ""
-  "build/Protokoll.bcf" 1524485148 96396 01d7206e490c7e82e2c1e666ab2d2be9 ""
+  "build/Protokoll.bcf" 1524663671 96396 01d7206e490c7e82e2c1e666ab2d2be9 ""
   (generated)
-  "build/Protokoll.bbl"
   "build/Protokoll.blg"
-["lualatex"] 1524485141 "Protokoll.tex" "build/Protokoll.pdf" "Protokoll" 1524485149
+  "build/Protokoll.bbl"
+["lualatex"] 1524663663 "Protokoll.tex" "build/Protokoll.pdf" "Protokoll" 1524663671
   "/home/hubi/.local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1480098698 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/home/hubi/.local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1480098698 924 9904cf1d39e9767e7a3622f2a125a565 ""
   "/home/hubi/.local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1480098698 928 2dc8d444221b7a635bb58038579b861a ""
@@ -285,6 +285,7 @@
   "/home/hubi/.local/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-bold.luc" 1508364543 135897 f513575381dc2524b0249298a6186d32 ""
   "/home/hubi/.local/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-regular.luc" 1508364335 135300 740e636239fe94bd0c70fcb128cacdbd ""
   "/home/hubi/.local/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman5-regular.luc" 1508364544 136401 a2ced73a86976615947485cb8f450f33 ""
+  "/home/hubi/.local/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman7-regular.luc" 1508364545 135969 900e2d5ff2f3383cc485dd672f4656d7 ""
   "/home/hubi/.local/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc" 1508364541 135736 1bb795d5cc9dcee9656879b60344dd31 ""
   "/home/hubi/.local/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmsans10-bold.luc" 1508364539 135638 b171573a1c62d15e08e092fcfb2271f2 ""
   "/home/hubi/.local/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmsans10-regular.luc" 1508364543 135396 ed991bc83e328f3bfa726d1d24b17b05 ""
@@ -293,12 +294,12 @@
   "/home/hubi/.local/texlive/2017/texmf-var/tex/generic/config/language.dat.lua" 1508347290 17237 f3953350bd04e0ad61c78208848544dc ""
   "/home/hubi/.local/texlive/2017/texmf-var/web2c/luatex/lualatex.fmt" 1508347322 1349049 97512dd6880eec3a499ae15b801a864b ""
   "Protokoll.tex" 1524483010 1763 47c0c557ccf93a42a6385ba0ccb3ae67 ""
-  "build/Protokoll.aux" 1524485148 11726 6b35e1d56995b7696db83a0902e6f7d3 ""
-  "build/Protokoll.bbl" 1524484546 951 712d111a8a1d962264d5223a5d95bb26 "biber build/Protokoll"
-  "build/Protokoll.run.xml" 1524485148 2369 0c81e4d44dac6ce20c45c95364254288 ""
-  "build/Protokoll.toc" 1524485148 1149 73543288ceb4604e783e46f8d9675046 ""
+  "build/Protokoll.aux" 1524663671 12337 74e298f329ffc3338831c2506908acaf ""
+  "build/Protokoll.bbl" 1524663646 951 712d111a8a1d962264d5223a5d95bb26 "biber build/Protokoll"
+  "build/Protokoll.run.xml" 1524663671 2369 0c81e4d44dac6ce20c45c95364254288 ""
+  "build/Protokoll.toc" 1524663671 1152 f8ffb38c27dc3b76027416f6b7ca0c5b ""
   "content/anhang.tex" 1524480109 284 0becaeb9964974c729d13237ad858516 ""
-  "content/auswertung.tex" 1524485139 3898 64aad9dd487abb41613ea42da29ec1e3 ""
+  "content/auswertung.tex" 1524663634 6472 fcc19d9f5f9b6ab4485f129c6bb3936e ""
   "content/diskussion.tex" 1524480109 44 402cc6c9751419c0f1a455b2d4ed1f51 ""
   "content/durchfuehrung.tex" 1524480109 1461 933561437e044a4e9ce2a9e1c65bfbc2 ""
   "content/fehlerrechnung.tex" 1524480109 1947 ba7d4951d94bd80f1a35aa55a8823269 ""
@@ -312,11 +313,12 @@
   "ressources/Theorie1.png" 1524480109 19398 57dcc565c4def33f9f33d5a6bd114129 ""
   "ressources/Theorie2.png" 1524480109 9153 621ac8722aeb2962ba964a056fe53afe ""
   "ressources/TransparenzZeit.png" 1524480109 47005 08ad9b1254bb8a80f6700d8406ac3ebb ""
+  "ressources/fit_reso.pdf" 1524653310 12345 1c5529627cad962e579a17070308991f ""
   "ressources/optischesPumpen.png" 1524480109 18631 a6b887b5955aa002447ee218179321ac ""
   (generated)
-  "build/Protokoll.run.xml"
-  "build/Protokoll.toc"
   "build/Protokoll.log"
-  "build/Protokoll.pdf"
-  "build/Protokoll.aux"
+  "build/Protokoll.toc"
   "build/Protokoll.bcf"
+  "build/Protokoll.aux"
+  "build/Protokoll.run.xml"
+  "build/Protokoll.pdf"

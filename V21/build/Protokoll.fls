@@ -559,6 +559,9 @@ INPUT /home/hubi/.local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbol
 INPUT /home/hubi/.local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT ./content/auswertung.tex
 INPUT ./content/auswertung.tex
+INPUT ./ressources/fit_reso.pdf
+INPUT ressources/fit_reso.pdf
+INPUT /home/hubi/.local/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman7-regular.luc
 INPUT ./content/diskussion.tex
 INPUT ./content/diskussion.tex
 INPUT ./content/anhang.tex

@@ -1,8 +1,8 @@
 \section{Auswertung}
 \label{sec:Auswertung}
-\subsection{Bestimmung des lokalen Erdmagnetfeld}
-Für die Bestimmung des Erdmagnetfeldes werden die Magnetfeldstärken der
-Sweepfeld- und Horizontalfeld in Abhängigkeit der Resonanzfrequenz gemessen.
+\subsection{Bestimmung des lokalen Erdmagnetfeldes}
+Für die Bestimmung des Erdmagnetfeldes werden die Magnetfeldstärken des
+Sweep- und Horizontalfeldes in Abhängigkeit der Resonanzfrequenz gemessen.
 Die gemessenen Messwerte werden in der Tabelle \ref{tabmess1} dargestellt.
  \begin{table}
    \centering
@@ -26,9 +26,74 @@ Die gemessenen Messwerte werden in der Tabelle \ref{tabmess1} dargestellt.
      \bottomrule
    \end{tabular}
  \end{table}
+Die in der Tabelle dargestellten Positionen der Resonantstellen geben an wie
+viel Strom durch die Spulen fließt. Zur Berechnung der Stromstärke müssen
+die Positionen der Sweepfelder und der Horizontalfelder mit den Faktoren
+$0.1$ und $0.3$ multipliziert werden. Mit Hilfe dieser berechneten Stromstärken
+und der Helmholzgleichung \eqref{holziholziholz} können die Magnetfeldstärken der Sweep- und
+Horizontalfeldstärken berechnet werden.
+\begin{align}
+\label{holziholziholz}
+B=\frac{I\cdot 8\mu_0}{R\sqrt{125}}
+\end{align}
+Anschließend werden die Magnetfeldstärken der Sweep- und Horizontalspule addiert
+und gegen die Frequenz $f$ aufgetragen. An diese Werte kann eine
+Funktionsanpassungen durchgeführt werden, dieser Plot wird in Abbildung
+\ref{plot1} dargestellt.
 
+\begin{figure}
+\centering
+\includegraphics{ressources/fit_reso.pdf}
+\caption{der Messwerte und Darstellung der Fitgergebnisse zur Berechnung
+der Land$\grave{\text{e}}$-Faktoren und des Erdmagnetfeldes}
+\label{plot1}
+\end{figure}
 
+Die Steigung der linearen Funktion lässt sich mit Hilfe der Gleichung \eqref{eq:hnu}
+berechnen, es folgt:
+\begin{align}
+    \label{Lande}
+    m=\frac{h}{g_\text{F}\mu_\text{B}}
+\end{align}
+Die Werte des linearen Fitmodells liegen bei:
+\begin{align}
+    \nonumber
+    m_1&=1.54\cdot 10^{-10} \pm 8\cdot 10^{-12}\\
+    \nonumber
+    m_2&=2.26\cdot 10^{-10} \pm 7\cdot 10^{-12}\\
+    \nonumber
+    b_1&=3.4\cdot 10^{-5} \pm 5\cdot 10^{-6}\\
+    \nonumber
+    b_2&=3.3\cdot 10^{-5} \pm 4\cdot 10^{-6}
+\end{align}
+Die Y-Achsenabschnitte der Fits entsprechen der horizontalen Komponenten
+des Erdmagnetfeldes kann als Horizontalkomponente des Erdmagnetfeldes
+identifiziert werden:
+\begin{align}
+    \nonumber
+    B_{\text{hor.}1}&=(34 \pm 5)\, \mu\text{T}\\
+    \nonumber
+    B_{\text{hor.}2}&=(33 \pm 4)\, \mu\text{T}
+\end{align}
+Die vertikale Komponente des Erdmagnetfeld wirde mit einer seperaten Spule
+ausgeglichen, der durchflossene Strom lag bei $I=0.15\,\text{A}$. Die
+Berechnung Magnetfeldstärke der vertikalen Komponente erfolgt mit der Gleichung
+\eqref{holziholziholz}:
 
+\begin{align}
+    B_\text{vert.}=(23 \pm 2)\, \mu \text{T}
+\end{align}
+Für das Gesamte Magnetfeld der Erede folgt:
+$$B_\text{Erde}=(41\pm 5 )\, \mu \text{T}.$$
+
+Die Bestimmung der Land$\grave{\text{e}}$-Faktoren der beiden Isotope
+erfolgt aus der Steigung der
+linearen Fits, dazu wird die Gleichung \eqref{Lande} nach $g_\text{F}$
+umgestellt, daraus ergeben konnten folgende Faktoren ermittelt werden:
+\begin{align}
+    g_{\text{F}1}=0.46 \pm 0.02 \\
+    g_{\text{F}2}=0.32 \pm 0.01
+\end{align}
 
 % Sämtliche im Folgenden durchgeführten Ausgleichsrechnungen werden mit der \emph{curve fit} Funktion aus dem für \emph{Python} geschriebenen package \emph{NumPy}\cite{scipy} durchgeführt. Fehlerrechnungen werden mit dem für \emph{Python} geschriebenen package \emph{Uncertainties}\cite{uncertainties} ausgeführt.
 

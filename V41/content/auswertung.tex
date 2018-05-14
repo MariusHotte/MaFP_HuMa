@@ -1,6 +1,57 @@
 \section{Auswertung}
 \label{sec:Auswertung}
-% Sämtliche im Folgenden durchgeführten Ausgleichsrechnungen werden mit der \emph{curve fit} Funktion aus dem für \emph{Python} geschriebenen package \emph{NumPy}\cite{scipy} durchgeführt. Fehlerrechnungen werden mit dem für \emph{Python} geschriebenen package \emph{Uncertainties}\cite{uncertainties} ausgeführt.
+Sämtliche im Folgenden durchgeführten Ausgleichsrechnungen werden mit der \emph{curve fit} Funktion aus dem für \emph{Python} geschriebenen package \emph{NumPy}\cite{scipy} durchgeführt. Fehlerrechnungen werden mit dem für \emph{Python} geschriebenen package \emph{Uncertainties}\cite{uncertainties} ausgeführt.
+
+\subsection{Allgemeine Auswertung der Filmstreifen}
+\label{sec:allgemein}
+Zur Auswertung wird der Nullpunkt in die Mitte des linken ausgestanzten Loches gesetzt, da in diesem Punkt der Strahl die Kamera verlässt. Somit entspricht der Abstand zwischen beiden ausgestanzten Löchern einem Winkel von $\theta=\pi$. Der Abstand der Streifen zum Nullpunkt werden mit einem Geodreik vermessen und mit der Beziehung
+\begin{align}
+	\theta=\frac{s}{2R}
+\end{align}
+in den Beugungswinkel überführt. Dabei beschreibt $s$ den Abstand des auftretenen Reflex zum Nullpunkt und $R$ den Radius der verwendeten Kamera.  Aufgrund der Fehleranfälligkeit die beim ablesen besteht, wird auf jeden Reflex ein Unsicherheit von einem Millimeter angenommen. 
+Der Netzebenabstand $d$ wird darauf hin, unter Verwendung der Bragg-Bedingung XXX, bestimmt.
+
+\subsection{Metallprobe}
+Die im voherigen Kapitel beschriebenen Messgrößen sind in Tabelle \ref{table:A1} für die verwendete Metallprobe 9 zusammengefasst.
+
+\input{build/Tabelle_Metall_Rohdaten_texformat.tex}
+
+Zur Bestimmung der Kristallstruktur wird das Verhältnis
+\begin{align}
+	\frac{d_1}{d_i}=\frac{m_i}{m_1}
+	\label{eq:dm}
+\end{align} 
+verwendet, wobei gilt $m=\sqrt{h^2+k^2+l^2}$.
+In Tabelle \ref{table:A2} sind die ersten neun Reflexe der Kristallstrukturen simple-cubic (sc),body centered cubic (bbc), face centered cubic (fcc) und Diamant aufgelistet, zudem wird das in Gleichung \ref{eq:dm} beschriebene Verhältnis gebildet, um diese mit der Probe zu vergleichen.
+
+
+\input{build/Tabelle_Metall_Kristall_texformat.tex}
+
+Der Vergleich mit allen Strukturen zeigt, dass die Probe eine bcc-Struktur besitzt.
+Desweiteren ist die Gitterkonstante $a$ der Probe zu bestimmen. Diese wird nach Gleichung XXX berechnet und in Abbildung \ref{fig:plot1} gegen $\cos^2{(\theta)}$ aufgetragen. Durch die verwendete lineare Ausgleichsrechnung 
+\begin{align}
+	a(\cos{(\theta)})= b\cos^2{(\theta)} + c
+\end{align}
+
+\begin{figure}
+  \centering
+  \includegraphics{build/Metall.pdf}
+  \caption{Messdaten und Fitergebnis.}
+  \label{fig:plot1}
+\end{figure}
+
+werden die in Kapitel XXX angesprochenen systematischen Fehler korrigiert. Die resultierenden Fitparamter lauten:
+\begin{align}
+	b&= \input{build/b_Metall.tex} \\
+	c&= \input{build/a_Metall.tex} 
+\end{align}
+
+Die Gitterkonstante und die vorliegende bcc-Struktur weißt nach \cite{gitter} auf Niob hin. Die Abweichung zur der in der Literatur angegebenen Gitterkonstante 
+$a=\SI{3.30}{\angstrom}$ beträgt $\input{build/prozent_metall.tex}$.
+
+
+
+
 
 % % Examples
 % \begin{equation}

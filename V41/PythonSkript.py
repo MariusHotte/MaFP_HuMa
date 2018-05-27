@@ -144,7 +144,7 @@ a=noms(d*m_bcc)
 x=noms((unp.cos(theta))**2)
 
 params = ucurve_fit(reg_linear, x, a*10**10)             # linearer Fit
-t_plot = np.linspace(0, 1, 2) 
+t_plot = np.linspace(0, 1, 2)
 plt.plot(t_plot, reg_linear(t_plot, *noms(params)), 'b-', label='Fit')
 
 plt.plot(x, a*10**10, 'rx', label='Messdaten')
@@ -153,7 +153,7 @@ plt.ylabel(r'$\cos^2{(theta)}$')
 plt.legend(loc='best')
 plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
 plt.savefig('build/Metall.pdf')
-plt.clf() 
+plt.clf()
 
 write('build/a_Metall.tex', make_SI(params[1], r'\angstrom', figures=2))
 write('build/b_Metall.tex', make_SI(params[0], r'\angstrom', figures=2))

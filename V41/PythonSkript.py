@@ -52,9 +52,9 @@ from utility import(
 
 Metall_cm =np.array([4,5.7,7.1,8.4,9.6,10.9,12.2,13.8,16.4]) # Diese Angaben sind in cm. 180Grad entsprechen auf dem Streifen 18cm Metall_cm =np.array([4,5.7,7.1,8.4,9.6,10.9,12.2,13.8,16.4])
 Salz_cm =np.array([2.75,3.9,4.8,6.3,7.0,8.3,8.9,9.55,10.2,11.55,12.2,14.9,16.5])
-m_bcc= np.array([1.41,2.00,2.45,2.83,3.16,3.46,3.74,4.00])
+m_bcc= np.array([1.41,2.00,2.45,2.83,3.16,3.46,3.74,4.00])#Metall m h k l bcc
 lam=1.54093*10**(-10) # Wellenlänge des Röntgenstrahls in meter
-Miller_diamant=np.array([111,220,311,400,331,422,333,440,531])
+Miller_diamant=np.array([111,220,311,400,331,422,333,440,531]) ##Alles 4 fürs metall
 Miller_bcc=np.array([110,200,211,220,310,222,321,400,330])
 Miller_fcc=np.array([111,200,220,311,222,400,331,420,422])
 Miller_sc=np.array([100,110,111,200,210,211,220,221,310])
@@ -151,8 +151,8 @@ plt.plot(x, a*10**10, 'rx', label='Messdaten')
 plt.xlabel(r'$a \:/\: \si{\angstrom}$')
 plt.ylabel(r'$\cos^2{(theta)}$')
 plt.legend(loc='best')
-plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
-plt.savefig('build/Metall.pdf')
+#plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
+#plt.savefig('build/Metall.pdf')
 plt.clf()
 
 write('build/a_Metall.tex', make_SI(params[1], r'\angstrom', figures=2))
@@ -203,9 +203,6 @@ for i in range(len(Miller)):
 	if abs(atom_a.real)>10**(-3) or abs(atom_a.imag)>10**(-3):
 		Miller_chlorid=np.append(Miller_chlorid,Miller[i])
 
-print(Miller)
-print(Miller_chlorid)
-
 
 Miller_caesium=np.array([100,110,111,200,221,210,211,220,300,310,311,222,320,321,330,400,410,411,331,420,421,332,422,333,440,442,500,510,324,521])
 m_caesium=np.array([])
@@ -216,6 +213,15 @@ for i in range(len(Miller_caesium)):
 	x=np.sqrt((h**2)+(k**2)+(l**2))
 	m_caesium=np.append(m_caesium,[x])
 
+
+print("Miller")
+print(Miller)
+print("Miller_chlorid")
+print(Miller_chlorid)
+print("Miller_steinsalz")
+print(Miller_steinsalz)
+print("Miller_zinkblende")
+print(Miller_zinkblende)
 # a_0=(lam/2*np.sin(theta[0]))*m_caesium
 
 # n = 13

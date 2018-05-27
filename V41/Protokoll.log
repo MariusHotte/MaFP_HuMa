@@ -1,13 +1,18 @@
-This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2017.10.18)  27 MAY 2018 13:09
+This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2017.10.18)  26 MAY 2018 15:57
  restricted system commands enabled.
 **Protokoll.tex
 (./Protokoll.tex
 LaTeX2e <2017-04-15>
 Lua module: luaotfload-main 2017/01/29 2.80001 OpenType layout system.
 Lua module: lualibs 2017-02-01 2.5 ConTeXt Lua standard libraries.
-Lua module: lualibs-extended 2017-02-01 2.5 ConTeXt Lua libraries -- extended collection.(using cache: /home/hubi/.local/texlive/2017/texmf-var/luatex-cache/generic)
-luaotfload | conf : Root cache directory is /home/hubi/.local/texlive/2017/texmf-var/luatex-cache/generic/names.
-luaotfload | init : Loading fontloader “fontloader-2017-02-11.lua” from kpse-resolved path “/home/hubi/.local/texlive/2017/texmf-dist/tex/luatex/luaotfload/fontloader-2017-02-11.lua”.
+Lua module: lualibs-extended 2017-02-01 2.5 ConTeXt Lua libraries -- extended co
+llection.(using cache: /home/hubi/.local/texlive/2017/texmf-var/luatex-cache/gen
+eric)
+luaotfload | conf : Root cache directory is /home/hubi/.local/texlive/2017/texmf
+-var/luatex-cache/generic/names.
+luaotfload | init : Loading fontloader “fontloader-2017-02-11.lua” from kpse
+-resolved path “/home/hubi/.local/texlive/2017/texmf-dist/tex/luatex/luaotfloa
+d/fontloader-2017-02-11.lua”.
 Lua-only attribute luaotfload@state = 1
 Lua-only attribute luaotfload@noligature = 2
 Lua-only attribute luaotfload@syllabe = 3
@@ -16,26 +21,39 @@ Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
 Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
 Inserting `luaotfload.define_font' at position 1 in `define_font'.
 Lua-only attribute luaotfload_color_attribute = 4
-luaotfload | conf : Root cache directory is /home/hubi/.local/texlive/2017/texmf-var/luatex-cache/generic/names.
-Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_font'.
-Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch_font'.
-Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
-Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
-Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.129 seconds
+luaotfload | conf : Root cache directory is /home/hubi/.local/texlive/2017/texmf
+-var/luatex-cache/generic/names.
+Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
+font'.
+Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
+_font'.
+Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_fon
+t_unsafe'.
+Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
+'.
+Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
+.
+luaotfload | main : initialization completed in 0.117 seconds
 Babel <3.14> and hyphenation patterns for 1 language(s) loaded.
-(./header.tex (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/koma-script/scrartcl.cls
+(./header.tex
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2017/09/07 v3.24 KOMA-Script document class (article)
 (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/koma-script/scrkbase.sty
-Package: scrkbase 2017/09/07 v3.24 KOMA-Script package (KOMA-Script-dependent basics and keyval usage)
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/koma-script/scrbase.sty
-Package: scrbase 2017/09/07 v3.24 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
+Package: scrkbase 2017/09/07 v3.24 KOMA-Script package (KOMA-Script-dependent ba
+sics and keyval usage)
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2017/09/07 v3.24 KOMA-Script package (KOMA-Script-independent b
+asics and keyval usage)
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/koma-script/scrlfile.sty
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/koma-script/scrlfile.sty
 Package: scrlfile 2017/09/07 v3.24 KOMA-Script package (loading files)
-))) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/koma-script/tocbasic.sty
+))) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/koma-script/tocbasic.s
+ty
 Package: tocbasic 2017/09/07 v3.24 KOMA-Script package (handling toc-files)
 \scr@dte@tocline@numberwidth=\skip41
 \scr@dte@tocline@numbox=\box26
@@ -50,10 +68,18 @@ Package tocbasic Info: omitting babel extension for `lot'
 (tocbasic)             because of feature `nobabel' available
 (tocbasic)             for `lot' on input line 136.
 Class scrartcl Info: File `scrsize11pt.clo' used instead of
-(scrartcl)           file `scrsize11.clo' to setup font sizes on input line 2080.
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
+(scrartcl)           file `scrsize11.clo' to setup font sizes on input line 2080
+.
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/koma-script/scrsize11pt.cl
+o
 File: scrsize11pt.clo 2017/09/07 v3.24 KOMA-Script font size class option (11pt)
-luaotfload | db : Font names database loaded from /home/hubi/.local/texlive/2017/texmf-var/luatex-cache/generic/names/luaotfload-names.luc(load luc: /home/hubi/.local/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.luc)) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/koma-script/typearea.sty
+
+luaotfload | db : Font names database loaded from /home/hubi/.local/texlive/2017
+/texmf-var/luatex-cache/generic/names/luaotfload-names.luc(load luc: /home/hubi/
+.local/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.l
+uc))
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/koma-script/typearea.sty
 Package: typearea 2017/09/07 v3.24 KOMA-Script package (type area)
 \ta@bcor=\skip42
 \ta@div=\count79
@@ -101,12 +127,15 @@ Class scrartcl Info: Redefining `\numberline' on input line 5319.
 \bibindent=\dimen102
 ) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifpdf.sty
 Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifvtex.sty
 Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
 Package ifvtex Info: VTeX not detected.
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
 \Gm@cnth=\count88
@@ -121,11 +150,15 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layouthoffset=\dimen109
 \Gm@layoutvoffset=\dimen110
 \Gm@dimlist=\toks15
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/koma-script/scrhack.sty
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/koma-script/scrhack.sty
 Package: scrhack 2017/09/07 v3.24 KOMA-Script package 
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/xpatch/xpatch.sty (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/l3kernel/expl3.sty
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/xpatch/xpatch.sty
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2017/09/18 L3 programming layer (loader) 
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/l3kernel/expl3-code.tex
 Package: expl3 2017/09/18 L3 programming layer (code)
 \ucharcat@table=\catcodetable5
 \c_max_int=\count91
@@ -267,13 +300,16 @@ Package: expl3 2017/09/18 L3 programming layer (code)
 \l__coffin_top_corner_dim=\dimen139
 \l__coffin_scaled_total_height_dim=\dimen140
 \l__coffin_scaled_width_dim=\dimen141
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
 File: l3pdfmode.def 2017/03/18 v L3 Experimental driver: PDF mode
 \l__driver_color_stack_int=\count172
 \l__driver_tmp_box=\box43
 ))
 Package: xpatch 2012/10/02 v0.3 Extending etoolbox patching commands
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/l3packages/xparse/xparse.s
+ty
 Package: xparse 2017/09/18 L3 Experimental document command parser
 \l__xparse_current_arg_int=\count173
 \g__xparse_grabber_int=\count174
@@ -464,51 +500,75 @@ Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
 . 
 . Defining command \xshowbibdriver with sig. 'm' on line 193.
 .................................................
-)) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+))
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/oberdiek/rerunfilecheck.st
+y
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
  (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
 Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/oberdiek/etexcmds.sty
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX detected.
-)))) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+))))
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2017/03/19 v0.25 Utility functions of pdfTeX for LuaTeX (HO)
+
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
 \pdftexcmds@toks=\toks16
 ) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/oberdiek/atveryend.sty
 Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/oberdiek/uniquecounter.sty
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/oberdiek/uniquecounter.s
+ty
 Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/oberdiek/bigintcalc.sty
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/oberdiek/bigintcalc.sty
 Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO)
+
 ))
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 282.
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/polyglossia/polyglossia.sty
-Package: polyglossia 2015/03/25 v1.42.4 Alternative to Babel for XeLaTeX and LuaLaTeX
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
+2.
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/polyglossia/polyglossia.st
+y
+Package: polyglossia 2015/03/25 v1.42.4 Alternative to Babel for XeLaTeX and Lua
+LaTeX
  (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/makecmds/makecmds.sty
 Package: makecmds 2009/09/03 v1.0a extra command making commands
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/xkeyval/xkvutils.tex
 \XKV@toks=\toks17
 \XKV@tempa@toks=\toks18
 )
 \XKV@depth=\count179
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-)) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/fontspec/fontspec.sty
+))
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/fontspec/fontspec.sty
 Package: fontspec 2017/09/22 v2.6e Font selection for XeLaTeX and LuaLaTeX
-Lua module: fontspec 2017/09/27 2.6e Font selection for XeLaTeX and LuaLaTeX (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
-Package: fontspec-luatex 2017/09/22 v2.6e Font selection for XeLaTeX and LuaLaTeX
+Lua module: fontspec 2017/09/27 2.6e Font selection for XeLaTeX and LuaLaTeX
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/fontspec/fontspec-luatex.s
+ty
+Package: fontspec-luatex 2017/09/22 v2.6e Font selection for XeLaTeX and LuaLaTe
+X
 \l__fontspec_script_int=\count180
 \l__fontspec_language_int=\count181
 \l__fontspec_strnum_int=\count182
@@ -523,7 +583,8 @@ Package: fontspec-luatex 2017/09/22 v2.6e Font selection for XeLaTeX and LuaLaTe
 \g__file_internal_ior=\read1
  (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/base/tuenc.def
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/base/tuenc.def
 File: tuenc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding TU on input line 82.
 ))
@@ -687,14 +748,17 @@ LaTeX Font Info:    Redeclaring font encoding TU on input line 82.
 . 
 . Defining command \UndeclareComposite with sig. 'mm' on line 3347.
 .................................................
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/fontspec/fontspec.cfg)
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/fontspec/fontspec.cfg)
 LaTeX Info: Redefining \itshape on input line 3525.
 LaTeX Info: Redefining \slshape on input line 3530.
 LaTeX Info: Redefining \scshape on input line 3535.
 LaTeX Info: Redefining \upshape on input line 3540.
 LaTeX Info: Redefining \em on input line 3570.
 LaTeX Info: Redefining \emph on input line 3595.
-(load luc: /home/hubi/.local/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bold.luc)(load luc: /home/hubi/.local/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-italic.luc)
+(load luc: /home/hubi/.local/texlive/2017/texmf-var/luatex-cache/generic/fonts/o
+tl/lmroman10-bold.luc)(load luc: /home/hubi/.local/texlive/2017/texmf-var/luatex
+-cache/generic/fonts/otl/lmroman10-italic.luc)
 LaTeX Info: Redefining \- on input line 3646.
 .................................................
 . LaTeX info: "xparse/redefine-command"
@@ -706,17 +770,23 @@ LaTeX Info: Redefining \- on input line 3646.
 . 
 . Defining command \liningnums with sig. 'm' on line 3745.
 .................................................
-)) (/home/hubi/.local/texlive/2017/texmf-dist/tex/luatex/luatexbase/luatexbase.sty
+))
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/luatex/luatexbase/luatexbase.sty
 Package: luatexbase 2015/10/04 v1.3 luatexbase interface to LuaTeX 
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/luatex/ctablestack/ctablestack.sty
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/luatex/ctablestack/ctablestack.s
+ty
 Package: ctablestack 2015/10/01 v1.0 Catcode table stable support
 \@catcodetablestackcnt=\count188
 )
 \CatcodeTableOther=\catcodetable6
 \CatcodeTableExpl=\catcodetable7
 )
-luatex-hyphen: using data file: /home/hubi/.local/texlive/2017/texmf-var/tex/generic/config/language.dat.lua
-Lua module: polyglossia 2013/05/11 1.3 Polyglossia) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/polyglossia/gloss-german.ldf
+luatex-hyphen: using data file: /home/hubi/.local/texlive/2017/texmf-var/tex/gen
+eric/config/language.dat.lua
+Lua module: polyglossia 2013/05/11 1.3 Polyglossia)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/polyglossia/gloss-german.l
+df
 File: gloss-german.ldf polyglossia: module for german
 
 hyph-de-1901.pat.txt
@@ -724,28 +794,33 @@ Language german was not yet loaded; created with id 4
 Language german already loaded; id is 4
 hyph-de-1996.pat.txt
 Language ngerman was not yet loaded; created with id 8
-Language ngerman already loaded; id is 8 (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/polyglossia/babelsh.def
+Language ngerman already loaded; id is 8
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/polyglossia/babelsh.def
 File: babelsh.def 2013/04/30 Babel common definitions for shorthands
  Taken verbatim from babel.def (2013/04/15 v3.9e)
 )
 Package polyglossia Info: Making " an active character on input line 79.
 )
 Package polyglossia Info: Default language is german.
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/amsmath/amsmath.sty
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip61
 
 For additional information on amsmath, use the `?' option.
 (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01 AMS text
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/amsmath/amsgen.sty
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks19
 \ex@=\dimen145
-)) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/amsmath/amsbsy.sty
+))
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen146
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
 \inf@bad=\count189
@@ -785,17 +860,21 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
 \mathdisplay@stack=\toks23
 LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/amsfonts/amssymb.sty
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/mathtools/mathtools.sty
+))
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/mathtools/mathtools.sty
 Package: mathtools 2017/05/24 v1.19 mathematical typesetting tools
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/tools/calc.sty
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count267
 \calc@Bcount=\count268
@@ -807,7 +886,8 @@ LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count269
 \calc@Cskip=\skip66
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/mathtools/mhsetup.sty
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
 )
 LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
@@ -823,25 +903,43 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \l_MT_below_intertext_sep=\dimen160
 \l_MT_above_shortintertext_sep=\dimen161
 \l_MT_below_shortintertext_sep=\dimen162
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/unicode-math/unicode-math.sty (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/unicode-math/unicode-math.
+sty
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys
+2e.sty
 Package: l3keys2e 2017/09/18 LaTeX2e option processing using LaTeX3 keys
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/ucharcat/ucharcat.sty
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/ucharcat/ucharcat.sty
 Package: ucharcat 2015/11/19 v0.03 ucharcat for luaLaTeX (DPC)
 \ucharcat@table=\catcodetable8
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/base/fix-cm.sty
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/base/fix-cm.sty
 Package: fix-cm 2015/01/14 v1.1t fixes to LaTeX
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/base/ts1enc.def
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
-)) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/filehook/filehook.sty
+))
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/filehook/filehook.sty
 Package: filehook 2011/10/12 v0.5d Hooks for input files
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/filehook/filehook-scrlfile.sty
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/filehook/filehook-scrlfile
+.sty
 Package: filehook-scrlfile 2011/01/03 v0.1 filehook patch for scrlfile package
-Package filehook Info: Package 'scrlfile' detected and compensated for on input line 102.
-)) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/unicode-math/unicode-math-luatex.sty
-Package: unicode-math-luatex 2017/10/09 v0.8h Unicode maths in XeLaTeX and LuaLaTeX
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/lualatex/lualatex-math/lualatex-math.sty
-Package: lualatex-math 2017/06/15 v1.7 Patches for mathematics typesetting with LuaLaTeX
-Lua module: lualatex-math 2013/08/03 1.3 Patches for mathematics typesetting with LuaLaTeX
+Package filehook Info: Package 'scrlfile' detected and compensated for on input 
+line 102.
+))
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/unicode-math/unicode-math-
+luatex.sty
+Package: unicode-math-luatex 2017/10/09 v0.8h Unicode maths in XeLaTeX and LuaLa
+TeX
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/lualatex/lualatex-math/lualatex-
+math.sty
+Package: lualatex-math 2017/06/15 v1.7 Patches for mathematics typesetting with 
+LuaLaTeX
+Lua module: lualatex-math 2013/08/03 1.3 Patches for mathematics typesetting wit
+h LuaLaTeX
 .................................................
 . lualatex-math info: "patch-macro"
 . 
@@ -871,7 +969,9 @@ Lua module: lualatex-math 2013/08/03 1.3 Patches for mathematics typesetting wit
 . 
 . Defining command \unimathsetup with sig. 'm' on line 191.
 .................................................
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex)
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/unicode-math/unicode-math-
+table.tex)
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
@@ -938,51 +1038,62 @@ Lua module: lualatex-math 2013/08/03 1.3 Patches for mathematics typesetting wit
 . Defining command \eqqcolon with sig. '' on line 2741.
 .................................................
 ))
-luaotfload | cache : Lookup cache loaded from /home/hubi/.local/texlive/2017/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc.(load luc: /home/hubi/.local/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/latinmodern-math.luc)
+luaotfload | cache : Lookup cache loaded from /home/hubi/.local/texlive/2017/tex
+mf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc.(load luc: /home/h
+ubi/.local/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/latinmodern-mat
+h.luc)
 \g__fontspec_family_LatinModernMath_int=\count273
 .................................................
 . fontspec info: "no-font-shape"
 . 
 . Could not resolve font "LatinModernMath/B" (it probably doesn't exist).
 .................................................
-luaotfload | aux : font no 26 (nil) does not define feature smcp for script math with language dflt
+luaotfload | aux : font no 26 (nil) does not define feature smcp for script math
+ with language dflt
 luaotfload | aux : no font with id 26
 .................................................
 . fontspec info: "defining-font"
 . 
 . Font family 'LatinModernMath(0)' created for font 'Latin Modern Math' with
 . options
-. [Renderer=Basic,BoldItalicFont={},ItalicFont={},Script=Math,SizeFeatures={{Size=10.95-},{Size=8-10.95,Font=Latin
+. [Renderer=Basic,BoldItalicFont={},ItalicFont={},Script=Math,SizeFeatures={{Siz
+e=10.95-},{Size=8-10.95,Font=Latin
 . Modern Math,Style=MathScript},{Size=-8,Font=Latin Modern
 . Math,Style=MathScriptScript}}].
 .  
 .  This font family consists of the following NFSS series/shapes:
 .  
 . - 'normal' (m/n) with NFSS spec.:
-. <10.95->"LatinModernMath:mode=base;script=math;language=DFLT;"<8-10.95>"LatinModernMath:mode=base;script=math;language=DFLT;+ssty=0;"<-8>"LatinModernMath:mode=base;script=math;language=DFLT;+ssty=1;"
+. <10.95->"LatinModernMath:mode=base;script=math;language=DFLT;"<8-10.95>"LatinM
+odernMath:mode=base;script=math;language=DFLT;+ssty=0;"<-8>"LatinModernMath:mode
+=base;script=math;language=DFLT;+ssty=1;"
 . - 'small caps'  (m/sc) with NFSS spec.: 
 .................................................
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
 (Font)              `operators' in the math version `normal' on input line 45.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/LatinModernMath(0)/m/n on input line 45.
+(Font)                  OT1/cmr/m/n --> TU/LatinModernMath(0)/m/n on input line 
+45.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
 (Font)              `operators' in the math version `bold' on input line 45.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/LatinModernMath(0)/bx/n on input line 45.
+(Font)                  OT1/cmr/bx/n --> TU/LatinModernMath(0)/bx/n on input lin
+e 45.
 .................................................
 . fontspec info: "no-font-shape"
 . 
 . Could not resolve font "LatinModernMath/B" (it probably doesn't exist).
 .................................................
-luaotfload | aux : font no 26 (nil) does not define feature smcp for script math with language dflt
+luaotfload | aux : font no 26 (nil) does not define feature smcp for script math
+ with language dflt
 luaotfload | aux : no font with id 26
 .................................................
 . fontspec info: "defining-font"
 . 
 . Font family 'LatinModernMath(1)' created for font 'Latin Modern Math' with
 . options
-. [Renderer=Basic,BoldItalicFont={},ItalicFont={},Script=Math,SizeFeatures={{Size=10.95-},{Size=8-10.95,Font=Latin
+. [Renderer=Basic,BoldItalicFont={},ItalicFont={},Script=Math,SizeFeatures={{Siz
+e=10.95-},{Size=8-10.95,Font=Latin
 . Modern Math,Style=MathScript},{Size=-8,Font=Latin Modern
 . Math,Style=MathScriptScript}},Scale=1.00001,FontAdjustment={\fontdimen
 . 8\font =485828.063sp\relax \fontdimen 9\font =282741.886sp\relax \fontdimen
@@ -997,7 +1108,9 @@ luaotfload | aux : no font with id 26
 .  This font family consists of the following NFSS series/shapes:
 .  
 . - 'normal' (m/n) with NFSS spec.:
-. <10.95->s*[1.00001]"LatinModernMath:mode=base;script=math;language=DFLT;"<8-10.95>s*[1.00001]"LatinModernMath:mode=base;script=math;language=DFLT;+ssty=0;"<-8>s*[1.00001]"LatinModernMath:mode=base;script=math;language=DFLT;+ssty=1;"
+. <10.95->s*[1.00001]"LatinModernMath:mode=base;script=math;language=DFLT;"<8-10
+.95>s*[1.00001]"LatinModernMath:mode=base;script=math;language=DFLT;+ssty=0;"<-8
+>s*[1.00001]"LatinModernMath:mode=base;script=math;language=DFLT;+ssty=1;"
 . - 'small caps'  (m/sc) with NFSS spec.: 
 . and font adjustment code:
 . \fontdimen 8\font =485828.063sp\relax \fontdimen 9\font =282741.886sp\relax
@@ -1013,24 +1126,28 @@ luaotfload | aux : no font with id 26
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
 (Font)              `symbols' in the math version `normal' on input line 45.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/cmsy/m/n --> TU/LatinModernMath(1)/m/n on input line 45.
+(Font)                  OMS/cmsy/m/n --> TU/LatinModernMath(1)/m/n on input line
+ 45.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
 (Font)              `symbols' in the math version `bold' on input line 45.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/cmsy/b/n --> TU/LatinModernMath(1)/bx/n on input line 45.
+(Font)                  OMS/cmsy/b/n --> TU/LatinModernMath(1)/bx/n on input lin
+e 45.
 .................................................
 . fontspec info: "no-font-shape"
 . 
 . Could not resolve font "LatinModernMath/B" (it probably doesn't exist).
 .................................................
-luaotfload | aux : font no 26 (nil) does not define feature smcp for script math with language dflt
+luaotfload | aux : font no 26 (nil) does not define feature smcp for script math
+ with language dflt
 luaotfload | aux : no font with id 26
 .................................................
 . fontspec info: "defining-font"
 . 
 . Font family 'LatinModernMath(2)' created for font 'Latin Modern Math' with
 . options
-. [Renderer=Basic,BoldItalicFont={},ItalicFont={},Script=Math,SizeFeatures={{Size=10.95-},{Size=8-10.95,Font=Latin
+. [Renderer=Basic,BoldItalicFont={},ItalicFont={},Script=Math,SizeFeatures={{Siz
+e=10.95-},{Size=8-10.95,Font=Latin
 . Modern Math,Style=MathScript},{Size=-8,Font=Latin Modern
 . Math,Style=MathScriptScript}},Scale=0.99999,FontAdjustment={\fontdimen
 . 8\font =28704.76sp\relax \fontdimen 9\font =143523.8sp\relax \fontdimen
@@ -1040,7 +1157,9 @@ luaotfload | aux : no font with id 26
 .  This font family consists of the following NFSS series/shapes:
 .  
 . - 'normal' (m/n) with NFSS spec.:
-. <10.95->s*[0.99999]"LatinModernMath:mode=base;script=math;language=DFLT;"<8-10.95>s*[0.99999]"LatinModernMath:mode=base;script=math;language=DFLT;+ssty=0;"<-8>s*[0.99999]"LatinModernMath:mode=base;script=math;language=DFLT;+ssty=1;"
+. <10.95->s*[0.99999]"LatinModernMath:mode=base;script=math;language=DFLT;"<8-10
+.95>s*[0.99999]"LatinModernMath:mode=base;script=math;language=DFLT;+ssty=0;"<-8
+>s*[0.99999]"LatinModernMath:mode=base;script=math;language=DFLT;+ssty=1;"
 . - 'small caps'  (m/sc) with NFSS spec.: 
 . and font adjustment code:
 . \fontdimen 8\font =28704.76sp\relax \fontdimen 9\font =143523.8sp\relax
@@ -1048,32 +1167,42 @@ luaotfload | aux : no font with id 26
 . \fontdimen 12\font =430571.4sp\relax \fontdimen 13\font =0pt\relax 
 .................................................
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 45.
+(Font)              `largesymbols' in the math version `normal' on input line 45
+.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/cmex/m/n --> TU/LatinModernMath(2)/m/n on input line 45.
+(Font)                  OMX/cmex/m/n --> TU/LatinModernMath(2)/m/n on input line
+ 45.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
 (Font)              `largesymbols' in the math version `bold' on input line 45.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/cmex/m/n --> TU/LatinModernMath(2)/bx/n on input line 45.
-(load luc: /home/hubi/.local/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/xits-math.luc)
+(Font)                  OMX/cmex/m/n --> TU/LatinModernMath(2)/bx/n on input lin
+e 45.
+(load luc: /home/hubi/.local/texlive/2017/texmf-var/luatex-cache/generic/fonts/o
+tl/xits-math.luc)
 \g__fontspec_family_XITSMath_int=\count274
-(load luc: /home/hubi/.local/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/xits-mathbold.luc)
-luaotfload | aux : font no 28 (nil) does not define feature smcp for script math with language dflt
+(load luc: /home/hubi/.local/texlive/2017/texmf-var/luatex-cache/generic/fonts/o
+tl/xits-mathbold.luc)
+luaotfload | aux : font no 28 (nil) does not define feature smcp for script math
+ with language dflt
 luaotfload | aux : no font with id 28
-luaotfload | aux : font no 29 (nil) does not define feature smcp for script math with language dflt
+luaotfload | aux : font no 29 (nil) does not define feature smcp for script math
+ with language dflt
 luaotfload | aux : no font with id 29
 .................................................
 . fontspec info: "defining-font"
 . 
 . Font family 'XITSMath(0)' created for font 'XITS Math' with options
-. [Renderer=Basic,BoldItalicFont={},ItalicFont={},Script=Math,SizeFeatures={{Size=10.95-},{Size=7.665-10.95,Font=XITS
+. [Renderer=Basic,BoldItalicFont={},ItalicFont={},Script=Math,SizeFeatures={{Siz
+e=10.95-},{Size=7.665-10.95,Font=XITS
 . Math,Style=MathScript},{Size=-7.665,Font=XITS
 . Math,Style=MathScriptScript}}].
 .  
 .  This font family consists of the following NFSS series/shapes:
 .  
 . - 'normal' (m/n) with NFSS spec.:
-. <10.95->"XITSMath:mode=base;script=math;language=DFLT;"<7.665-10.95>"XITSMath:mode=base;script=math;language=DFLT;+ssty=0;"<-7.665>"XITSMath:mode=base;script=math;language=DFLT;+ssty=1;"
+. <10.95->"XITSMath:mode=base;script=math;language=DFLT;"<7.665-10.95>"XITSMath:
+mode=base;script=math;language=DFLT;+ssty=0;"<-7.665>"XITSMath:mode=base;script=
+math;language=DFLT;+ssty=1;"
 . - 'small caps'  (m/sc) with NFSS spec.: 
 . - 'bold' (bx/n) with NFSS spec.:
 . <->"XITSMath/B:mode=base;script=math;language=DFLT;"
@@ -1081,25 +1210,32 @@ luaotfload | aux : no font with id 29
 .................................................
 \sym__um_fam1=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `__um_fam1' in version `normal'
-(Font)                  TU/XITSMath(0)/m/n --> TU/XITSMath(0)/m/n on input line 46.
+(Font)                  TU/XITSMath(0)/m/n --> TU/XITSMath(0)/m/n on input line 
+46.
 LaTeX Font Info:    Overwriting symbol font `__um_fam1' in version `bold'
-(Font)                  TU/XITSMath(0)/m/n --> TU/XITSMath(0)/bx/n on input line 46.
-luaotfload | aux : font no 28 (nil) does not define feature smcp for script math with language dflt
+(Font)                  TU/XITSMath(0)/m/n --> TU/XITSMath(0)/bx/n on input line
+ 46.
+luaotfload | aux : font no 28 (nil) does not define feature smcp for script math
+ with language dflt
 luaotfload | aux : no font with id 28
-luaotfload | aux : font no 29 (nil) does not define feature smcp for script math with language dflt
+luaotfload | aux : font no 29 (nil) does not define feature smcp for script math
+ with language dflt
 luaotfload | aux : no font with id 29
 .................................................
 . fontspec info: "defining-font"
 . 
 . Font family 'XITSMath(1)' created for font 'XITS Math' with options
-. [Renderer=Basic,BoldItalicFont={},ItalicFont={},Script=Math,SizeFeatures={{Size=10.95-},{Size=7.665-10.95,Font=XITS
+. [Renderer=Basic,BoldItalicFont={},ItalicFont={},Script=Math,SizeFeatures={{Siz
+e=10.95-},{Size=7.665-10.95,Font=XITS
 . Math,Style=MathScript},{Size=-7.665,Font=XITS
 . Math,Style=MathScriptScript}},StylisticSet={1}].
 .  
 .  This font family consists of the following NFSS series/shapes:
 .  
 . - 'normal' (m/n) with NFSS spec.:
-. <10.95->"XITSMath:mode=base;script=math;language=DFLT;+ss01;"<7.665-10.95>"XITSMath:mode=base;script=math;language=DFLT;+ss01;+ssty=0;"<-7.665>"XITSMath:mode=base;script=math;language=DFLT;+ss01;+ssty=1;"
+. <10.95->"XITSMath:mode=base;script=math;language=DFLT;+ss01;"<7.665-10.95>"XIT
+SMath:mode=base;script=math;language=DFLT;+ss01;+ssty=0;"<-7.665>"XITSMath:mode=
+base;script=math;language=DFLT;+ss01;+ssty=1;"
 . - 'small caps'  (m/sc) with NFSS spec.: 
 . - 'bold' (bx/n) with NFSS spec.:
 . <->"XITSMath/B:mode=base;script=math;language=DFLT;+ss01;"
@@ -1107,12 +1243,16 @@ luaotfload | aux : no font with id 29
 .................................................
 \sym__um_fam2=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `__um_fam2' in version `normal'
-(Font)                  TU/XITSMath(1)/m/n --> TU/XITSMath(1)/m/n on input line 47.
+(Font)                  TU/XITSMath(1)/m/n --> TU/XITSMath(1)/m/n on input line 
+47.
 LaTeX Font Info:    Overwriting symbol font `__um_fam2' in version `bold'
-(Font)                  TU/XITSMath(1)/m/n --> TU/XITSMath(1)/bx/n on input line 47.
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/siunitx/siunitx.sty
+(Font)                  TU/XITSMath(1)/m/n --> TU/XITSMath(1)/bx/n on input line
+ 47.
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/siunitx/siunitx.sty
 Package: siunitx 2017/08/02 v2.7j A comprehensive (SI) units package
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/tools/array.sty
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/tools/array.sty
 Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 \col@sep=\dimen163
 \extrarowheight=\dimen164
@@ -1275,12 +1415,19 @@ Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
 . 
 . Defining command \siInBookmark with sig. 'om' on line 7429.
 .................................................
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/beamer/translator/translator.sty
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/beamer/translator/translat
+or.sty
 Package: translator 2010/06/12 ver 1.10
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/beamer/translator/translator-language-mappings.tex))) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/mhchem/mhchem.sty
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/beamer/translator/translat
+or-language-mappings.tex)))
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/mhchem/mhchem.sty
 Package: mhchem 2017/07/24 v4.07 for typesetting chemical formulae
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/chemgreek/chemgreek.sty
-Package: chemgreek 2016/12/20 v1.1 interfaceforuprightgreeklettersforuseinchemistry (CN)
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/chemgreek/chemgreek.sty
+Package: chemgreek 2016/12/20 v1.1 interfaceforuprightgreeklettersforuseinchemis
+try (CN)
 \l__chemgreek_tmpa_int=\count292
 \g__chemgreek_tmpa_int=\count293
 .................................................
@@ -1333,15 +1480,18 @@ Package: chemgreek 2016/12/20 v1.1 interfaceforuprightgreeklettersforuseinchemis
 . 
 . Defining command \selectchemgreekmapping with sig. 'm' on line 491.
 .................................................
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: luatex.def on input line 99.
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/graphics-def/luatex.def
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/graphics-def/luatex.def
 File: luatex.def 2017/06/24 v1.0f Graphics/color driver for luatex
 ))
 \l__mhchem_ce_distanceFromLastComma_int=\count294
@@ -1360,28 +1510,49 @@ File: luatex.def 2017/06/24 v1.0f Graphics/color driver for luatex
 \mhchem@option@minusmathsidebearingright=\dimen178
 \mhchem@option@minustextsidebearingleft=\dimen179
 \mhchem@option@minustextsidebearingright=\dimen180
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-co
+mmon.tex
 \pgfutil@everybye=\toks25
 \pgfutil@tempdima=\dimen181
 \pgfutil@tempdimb=\dimen182
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-co
+mmon-lists.tex))
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfutil-la
+tex.def
 \pgfutil@abb=\box53
  (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/ms/everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
-)) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+))
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfrcs.cod
+e.tex
 Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
 ))
 Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 \Gin@req@height=\dimen183
 \Gin@req@width=\dimen184
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.c
+ode.tex
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeys.co
+de.tex
 \pgfkeys@pathtoks=\toks26
 \pgfkeys@temptoks=\toks27
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeysfil
+tered.code.tex
 \pgfkeys@tmptoks=\toks28
 ))
 \pgf@x=\dimen185
@@ -1401,23 +1572,34 @@ Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 \t@pgf@toka=\toks29
 \t@pgf@tokb=\toks30
 \t@pgf@tokc=\toks31
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
 Driver file for pgf: pgfsys-luatex.def
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-luatex.def
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-l
+uatex.def
 File: pgfsys-luatex.def 2014/10/11  (rcs-revision 1.35)
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-c
+ommon-pdf.def
 File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
-))) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+)))
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsysso
+ftpath.code.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
 \pgfsyssoftpath@smallbuffer@items=\count300
 \pgfsyssoftpath@bigbuffer@items=\count301
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/systemlayer/pgfsyspr
+otocol.code.tex
 File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
-)) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
+))
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: luatex.def on input line 225.
@@ -1430,18 +1612,50 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.c
+ode.tex
 Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.te
+x
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathcalc.cod
+e.tex
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathutil.cod
+e.tex)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathparser.c
+ode.tex
 \pgfmath@dimen=\dimen193
 \pgfmath@count=\count302
 \pgfmath@box=\box54
 \pgfmath@toks=\toks32
 \pgfmath@stack@operand=\toks33
 \pgfmath@stack@operation=\toks34
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunction
+s.code.tex
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunction
+s.basic.code.tex)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunction
+s.trigonometric.code.tex)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunction
+s.random.code.tex)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunction
+s.comparison.code.tex)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunction
+s.base.code.tex)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunction
+s.round.code.tex)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunction
+s.misc.code.tex)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfunction
+s.integerarithmetics.code.tex)))
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmathfloat.co
+de.tex
 \c@pgfmathroundto@lastzeros=\count303
-)) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+))
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepo
+ints.code.tex
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
 \pgf@picminx=\dimen194
 \pgf@picmaxx=\dimen195
@@ -1457,73 +1671,126 @@ File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
 \pgf@yy=\dimen261
 \pgf@zx=\dimen262
 \pgf@zy=\dimen263
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepa
+thconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
 \pgf@path@lastx=\dimen264
 \pgf@path@lasty=\dimen265
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepa
+thusage.code.tex
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
 \pgf@shorten@end@additional=\dimen266
 \pgf@shorten@start@additional=\dimen267
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoresc
+opes.code.tex
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box55
 \pgf@hbox=\box56
 \pgf@layerbox@main=\box57
 \pgf@picture@serial@count=\count304
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregr
+aphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
 \pgflinewidth=\dimen268
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretr
+ansformations.code.tex
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
 \pgf@pt@x=\dimen269
 \pgf@pt@y=\dimen270
 \pgf@pt@temp=\dimen271
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequ
+ick.code.tex
 File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreob
+jects.code.tex
 File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepa
+thprocessing.code.tex
 File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorear
+rows.code.tex
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
 \pgfarrowsep=\dimen272
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoresh
+ade.code.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
 \pgf@max=\dimen273
 \pgf@sys@shading@range@num=\count305
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreim
+age.code.tex
 File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreex
+ternal.code.tex
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
 \pgfexternal@startupbox=\box58
-)) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+))
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorela
+yers.code.tex
 File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretr
+ansparency.code.tex
 File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepa
+tterns.code.tex
 File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
-))) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+)))
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmodulesha
+pes.code.tex
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
 \pgfnodeparttextbox=\box59
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmoduleplo
+t.code.tex
 File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-
+version-0-65.sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
 \pgf@nodesepstart=\dimen274
 \pgf@nodesepend=\dimen275
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-
+version-1-18.sty
 Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
-)) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+))
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgfkeys.co
+de.tex))
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.te
+x))
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/utilities/pgffor.cod
+e.tex
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/math/pgfmath.code.te
+x)
 \pgffor@iter=\dimen276
 \pgffor@skip=\dimen277
 \pgffor@stack=\toks35
 \pgffor@toks=\toks36
-)) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+))
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/t
+ikz.code.tex
 Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibrary
+plothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \pgf@plot@mark@count=\count306
 \pgfplotmarksize=\dimen278
@@ -1542,16 +1809,32 @@ File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
 \tikznumberofchildren=\count308
 \tikznumberofcurrentchild=\count309
 \tikz@fig@count=\count310
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmodulemat
+rix.code.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 \pgfmatrixcurrentrow=\count311
 \pgfmatrixcurrentcolumn=\count312
 \pgf@matrix@numberofcolumns=\count313
 )
 \tikz@expandcount=\count314
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/l
+ibraries/tikzlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
-))) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/circuits/tikzlibrarycircuits.ee.IEC.code.tex (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/circuits/tikzlibrarycircuits.ee.code.tex (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/circuits/tikzlibrarycircuits.code.tex (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.markings.code.tex (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarydecorations.code.tex (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.code.tex
+)))
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/l
+ibraries/circuits/tikzlibrarycircuits.ee.IEC.code.tex
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/l
+ibraries/circuits/tikzlibrarycircuits.ee.code.tex
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/l
+ibraries/circuits/tikzlibrarycircuits.code.tex
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/l
+ibraries/tikzlibrarydecorations.markings.code.tex
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/l
+ibraries/tikzlibrarydecorations.code.tex
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/modules/pgfmoduledec
+orations.code.tex
 \pgfdecoratedcompleteddistance=\dimen285
 \pgfdecoratedremainingdistance=\dimen286
 \pgfdecoratedinputsegmentcompleteddistance=\dimen287
@@ -1562,19 +1845,34 @@ File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 \pgfdecorationsegmentlength=\dimen291
 )
 \tikz@lib@dec@box=\box64
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.markings.code.tex)) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarycalc.code.tex
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/decoration
+s/pgflibrarydecorations.markings.code.tex))
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/l
+ibraries/tikzlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
 )
 \tikz@lib@circ@count=\count316
 \tikzcircuitssizeunit=\dimen292
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/circuits/pgflibraryshapes.gates.ee.code.tex)) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibraryarrows.code.tex
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/cir
+cuits/pgflibraryshapes.gates.ee.code.tex))
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/l
+ibraries/tikzlibraryarrows.code.tex
 File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.tex
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/pgflibrary
+arrows.code.tex
 File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
 \arrowsize=\dimen293
-)) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/circuits/pgflibraryshapes.gates.ee.IEC.code.tex)) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarypositioning.code.tex
+))
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/libraries/shapes/cir
+cuits/pgflibraryshapes.gates.ee.IEC.code.tex))
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/pgf/frontendlayer/tikz/l
+ibraries/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/csquotes/csquotes.sty
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/csquotes/csquotes.sty
 Package: csquotes 2017/03/11 v5.2b context-sensitive quotations (JAW)
 \csq@reset=\count317
 \csq@gtype=\count318
@@ -1583,16 +1881,20 @@ Package: csquotes 2017/03/11 v5.2b context-sensitive quotations (JAW)
 \csq@maxlvl=\count321
 \csq@tshold=\count322
 \csq@ltx@everypar=\toks37
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/csquotes/csquotes.def
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/csquotes/csquotes.def
 File: csquotes.def 2017/03/11 v5.2b csquotes generic definitions (JAW)
 )
 Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
 Package csquotes Info: ... configuration file loaded successfully.
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/csquotes/csquotes.cfg
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/csquotes/csquotes.cfg
 File: csquotes.cfg 
 )
 Package csquotes Info: Enabling multilingual quotes.
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/l3packages/xfrac/xfrac.sty (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/base/textcomp.sty
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/l3packages/xfrac/xfrac.sty
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2017/04/05 v2.0i Standard LaTeX package
 Package textcomp Info: Sub-encoding information:
 (textcomp)               5 = only ISO-Adobe without \textcurrency
@@ -1606,7 +1908,8 @@ Package textcomp Info: Sub-encoding information:
 (textcomp)             Family '?' is the default used for unknown fonts.
 (textcomp)             See the documentation for details.
 Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 79.
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/base/ts1enc.def
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
 )
@@ -1672,7 +1975,9 @@ Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 406.
 Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 407.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 408.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 409.
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/l3packages/xtemplate/xtemp
+late.sty
 Package: xtemplate 2017/09/18 L3 Experimental prototype document functions
 \l__xtemplate_tmp_dim=\dimen294
 \l__xtemplate_tmp_int=\count323
@@ -1699,9 +2004,11 @@ Package: xfrac 2017/09/18 L3 Experimental split-level fractions
 . 
 . Defining command \sfrac with sig. 'omom' on line 419.
 .................................................
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/blindtext/blindtext.sty
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/blindtext/blindtext.sty
 Package: blindtext 2012/01/06 V2.0 blindtext-Package
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/tools/xspace.sty
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/tools/xspace.sty
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
 \c@blindtext=\count324
@@ -1722,7 +2029,8 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 \c@blind@randommax=\count339
 \c@blind@pangramcount=\count340
 \c@blind@pangrammax=\count341
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/float/float.sty
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count342
 \float@exts=\toks38
@@ -1731,37 +2039,48 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@floatcapt=\box68
 )
 Package scrhack Info: loading float hack on input line 92.
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/koma-script/float.hak
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/koma-script/float.hak
 File: float.hak 2017/09/07 v3.24 KOMA-Script package (hacking package float)
 Package scrhack Info: redefining \newfloat on input line 161.
 Package scrhack Info: redefining \listof on input line 161.
 Package scrhack Info: undefining \float@addtolists on input line 161.
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/placeins/placeins.sty
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/oberdiek/pdflscape.sty
 Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/graphics/lscape.sty
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/graphics/lscape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 )
 Package scrhack Info: loading lscape hack on input line 76.
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/koma-script/lscape.hak
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/koma-script/lscape.hak
 File: lscape.hak 2017/09/07 v3.24 KOMA-Script package (hacking package lscape)
-Package scrhack Info: \landscape patched to make \textheight change optional on input line 90.
+Package scrhack Info: \landscape patched to make \textheight change optional on 
+input line 90.
 \scrh@LT@textheight=\skip85
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/pdfpages/pdfpages.sty
 Package: pdfpages 2017/08/14 v0.5k Insert pages of external PDF documents (AM)
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/base/ifthen.sty
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/eso-pic/eso-pic.sty
 Package: eso-pic 2015/07/21 v2.0g eso-pic (RN)
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/oberdiek/atbegshi.sty
 Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 ))
 \AM@pagewidth=\dimen300
 \AM@pageheight=\dimen301
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/pdfpages/ppluatex.def
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/pdfpages/ppluatex.def
 File: ppluatex.def 2017/08/14 v0.5k Pdfpages driver for LuaTeX (AM)
 )
 \AM@pagebox=\box69
@@ -1769,9 +2088,11 @@ File: ppluatex.def 2017/08/14 v0.5k Pdfpages driver for LuaTeX (AM)
 \AM@toc@title=\toks41
 \c@AM@survey=\count343
 \AM@templatesizebox=\box70
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/caption/caption.sty
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/caption/caption.sty
 Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/caption/caption3.sty
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/caption/caption3.sty
 Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 67.
 \captionmargin=\dimen302
@@ -1785,24 +2106,28 @@ Package caption3 Info: TeX engine: e-TeX on input line 67.
 Package caption Info: KOMA-Script document class.
 \c@ContinuedFloat=\count344
 Package caption Info: float package is loaded.
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/caption/subcaption.sty
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/caption/subcaption.sty
 Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
 \c@subfigure=\count345
 \c@subtable=\count346
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/enumitem/enumitem.sty
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \labelindent=\skip86
 \enit@outerparindent=\dimen309
 \enit@toks=\toks42
 \enit@inbox=\box71
 \enitdp@description=\count347
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/oberdiek/grffile.sty
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/oberdiek/grffile.sty
 Package: grffile 2016/05/16 v1.17 Extended file name support for graphics (HO)
 Package grffile Info: Option `multidot' is set to `true'.
 Package grffile Info: Option `extendedchars' is set to `false'.
 Package grffile Info: Option `space' is set to `true'.
 Package grffile Info: \Gin@ii of package `graphicx' fixed on input line 486.
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/booktabs/booktabs.sty
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \heavyrulewidth=\dimen310
 \lightrulewidth=\dimen311
@@ -1821,7 +2146,8 @@ Package: booktabs 2016/04/27 v1.618033 publication quality tables
 \@thisruleclass=\count350
 \@lastruleclass=\count351
 \@thisrulewidth=\dimen322
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/microtype/microtype.sty
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2017/07/07 v2.7 Micro-typographical refinements (RS)
 \MT@toks=\toks43
 \MT@count=\count352
@@ -1829,7 +2155,9 @@ LaTeX Info: Redefining \textls on input line 789.
 \MT@outer@kern=\dimen323
 LaTeX Info: Redefining \textmicrotypecontext on input line 1334.
 \MT@listname@count=\count353
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/microtype/microtype-luatex.def
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/microtype/microtype-luatex
+.def
 File: microtype-luatex.def 2017/07/07 v2.7 Definitions specific to luatex (RS)
 Lua module: microtype 2017/07/07 2.7 microtype module.
 LaTeX Info: Redefining \lsstyle on input line 681.
@@ -1837,19 +2165,26 @@ LaTeX Info: Redefining \lslig on input line 681.
 \MT@outer@space=\skip87
 )
 Package microtype Info: Loading configuration file microtype.cfg.
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/microtype/microtype.cfg
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/microtype/microtype.cfg
 File: microtype.cfg 2017/07/07 v2.7 microtype main configuration file (RS)
-)) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/biblatex/biblatex.sty
+))
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/biblatex/biblatex.sty
 Package: biblatex 2016/12/05 v3.7 programmable bibliographies (PK/JW/AB)
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/logreq/logreq.sty
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/logreq/logreq.sty
 Package: logreq 2010/08/04 v1.0 xml request logger
 \lrq@indent=\count354
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/logreq/logreq.def
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/logreq/logreq.def
 File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
-)) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/url/url.sty
+))
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip21
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/xstring/xstring.sty (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/xstring/xstring.tex
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/xstring/xstring.sty
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/xstring/xstring.tex
 \@xs@message=\write4
 \integerpart=\count355
 \decimalpart=\count356
@@ -1909,7 +2244,8 @@ Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 \c@mincompwidth=\count397
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/biblatex/blx-dm.def)
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/biblatex/blx-dm.def)
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@afterword=\count398
@@ -1986,12 +2322,14 @@ Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \shorteditorwidth=\skip101
 Package biblatex Info: Trying to load compatibility code...
 Package biblatex Info: ... file 'blx-compat.def' found.
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/biblatex/blx-compat.def
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/biblatex/blx-compat.def
 File: blx-compat.def 2016/12/05 v3.7 biblatex compatibility (PK/JW/AB)
 )
 Package biblatex Info: Trying to load generic definitions...
 Package biblatex Info: ... file 'biblatex.def' found.
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/biblatex/biblatex.def
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/biblatex/biblatex.def
 File: biblatex.def 2016/12/05 v3.7 biblatex compatibility (PK/JW/AB)
 \c@textcitecount=\count464
 \c@textcitetotal=\count465
@@ -2003,11 +2341,13 @@ File: biblatex.def 2016/12/05 v3.7 biblatex compatibility (PK/JW/AB)
 )
 Package biblatex Info: Trying to load bibliography style 'numeric'...
 Package biblatex Info: ... file 'numeric.bbx' found.
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/biblatex/bbx/numeric.bbx
 File: numeric.bbx 2016/12/05 v3.7 biblatex bibliography style (PK/JW/AB)
 Package biblatex Info: Trying to load bibliography style 'standard'...
 Package biblatex Info: ... file 'standard.bbx' found.
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/biblatex/bbx/standard.bbx
 File: standard.bbx 2016/12/05 v3.7 biblatex bibliography style (PK/JW/AB)
 \c@bbx:relatedcount=\count471
 \c@bbx:relatedtotal=\count472
@@ -2036,11 +2376,16 @@ File: biblatex.cfg
 Package scrhack Info: hyperref hack deactivated because of
 (scrhack)             detection of KOMA-Script class, that doesn't
 (scrhack)             need that hack, on input line 168.
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/hyperref/hyperref.sty
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-hyperref
+.sty
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/oberdiek/hobsub-generic.
+sty
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
 Package hobsub Info: Skipping package `infwarerr' (already loaded).
@@ -2075,15 +2420,18 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 \@linkdim=\dimen324
 \Hy@linkcounter=\count473
 \Hy@pagecounter=\count474
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/hyperref/pd1enc.def
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
 )
 \Hy@SavedSpaceFactor=\count475
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
 Package hyperref Info: Option `unicode' set `true' on input line 4374.
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/hyperref/puenc.def
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2017/03/14 v6.85a Hyperref: PDF Unicode definition (HO)
 )
 Package hyperref Info: Option `pdfusetitle' set `true' on input line 4374.
@@ -2121,12 +2469,15 @@ File: hluatex.def 2017/03/14 v6.85a Hyperref driver for luaTeX
 \Fld@listcount=\count481
 \c@bookmark@seq@number=\count482
 \Hy@SectionHShift=\skip102
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/oberdiek/bookmark.sty
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/oberdiek/bookmark.sty
 Package: bookmark 2016/05/17 v1.26 PDF bookmarks (HO)
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/oberdiek/bkm-pdftex.def
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/oberdiek/bkm-pdftex.def
 File: bkm-pdftex.def 2016/05/17 v1.26 bookmark driver for pdfTeX (HO)
 \BKM@id=\count483
-)) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/ncctools/extdash.sty
+))
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/ncctools/extdash.sty
 Package: extdash 2005/01/29 v1.2 Extended Dash Package (NCC)
 )
 .................................................
@@ -2134,7 +2485,8 @@ Package: extdash 2005/01/29 v1.2 Extended Dash Package (NCC)
 . 
 . Defining command \OverfullCenter with sig. '+m' on line 206.
 .................................................
- (./mathebefehle.tex
+
+(./mathebefehle.tex
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
@@ -2155,35 +2507,33 @@ Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'polyglossia' package.
 Package biblatex Info: Trying to load language 'german'...
 Package biblatex Info: ... file 'german.lbx' found.
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/biblatex/lbx/german.lbx
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/biblatex/lbx/german.lbx
 File: german.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
-) (./build/Protokoll.aux
-luatex-hyphen: loading patterns and exceptions for: german (\language4)
-luatex-hyphen: info: no hyphenation exceptions for this language
-Language ngerman already loaded; id is 8)
+)
+No file Protokoll.aux.
+
 \openout1 = Protokoll.aux
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 9.
-LaTeX Font Info:    ... okay on input line 9.
-
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -2218,17 +2568,22 @@ LaTeX Font Info:    ... okay on input line 9.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Language ngerman already loaded; id is 8 (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/beamer/translator/dicts/translator-basic-dictionary/translator-basic-dictionary-English.dict
+Language ngerman already loaded; id is 8
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/beamer/translator/dicts/tr
+anslator-basic-dictionary/translator-basic-dictionary-English.dict
 Dictionary: translator-basic-dictionary, Language: English 
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/siunitx/siunitx-abbreviati
+ons.cfg
 File: siunitx-abbreviations.cfg 2017/08/02 v2.7j siunitx: Abbreviated units
 )
 .................................................
 . chemgreek info: "mapping-activated"
 . 
-. Activating mapping `fontspec' on line 9.
+. Activating mapping `fontspec' on line 11.
 .................................................
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count484
 \scratchdimen=\dimen328
@@ -2241,23 +2596,29 @@ File: siunitx-abbreviations.cfg 2017/08/02 v2.7j siunitx: Abbreviated units
 \MPnumerator=\count488
 \makeMPintoPDFobject=\count489
 \everyMPtoPDFconversion=\toks45
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/oberdiek/grfext.sty
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 438.
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 43
+8.
 Package grfext Info: Graphics extension search list:
-(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2 ,.eps]
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG
+,.JBIG2,.JB2 ,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/latexconfig/epstopdf-sys.c
+fg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+
 )) ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box73
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 9.
+LaTeX Info: Redefining \microtypecontext on input line 11.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -2267,8 +2628,11 @@ Package microtype Info: Using default expansion set `basictext'.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of spacing.
 Package microtype Info: No adjustment of kerning.
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/microtype/mt-LatinModernRoman.cfg
-File: mt-LatinModernRoman.cfg 2013/03/13 v1.0 microtype config. file: Latin Modern Roman (RS)
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/microtype/mt-LatinModernRo
+man.cfg
+File: mt-LatinModernRoman.cfg 2013/03/13 v1.0 microtype config. file: Latin Mode
+rn Roman (RS)
 )
 Package biblatex Info: LuaTeX detected.
 (biblatex)             Assuming input encoding 'utf8'.
@@ -2277,30 +2641,33 @@ Package biblatex Info: Automatic encoding selection.
 
 \openout5 = Protokoll.bcf
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'Protokoll.bbl' found.
- (./build/Protokoll.bbl)
-Package biblatex Info: Reference section=0 on input line 9.
-Package biblatex Info: Reference segment=0 on input line 9.
-Package hyperref Info: Link coloring OFF on input line 9.
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
+Package biblatex Info: ... file 'Protokoll.bbl' not found.
+
+No file Protokoll.bbl.
+Package biblatex Info: Reference section=0 on input line 11.
+Package biblatex Info: Reference segment=0 on input line 11.
+Package hyperref Info: Link coloring OFF on input line 11.
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/generic/oberdiek/gettitlestring.
+sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count490
 )
-LaTeX Info: Redefining \ref on input line 9.
-LaTeX Info: Redefining \pageref on input line 9.
-LaTeX Info: Redefining \nameref on input line 9.
+LaTeX Info: Redefining \ref on input line 11.
+LaTeX Info: Redefining \pageref on input line 11.
+LaTeX Info: Redefining \nameref on input line 11.
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \Re with sig. '' on line 9.
+. Redefining command \Re with sig. '' on line 11.
 .................................................
 .................................................
 . LaTeX info: "xparse/redefine-command"
 . 
-. Redefining command \Im with sig. '' on line 9.
+. Redefining command \Im with sig. '' on line 11.
 .................................................
 \c__siunitx_mathsf_int=\count491
 Package microtype Info: Loading generic protrusion settings for font family
@@ -2308,27 +2675,30 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 10.95015pt on input line 9.
+(Font)              scaled to size 10.95015pt on input line 11.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 7.6651pt on input line 9.
+(Font)              scaled to size 7.6651pt on input line 11.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 5.47508pt on input line 9.
+(Font)              scaled to size 5.47508pt on input line 11.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 10.94983pt on input line 9.
+(Font)              scaled to size 10.94983pt on input line 11.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 7.66487pt on input line 9.
+(Font)              scaled to size 7.66487pt on input line 11.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 5.47491pt on input line 9.
-LaTeX Font Info:    Try loading font information for U+msa on input line 9.
+(Font)              scaled to size 5.47491pt on input line 11.
+LaTeX Font Info:    Try loading font information for U+msa on input line 11.
  (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/microtype/mt-msa.cfg
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 9.
- (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
+LaTeX Font Info:    Try loading font information for U+msb on input line 11.
+
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/microtype/mt-msb.cfg
+)
+(/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 Package microtype Info: Loading generic protrusion settings for font family
@@ -2344,127 +2714,159 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: OT1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-(load luc: /home/hubi/.local/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-bold.luc)(load luc: /home/hubi/.local/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmsans10-regular.luc)
+(load luc: /home/hubi/.local/texlive/2017/texmf-var/luatex-cache/generic/fonts/o
+tl/lmroman12-bold.luc)(load luc: /home/hubi/.local/texlive/2017/texmf-var/luatex
+-cache/generic/fonts/otl/lmsans10-regular.luc)
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: TU).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-(load luc: /home/hubi/.local/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmsans10-bold.luc)(load luc: /home/hubi/.local/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman12-regular.luc)
+(load luc: /home/hubi/.local/texlive/2017/texmf-var/luatex-cache/generic/fonts/o
+tl/lmsans10-bold.luc)(load luc: /home/hubi/.local/texlive/2017/texmf-var/luatex-
+cache/generic/fonts/otl/lmroman12-regular.luc)
 LaTeX Font Info:    Font shape `TU/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 14.4002pt on input line 11.
+(Font)              scaled to size 14.4002pt on input line 14.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 10.00015pt on input line 11.
+(Font)              scaled to size 10.00015pt on input line 14.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 7.0001pt on input line 11.
+(Font)              scaled to size 7.0001pt on input line 14.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 14.39977pt on input line 11.
+(Font)              scaled to size 14.39977pt on input line 14.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 9.99985pt on input line 11.
+(Font)              scaled to size 9.99985pt on input line 14.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 6.9999pt on input line 11.
+(Font)              scaled to size 6.9999pt on input line 14.
  [1
 
 {/home/hubi/.local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Package tocbasic Info: character protrusion at toc deactivated on input line 12.
- (./build/Protokoll.toc
-Language ngerman already loaded; id is 8)
+Package tocbasic Info: character protrusion at toc deactivated on input line 15.
+
+
+
+Package hyperref Warning: old toc file detected, not used; run LaTeX again.
+
 \tf@toc=\write6
 
 \openout6 = Protokoll.toc
- [2
+[2
 
 ] (./content/theorie.tex
 Underfull \hbox (badness 10000) in paragraph at lines 10--12
 
  []
 
-<ressources/gitter.png, id=49, pagebox=cropbox, 1128.215pt x 794.97pt>
-File: ressources/gitter.png Graphic file (type png)
-<use ressources/gitter.png>
-Package luatex.def Info: ressources/gitter.png  used on input line 25. on input line 25.
-Package luatex.def Info: Requested size: 250.38564pt x 176.42235pt on input line 25.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(1)/m/n' will be
-(Font)              scaled to size 5.00008pt on input line 27.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 4.99992pt on input line 27.
-[3<./ressources/gitter.png>]
-<ressources/primitiv.png, id=62, pagebox=cropbox, 612.689pt x 713.867pt>
-File: ressources/primitiv.png Graphic file (type png)
-<use ressources/primitiv.png>
-Package luatex.def Info: ressources/primitiv.png  used on input line 45. on input line 45.
-Package luatex.def Info: Requested size: 113.81102pt x 132.59706pt on input line 45.
-(load luc: /home/hubi/.local/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc)(load luc: /home/hubi/.local/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman5-regular.luc)) [4<./ressources/primitiv.png>] (./content/fehlerrechnung.tex) [5
 
-] (./content/versuchsaufbau.tex) [6
+LaTeX Warning: Reference `fig_gitter' on page 3 undefined on input line 23.
 
-] (./content/durchfuehrung.tex) [7
+) [3] (./content/fehlerrechnung.tex(load luc: /home/hubi/.local/texlive/2017/tex
+mf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc)(load luc: /home/hubi
+/.local/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman5-regular.l
+uc)) [4
 
-] (./content/auswertung.tex (./build/Tabelle_Metall_Rohdaten_texformat.tex (./build/Tabelle_Metall_Rohdaten.tex)) (./build/Tabelle_Metall_Kristall_texformat.tex (./build/Tabelle_Metall_Kristall.tex)) [8
+] (./content/versuchsaufbau.tex) [5
+
+] (./content/durchfuehrung.tex)
+[6
+
+] (./content/auswertung.tex
+
+LaTeX Warning: Citation 'scipy' on page 7 undefined on input line 3.
+
+
+LaTeX Warning: Citation 'uncertainties' on page 7 undefined on input line 3.
+
+(./build/Tabelle_Metall_Rohdaten_texformat.tex
+(./build/Tabelle_Metall_Rohdaten.tex))
+(./build/Tabelle_Metall_Kristall_texformat.tex
+(./build/Tabelle_Metall_Kristall.tex))
+
+LaTeX Warning: Reference `fig:plot1' on page 7 undefined on input line 36.
+
+[7
 
 ]
-<build/Metall.pdf, id=104, pagebox=cropbox, 417.7206pt x 258.00488pt>
+<build/Metall.pdf, id=69, pagebox=cropbox, 417.7206pt x 258.00488pt>
 File: build/Metall.pdf Graphic file (type pdf)
 <use build/Metall.pdf>
-Package luatex.def Info: build/Metall.pdf  used on input line 43. on input line 43.
-Package luatex.def Info: Requested size: 417.71957pt x 258.00424pt on input line 43.
- (./build/b_Metall.tex) (./build/a_Metall.tex) (./build/b_Metall.tex) (./build/a_Metall.tex) (./build/prozent_metall.tex)) [9<./build/Metall.pdf>] (./content/diskussion.tex) [10
+Package luatex.def Info: build/Metall.pdf  used on input line 43. on input line 
+43.
+Package luatex.def Info: Requested size: 417.71957pt x 258.00424pt on input line
+ 43.
+ (./build/b_Metall.tex) (./build/a_Metall.tex) (./build/b_Metall.tex)
+(./build/a_Metall.tex)
+
+LaTeX Warning: Citation 'gitter' on page 8 undefined on input line 54.
+
+(./build/prozent_metall.tex)
+Overfull \hbox (4.66643pt too wide) in paragraph at lines 54--56
+\TU/lmr/m/n/10.95 chung zur der in der Li-te-ra-tur an-ge-ge-be-nen Git-ter-kon
+-stan-te $\l_fontspec_font 𝑎 = [] []$ \TU/lmr/m/n/10.95 be-trägt $[] []$. 
+ []
+
+) [8<./build/Metall.pdf>] (./content/diskussion.tex) [9
 
 ]
 
-Package biblatex Warning: Month out of range or not an integer
-(biblatex)                at entry 'gitter' on input line 34.
+LaTeX Warning: Empty bibliography on input line 37.
 
-
-Overfull \hbox (23.49707pt too wide) in paragraph at lines 35--35
-[]\TU/lmr/m/it/10.95 Git-ter-kon-stan-ten\TU/lmr/m/n/10.95 . https://www.tf.uni-kiel.de/mat-wis/amat/mw1_ge/kap_3/il-lus-tr/t3_1_1.html.
- []
-
-
-Package biblatex Warning: No driver for entry type 'software'.
-(biblatex)                Using fallback driver on input line 34.
-
-(load luc: /home/hubi/.local/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmromancaps10-regular.luc)(load luc: /home/hubi/.local/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmmono10-regular.luc)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmtt' (encoding: TU).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
-
-Package biblatex Warning: No driver for entry type 'software'.
-(biblatex)                Using fallback driver on input line 34.
-
-[11
-
-] (./content/anhang.tex)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 40.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 40.
- (./build/Protokoll.aux
+(./content/anhang.tex)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 43.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 43.
+ (./Protokoll.aux
+luatex-hyphen: loading patterns and exceptions for: german (\language4)
+luatex-hyphen: info: no hyphenation exceptions for this language
 Language ngerman already loaded; id is 8)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 40.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 40.
-Package rerunfilecheck Info: File `Protokoll.aux' has not changed.
-(rerunfilecheck)             Checksum: 7D299397EA827CB30817FE22A3316ABB;8658.
-Package rerunfilecheck Info: File `Protokoll.toc' has not changed.
-(rerunfilecheck)             Checksum: 2ACE202075EE6D94A137482FDF3C29E6;1051.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 43.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 43.
+
+
+Package rerunfilecheck Warning: File `Protokoll.aux' has changed. Rerun.
+
+Package rerunfilecheck Info: Checksums for `Protokoll.aux':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  1B5521237BC853DCB1182C18A3D04C05;7259.
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                Protokoll
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'Protokoll.run.xml'.
 
 \openout1 = Protokoll.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 54364 strings out of 494469
+ 54259 strings out of 494469
  100000,1977958 words of node,token memory allocated
- 634 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 17 attribute, 76 glue_spec, 17 attribute_list, 2 write nodes
-   avail lists: 1:3,2:3006,3:108,4:48,5:540,6:2612,7:2559,8:87,9:908,10:9,11:273
- 56569 multiletter control sequences out of 65536+600000
- 155 fonts using 54440671 bytes
- 72i,18n,104p,8838b,2512s stack positions out of 5000i,500n,10000p,200000b,100000s
-</home/hubi/.local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></home/hubi/.local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></home/hubi/.local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/hubi/.local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/hubi/.local/texlive/2017/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/hubi/.local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/hubi/.local/texlive/2017/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/hubi/.local/texlive/2017/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/hubi/.local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/hubi/.local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/hubi/.local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/hubi/.local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on Protokoll.pdf (11 pages, 215328 bytes).
+ 617 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 17 attribute, 72 glue_spec, 17 attr
+ibute_list, 3 write nodes
+   avail lists: 1:1,2:3011,3:105,4:34,5:541,6:2587,7:2559,8:84,9:911,10:13,11:25
+7
+ 56509 multiletter control sequences out of 65536+600000
+ 143 fonts using 50127791 bytes
+ 72i,18n,104p,8838b,2482s stack positions out of 5000i,500n,10000p,200000b,100000s
+</home/hubi/.local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman10-it
+alic.otf></home/hubi/.local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmr
+oman8-regular.otf></home/hubi/.local/texlive/2017/texmf-dist/fonts/opentype/publ
+ic/lm/lmroman10-bold.otf></home/hubi/.local/texlive/2017/texmf-dist/fonts/openty
+pe/public/lm-math/latinmodern-math.otf></home/hubi/.local/texlive/2017/texmf-dis
+t/fonts/opentype/public/lm-math/latinmodern-math.otf></home/hubi/.local/texlive/
+2017/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/hubi/.loca
+l/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/
+hubi/.local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf><
+/home/hubi/.local/texlive/2017/texmf-dist/fonts/opentype/public/lm/lmroman12-bol
+d.otf>
+Output written on Protokoll.pdf (9 pages, 64066 bytes).
 
-PDF statistics: 275 PDF objects out of 1000 (max. 8388607)
- 210 compressed objects within 3 object streams
- 45 named destinations out of 1000 (max. 131072)
- 112 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 205 PDF objects out of 1000 (max. 8388607)
+ 155 compressed objects within 2 object streams
+ 37 named destinations out of 1000 (max. 131072)
+ 104 words of extra memory for PDF output out of 10000 (max. 100000000)
 

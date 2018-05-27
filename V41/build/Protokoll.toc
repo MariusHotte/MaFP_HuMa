@@ -1,12 +1,15 @@
 \boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
 \defcounter {refsection}{0}\relax 
 \select@language {german}
-\contentsline {section}{\numberline {1}Theorie}{3}{section.1}
-\contentsline {section}{\numberline {2}Fehlerrechnung}{4}{section.2}
-\contentsline {section}{\numberline {3}Versuchsaufbau}{5}{section.3}
-\contentsline {section}{\numberline {4}Durchführung}{6}{section.4}
-\contentsline {section}{\numberline {5}Auswertung}{7}{section.5}
-\contentsline {subsection}{\numberline {5.1}Allgemeine Auswertung der Filmstreifen}{7}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Metallprobe}{7}{subsection.5.2}
-\contentsline {section}{\numberline {6}Diskussion}{9}{section.6}
-\contentsline {section}{\nonumberline Literatur}{10}{section*.5}
+\contentsline {section}{\numberline {1}Zielsetzung}{3}{section.1}
+\contentsline {section}{\numberline {2}Theorie}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Grundlagen zur Kristallstrukturen}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Elementarzelle}{4}{subsection.2.2}
+\contentsline {section}{\numberline {3}Fehlerrechnung}{5}{section.3}
+\contentsline {section}{\numberline {4}Versuchsaufbau}{6}{section.4}
+\contentsline {section}{\numberline {5}Durchführung}{7}{section.5}
+\contentsline {section}{\numberline {6}Auswertung}{8}{section.6}
+\contentsline {subsection}{\numberline {6.1}Allgemeine Auswertung der Filmstreifen}{8}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Metallprobe}{8}{subsection.6.2}
+\contentsline {section}{\numberline {7}Diskussion}{10}{section.7}
+\contentsline {section}{\nonumberline Literatur}{11}{section*.7}

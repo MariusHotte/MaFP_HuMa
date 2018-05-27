@@ -1,20 +1,20 @@
-[0] Config.pm:302> INFO - This is Biber 2.11
-[0] Config.pm:305> INFO - Logfile is 'build/Protokoll.blg'
-[39] biber:313> INFO - === So Mai 13, 2018, 10:33:28
-[61] Biber.pm:371> INFO - Reading 'build/Protokoll.bcf'
-[138] Biber.pm:857> INFO - Found 3 citekeys in bib section 0
-[156] Biber.pm:3976> INFO - Processing section 0
-[170] Biber.pm:4136> INFO - Looking for bibtex format file 'Quellen.bib' for section 0
-[171] bibtex.pm:1500> INFO - LaTeX decoding ...
-[179] bibtex.pm:1316> INFO - Found BibTeX data source 'Quellen.bib'
-[181] Utils.pm:193> WARN - month field 'Mai' in entry 'gitter' is not an integer - this will probably not sort properly.
-[181] Biber.pm:4136> INFO - Looking for bibtex format file 'programme.bib' for section 0
-[182] bibtex.pm:1500> INFO - LaTeX decoding ...
-[187] bibtex.pm:1316> INFO - Found BibTeX data source 'programme.bib'
-[220] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[221] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[221] Biber.pm:3804> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
-[221] Biber.pm:3810> INFO - No sort tailoring available for locale 'de-DE'
-[229] bbl.pm:617> INFO - Writing 'build/Protokoll.bbl' with encoding 'UTF-8'
-[230] bbl.pm:720> INFO - Output to build/Protokoll.bbl
-[231] Biber.pm:110> INFO - WARNINGS: 1
+[0] Config.pm:354> INFO - This is Biber 2.7
+[0] Config.pm:357> INFO - Logfile is 'build/Protokoll.blg'
+[34] biber:303> INFO - === Sun May 27, 2018, 13:03:18
+[54] Biber.pm:359> INFO - Reading 'build/Protokoll.bcf'
+[138] Biber.pm:835> INFO - Found 3 citekeys in bib section 0
+[154] Biber.pm:3670> INFO - Processing section 0
+[170] Biber.pm:3840> INFO - Looking for bibtex format file 'Quellen.bib' for section 0
+[172] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
+[177] bibtex.pm:1292> INFO - Found BibTeX data source 'Quellen.bib'
+[179] Utils.pm:164> WARN - month field 'Mai' in entry 'gitter' is not an integer - this will probably not sort properly.
+[179] Biber.pm:3840> INFO - Looking for bibtex format file 'programme.bib' for section 0
+[180] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
+[181] bibtex.pm:1292> INFO - Found BibTeX data source 'programme.bib'
+[201] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[201] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[202] Biber.pm:3499> INFO - Sorting list 'nty/global/' of type 'entry' with scheme 'nty' and locale 'de-DE'
+[202] Biber.pm:3505> INFO - No sort tailoring available for locale 'de-DE'
+[206] bbl.pm:608> INFO - Writing 'build/Protokoll.bbl' with encoding 'UTF-8'
+[207] bbl.pm:712> INFO - Output to build/Protokoll.bbl
+[207] Biber.pm:109> INFO - WARNINGS: 1

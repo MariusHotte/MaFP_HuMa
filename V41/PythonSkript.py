@@ -1,7 +1,7 @@
 ##################################################### Import system libraries ######################################################
-import matplotlib as mpl
-mpl.rcdefaults()
-mpl.rcParams.update(mpl.rc_params_from_file('meine-matplotlibrc'))
+import matplotlib
+pgf_with_rc_fonts = {"pgf.texsystem": "pdflatex"}
+matplotlib.rcParams.update(pgf_with_rc_fonts)
 import matplotlib.pyplot as plt
 import numpy as np
 import scipy.constants as const
@@ -52,9 +52,9 @@ from utility import(
 
 Metall_cm =np.array([4,5.7,7.1,8.4,9.6,10.9,12.2,13.8,16.4]) # Diese Angaben sind in cm. 180Grad entsprechen auf dem Streifen 18cm Metall_cm =np.array([4,5.7,7.1,8.4,9.6,10.9,12.2,13.8,16.4])
 Salz_cm =np.array([2.75,3.9,4.8,6.3,7.0,8.3,8.9,9.55,10.2,11.55,12.2,14.9,16.5])
-m_bcc= np.array([1.41,2.00,2.45,2.83,3.16,3.46,3.74,4.00])
+m_bcc= np.array([1.41,2.00,2.45,2.83,3.16,3.46,3.74,4.00])#Metall m h k l bcc
 lam=1.54093*10**(-10) # Wellenlänge des Röntgenstrahls in meter
-Miller_diamant=np.array([111,220,311,400,331,422,333,440,531])
+Miller_diamant=np.array([111,220,311,400,331,422,333,440,531]) ##Alles 4 fürs metall
 Miller_bcc=np.array([110,200,211,220,310,222,321,400,330])
 Miller_fcc=np.array([111,200,220,311,222,400,331,420,422])
 Miller_sc=np.array([100,110,111,200,210,211,220,221,310])
@@ -94,7 +94,7 @@ for i in range(len(Miller_sc)):
 	l=int(list(str(Miller_sc[i]))[2])
 	x=np.sqrt((h**2)+(k**2)+(l**2))
 	m_sc=np.append(m_sc,[x])
-m_sc_norm=m_diamant/m_sc[0]
+m_sc_norm=m_sc/m_sc[0]
 
 
 
@@ -142,16 +142,14 @@ write('build/Tabelle_Metall_Kristall_texformat.tex', make_full_table(
 
 a=noms(d*m_bcc)
 x=noms((unp.cos(theta))**2)
-
 params = ucurve_fit(reg_linear, x, a*10**10)             # linearer Fit
 t_plot = np.linspace(0, 1, 2)
 plt.plot(t_plot, reg_linear(t_plot, *noms(params)), 'b-', label='Fit')
-
 plt.plot(x, a*10**10, 'rx', label='Messdaten')
-plt.xlabel(r'$a \:/\: \si{\angstrom}$')
-plt.ylabel(r'$\cos^2{(theta)}$')
+#plt.xlabel(r'$a \:/\: \si{\angstrom}$')
+#plt.ylabel(r'$\cos^2{(theta)}$')
 plt.legend(loc='best')
-plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
+#plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
 plt.savefig('build/Metall.pdf')
 plt.clf()
 
@@ -183,6 +181,14 @@ for i in range(len(Miller)):
 	atom_b= cmath.exp(-2*np.pi*ii*(0.25*h+0.25*k+0.25*l)) + cmath.exp(-2*np.pi*ii*(0.75*h+0.75*k+0.25*l)) + cmath.exp(-2*np.pi*ii*(0.25*h+0.75*k+0.75*l)) +cmath.exp(-2*np.pi*ii*(0.75*h+0.25*k+0.75*l))
 	if abs(atom_a.real)>10**(-3) or abs(atom_a.imag)>10**(-3) or abs(atom_b.real)>10**(-3) or abs(atom_b.imag)>10**(-3):
 		Miller_zinkblende=np.append(Miller_zinkblende,Miller[i])
+m_zinkblende=np.array([])
+for i in range(len(Miller_zinkblende)):
+    h=int(list(str(Miller_zinkblende[i]))[0])
+    k=int(list(str(Miller_zinkblende[i]))[1])
+    l=int(list(str(Miller_zinkblende[i]))[2])
+    x=np.sqrt((h**2)+(k**2)+(l**2))
+    m_zinkblende=np.append(m_zinkblende,[x])
+
 
 Miller_steinsalz=np.array([])
 for i in range(len(Miller)):
@@ -193,6 +199,13 @@ for i in range(len(Miller)):
 	atom_b= cmath.exp(-2*np.pi*ii*(0.5*h+0.5*k+0.5*l)) + cmath.exp(-2*np.pi*ii*(1*h+1*k+0.5*l)) + cmath.exp(-2*np.pi*ii*(1*h+0.5*k+1*l)) +cmath.exp(-2*np.pi*ii*(0.5*h+1*k+1*l))
 	if abs(atom_a.real)>10**(-3) or abs(atom_a.imag)>10**(-3) or abs(atom_b.real)>10**(-3) or abs(atom_b.imag)>10**(-3):
 		Miller_steinsalz=np.append(Miller_steinsalz,Miller[i])
+m_steinsalz=np.array([])
+for i in range(len(Miller_steinsalz)):
+    h=int(list(str(Miller_steinsalz[i]))[0])
+    k=int(list(str(Miller_steinsalz[i]))[1])
+    l=int(list(str(Miller_steinsalz[i]))[2])
+    x=np.sqrt((h**2)+(k**2)+(l**2))
+    m_steinsalz=np.append(m_steinsalz,[x])
 
 Miller_chlorid=np.array([])
 for i in range(len(Miller)):
@@ -202,9 +215,13 @@ for i in range(len(Miller)):
 	atom_a= cmath.exp(-2*np.pi*ii*(0*h+0*k+0*l))+ cmath.exp(-2*np.pi*ii*(0.5*h+0.5*k+0.5*l))
 	if abs(atom_a.real)>10**(-3) or abs(atom_a.imag)>10**(-3):
 		Miller_chlorid=np.append(Miller_chlorid,Miller[i])
-
-print(Miller)
-print(Miller_chlorid)
+m_chlorid=np.array([])
+for i in range(len(Miller_chlorid)):
+    h=int(list(str(Miller_chlorid[i]))[0])
+    k=int(list(str(Miller_chlorid[i]))[1])
+    l=int(list(str(Miller_chlorid[i]))[2])
+    x=np.sqrt((h**2)+(k**2)+(l**2))
+    m_chlorid=np.append(m_chlorid,[x])
 
 
 Miller_caesium=np.array([100,110,111,200,221,210,211,220,300,310,311,222,320,321,330,400,410,411,331,420,421,332,422,333,440,442,500,510,324,521])
@@ -216,6 +233,7 @@ for i in range(len(Miller_caesium)):
 	x=np.sqrt((h**2)+(k**2)+(l**2))
 	m_caesium=np.append(m_caesium,[x])
 
+print(m_caesium,m_chlorid, m_zinkblende, m_steinsalz)
 # a_0=(lam/2*np.sin(theta[0]))*m_caesium
 
 # n = 13
@@ -226,7 +244,6 @@ for i in range(len(Miller_caesium)):
 # for j in range(len(theta)):
 # 	for i in range(len(m_caesium)):
 # 		a[j][i]=(lam/2*np.sin(theta[j]))*m_caesium[i]*10**10
-
 # b_1=np.array(a[0])
 # b_2=np.array(a[1])
 

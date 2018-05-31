@@ -19,6 +19,15 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{CsJ}{misc}{}
+      \field{sortinit}{B}
+      \field{sortinithash}{5f6fa000f686ee5b41be67ba6ff7962d}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{https://books.google.de/books?id\=0ow5kTB0icAC\&dqC̄sBr\+gitterkonstante\&hld̄e\&sourceḡbs\_navlinks\_s}
+      \field{month}{Mai}
+      \field{title}{Binäre Verbindungen}
+      \field{year}{2018}
+    \endentry
     \entry{gitter}{misc}{}
       \field{sortinit}{G}
       \field{sortinithash}{618d986594b7198ba52cf8b00d348f3f}

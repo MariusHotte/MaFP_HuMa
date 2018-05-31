@@ -4,13 +4,13 @@ Sämtliche im Folgenden durchgeführten Ausgleichsrechnungen werden mit der \emp
 
 \subsection{Allgemeine Auswertung der Filmstreifen}
 \label{sec:allgemein}
-Zur Auswertung wird der Nullpunkt in die Mitte des linken ausgestanzten Loches gesetzt, da in diesem Punkt der Strahl die Kamera verlässt. Somit entspricht der Abstand zwischen beiden ausgestanzten Löchern einem Winkel von $\theta=\SI{90}{\degree}$. Der Abstand der Streifen zum Nullpunkt werden mit einem Geodreik vermessen und mit der Beziehung
+Zur Auswertung wird der Nullpunkt in die Mitte des linken ausgestanzten Loches gesetzt, da in diesem Punkt der Strahl die Kamera verlässt. Somit entspricht der Abstand zwischen beiden ausgestanzten Löchern einem Winkel von $\theta=\SI{90}{\degree}$. Der Abstand der Streifen zum Nullpunkt werden mit einem Geodreieck vermessen und mit der Beziehung
 \begin{align}
 	\theta=\frac{s}{2R}
 \end{align}
 in den Beugungswinkel überführt. Dabei beschreibt $s$ den Abstand des auftretenen Reflex zum Nullpunkt und $R=\SI{5.73}{\centi\meter}$ den Radius der verwendeten Kamera.  Aufgrund der Fehleranfälligkeit beim ablesen, wird auf jeden Reflex ein Unsicherheit  $\Delta s=\SI{1}{\milli\meter}$ angenommen.
 
-\subsection{Metallprobe}
+\subsection{Metallprobe 9}
 Die im vorherigen Kapitel beschriebenen Messgrößen und der Netzebenenabstand $d$, welcher mit der Bragg-Bedingung XXX bestimmt wird, sind in Tabelle \ref{table:A1} für die verwendete Metallprobe 9 zusammengefasst.
 \input{build/Tabelle_Metall_Rohdaten_texformat.tex}
 Die letzten beiden Einträge in der Tabelle stehen aus einer Ringaufspaltung. Bei der Betrachtung der Netzebenenabstände $d$ für die Ringaufspaltung, ist zu erkennen, dass sich diese erst in der dritten Nachkommerstelle unterscheiden. Zudem liegt der eine Wert im Fehlerintervall des anderen und umgekehrt. Aufgrund dessen werden im Folgenden die beiden Abstände gemittelt und mit der mittleren Wellelänge der $K_\alpha$-Linie ein gemittelter Netzebenenabstand berechnet. \\
@@ -53,7 +53,7 @@ werden die in Kapitel XXX angesprochenen systematischen Fehler korrigiert. Die r
 Die Gitterkonstante und die vorliegende bcc-Struktur weißt nach \cite{gitter} auf Niob hin. Die Abweichung zur der in der Literatur angegebenen Gitterkonstante
 $a=\SI{3.30}{\angstrom}$ beträgt $\input{build/prozent_metall.tex}$.
 
-\subsection{Salzprobe}
+\subsection{Salzprobe 5}
 Die Salzprobe muss eine Gitterstruktur aufweisen, die aus zwei verschiedenen Atomen besteht. Nach \cite{skript} werden somit die Zinkblenden-, die Steinsalz, Cäsiumchlorid- und Fluoritstruktur im folgenden untersucht. Dafür werden mit Gleichung XXX alle aufkommenden Reflexe ermittelt. Da das Material unbekannt ist, lässt sich keine Aussagen über den Atomformfaktor $f$ treffen. Aus diesem Grund werden die beiden jeweiligen Untergitter der zuvor genannten Gitterstrukturen untersucht. Tritt also ein Reflex in einem der Untergitter auf, wird dieser zu den Reflexen der Gesamtstruktur hinzugezählt. Diese Methode funktioniert nicht bei der Cäsiumchlorid-Struktur, da dessen Elementarzelle nur zwei Atome besitzt und zusätzlich einer der Koordinaten $(0,0,0)$ ist. Somit würde bei jeder Kombination von Millerindizes ein Reflex entstehen. Deshalb wird zur Vereinfachung angenommen:
 \begin{align}
 	f_1\approx f_2
@@ -80,7 +80,7 @@ Zur Auswertung wird für jeweils alle dreizehn Reflexe auf dem Filmstreifen  und
     \label{fig:A_excel}
 \end{figure}
 
-Bei dem Vergleich von Abbildung \ref{fig:C_excel} und \ref{fig:A_excel} ist zuerkennen, dass die Salzprobe eine Cäsiumchloridstruktur besitzt. Zur Korrektur der systematischen Fehler wird erneut die Gitterkonstante $a$ gegen $\cos^2{\theta}$ aufgetragen und eine lineare Ausgleichsrechung \eqref{eq:FIT} vorgenommen. Es ist anzumerken, dass der in Abbildung \ref{fig:plot5} grün markierte Messwert nicht in die lineare Ausgleichrechnung mit eingeht.
+Bei dem Vergleich von Abbildung \ref{fig:C_excel} und \ref{fig:A_excel} ist zuerkennen, dass die Salzprobe eine Cäsiumchloridstruktur besitzt. Zur Korrektur der systematischen Fehler wird erneut die Gitterkonstante $a$ gegen $\cos^2{\theta}$ aufgetragen und eine lineare Ausgleichsrechung \eqref{eq:FIT} vorgenommen. Es ist anzumerken, dass der in Abbildung \ref{fig:plot5} grün markierte Messwert nicht in die lineare Ausgleichrechnung eingeht.
 
 \begin{figure}
 	\centering
@@ -95,8 +95,9 @@ Die Ergebnisse der Fitparamter lauten:
 	b&= \input{build/b_Salz.tex} \\
 	c&= \input{build/a_Salz.tex}
 \end{align}
+Somit ist $a=\input{build/a_Salz.tex}$ die experimentell bestimmte Gitterkonstante für die Salzprobe 5.
 
-
+Die experimentell bestimmte Gittekonstante $a$ und die Cäsiumchloridstruktur weisen nach \cite{CsJ} auf Caesiumiodid hin. Die Abweichung bzgl. zum Literaturwert von $a=\SI{4.56}{\angstrom}$ ergibt somit eine Abweichung von $\SI{2.46}{\percent}$.
 
 
 

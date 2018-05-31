@@ -1,0 +1,26 @@
+\begin{table}
+    \centering
+    \caption{Vergleich der Verhältnisse mit zusätzlicher Abweichung.}
+    \label{table:A3}
+    \sisetup{parse-numbers=false}
+    \begin{tabular}{
+	S[table-format=1.2]
+	S[table-format=2.2]
+	S[table-format=1.2]
+	S[table-format=1.2]
+	S[table-format=1.2]
+	S[table-format=2.2]
+	S[table-format=1.2]
+	@{${}\pm{}$}
+	S[table-format=1.2, table-number-alignment = left]
+	}
+	\toprule
+	{$\left(\frac{m_i}{m_1}\right)_{sc}$}		& {$|Abw_{sc}|\:/\: \si{\percent}$}		& 
+	{$\left(\frac{m_i}{m_1}\right)_{bcc}$}		& {$|Abw_{bcc}|\:/\: \si{\percent}$}		& 
+	{$\left(\frac{m_i}{m_1}\right)_{fcc}$}		& {$|Abw_{fcc}|\:/\: \si{\percent}$}		& 
+	\multicolumn{2}{c}{$\frac{d_1}{d_i}$}		\\ 
+	\midrule
+    \input{build/Tabelle_Metall_Kristall_Abw.tex}
+    \bottomrule
+    \end{tabular}
+    \end{table}

@@ -24,7 +24,7 @@ Abbildung
     \centering
     \includegraphics[width=0.55\textwidth]{ressources/gitter.png}
     \caption{Eines Gitters mit verschiedenen Gitterpunkten und deren mögliche
-    Verschiebung durch den Translationsvektor $\vec l$.}
+    Verschiebung durch den Translationsvektor $\vec l$\cite{skript}.}
     \label{fig_gitter}
 \end{figure}
 \ref{fig_gitter}
@@ -43,15 +43,175 @@ als primitive Einheitszelle festgelegt werden.
 \begin{figure}
     \centering
     \includegraphics[width=0.25\textwidth]{ressources/primitiv.png}
-    \caption{Eines Gitters mit verschiedenen Gitterpunkten und deren mögliche
-    Verschiebung durch den Translationsvektor $\vec l$.}
+    \caption{Kubisch primitives Gitter\cite{skript}.}
     \label{primitiv}
 \end{figure}
-
-
-Bei Einheitszellen
-mit mehreren Atomen wie z.B. NaCl besteht die Einheitszelle aus $\text{Na}^+$
+Nicht jedes Gitter kann durch primitive Einheitszellen aufgebaut werden.
+Diese Einheitszellen besitzten mehreren Atomen
+wie z.B. NaCl besteht die Einheitszelle aus $\text{Na}^+$
 und $\text{Cl}^-$ Ionen.
+\subsection{Kristalline Strukturen}
+Die mögliche Anzahl an Gitterstrukturen ist drei Dimensionen beschränkt und
+wird durch die 14 Bravais-Gitter wiedergegeben. Diese lassen sich anhand
+Einheitszellen in sieben verschiedene Gittertypen einordnen. Im folgenden
+wird auf die kubischen Gitterstrukturen weiter eingegangen.
+\subsubsection{Kubische Gitterstrukturen}
+Die kubische Gitterstruktur wird innerhalb des Bravais-Gitter ins drei
+verschiedene Gittersysteme aufgeteilt. Das kubisch primitive Gitter, vgl.
+Abbildung \ref{primitiv}, dem kubisch flächenzentrierten Abbildung \ref{bcc} und dem
+kubisch raumzentierten Gitter ,vgl Abbildung \ref{bcc}.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.55\textwidth]{ressources/kubies.png}
+    \caption{Abbildung eines bcc-Gitters (links) und eines fcc-Gitters\cite{skript}.}
+    \label{bcc}
+\end{figure}
+
+Das kubisch primitive Gitter besitzt wie in Kapitel 2.2 erwähnt eine
+primitive Einheitszelle mit einem Atom in einer der Würfelecken.
+Wenn man dieses als Koordinaten der Punkte der Basis
+schreib, erhält man für die primitive Einheitszelle:
+$$ (\,0,\,0,\,0).$$
+Das kubisch raumzentierte Gitter \ref{bcc} besitzt eine Basis mit 2 Atomen,
+eines in der Würfelecke und eines in der Mitte jedes Würfels. Schreibt man
+die Koordinaten dieser Basis auf so ergibt sich:
+$$(\,0\,,\,0\,,\,0\,) \quad (\,\frac{1}{2}\,, \,\frac{1}{2}\, ,\, \frac{1}{2}\,)$$
+Das kubisch flächenzentrierte Gitter ist das komplexeste der drei kubischen Bravais-Gitter.
+Dieses besitzt auf jeder der sechs Würfelseiten ein weeiteres Atom. Die damit
+verbundene Basis hat 4 Atome. Weißt man ihnen Korrdinaten zu so ergibt sich
+für diese Basis:
+$$(\,0,\,0,\,0), \quad (\,\frac{1}{2},\, \frac{1}{2} ,\, 0), \quad (\, \frac{1}{2}, \,0 ,\, \frac{1}{2}),
+\quad (\,0, \, \frac{1}{2} , \, \frac{1}{2})$$
+Innerhalb des Versuches werden die Proben auf verschiedene kubische Strukturen
+untersucht, welche sich aus mehreren kubischen Bravais-Gitter zusammensetzten.
+Die Diamantstruktur lässt sich auf zwei kubisch flächenzentrierten Gitter
+zusammensetzten, wobei das zweite kubisch flächenzentrierte Gitter um
+$\frac{1}{4}$ in einer raumdiagonalen verschoben ist. Die daraus folgende
+Basis besitzt 8 Atome. Die ersten 4 sind die des einfach flöchenzentrierten
+kubischen Gitters:
+
+$$(\,0,\,0,\,0), \quad (\,\frac{1}{2},\, \frac{1}{2} ,\, 0), \quad (\, \frac{1}{2}, \,0 ,\, \frac{1}{2}),
+\quad (\,0, \, \frac{1}{2} , \, \frac{1}{2}).$$
+Die weitern 4 sind die jeweils um die raumdiagonalen verschobenen Atome:
+$$ (\, \frac{1}{4},\, \frac{1}{4}, \, \frac{1}{4}), \quad (\frac{3}{4}, \, \frac{3}{4}, \, \frac{1}{4}),
+\quad (\, \frac{3}{4}, \, \frac{1}{4}, \frac{3}{4}), \quad (\,\frac{1}{4},\,  \frac{3}{4}, \, \frac{3}{4}) $$
+Die Zinkblende-Struktur ist ähnlich zur Diamantstruktur, nur dass diese aus
+Zink und Schwefel Atomen besteht. Jedes der beiden Untergitter
+ist mit ausschließlich Schwefel oder Zink Atomen besetzt.\\
+Bei der Steinsalz-Struktur besteht das Gitter aus zwei versetzten kubisch-flächenzentrierten
+kubischen Gittern, welche um eine habe Raumdiagonale verschoben sind. Die
+Positionen der Atome einer Einheitszelle liegen bei:
+\begin{align}
+    A:(\,0,\,0,\,0), \quad (\,\frac{1}{2},\, \frac{1}{2} ,\, 0), \quad (\, \frac{1}{2}, \,0 ,\, \frac{1}{2}),
+    \quad (\,0, \, \frac{1}{2} , \, \frac{1}{2}) \\
+    B:(\,\frac{1}{2},\,\frac{1}{2},\,\frac{1}{2},, \quad (\,1 , \, 1 , \quad\frac{1}{2},)
+    ,\quad (1, \,\frac{1}{2}, \,1),\quad (\,\frac{1}{2}, \, 1, \,1)
+\end{align}
+Die Gitterstruktur von Cäsiumchlorid bestheht ebenfalls aus zwei unterschiedlichen
+kubisch-primitiven Gittern, welche ebensfalls um eine halb Raumdiagonale
+verschoben sind. Die Posiotionen der zweiatomigen Basis aus Cäsium und Chlor lieg bei:
+\begin{align}
+A:(\,0 , \, 0 , \, 0)\\
+B:(\, \frac{1}{2},\, \frac{1}{2},\, \frac{1}{2})
+\end{align}
+\subsection{Millersche Indices}
+Die Millerschen Indices diehnen dazu eine Netzebene eines Kristalles und deren
+Lage Raum genauer zu beschreiben. Die Millerschenindices bestehen aus einen Zahlentripel
+(h,k,l). Jeder dieser Indices gibt den reziproken Werte der Schnittpunkte der
+Netzebene mit den Achsenabschnitten. Mit den Millerschen Indices lässt sich der
+Netzabstand zweier Ebenen berechnen. Die Netzebenen die parallel zureinadner
+liegen bilden eine Netzebenenschar. Der Abstand zweier Netzebenen lässt sich
+durch die Millerschen Indices ausdrücken:
+$$ d=\frac{1}{\sqrt{
+\left(\frac{h}{a} \right)^2 + \left(\frac{k}{b} \right)^2 + \left(\frac{l}{c} \right)^2.
+}}
+$$
+Für die kubishen Gitterstrukturen vereinfacht sich der allgemeine Zusammenhang zu:
+\begin{align}
+d=\frac{a}{\sqrt{h^2 + k^2 + l^2}}
+\label{gitti}
+\end{align}
+\subsection{Beugung von Röntgenstrahlug an Kristallen}
+Trifft Röntgenstrahlung auf ein Kristall, beziehungsweise auf die Elektronen
+und die Atome, so kann die Wechselwirkung  als ein klassischen Struprozess
+aufgefasst werden. Die innerhalb des Streuprozesses angeregten geladenen
+Teilchen emittieren Strahlung, wobei in Abhängigkeit des Kristallgitters
+bestimmte Interferenzeffekte auftreten. Die Schwingungen der angeregten
+geladenen Teilchen können als Hertzscher Dipol aufgefasst werden.
+Aufgrund der Eigenschaften des Hertzschen Dipol kann ein
+Zusammenhang zwischen der Intensität der emitteirten Strahlung und
+der Masse $m$ des schwingenden Teilchens angegeben werden:
+$$I \approx \frac{1}{m^2}$$
+Der naive Ansatz ist, dass die emittierte Strahlung des
+Atoms $I_a$ proportional zur Ordnungszahl $z$ ist.
+Da die Elektronenhülle der Atome eine endliche Ausdehnung besitzt und
+es somit zu einer Phasendifferenz , zwischen Elektronen die an
+"Anfang" und "Ende" der Elektronenhülle wechselwirken, kommt sinkt die
+Intensität. Dieser Effekt wird durch den Atomformfaktor $f$ ,welcher
+materialabhängig ist, beschrieben. Die Intensität $I_a$ verglichen mit
+der Intensität, welche durch eine Streuung an einem einzelnen Elektron ensteht,
+erigbt:
+\begin{align}
+    f^2\left( \frac{\sin \theta}{\lambda}Z \right)=\frac{I_a}{I_e}
+    \label{atom}
+\end{align}
+Der Atomformfaktor hängt vom Winkel $\theta$, der Ordnungszahl $z$ und der
+Wellenlänge $\lambda$ ab, Ziel nun die Berechnung der Phasendifferenz zweier
+Wellen, welche an unterschiedlichen Orten gestreut werden.
+In der Abbildung \ref{bragg} ist eine schematische Skizze zur
+Berechnung der Phasendifferenz dargestellt.
+\begin{figure}
+    \centering
+    \includegraphics[width=0.55\textwidth]{ressources/bragg.png}
+    \caption{Skizze zur Berechnung der Phasendifferenz\cite{skript}.}
+    \label{bragg}
+\end{figure}
+Für die einfallenden ($|\vec{k}|$) und gestreuten Wellenvektoren $|\vec{k_0}|$ gilt:
+\begin{align}
+|\vec{k}|=|\vec{k_0}|=\frac{1}{\lambda}
+    \label{welle}
+\end{align}
+Mit Hilfe des Wellenvektors lässt sich der Gangunterschied $\Delta s$ zwischen
+zwei Wellen, welche an den Punkten 0 und P gestrut werden, berechnen
+
+\begin{align}
+    \Delta s= s_1 + s_2= \vec{r} \left(\frac{\vec{k}}{k}-\frac{\vec{k_0}}{k_0} \right).
+\end{align}
+Damit folgt für die Phasendifferenz $\Delta \Phi$:
+\begin{align}
+     \Delta \Phi= 2\pi \frac{\Delta s}{\lambda}= 2 \pi \vec{r}\cdot(\vec{k}-\vec{k_0}).
+\end{align}
+Die Streuamplitude, welche nachher für die Ringe auf den Debye-Scherrer Aufnahmen
+verantwortlich sind, ergeben sich wenn üver alle Positionen der Atome $r_i$
+innerhalb einer Einheitszelle summiert wird
+\begin{align}
+A=\sum_j f_j e^{-2 \pi i \vec{r_j} (\vec{k}-\vec{k_0})} I_e=\sum_j f_j e^{-2\pi i (x_j\vec{a}
++y_j \vec{b} + z_j \vec{c})(\vec{k}-\vec{k_0})} I_e
+\end{align}
+Gegeben sei die Bragg Bedingung:
+\begin{align}
+n\lambda = 2d \sin \theta
+    \label{braggi}
+\end{align}
+Für den reziproken Raum gilt analog die Laue Bedingung:
+\begin{align}
+    \vec{g}= \vec{k}-\vec{k_0}= h \vec{A}+ k\vec{B}+l\vec{C}
+\end{align}
+mit
+\begin{align*}
+    \vec{A}= \frac{\vec{b} \times \vec{c}} { \vec{a} (\vec{b} \times \vec{c})}\\
+    \vec{B}= \frac{\vec{c} \times \vec{a}} { \vec{a} (\vec{b} \times \vec{c})}\\
+    \vec{C}= \frac{\vec{a} \times \vec{b}} { \vec{a} (\vec{b} \times \vec{c})}
+\end{align*}
+Die Streuamplitude $S$ ergit sich mit Hilfe der Gleichungen (9) und (11):
+\begin{align}
+    S=\sum_j f_j e^{-2 \pi i \vec{r_j} \vec{g}}=\sum_j f_j e^{-2 \pi i(x_j
+    h + y_j k + z_j l)}
+\label{streu}
+\end{align}
+Die Streuamplitude ($S(h,k,l)$) hängt nun von den Millerschen Indices $h,k,l$ ab,
+das heißt es lässt sich für die Netzeben berechnen, ob ein Reflex sichtbar ist oder nicht.
 % 2x2 Plot
 % \begin{figure*}
 %     \centering

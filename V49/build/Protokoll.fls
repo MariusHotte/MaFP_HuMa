@@ -1,4 +1,4 @@
-PWD /home/hubi/repos/MaFP_HuMa/V49
+PWD /home/hubi/uni/1 Master Sem./Praktikum/MaFP_HuMa/V49
 INPUT /home/hubi/.local/texlive/2017/texmf-var/web2c/luatex/lualatex.fmt
 INPUT ./Protokoll.tex
 OUTPUT build/Protokoll.log
@@ -544,10 +544,16 @@ INPUT /home/hubi/.local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbol
 INPUT /home/hubi/.local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT /home/hubi/.local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT /home/hubi/.local/texlive/2017/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
-INPUT ./content/durchfuehrung.tex
-INPUT ./content/durchfuehrung.tex
 INPUT ./content/auswertung.tex
 INPUT ./content/auswertung.tex
+INPUT /home/hubi/uni/1 Master Sem./Praktikum/MaFP_HuMa/V49/build/fit_tau_1.pdf
+INPUT /home/hubi/uni/1 Master Sem./Praktikum/MaFP_HuMa/V49/build/fit_tau_1.pdf
+INPUT /home/hubi/uni/1 Master Sem./Praktikum/MaFP_HuMa/V49/build/U_fit_Tau2.pdf
+INPUT /home/hubi/uni/1 Master Sem./Praktikum/MaFP_HuMa/V49/build/U_fit_Tau2.pdf
+INPUT /home/hubi/uni/1 Master Sem./Praktikum/MaFP_HuMa/V49/build/halbw.pdf
+INPUT /home/hubi/uni/1 Master Sem./Praktikum/MaFP_HuMa/V49/build/halbw.pdf
+INPUT /home/hubi/uni/1 Master Sem./Praktikum/MaFP_HuMa/V49/build/plot_diff.pdf
+INPUT /home/hubi/uni/1 Master Sem./Praktikum/MaFP_HuMa/V49/build/plot_diff.pdf
 INPUT ./content/diskussion.tex
 INPUT ./content/diskussion.tex
 INPUT ./content/anhang.tex

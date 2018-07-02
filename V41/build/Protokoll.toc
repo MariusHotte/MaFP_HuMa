@@ -8,7 +8,7 @@
 \contentsline {subsection}{\numberline {2.3}Kristalline Strukturen}{4}{subsection.2.3}
 \contentsline {subsubsection}{\numberline {2.3.1}Kubische Gitterstrukturen}{4}{subsubsection.2.3.1}
 \contentsline {subsection}{\numberline {2.4}Millersche Indices}{6}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Beugung von Röntgenstrahlug an Kristallen}{6}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.5}Beugung von Röntgenstrahlung an Kristallen}{6}{subsection.2.5}
 \contentsline {section}{\numberline {3}Fehlerrechnung}{8}{section.3}
 \contentsline {section}{\numberline {4}Versuchsaufbau}{9}{section.4}
 \contentsline {section}{\numberline {5}Durchführung}{10}{section.5}

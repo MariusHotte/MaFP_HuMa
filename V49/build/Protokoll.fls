@@ -1,4 +1,4 @@
-PWD /home/hubi/uni/1 Master Sem./Praktikum/MaFP_HuMa/V49
+PWD /home/hubi/repos/MaFP_HuMa/V49
 INPUT /home/hubi/.local/texlive/2017/texmf-var/web2c/luatex/lualatex.fmt
 INPUT ./Protokoll.tex
 OUTPUT build/Protokoll.log

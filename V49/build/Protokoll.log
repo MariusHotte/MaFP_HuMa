@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.5.27)  29 JUN 2018 09:28
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.5.27)  2 JUL 2018 12:44
  restricted system commands enabled.
 **Protokoll.tex
 (./Protokoll.tex
@@ -22,7 +22,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.130 seconds (./header.tex (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/koma-script/scrartcl.cls
+luaotfload | main : initialization completed in 0.114 seconds (./header.tex (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2018/03/30 v3.25 KOMA-Script document class (article)
 (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/koma-script/scrkbase.sty
 Package: scrkbase 2018/03/30 v3.25 KOMA-Script package (KOMA-Script-dependent basics and keyval usage)
@@ -728,22 +728,22 @@ luatex-hyphen: using data file: /home/hubi/.local/texlive/2017/texmf-var/tex/gen
 Lua module: polyglossia 2013/05/11 1.3 Polyglossia) (/home/hubi/.local/texlive/2017/texmf-dist/tex/latex/polyglossia/gloss-german.ldf
 File: gloss-german.ldf polyglossia: module for german
 Module polyglossia Info: Language data for german
-(polyglossia)            patterns	hyph-de-1901.pat.txt
-(polyglossia)            loader	loadhyph-de-1901.tex
-(polyglossia)            lefthyphenmin	2
-(polyglossia)            righthyphenmin	2
 (polyglossia)            hyphenation	
-(polyglossia)            synonyms	table: 0x4d2f660
+(polyglossia)            patterns	hyph-de-1901.pat.txt
+(polyglossia)            righthyphenmin	2
+(polyglossia)            lefthyphenmin	2
+(polyglossia)            synonyms	table: 0x4883ff0
+(polyglossia)            loader	loadhyph-de-1901.tex
 (polyglossia)            patterns: hyph-de-1901.pat.txt on input line 6
 Module polyglossia Info: Language german was not yet loaded; created with id 4 on input line 6
 Module polyglossia Info: Language german already loaded; id is 4 on input line 6
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            patterns	hyph-de-1996.pat.txt
-(polyglossia)            loader	loadhyph-de-1996.tex
-(polyglossia)            lefthyphenmin	2
-(polyglossia)            righthyphenmin	2
 (polyglossia)            hyphenation	
-(polyglossia)            synonyms	table: 0x4d2f830
+(polyglossia)            patterns	hyph-de-1996.pat.txt
+(polyglossia)            righthyphenmin	2
+(polyglossia)            lefthyphenmin	2
+(polyglossia)            synonyms	table: 0x48841c0
+(polyglossia)            loader	loadhyph-de-1996.tex
 (polyglossia)            patterns: hyph-de-1996.pat.txt on input line 68
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 8 on input line 68
 Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 68
@@ -2471,70 +2471,70 @@ Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 
 
 ] (./content/theorie.tex(load luc: /home/hubi/.local/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc)(load luc: /home/hubi/.local/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman5-regular.luc) [3](load luc: /home/hubi/.local/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman6-regular.luc)
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 12.00018pt on input line 42.
+(Font)              scaled to size 12.00018pt on input line 54.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 8.00012pt on input line 42.
+(Font)              scaled to size 8.00012pt on input line 54.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 6.00009pt on input line 42.
+(Font)              scaled to size 6.00009pt on input line 54.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 11.99982pt on input line 42.
+(Font)              scaled to size 11.99982pt on input line 54.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 7.99988pt on input line 42.
+(Font)              scaled to size 7.99988pt on input line 54.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 5.99991pt on input line 42.
+(Font)              scaled to size 5.99991pt on input line 54.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 42.
+(hyperref)                removing `math shift' on input line 54.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 42.
+(hyperref)                removing `subscript' on input line 54.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 42.
+(hyperref)                removing `math shift' on input line 54.
 
 <ressources/T_1_plot.png, id=80, 911.65594pt x 644.4075pt>
 File: ressources/T_1_plot.png Graphic file (type png)
 <use ressources/T_1_plot.png>
-Package luatex.def Info: ressources/T_1_plot.png  used on input line 53.
+Package luatex.def Info: ressources/T_1_plot.png  used on input line 65.
 (luatex.def)             Requested size: 216.24373pt x 152.85172pt.
 (load luc: /home/hubi/.local/texlive/2017/texmf-var/luatex-cache/generic/fonts/otl/lmroman7-regular.luc)
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 5.00008pt on input line 54.
+(Font)              scaled to size 5.00008pt on input line 66.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 4.99992pt on input line 54.
+(Font)              scaled to size 4.99992pt on input line 66.
  [4]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 58.
+(hyperref)                removing `math shift' on input line 70.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 58.
+(hyperref)                removing `subscript' on input line 70.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 58.
+(hyperref)                removing `math shift' on input line 70.
 
 <ressources/hahn_echo.png, id=94, 651.18282pt x 368.87813pt>
 File: ressources/hahn_echo.png Graphic file (type png)
 <use ressources/hahn_echo.png>
-Package luatex.def Info: ressources/hahn_echo.png  used on input line 68.
+Package luatex.def Info: ressources/hahn_echo.png  used on input line 80.
 (luatex.def)             Requested size: 341.43307pt x 193.41624pt.
 [5<./ressources/T_1_plot.png>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 87.
+(hyperref)                removing `math shift' on input line 99.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `subscript' on input line 87.
+(hyperref)                removing `subscript' on input line 99.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 87.
+(hyperref)                removing `math shift' on input line 99.
 
 [6<./ressources/hahn_echo.png>]) [7] (./content/fehlerrechnung.tex) [8
 
@@ -2646,7 +2646,7 @@ Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 44.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 44.
 Package rerunfilecheck Info: File `Protokoll.aux' has not changed.
-(rerunfilecheck)             Checksum: ED3FF0A7443F31EDD81208B5D4EE8BEA;19380.
+(rerunfilecheck)             Checksum: 9B44CB8D3414EDDAB25F552CB956A309;19381.
 Package rerunfilecheck Info: File `Protokoll.toc' has not changed.
 (rerunfilecheck)             Checksum: D9ABC5AD55C6F7D08C38019797011F9B;2358.
 

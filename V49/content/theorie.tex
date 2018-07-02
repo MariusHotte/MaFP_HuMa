@@ -1,15 +1,27 @@
 \section{Theorie}
 \label{sec:Theorie}
 \subsection{Einleitung}
-Mittels der Kernspinresonanz können Spins in einem homogenen Magnetfeld mit Hochfrequenzfeld beeinflusst werden. In diesem Versuch werden die Spins einer destillierten Wasser-Probe aus ihrem Gleichgewicht gebracht, wodurch spezifische Relaxationszeiten und die Diffusionskonstante bestimmt werden können.
+Mittels der Kernspinresonanz können Spins in einem homogenen Magnetfeld mit
+Hochfrequenzfeld beeinflusst werden. In diesem Versuch werden die Spins einer 
+destillierten Wasser-Probe aus ihrem Gleichgewicht gebracht, wodurch spezifische
+Relaxationszeiten und die Diffusionskonstante bestimmt werden können.
+
 \subsection{Allgemeine Grundlagen}
 \subsubsection{Magnetisierung im thermischen Gleichgewicht}
-Wird ein externes Magnetfeld an eine Probe angelegt, beispielsweise parallel zur z-Richtung, entsteht eine makroskopische Magnetisierung der Probe. Dieses tritt auf, da die Kernspinzustände entarten und somit sich die einzelnen magnetischen Momente orientieren. Bei einem Proton mit Kernspin $I=\frac{1}{2}$ existieren, aufgrund des Zeemaneffekts, zwei Unterniveaus mit der magnetischen Quantenzahl $m=-\frac{1}{2}$ und $m=\frac{1}{2}$. Anhand der Maxwell-Boltzmann-Statistik kann eine Aussage über Besetzung der beiden Unterniveaus getroffen werden. Bei Betrachtung im thermischen Gleichgewicht fällt bei dem Besetzungsverhältnis der beiden Zustände
+Wird ein externes Magnetfeld an eine Probe angelegt, beispielsweise parallel
+zur z-Richtung, entsteht eine makroskopische Magnetisierung der Probe. Dieses
+tritt auf, da die Kernspinzustände entarten und somit sich die einzelnen
+magnetischen Momente orientieren. Bei einem Proton mit Kernspin $I=\frac{1}{2}$
+existieren, aufgrund des Zeemaneffekts, zwei Unterniveaus mit der magnetischen
+Quantenzahl $m=-\frac{1}{2}$ und $m=\frac{1}{2}$. Anhand der
+Maxwell-Boltzmann-Statistik kann eine Aussage über Besetzung der beiden
+Unterniveaus getroffen werden. Bei Betrachtung im thermischen Gleichgewicht
+fällt bei dem Besetzungsverhältnis der beiden Zustände
 \begin{align}
 	\frac{N(m)}{N(m-1)}=\exp{\left(\frac{\Delta E}{k_BT}\right)}
 	\label{eq:verhaeltniss}
 \end{align}
-auf, dass die Niveaus nur leicht unterschiedlich besetzt sind, da bei sehr hohen Temperaturen das Verhältnis gegen 1 kovergiert. Aus der ungleichen Besetzung resultiert eine Kernspinpolaritation, wodurch sich aus den einzelnen magnetischen Momenten $\mu_i$ eine makroskopische Gesamtmagnetisierung der Probe 
+auf, dass die Niveaus nur leicht unterschiedlich besetzt sind, da bei sehr hohen Temperaturen das Verhältnis gegen 1 kovergiert. Aus der ungleichen Besetzung resultiert eine Kernspinpolaritation, wodurch sich aus den einzelnen magnetischen Momenten $\mu_i$ eine makroskopische Gesamtmagnetisierung der Probe
 \begin{align}
 	M_0 = \frac{1}{4}\mu_0\gamma^2\frac{\hbar^2}{k_B}N\frac{B_0}{T}
 	\label{eq:gleichgewicht}
@@ -17,7 +29,7 @@ auf, dass die Niveaus nur leicht unterschiedlich besetzt sind, da bei sehr hohen
 einstellt. Dabei steht $\mu_0$ für die Permeabilität des Vakuums, $\gamma$ für das gyromagnetische Verhältnis und N für die Anzahl der magnetischen Momente pro Volumeneinheit.
 
 \subsubsection{Lamor-Präzession und Relaxationszeiten}
-Wird durch Einstrahlung von Hochfrequenzquanten der Übergang in das höhere Niveau ermöglicht, entsteht ein Ungleichgewicht im Besetzungsverhältnis. Dadurch wirkt ein Drehmoment $D$ welches zu Präzessionsbewegung um die z-Achse führt. In einem Ein-Teilchen-System wird die Präzession mit der Kreisfrequenz 
+Wird durch Einstrahlung von Hochfrequenzquanten der Übergang in das höhere Niveau ermöglicht, entsteht ein Ungleichgewicht im Besetzungsverhältnis. Dadurch wirkt ein Drehmoment $D$ welches zu Präzessionsbewegung um die z-Achse führt. In einem Ein-Teilchen-System wird die Präzession mit der Kreisfrequenz
 \begin{align}
 	\omega_L=\gamma B_0 \:,
 	\label{eq:Lamor}
@@ -60,7 +72,7 @@ In Abbildung \ref{fig:plot1} ist der Verlauf der zuvor beschriebenen Gleichung d
 Die Magnetisierung wird durch einen $\Delta t_{90}$-Puls aus der Gleichgewichtlage in die x-y-Ebene gelengt, in der die Präzessionsbewegung eine Induktionsspannung in der probenumschließenden Spule erzeugt. Von da aus relaxiert diese wieder in ihre Ausgangslage zurück. Dieser Vorgang wird als Freie Induktion (FID) bezeichnet. Mit diesem Verfahren kann jedoch nicht zur Bestimmung von $T_2$ verwendet werden, da es zu einer Dephasierung der Spins kommt. Grund dafür ist zum einen die Dipolwechselwirkungen zwischen nächsten Nachbarn und zum andere die Inhomogenität der Polschuhe, wodurch die Spins schneller oder langsamer als die Lamorfrequenz rotieren.
 
 \subsubsection{Spin-Echo-Verfahren}
-Dieses Verfahren baut auf der freien Induktion auf, jedoch wird durch einen weiteren HF-Puls der Dephasierung entgegen gewirkt. Zu Beginn wird die Magnetisierung erneut mit einem $\Delta t_{90}$-Puls in die x-y-Ebene ausgelengt, in der die Spins beginnen mit leicht unterschiedlichen Frequenzen und Umlaufrichtungen zu rotieren. Nach einer Zeit $T$ ist die Auffächerung der Spins so groß, dass in der Spule kein Induktionssignal gemessen werden kann. Nach dem Zeitraum $\tau$  wird ein $\Delta t_{180}$-Puls genutzt um die Spins um \SI{180}{\degree} zu drehen. Somit laufen die Spins ab diesem Zeitpunkt wieder zusammen. Die Spins die zuvor mit einer im Betrag höheren Frequenz umgelaufen sind, haben ebenfalls eine längere Strecke in selber Zeit zurückgelegt, wie die langsameren Spins. Nach einem weiteren Zeitraum $\tau$ sind somit alle Spins für einen Augenblick in Phase und induzieren eine Spannung. Der zuvor beschriebene Ablauf ist in Abbildung \ref{fig:plot2} graphisch dargestellt. 
+Dieses Verfahren baut auf der freien Induktion auf, jedoch wird durch einen weiteren HF-Puls der Dephasierung entgegen gewirkt. Zu Beginn wird die Magnetisierung erneut mit einem $\Delta t_{90}$-Puls in die x-y-Ebene ausgelengt, in der die Spins beginnen mit leicht unterschiedlichen Frequenzen und Umlaufrichtungen zu rotieren. Nach einer Zeit $T$ ist die Auffächerung der Spins so groß, dass in der Spule kein Induktionssignal gemessen werden kann. Nach dem Zeitraum $\tau$  wird ein $\Delta t_{180}$-Puls genutzt um die Spins um \SI{180}{\degree} zu drehen. Somit laufen die Spins ab diesem Zeitpunkt wieder zusammen. Die Spins die zuvor mit einer im Betrag höheren Frequenz umgelaufen sind, haben ebenfalls eine längere Strecke in selber Zeit zurückgelegt, wie die langsameren Spins. Nach einem weiteren Zeitraum $\tau$ sind somit alle Spins für einen Augenblick in Phase und induzieren eine Spannung. Der zuvor beschriebene Ablauf ist in Abbildung \ref{fig:plot2} graphisch dargestellt.
 
 
 \begin{figure}

@@ -4,16 +4,17 @@ Sämtliche im Folgenden durchgeführten Ausgleichsrechnungen werden mit der \emp
 
 \subsection{Allgemeine Auswertung der Filmstreifen}
 \label{sec:allgemein}
-Zur Auswertung wird der Nullpunkt in die Mitte des linken ausgestanzten Loches gesetzt, da in diesem Punkt der Strahl die Kamera verlässt. Somit entspricht der Abstand zwischen beiden ausgestanzten Löchern einem Winkel von $\theta=\SI{90}{\degree}$. Der Abstand der Streifen zum Nullpunkt werden mit einem Geodreieck vermessen und mit der Beziehung
+Für die Auswertung wurden während der Durchführung die Filmstreifen durch ein einseitiges Abschneiden der Ecken markiert, sodass im Nachhinein nachzuvollziehen ist, durch welches Loch im Filmstreifen der Röntgenstrahl eingetreten und durch welches Loch wieder ausgetreten ist. Die Markierung befindet sich an der Seite an dem der Strahl eingetreten ist. Somit wird zur Auswertung der Nullpunkt in die Mitte des Loches ohne markierten Rand gelegt, da in diesem Punkt der Strahl die Kamera verlässt. Somit entspricht der Abstand zwischen beiden ausgestanzten Löchern einem Winkel von $\theta=\SI{90}{\degree}$. Der Abstand der Streifen zum Nullpunkt werden mit einem Geodreieck vermessen und mit der Beziehung
 \begin{align}
 	\theta=\frac{s}{2R}
 \end{align}
-in den Beugungswinkel überführt. Dabei beschreibt $s$ den Abstand des auftretenen Reflex zum Nullpunkt und $R=\SI{5.73}{\centi\meter}$ den Radius der verwendeten Kamera.  Aufgrund der Fehleranfälligkeit beim ablesen, wird auf jeden Reflex ein Unsicherheit  $\Delta s=\SI{1}{\milli\meter}$ angenommen.
+in den Beugungswinkel überführt. Dabei beschreibt $s$ den Abstand des auftretenden Reflex zum Nullpunkt und $R=\SI{5.73}{\centi\meter}$ den Radius der verwendeten Kamera.  Aufgrund der Fehleranfälligkeit beim Ablesen, wird auf jeden Reflex eine Unsicherheit  $\Delta s=\SI{1}{\milli\meter}$ angenommen.
 
 \subsection{Metallprobe 9}
+\label{sec:Metallprobe9}
 Die im vorherigen Kapitel beschriebenen Messgrößen und der Netzebenenabstand $d$, welcher mit der Bragg-Bedingung \eqref{braggi} bestimmt wird, sind in Tabelle \ref{table:A1} für die verwendete Metallprobe 9 zusammengefasst.
 \input{build/Tabelle_Metall_Rohdaten_texformat.tex}
-Die letzten beiden Einträge in der Tabelle stehen aus einer Ringaufspaltung. Bei der Betrachtung der Netzebenenabstände $d$ für die Ringaufspaltung, ist zu erkennen, dass sich diese erst in der dritten Nachkommerstelle unterscheiden. Zudem liegt der eine Wert im Fehlerintervall des anderen und umgekehrt. Aufgrund dessen werden im Folgenden die beiden Abstände gemittelt und mit der mittleren Wellelänge der $K_\alpha$-Linie ein gemittelter Netzebenenabstand berechnet. \\
+Die letzten beiden Einträge in der Tabelle entstehen aus einer Ringaufspaltung. Bei der Betrachtung der Netzebenenabstände $d$ für die Ringaufspaltung, ist zu erkennen, dass sich diese erst in der dritten Nachkommastelle unterscheiden. Zudem liegt der eine Wert im Fehlerintervall des anderen und umgekehrt. Aufgrund dessen werden im Folgenden die beiden Abstände gemittelt und mit der mittleren Wellenlänge der $K_\alpha$-Linie ein gemittelter Netzebenenabstand berechnet. \\
 
 Zur Bestimmung der Kristallstruktur wird das Verhältnis
 \begin{align}
@@ -21,17 +22,22 @@ Zur Bestimmung der Kristallstruktur wird das Verhältnis
 	\label{eq:dm}
 \end{align}
 verwendet, wobei gilt $m=\sqrt{h^2+k^2+l^2}$. Dadurch erfolgt ein Vergleich der Theorie (rechte Seite) mit den experimentell bestimmten Werten (linke Seite).
-In Tabelle \ref{table:A2} sind die ersten neun Reflexe der Kristallstrukturen simple-cubic (sc), body centered cubic (bbc), face centered cubic (fcc) und Diamant aufgelistet. Zudem wird das in Gleichung \ref{eq:dm} beschriebene Verhältnis gebildet, um dieses mit der Probe zu vergleichen.
+In Tabelle \ref{table:A2} sind die ersten neun Reflexe der Kristallstrukturen simple-cubic (sc), body centered cubic (bcc), face centered cubic (fcc) und Diamant aufgelistet. Zudem wird das in Gleichung \ref{eq:dm} beschriebene Verhältnis gebildet, um dieses mit der Probe zu vergleichen.
 
 \input{build/Tabelle_Metall_Kristall_texformat.tex}
 
+Die Unsicherheiten der Verhältnisse der Netzebenenabstände werden mit der Gleichung
+\begin{align}
+	\Delta\frac{d_1}{d_i}=\frac{d_1}{d_i}\left(\frac{\Delta d_1}{d_1} + \frac{\Delta d_i}{d_i}\right)
+\end{align}
+berechnet.\\
 Anhand der absoluten Zahlen kann zunächst die Aussage getroffen werden, dass die Diamantstruktur nicht der gesuchten Kristallprobe entspricht. Um die anderen Strukturen bewerten zu können, wird in Tabelle \ref{table:A3} die absolute Abweichung in Prozent angegeben.
 
 \input{build/Tabelle_Metall_Kristall_Abw_texformat.tex}
 
-Zu beobachten ist, dass die bcc-Kristallstruktur kontinuierlich nur geringe Abweichungen unter $\SI{4}{\percent}$ aufweißt. Somit wird angenommen, dass die Probe eine bcc-Struktur besitzt.
+Zu beobachten ist, dass die bcc-Kristallstruktur kontinuierlich nur geringe Abweichungen unter $\SI{4}{\percent}$ aufweist. Somit wird angenommen, dass die Probe eine bcc-Struktur besitzt.
 
-Desweiteren ist die Gitterkonstante $a$ der Probe zu bestimmen. Diese wird nach Gleichung \eqref{gitti} berechnet und in Abbildung \ref{fig:plot1} gegen $\cos^2{(\theta)}$ aufgetragen. Durch die verwendete lineare Ausgleichsrechnung
+Des weiteren ist die Gitterkonstante $a$ der Probe zu bestimmen. Diese wird nach Gleichung \eqref{gitti} berechnet und in Abbildung \ref{fig:plot1} gegen $\cos^2{(\theta)}$ aufgetragen. Durch die verwendete lineare Ausgleichsrechnung
 \begin{align}
 	a(\cos{(\theta)})= b\cos^2{(\theta)} + c
 	\label{eq:FIT}
@@ -43,7 +49,7 @@ Desweiteren ist die Gitterkonstante $a$ der Probe zu bestimmen. Diese wird nach 
   \caption{Messdaten und Fitergebnis.}
   \label{fig:plot1}
 \end{figure}
-systematischen Fehler korrigiert. Die resultierenden Fitparamter lauten:
+systematischen Fehler korrigiert. Die resultierenden Fitparameter lauten:
 \begin{align}
 	b&= \input{build/b_Metall.tex} \\
 	c&= \input{build/a_Metall.tex}
@@ -53,51 +59,120 @@ Die Gitterkonstante und die vorliegende bcc-Struktur weißt nach \cite{gitter} a
 $a=\SI{3.30}{\angstrom}$ beträgt $\input{build/prozent_metall.tex}$.
 
 \subsection{Salzprobe 5}
-Die Salzprobe muss eine Gitterstruktur aufweisen, die aus zwei verschiedenen Atomen besteht. Nach \cite{skript} werden somit die Zinkblenden-, die Steinsalz, Cäsiumchlorid- und Fluoritstruktur im folgenden untersucht. Dafür werden mit Gleichung \eqref{streu} alle aufkommenden Reflexe ermittelt. Da das Material unbekannt ist, lässt sich keine Aussagen über den Atomformfaktor $f$ treffen. Aus diesem Grund werden die beiden jeweiligen Untergitter der zuvor genannten Gitterstrukturen untersucht. Tritt also ein Reflex in einem der Untergitter auf, wird dieser zu den Reflexen der Gesamtstruktur hinzugezählt. Diese Methode funktioniert nicht bei der Cäsiumchlorid-Struktur, da dessen Elementarzelle nur zwei Atome besitzt und zusätzlich einer der Koordinaten $(0,0,0)$ ist. Somit würde bei jeder Kombination von Millerindizes ein Reflex entstehen. Deshalb wird zur Vereinfachung angenommen:
-\begin{align}
-	f_1\approx f_2
-\end{align}
+Die Salzprobe muss eine Gitterstruktur aufweisen, die aus zwei verschiedenen Elementen besteht. Nach \cite{skript} werden somit die Zinkblenden-, die Steinsalz, Cäsiumchlorid- und Fluoritstruktur im folgenden untersucht. Dafür werden mit Gleichung \eqref{streu} alle aufkommenden Reflexe ermittelt. Da das Material unbekannt ist, lässt sich keine Aussagen über den Atomformfaktor $f$ treffen. Somit kann nur durch starke bzw. schwache Reflexe zwischen den Gitterstrukturen unterschieden werden. In Tabelle \ref{tbl:beispieltabelle} sind die im Folgenden verwendeten Auswahlregeln zusammengefasst.
 
-Die auf dem Filmstreifen vermessenen Reflexe, die sich daraus ergebenen Winkel $\theta$ und die Netzebenenabstände sind in Tabelle \ref{table:A4} aufgelistet.
+   \begin{table}
+     \centering
+     \caption{Auswahlregeln für verschiedene Gitterstrukturen mit Stärke der Intensität}
+     \label{tbl:beispieltabelle}
+     \begin{tabular}{cc}
+       \hline
+       \textbf{Gittertyp}  & \textbf{Braggreflexe} \\
+       \hline
+       Steinsalz           & alle h,k,l gerade (hohe Intensität) oder ungerade (niedrige Intensität)             \\
+       Fluorit             & alle h,k,l gerade (hohe Intensität) oder ungerade (niedrige Intensität)              \\
+       Cäsiumchlorid       & h\:+\:k\:+\:l gerade (hohe Intensität) oder ungerade (niedrige Intensität)              \\
+     \end{tabular}
+
+
+     % Verweis im Text mittels \ref{tbl:beispieltabelle}
+
+   \end{table}
+
+Für die nicht aufgeführte Zinkblendenstruktur bestehe keine Auswahlregeln, weshalb die Intensitäten der zuvor bestimmten Reflexe rein rechnerisch ermittelt wird.
+
+
+% werden die beiden jeweiligen Untergitter der zuvor genannten Gitterstrukturen untersucht. Tritt also ein Reflex in einem der Untergitter auf, wird dieser zu den Reflexen der Gesamtstruktur hinzugezählt. Diese Methode funktioniert nicht bei der Cäsiumchlorid-Struktur, da dessen Elementarzelle nur zwei Atome besitzt und zusätzlich einer der Koordinaten $(0,0,0)$ ist. Somit würde bei jeder Kombination von Millerindizes ein Reflex entstehen. Deshalb wird zur Vereinfachung angenommen:
+% \begin{align}
+% 	f_1\approx f_2
+% \end{align}
+
+
+Zur Identifizierung der Gitterstruktur werden wie in Kapitel \ref{sec:Metallprobe9} die theoretischen und die experimentell bestimmten Werte über das Verhältnis in Gleichung \ref{eq:dm} verglichen. Die hierfür benötigten Reflexe auf dem Filmstreifen, die sich daraus ergebenen Winkel $\theta$ und die Netzebenenabstände sind in Tabelle \ref{table:A4} aufgelistet.
 
 \input{build/Tabelle_Salz_Rohdaten_texformat.tex}
 
-Zur Auswertung wird für jeweils alle dreizehn Reflexe auf dem Filmstreifen  und alle möglichen Millerindizes die Gitterkonstante $a$ berechnet. Stimmt die angenommene Gitterstruktur mit der Gitterstruktur der Probe überein, ist die Gitterkonstante $a$ in einer Diagonale durchgehend zu finden. Da die Zinkblenden-, die Steinsalz  und Fluoritstruktur die gleichen Reflexe aufweisen, sind diese zusammen in Abbildung \ref{fig:C_excel} und die  Cäsiumchloridstruktur in Abbildung \ref{fig:A_excel} dargestellt.
+Da die Reflexe auf dem Filmstreifen nicht exakt zu den schwachen oder den starken Reflexen zugeordnet werden können, wird das Verhältnis $\frac{m_i}{m_1}$ auf zwei verschiedene Reflexe normiert. Dabei wird zu einen der erste starke Reflexe und zum anderen der erste schwache Reflex verwendet. Die Ergebnisse der unterschiedlichen Normierungen, sowie die Markierung der starken und schwachen Reflexe sind in Abbildung \ref{fig:Anhang1} - \ref{fig:Anhang6} aufgelistet. Der schlussendliche Vergleich mit den experimentell bestimmen Werten zeigt, dass die geringste Abweichung bei den Strukturen Steinsalz/Fluorit und Cäsiumchlorid zu verzeichnen ist (auf den starken Reflex normiert). Zum genaueren Vergleich sind die Verhältnisse mit den absoluten Abweichungen bzgl. der gemessenen Werte in Tabelle \ref{table:A10} zusammengefasst.
+
+\input{build/Tabelle_Salz_vgl_texformat.tex}
+
+Da die Abweichungen in ähnlich kleinen Intervallen liegen, ist für eine genaue Aussage in Tabelle \ref{table:A10} der Mittelwert der absoluten Abweichungen sowie die Standardabweichung dargestellt. Auf Grundlage dieser Ergebnisse wird vorerst angenommen, dass die Probe eine Cäsiumchlorid-Struktur besitzt. 
+
+\input{build/Tabelle_Salz_mittel_texformat.tex}
+
+Wie in Kapitel \ref{sec:Metallprobe9} wird die Gitterkonstante $a$ mit Hilfe von Gleichung \eqref{gitti} bestimmt und in Abbildung \ref{fig:SalzC} aufgetragen. Die Fitparameter der verwendeten Ausgleichsfunktion (siehe \ref{eq:FIT}) lauten:
+
 
 \begin{figure}
-	\centering
-	\includegraphics[angle=90,scale=0.75]{ressources/Caesiumchlorid.png}
-	\caption{Messdaten und Fitergebnis.}
-    \label{fig:C_excel}
+  \centering
+  \includegraphics[scale=0.75]{build/Salz_2.pdf}
+  \caption{Messdaten und Fitergebnis unter der Annahme einer Cäsiumchlorid-Struktur.}
+  \label{fig:SalzC}
 \end{figure}
 
-
-\begin{figure}
-	\centering
-	\includegraphics[angle=90,scale=0.75]{ressources/Strukturen.png}
-	\caption{Messdaten und Fitergebnis.}
-    \label{fig:A_excel}
-\end{figure}
-
-Bei dem Vergleich von Abbildung \ref{fig:C_excel} und \ref{fig:A_excel} ist zuerkennen, dass die Salzprobe eine Cäsiumchloridstruktur besitzt. Zur Korrektur der systematischen Fehler wird erneut die Gitterkonstante $a$ gegen $\cos^2{\theta}$ aufgetragen und eine lineare Ausgleichsrechung \eqref{eq:FIT} vorgenommen. Es ist anzumerken, dass der in Abbildung \ref{fig:plot5} grün markierte Messwert nicht in die lineare Ausgleichrechnung eingeht.
-
-\begin{figure}
-	\centering
-	\includegraphics[scale=0.75]{build/Salz.pdf}
-	\caption{Messdaten und Fitergebnis.}
-    \label{fig:plot5}
-\end{figure}
-
-Die Ergebnisse der Fitparamter lauten:
 
 \begin{align}
-	b&= \input{build/b_Salz.tex} \\
-	c&= \input{build/a_Salz.tex}
+	b&= \input{build/b_Salz2.tex} \\
+	c&= \input{build/a_Salz2.tex}
 \end{align}
-Somit ist $a=\input{build/a_Salz.tex}$ die experimentell bestimmte Gitterkonstante für die Salzprobe 5.
 
-Die experimentell bestimmte Gittekonstante $a$ und die Cäsiumchloridstruktur weisen nach \cite{CsJ} auf Caesiumiodid hin. Die Abweichung bzgl. zum Literaturwert von $a=\SI{4.56}{\angstrom}$ ergibt somit eine Abweichung von $\SI{2.46}{\percent}$.
+Der nicht lineare Verlauf der Messdaten lässt auf einen Irrtum in der Zuweisung der Struktur schließen. Wird die Gitterkonstante $a$ mit der Annahme bestimmt, dass eine Steinsalz/Fluorit-Struktur vorliegt, besteht wie in Abbildung \ref{fig:SalzC2} zu sehen der erwartete linearer Zusammenhang. Die dazugehörigen Fitparameter lauten:
 
+
+\begin{figure}
+  \centering
+  \includegraphics[scale=0.75]{build/Salz_3.pdf}
+  \caption{Messdaten und Fitergebnis unter der Annahme einer Steinsalz/Fluorit-Struktur.}
+  \label{fig:SalzC2}
+\end{figure}
+
+\begin{align}
+	b&= \input{build/b_Salz3.tex} \\
+	c&= \input{build/a_Salz3.tex}
+\end{align}
+
+Der in der Abbildung grün markierte Messpunkt wird als zufälliger Ausreißer behandelt und geht somit nicht in die lineare Ausgleichsrechnung mit ein.
+
+
+
+
+
+% Zur Auswertung wird für jeweils alle dreizehn Reflexe auf dem Filmstreifen  und alle möglichen Millerindizes die Gitterkonstante $a$ berechnet. Stimmt die angenommene Gitterstruktur mit der Gitterstruktur der Probe überein, ist die Gitterkonstante $a$ in einer Diagonale durchgehend zu finden. Da die Zinkblenden-, die Steinsalz  und Fluoritstruktur die gleichen Reflexe aufweisen, sind diese zusammen in Abbildung \ref{fig:C_excel} und die  Cäsiumchloridstruktur in Abbildung \ref{fig:A_excel} dargestellt.
+
+% \begin{figure}
+% 	\centering
+% 	\includegraphics[angle=90,scale=0.75]{ressources/Caesiumchlorid.png}
+% 	\caption{Messdaten und Fitergebnis.}
+%     \label{fig:C_excel}
+% \end{figure}
+
+
+% \begin{figure}
+% 	\centering
+% 	\includegraphics[angle=90,scale=0.75]{ressources/Strukturen.png}
+% 	\caption{Messdaten und Fitergebnis.}
+%     \label{fig:A_excel}
+% \end{figure}
+
+% Bei dem Vergleich von Abbildung \ref{fig:C_excel} und \ref{fig:A_excel} ist zuerkennen, dass die Salzprobe eine Cäsiumchloridstruktur besitzt. Zur Korrektur der systematischen Fehler wird erneut die Gitterkonstante $a$ gegen $\cos^2{\theta}$ aufgetragen und eine lineare Ausgleichsrechung \eqref{eq:FIT} vorgenommen. Es ist anzumerken, dass der in Abbildung \ref{fig:plot5} grün markierte Messwert nicht in die lineare Ausgleichrechnung eingeht.
+
+% \begin{figure}
+% 	\centering
+% 	\includegraphics[scale=0.75]{build/Salz.pdf}
+% 	\caption{Messdaten und Fitergebnis.}
+%     \label{fig:plot5}
+% \end{figure}
+
+% Die Ergebnisse der Fitparamter lauten:
+
+% \begin{align}
+% 	b&= \input{build/b_Salz.tex} \\
+% 	c&= \input{build/a_Salz.tex}
+% \end{align}
+% Somit ist $a=\input{build/a_Salz.tex}$ die experimentell bestimmte Gitterkonstante für die Salzprobe 5.
+
+% Die experimentell bestimmte Gittekonstante $a$ und die Cäsiumchloridstruktur weisen nach \cite{CsJ} auf Caesiumiodid hin. Die Abweichung bzgl. zum Literaturwert von $a=\SI{4.56}{\angstrom}$ ergibt somit eine Abweichung von $\SI{2.46}{\percent}$.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 % % Examples

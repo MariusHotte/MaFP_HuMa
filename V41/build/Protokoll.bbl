@@ -19,18 +19,9 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
-    \entry{CsJ}{misc}{}
-      \field{sortinit}{B}
-      \field{sortinithash}{276475738cc058478c1677046f857703}
-      \field{labeltitlesource}{title}
-      \field{howpublished}{https://books.google.de/books?id\=0ow5kTB0icAC\&dqC̄sBr\+gitterkonstante\&hld̄e\&sourceḡbs\_navlinks\_s}
-      \field{month}{Mai}
-      \field{title}{Binäre Verbindungen}
-      \field{year}{2018}
-    \endentry
     \entry{gitter}{misc}{}
       \field{sortinit}{G}
-      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{sortinithash}{618d986594b7198ba52cf8b00d348f3f}
       \field{labeltitlesource}{title}
       \field{howpublished}{https://www.tf.uni-kiel.de/matwis/amat/mw1\_ge/kap\_3/illustr/t3\_1\_1.html}
       \field{month}{Mai}
@@ -64,7 +55,7 @@
       \strng{authornamehash}{a084ab80d4e88edca8fdd4b590cf2da8}
       \strng{authorfullhash}{a084ab80d4e88edca8fdd4b590cf2da8}
       \field{sortinit}{J}
-      \field{sortinithash}{fce5f8d0bd05e8d93f3dbe21c78897ca}
+      \field{sortinithash}{c86bd6cced82a15683b396c2169909ef}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{{SciPy}: Open source scientific tools for {Python}}
@@ -91,7 +82,7 @@
       \strng{authornamehash}{fd5e607cc043da9b40442508c133a26c}
       \strng{authorfullhash}{fd5e607cc043da9b40442508c133a26c}
       \field{sortinit}{L}
-      \field{sortinithash}{2c7981aaabc885868aba60f0c09ee20f}
+      \field{sortinithash}{7bba64db83423e3c29ad597f3b682cf3}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Uncertainties: a Python package for calculations with uncertainties}
@@ -105,7 +96,7 @@
     \endentry
     \entry{skript}{misc}{}
       \field{sortinit}{T}
-      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
       \field{labeltitlesource}{title}
       \field{howpublished}{http://129.217.224.2/HOMEPAGE/Anleitung\_FPBSc.html}
       \field{month}{Mai}

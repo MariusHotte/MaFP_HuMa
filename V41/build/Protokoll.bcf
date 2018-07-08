@@ -1989,7 +1989,6 @@
     <bcf:citekey order="12">uncertainties</bcf:citekey>
     <bcf:citekey order="13">gitter</bcf:citekey>
     <bcf:citekey order="14">skript</bcf:citekey>
-    <bcf:citekey order="15">CsJ</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

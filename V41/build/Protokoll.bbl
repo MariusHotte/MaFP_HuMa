@@ -26,7 +26,7 @@
       \field{howpublished}{https://www.tf.uni-kiel.de/matwis/amat/mw1\_ge/kap\_3/illustr/t3\_1\_1.html}
       \field{month}{Mai}
       \field{title}{Gitterkonstanten}
-      \field{year}{2018}
+      \field{year}{2017}
     \endentry
     \entry{scipy}{software}{}
       \true{moreauthor}
@@ -65,6 +65,20 @@
       \endverb
       \verb{url}
       \verb http://www.scipy.org/
+      \endverb
+    \endentry
+    \entry{Kaliumchlorid}{online}{}
+      \field{sortinit}{K}
+      \field{sortinithash}{4c244ceae61406cdc0cc2ce1cb1ff703}
+      \field{labeltitlesource}{title}
+      \field{month}{Mai}
+      \field{title}{Kaliumchlorid}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb http://www.bettyandjim.com/N1YPONO1
+      \endverb
+      \verb{url}
+      \verb http://www.bettyandjim.com/N1YPONO1
       \endverb
     \endentry
     \entry{uncertainties}{software}{}

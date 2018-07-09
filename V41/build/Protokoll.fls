@@ -1,4 +1,4 @@
-PWD /home/marius/Documents/MaFP_HuMa/V41
+PWD /home/marius/Documents/Allgemeine Testumgebung/Praktikum/V41_Versuch
 INPUT /var/lib/texmf/web2c/luatex/lualatex.fmt
 INPUT ./Protokoll.tex
 OUTPUT build/Protokoll.log
@@ -592,16 +592,21 @@ INPUT ./build/b_Salz3.tex
 INPUT ./build/b_Salz3.tex
 INPUT ./build/a_Salz3.tex
 INPUT ./build/a_Salz3.tex
+INPUT ./build/prozent_salz.tex
+INPUT ./build/prozent_salz.tex
 INPUT ./content/diskussion.tex
 INPUT ./content/diskussion.tex
 INPUT ./build/prozent_metall.tex
 INPUT ./build/prozent_metall.tex
+INPUT ./build/prozent_salz.tex
+INPUT ./build/prozent_salz.tex
 INPUT /home/marius/.texlive/texmf-var/luatex-cache/generic/fonts/otl/lmromancaps10-regular.luc
 INPUT ./content/anhang.tex
 INPUT ./content/anhang.tex
 INPUT ./ressources/Steinsalz.png
 INPUT ./ressources/Steinsalz.png
-INPUT ./ressources/Steinsalz.png
+INPUT ./ressources/Steinsalz2.png
+INPUT ./ressources/Steinsalz2.png
 INPUT ./ressources/Caesium.png
 INPUT ./ressources/Caesium.png
 INPUT ./ressources/Caesium2.png

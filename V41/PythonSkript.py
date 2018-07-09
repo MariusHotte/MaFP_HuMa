@@ -387,8 +387,8 @@ params = ucurve_fit(reg_linear, x, a*10**10)             # linearer Fit
 t_plot = np.linspace(0, 1, 2)
 plt.plot(t_plot, reg_linear(t_plot, *noms(params)), 'b-', label='Fit')
 plt.plot(x, a*10**10, 'rx', label='Messdaten')
-plt.xlabel(r'$z $')
-plt.ylabel(r'$B $')
+plt.xlabel(r"$\cos^2{\theta}$")
+plt.ylabel(r"a in $10^{10} m$")
 plt.legend(loc='best')
 plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
 plt.savefig('build/Salz_2.pdf')
@@ -406,8 +406,8 @@ x=np.delete(x, 6)
 params = ucurve_fit(reg_linear, x, a*10**10)             # linearer Fit
 t_plot = np.linspace(0, 1, 2)
 plt.plot(t_plot, reg_linear(t_plot, *noms(params)), 'b-', label='Fit')
-plt.xlabel(r'$z $')
-plt.ylabel(r'$B $')
+plt.xlabel(r"$\cos^2{\theta}$")
+plt.ylabel(r"a in $10^{10} m$")
 plt.legend(loc='best')
 plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
 plt.savefig('build/Salz_3.pdf')
@@ -415,7 +415,7 @@ plt.clf()
 
 write('build/a_Salz3.tex', make_SI(params[1], r'\angstrom', figures=2))
 write('build/b_Salz3.tex', make_SI(params[0], r'\angstrom', figures=2))
-
+save=params[1]
 # write('build/a_Metall.tex', make_SI(params[1], r'\angstrom', figures=2))
 # write('build/b_Metall.tex', make_SI(params[0], r'\angstrom', figures=2))
 
@@ -455,7 +455,13 @@ write('build/a_Salz.tex', make_SI(params[1], r'\angstrom', figures=2))
 write('build/b_Salz.tex', make_SI(params[0], r'\angstrom', figures=2))
 
 
+print('llllllllll')
+print(save)
 
+lit_wert=6.29
+prozent=1-save/lit_wert
+write('build/prozent_salz.tex', make_SI(prozent*100, r'\percent', figures=1))
+print(prozent)
 ################################ FREQUENTLY USED CODE ################################
 #
 ########## IMPORT ##########

@@ -1975,9 +1975,9 @@
     <bcf:datasource type="file" datatype="bibtex">programme.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">.</bcf:citekey>
-    <bcf:citekey order="2">z</bcf:citekey>
-    <bcf:citekey order="3">u</bcf:citekey>
+    <bcf:citekey order="1">diff</bcf:citekey>
+    <bcf:citekey order="2">visko</bcf:citekey>
+    <bcf:citekey order="3">visko</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

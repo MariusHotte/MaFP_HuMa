@@ -51,7 +51,7 @@ from utility import(
 ################################################ Finish importing custom libraries #################################################
 
 Metall_cm =np.array([4,5.7,7.1,8.4,9.6,10.9,12.2,13.8,16.2,16.45]) # Diese Angaben sind in cm. 180Grad entsprechen auf dem Streifen 18cm Metall_cm =np.array([4,5.7,7.1,8.4,9.6,10.9,12.2,13.8,16.4])
-Salz_cm =np.array([2.75,3.9,4.8,6.3,7.0,8.3,8.9,9.55,10.2,11.55,12.2,14.9,16.5])
+Salz_cm =np.array([2.75,3.9,4.8,5.6,6.3,7.0,8.3,8.9,9.55,10.2,11.55,12.2,12.8,14.1,14.9,16.5])
 m_bcc= np.array([1.41,2.00,2.45,2.83,3.16,3.46,3.74,4.00])#Metall m h k l bcc
 lam=1.5417*10**(-10) # Wellenlänge des Röntgenstrahls in meter, wichtig Mittelwert
 lam_1=1.54093*10**(-10)
@@ -67,6 +67,8 @@ for i in range(len(Miller_diamant)):
 	k=int(list(str(Miller_diamant[i]))[1])
 	l=int(list(str(Miller_diamant[i]))[2])
 	x=np.sqrt((h**2)+(k**2)+(l**2))
+ 
+
 	m_diamant=np.append(m_diamant,[x])
 m_diamant_norm=m_diamant/m_diamant[0]
 
@@ -204,14 +206,81 @@ write('build/prozent_metall.tex', make_SI(prozent, r'\percent', figures=1))
 
 theta_strich= Salz_cm/5.73
 theta=theta_strich/2
-
 d=lam/(2*np.sin(theta))
 d_verhaeltnis=(d[0]/d)
-print('Important')
+print('Huuuuuubi')
 print(d_verhaeltnis)
 
+Miller=([100,110,111,200,210,211,220,221,222,300,310,311,320,321,322,330,331,332,333,400,410,411,420,421,422,430,431,432,433,440,441,442,443,444,500,510,511,520,521,522,530,531,532,533,540,541,542,543,544,551,552,553,554,555,600,610,611,620,621,622,630,631,632,633,640,641,642,643,644,650,651,652,653,654,655,660,661,662,663,664,665,666])
 
-write('build/Tabelle_Salz_Rohdaten.tex', make_table([Salz_cm,theta,d*10**10],[1,1,2]))     # fehlerbehaftete arrays (uarrays) sollten rechts eine 1 bekommen (1 signifikante Stelle)
+Allg=np.array([])
+for i in range(len(Miller)):
+  h=int(list(str(Miller[i]))[0])
+  k=int(list(str(Miller[i]))[1])
+  l=int(list(str(Miller[i]))[2])
+  if h%2==0 and k%2==0 and l%2==0:
+    Allg=np.append(Allg,[h,k,l])
+  if h%2==1 and k%2==1 and l%2==1:
+    Allg=np.append(Allg,[h,k,l])
+print(Allg)
+Salz_cm =np.array([2.75,3.9,4.8,5.6,6.3,7.0,8.3,8.9,9.55,10.2,11.55,12.2,12.8,
+    #14.1,
+    14.9,16.5])
+m=np.array([2.000,2.828,3.464,4.000,4.472,4.899,5.657,6.000,6.325,6.633,7.211,7.483,7.681
+    #,8.660
+    ,8.246,8.485])
+
+theta_strich= Salz_cm/5.73
+theta=theta_strich/2
+d=lam/(2*np.sin(theta))
+
+a=noms(d*m)
+x=noms((unp.cos(theta))**2)
+params = ucurve_fit(reg_linear, x, a*10**10)             # linearer Fit
+t_plot = np.linspace(0, 1, 2)
+plt.plot(t_plot, reg_linear(t_plot, *noms(params)), 'b-', label='Fit')
+plt.plot(x, a*10**10, 'rx', label='Messdaten')
+
+
+Salz_cm =np.array([2.75,3.9,4.8,5.6,6.3,7.0,8.3,8.9,9.55,10.2,11.55,12.2,12.8,14.1,14.9,16.5])
+m=np.array([2.000,2.828,3.464,4.000,4.472,4.899,5.657,6.000,6.325,6.633,7.211,7.483,7.681,8.660,8.246,8.485])
+
+theta_strich= Salz_cm/5.73
+theta=theta_strich/2
+d=lam/(2*np.sin(theta))
+a=noms(d*m)
+x=noms((unp.cos(theta))**2)
+
+plt.plot(x[13], a[13]*10**10, 'gx', label='Messdaten')
+plt.xlabel(r"$\cos^2{\theta}$")
+plt.ylabel(r"a in $10^{10} m$")
+#plt.ylim(5.5,7)
+plt.legend(loc='best')
+plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
+plt.savefig('build/Salz_lasttry.pdf')
+plt.clf()
+print(x)
+print(params)
+
+write('build/a_Salz2.tex', make_SI(params[1], r'\angstrom', figures=2))
+write('build/b_Salz2.tex', make_SI(params[0], r'\angstrom', figures=2))
+
+
+
+# Steinsalz_stark=np.array([])
+# Steinsalz_schwach=np.array([])
+# for i in range(len(Miller)):
+#   h=int(list(str(Miller[i]))[0])
+#   k=int(list(str(Miller[i]))[1])
+#   l=int(list(str(Miller[i]))[2])
+#   if h%2==1 and k%2==1 and l%2==1:
+#     if 
+
+# print('Important')
+# print(d_verhaeltnis)
+
+
+write('build/Tabelle_Salz_Rohdaten.tex', make_table([Salz_cm,theta,d*10**10],[2,2,2]))     # fehlerbehaftete arrays (uarrays) sollten rechts eine 1 bekommen (1 signifikante Stelle)
 write('build/Tabelle_Salz_Rohdaten_texformat.tex', make_full_table(
     caption = 'Messdaten der Salzprobe.',
     label = 'table:A4',
@@ -225,243 +294,287 @@ write('build/Tabelle_Salz_Rohdaten_texformat.tex', make_full_table(
     replaceNaNby = 'not a number'))         # default = '-'
 
 
-import cmath
-ii= complex(0,1)
+# import cmath
+# ii= complex(0,1)
 
-print('Jetzt geht es los!')
-Miller_zinkblende=np.array([])
-Miller_zinkblende_Instensitaet=np.array([])
-Miller=([100,110,111,200,210,211,220,221,222,300,310,311,320,321,322,330,331,332,333,400,410,411,420,421,422,430,431,432,433,440,441,442,443,444,500,510,511,520,521,522,530,531,532,533,540,541,542,543,544,551,552,553,554,555,600,610,611,620,621,622,630,631,632,633,640,641,642,643,644,650,651,652,653,654,655,660,661,662,663,664,665,666])
-for i in range(len(Miller)):
-	h=int(list(str(Miller[i]))[0])
-	k=int(list(str(Miller[i]))[1])
-	l=int(list(str(Miller[i]))[2])
-	atom_a= cmath.exp(-2*np.pi*ii*(0*h+0*k+0*l)) + cmath.exp(-2*np.pi*ii*(0.5*h+0.5*k+0*l)) + cmath.exp(-2*np.pi*ii*(0*h+0.5*k+0.5*l)) +cmath.exp(-2*np.pi*ii*(0.5*h+0*k+0.5*l))
-	atom_b= cmath.exp(-2*np.pi*ii*(0.25*h+0.25*k+0.25*l)) + cmath.exp(-2*np.pi*ii*(0.75*h+0.75*k+0.25*l)) + cmath.exp(-2*np.pi*ii*(0.25*h+0.75*k+0.75*l)) +cmath.exp(-2*np.pi*ii*(0.75*h+0.25*k+0.75*l))
-	if abs(atom_a.real)>10**(-3) or abs(atom_a.imag)>10**(-3) or abs(atom_b.real)>10**(-3) or abs(atom_b.imag)>10**(-3):
-		Miller_zinkblende=np.append(Miller_zinkblende,Miller[i])
-		value_zinkblende=atom_a.real + atom_b.real
-		value1_zinkblende=np.sqrt((atom_a.real+atom_b.real)**2+(atom_a.imag+atom_b.imag)**2)
-		array_help=np.array([atom_a.real,atom_a.imag,atom_b.real,atom_b.imag])
-		Miller_zinkblende_Instensitaet=np.append(Miller_zinkblende_Instensitaet,value1_zinkblende)
+# print('Jetzt geht es los!')
+# Miller_zinkblende=np.array([])
+# Miller_zinkblende_Instensitaet=np.array([])
+# Miller=([100,110,111,200,210,211,220,221,222,300,310,311,320,321,322,330,331,332,333,400,410,411,420,421,422,430,431,432,433,440,441,442,443,444,500,510,511,520,521,522,530,531,532,533,540,541,542,543,544,551,552,553,554,555,600,610,611,620,621,622,630,631,632,633,640,641,642,643,644,650,651,652,653,654,655,660,661,662,663,664,665,666])
+# for i in range(len(Miller)):
+# 	h=int(list(str(Miller[i]))[0])
+# 	k=int(list(str(Miller[i]))[1])
+# 	l=int(list(str(Miller[i]))[2])
+# 	atom_a= cmath.exp(-2*np.pi*ii*(0*h+0*k+0*l)) + cmath.exp(-2*np.pi*ii*(0.5*h+0.5*k+0*l)) + cmath.exp(-2*np.pi*ii*(0*h+0.5*k+0.5*l)) +cmath.exp(-2*np.pi*ii*(0.5*h+0*k+0.5*l))
+# 	atom_b= cmath.exp(-2*np.pi*ii*(0.25*h+0.25*k+0.25*l)) + cmath.exp(-2*np.pi*ii*(0.75*h+0.75*k+0.25*l)) + cmath.exp(-2*np.pi*ii*(0.25*h+0.75*k+0.75*l)) +cmath.exp(-2*np.pi*ii*(0.75*h+0.25*k+0.75*l))
+# 	if abs(atom_a.real)>10**(-3) or abs(atom_a.imag)>10**(-3) or abs(atom_b.real)>10**(-3) or abs(atom_b.imag)>10**(-3):
+# 		Miller_zinkblende=np.append(Miller_zinkblende,Miller[i])
+# 		value_zinkblende=atom_a.real + atom_b.real
+# 		value1_zinkblende=np.sqrt((atom_a.real+atom_b.real)**2+(atom_a.imag+atom_b.imag)**2)
+# 		array_help=np.array([atom_a.real,atom_a.imag,atom_b.real,atom_b.imag])
+# 		Miller_zinkblende_Instensitaet=np.append(Miller_zinkblende_Instensitaet,value1_zinkblende)
 
-# m_zinkblende=np.array([])
-# for i in range(len(Miller_zinkblende)):
-#     h=int(list(str(Miller_zinkblende[i]))[0])
-#     k=int(list(str(Miller_zinkblende[i]))[1])
-#     l=int(list(str(Miller_zinkblende[i]))[2])
-#     x=np.sqrt((h**2)+(k**2)+(l**2))
-#     m_zinkblende=np.append(m_zinkblende,[x])
+# # m_zinkblende=np.array([])
+# # for i in range(len(Miller_zinkblende)):
+# #     h=int(list(str(Miller_zinkblende[i]))[0])
+# #     k=int(list(str(Miller_zinkblende[i]))[1])
+# #     l=int(list(str(Miller_zinkblende[i]))[2])
+# #     x=np.sqrt((h**2)+(k**2)+(l**2))
+# #     m_zinkblende=np.append(m_zinkblende,[x])
 
 
-Miller_steinsalz=np.array([])
-Miller_steinsalz_Intensitaet=np.array([])
-for i in range(len(Miller)):
-	h=int(list(str(Miller[i]))[0])
-	k=int(list(str(Miller[i]))[1])
-	l=int(list(str(Miller[i]))[2])
-	atom_a= cmath.exp(-2*np.pi*ii*(0*h+0*k+0*l)) + cmath.exp(-2*np.pi*ii*(0.5*h+0.5*k+0*l)) + cmath.exp(-2*np.pi*ii*(0*h+0.5*k+0.5*l)) +cmath.exp(-2*np.pi*ii*(0.5*h+0*k+0.5*l))
-	atom_b= cmath.exp(-2*np.pi*ii*(0.5*h+0.5*k+0.5*l)) + cmath.exp(-2*np.pi*ii*(1*h+1*k+0.5*l)) + cmath.exp(-2*np.pi*ii*(1*h+0.5*k+1*l)) +cmath.exp(-2*np.pi*ii*(0.5*h+1*k+1*l))
-	if abs(atom_a.real)>10**(-3) or abs(atom_a.imag)>10**(-3) or abs(atom_b.real)>10**(-3) or abs(atom_b.imag)>10**(-3):
-		Miller_steinsalz=np.append(Miller_steinsalz,Miller[i])
-		# value_steinsalz=atom_a.real+atom_b.real
-		value1_steinsalz=np.sqrt((atom_a.real+atom_b.real)**2+(atom_a.imag+atom_b.imag)**2)
-		# array_help=np.array([atom_a.real,atom_a.imag,atom_b.real,atom_b.imag])
-		atom_a_konjugiert=(cmath.exp(-2*np.pi*ii*(0*h+0*k+0*l)) + cmath.exp(-2*np.pi*ii*(0.5*h+0.5*k+0*l)) + cmath.exp(-2*np.pi*ii*(0*h+0.5*k+0.5*l)) +cmath.exp(-2*np.pi*ii*(0.5*h+0*k+0.5*l)))*(cmath.exp(2*np.pi*ii*(0*h+0*k+0*l)) + cmath.exp(2*np.pi*ii*(0.5*h+0.5*k+0*l)) + cmath.exp(2*np.pi*ii*(0*h+0.5*k+0.5*l)) +cmath.exp(2*np.pi*ii*(0.5*h+0*k+0.5*l)))
-		atom_b_konjugiert=(cmath.exp(-2*np.pi*ii*(0.5*h+0.5*k+0.5*l)) + cmath.exp(-2*np.pi*ii*(1*h+1*k+0.5*l)) + cmath.exp(-2*np.pi*ii*(1*h+0.5*k+1*l)) +cmath.exp(-2*np.pi*ii*(0.5*h+1*k+1*l)))*(cmath.exp(2*np.pi*ii*(0.5*h+0.5*k+0.5*l)) + cmath.exp(2*np.pi*ii*(1*h+1*k+0.5*l)) + cmath.exp(2*np.pi*ii*(1*h+0.5*k+1*l)) +cmath.exp(2*np.pi*ii*(0.5*h+1*k+1*l)))
-		hilfe=atom_a_konjugiert+atom_b_konjugiert
-		Miller_steinsalz_Intensitaet=np.append(Miller_steinsalz_Intensitaet,value1_steinsalz)
+# Miller_steinsalz=np.array([])
+# Miller_steinsalz_Intensitaet=np.array([])
+# for i in range(len(Miller)):
+# 	h=int(list(str(Miller[i]))[0])
+# 	k=int(list(str(Miller[i]))[1])
+# 	l=int(list(str(Miller[i]))[2])
+# 	atom_a= cmath.exp(-2*np.pi*ii*(0*h+0*k+0*l)) + cmath.exp(-2*np.pi*ii*(0.5*h+0.5*k+0*l)) + cmath.exp(-2*np.pi*ii*(0*h+0.5*k+0.5*l)) +cmath.exp(-2*np.pi*ii*(0.5*h+0*k+0.5*l))
+# 	atom_b= cmath.exp(-2*np.pi*ii*(0.5*h+0.5*k+0.5*l)) + cmath.exp(-2*np.pi*ii*(1*h+1*k+0.5*l)) + cmath.exp(-2*np.pi*ii*(1*h+0.5*k+1*l)) +cmath.exp(-2*np.pi*ii*(0.5*h+1*k+1*l))
+# 	if abs(atom_a.real)>10**(-3) or abs(atom_a.imag)>10**(-3) or abs(atom_b.real)>10**(-3) or abs(atom_b.imag)>10**(-3):
+# 		Miller_steinsalz=np.append(Miller_steinsalz,Miller[i])
+# 		# value_steinsalz=atom_a.real+atom_b.real
+# 		value1_steinsalz=np.sqrt((atom_a.real+atom_b.real)**2+(atom_a.imag+atom_b.imag)**2)
+# 		# array_help=np.array([atom_a.real,atom_a.imag,atom_b.real,atom_b.imag])
+# 		atom_a_konjugiert=(cmath.exp(-2*np.pi*ii*(0*h+0*k+0*l)) + cmath.exp(-2*np.pi*ii*(0.5*h+0.5*k+0*l)) + cmath.exp(-2*np.pi*ii*(0*h+0.5*k+0.5*l)) +cmath.exp(-2*np.pi*ii*(0.5*h+0*k+0.5*l)))*(cmath.exp(2*np.pi*ii*(0*h+0*k+0*l)) + cmath.exp(2*np.pi*ii*(0.5*h+0.5*k+0*l)) + cmath.exp(2*np.pi*ii*(0*h+0.5*k+0.5*l)) +cmath.exp(2*np.pi*ii*(0.5*h+0*k+0.5*l)))
+# 		atom_b_konjugiert=(cmath.exp(-2*np.pi*ii*(0.5*h+0.5*k+0.5*l)) + cmath.exp(-2*np.pi*ii*(1*h+1*k+0.5*l)) + cmath.exp(-2*np.pi*ii*(1*h+0.5*k+1*l)) +cmath.exp(-2*np.pi*ii*(0.5*h+1*k+1*l)))*(cmath.exp(2*np.pi*ii*(0.5*h+0.5*k+0.5*l)) + cmath.exp(2*np.pi*ii*(1*h+1*k+0.5*l)) + cmath.exp(2*np.pi*ii*(1*h+0.5*k+1*l)) +cmath.exp(2*np.pi*ii*(0.5*h+1*k+1*l)))
+# 		hilfe=atom_a_konjugiert+atom_b_konjugiert
+# 		Miller_steinsalz_Intensitaet=np.append(Miller_steinsalz_Intensitaet,value1_steinsalz)
 
-# print('Guck mal kurz hierher')
-# print(Miller_zinkblende)
-# print(Miller_steinsalz)
-# print('Intensitaetsvergleich')
-# print(Miller_steinsalz_Intensitaet)
-# print(Miller_zinkblende_Instensitaet)
+# # print('Guck mal kurz hierher')
+# # print(Miller_zinkblende)
+# # print(Miller_steinsalz)
+# # print('Intensitaetsvergleich')
+# # print(Miller_steinsalz_Intensitaet)
+# # print(Miller_zinkblende_Instensitaet)
 
-# m_steinsalz=np.array([])
-# for i in range(len(Miller_steinsalz)):
-#     h=int(list(str(Miller_steinsalz[i]))[0])
-#     k=int(list(str(Miller_steinsalz[i]))[1])
-#     l=int(list(str(Miller_steinsalz[i]))[2])
-#     x=np.sqrt((h**2)+(k**2)+(l**2))
-#     m_steinsalz=np.append(m_steinsalz,[x])
+# # m_steinsalz=np.array([])
+# # for i in range(len(Miller_steinsalz)):
+# #     h=int(list(str(Miller_steinsalz[i]))[0])
+# #     k=int(list(str(Miller_steinsalz[i]))[1])
+# #     l=int(list(str(Miller_steinsalz[i]))[2])
+# #     x=np.sqrt((h**2)+(k**2)+(l**2))
+# #     m_steinsalz=np.append(m_steinsalz,[x])
 
-Miller_chlorid=np.array([])
-for i in range(len(Miller)):
-	h=int(list(str(Miller[i]))[0])
-	k=int(list(str(Miller[i]))[1])
-	l=int(list(str(Miller[i]))[2])
-	atom_a= cmath.exp(-2*np.pi*ii*(0*h+0*k+0*l))+ cmath.exp(-2*np.pi*ii*(0.5*h+0.5*k+0.5*l))
-	if abs(atom_a.real)>10**(-3) or abs(atom_a.imag)>10**(-3):
-		Miller_chlorid=np.append(Miller_chlorid,Miller[i])
+# Miller_chlorid=np.array([])
+# for i in range(len(Miller)):
+# 	h=int(list(str(Miller[i]))[0])
+# 	k=int(list(str(Miller[i]))[1])
+# 	l=int(list(str(Miller[i]))[2])
+# 	atom_a= cmath.exp(-2*np.pi*ii*(0*h+0*k+0*l))+ cmath.exp(-2*np.pi*ii*(0.5*h+0.5*k+0.5*l))
+# 	if abs(atom_a.real)>10**(-3) or abs(atom_a.imag)>10**(-3):
+# 		Miller_chlorid=np.append(Miller_chlorid,Miller[i])
 
-# m_chlorid=np.array([])
-# for i in range(len(Miller_chlorid)):
-#     h=int(list(str(Miller_chlorid[i]))[0])
-#     k=int(list(str(Miller_chlorid[i]))[1])
-#     l=int(list(str(Miller_chlorid[i]))[2])
-#     x=np.sqrt((h**2)+(k**2)+(l**2))
-#     m_chlorid=np.append(m_chlorid,[x])
+# # m_chlorid=np.array([])
+# # for i in range(len(Miller_chlorid)):
+# #     h=int(list(str(Miller_chlorid[i]))[0])
+# #     k=int(list(str(Miller_chlorid[i]))[1])
+# #     l=int(list(str(Miller_chlorid[i]))[2])
+# #     x=np.sqrt((h**2)+(k**2)+(l**2))
+# #     m_chlorid=np.append(m_chlorid,[x])
 
-Miller_flourit=np.array([])
-for i in range(len(Miller)):
-    h=int(list(str(Miller[i]))[0])
-    k=int(list(str(Miller[i]))[1])
-    l=int(list(str(Miller[i]))[2])
-    atom_a= cmath.exp(-2*np.pi*ii*(0*h+0*k+0*l)) + cmath.exp(-2*np.pi*ii*(0.5*h+0.5*k+0*l)) + cmath.exp(-2*np.pi*ii*(0*h+0.5*k+0.5*l)) +cmath.exp(-2*np.pi*ii*(0.5*h+0*k+0.5*l))
-    atom_b= cmath.exp(-2*np.pi*ii*(0.25*h+0.25*k+0.25*l)) + cmath.exp(-2*np.pi*ii*(0.75*h+0.75*k+0.25*l)) + cmath.exp(-2*np.pi*ii*(0.25*h+0.75*k+0.75*l)) +cmath.exp(-2*np.pi*ii*(0.75*h+0.25*k+0.75*l)) +cmath.exp(-2*np.pi*ii*(0.75*h+0.75*k+0.75*l)) +cmath.exp(-2*np.pi*ii*(0.25*h+0.25*k+0.75*l)) +cmath.exp(-2*np.pi*ii*(0.25*h+0.75*k+0.25*l)) +cmath.exp(-2*np.pi*ii*(0.75*h+0.25*k+0.25*l))
-    if abs(atom_a.real)>10**(-3) or abs(atom_a.imag)>10**(-3) or abs(atom_b.real)>10**(-3) or abs(atom_b.imag)>10**(-3):
-        Miller_flourit=np.append(Miller_flourit,Miller[i])
+# Miller_flourit=np.array([])
+# for i in range(len(Miller)):
+#     h=int(list(str(Miller[i]))[0])
+#     k=int(list(str(Miller[i]))[1])
+#     l=int(list(str(Miller[i]))[2])
+#     atom_a= cmath.exp(-2*np.pi*ii*(0*h+0*k+0*l)) + cmath.exp(-2*np.pi*ii*(0.5*h+0.5*k+0*l)) + cmath.exp(-2*np.pi*ii*(0*h+0.5*k+0.5*l)) +cmath.exp(-2*np.pi*ii*(0.5*h+0*k+0.5*l))
+#     atom_b= cmath.exp(-2*np.pi*ii*(0.25*h+0.25*k+0.25*l)) + cmath.exp(-2*np.pi*ii*(0.75*h+0.75*k+0.25*l)) + cmath.exp(-2*np.pi*ii*(0.25*h+0.75*k+0.75*l)) +cmath.exp(-2*np.pi*ii*(0.75*h+0.25*k+0.75*l)) +cmath.exp(-2*np.pi*ii*(0.75*h+0.75*k+0.75*l)) +cmath.exp(-2*np.pi*ii*(0.25*h+0.25*k+0.75*l)) +cmath.exp(-2*np.pi*ii*(0.25*h+0.75*k+0.25*l)) +cmath.exp(-2*np.pi*ii*(0.75*h+0.25*k+0.25*l))
+#     if abs(atom_a.real)>10**(-3) or abs(atom_a.imag)>10**(-3) or abs(atom_b.real)>10**(-3) or abs(atom_b.imag)>10**(-3):
+#         Miller_flourit=np.append(Miller_flourit,Miller[i])
 
-#######################################################################################
-#Ergebniss-Tabelle aus Excel-Datei
+# #######################################################################################
+# #Ergebniss-Tabelle aus Excel-Datei
 
-steinsalz_vgl=np.array([1,1.414213562,1.732050808,2.179449472,2.449489743,2.828427125,2.958039892,3.16227766,3.278719262,3.570741214,3.74165738677394,4.123105626,4.242640687])
-steinsalz_vgl_miller=np.array([200,220,222,331,422,440,511,620,533,551,642,644,660])
-steinsalz_vgl_ver=abs(noms((1-steinsalz_vgl/d_verhaeltnis)*100))
+# steinsalz_vgl=np.array([1,1.414213562,1.732050808,2.179449472,2.449489743,2.828427125,2.958039892,3.16227766,3.278719262,3.570741214,3.74165738677394,4.123105626,4.242640687])
+# steinsalz_vgl_miller=np.array([200,220,222,331,422,440,511,620,533,551,642,644,660])
+# steinsalz_vgl_ver=abs(noms((1-steinsalz_vgl/d_verhaeltnis)*100))
 
-caesium_vgl=np.array([1,1.414113562,1.732050808,2.236067977,2.449489743,2.828427125,2.915475947,3.16227766,3.240370349,3.535533906,3.674234614,4.062019202,4.183300133])
-caesium_vgl_miller=np.array([110,200,211,310,222,400,410,420,421,430,511,522,531])
+# caesium_vgl=np.array([1,1.414113562,1.732050808,2.236067977,2.449489743,2.828427125,2.915475947,3.16227766,3.240370349,3.535533906,3.674234614,4.062019202,4.183300133])
+# caesium_vgl_miller=np.array([110,200,211,310,222,400,410,420,421,430,511,522,531])
+# caesium_vgl_ver=abs(noms((1-caesium_vgl/d_verhaeltnis)*100))
+
+# write('build/Tabelle_Salz_vgl.tex', make_table([steinsalz_vgl_miller,steinsalz_vgl,steinsalz_vgl_ver,caesium_vgl_miller,caesium_vgl,caesium_vgl_ver,d_verhaeltnis],[2,2,2,2,2,2,2]))     # fehlerbehaftete arrays (uarrays) sollten rechts eine 1 bekommen (1 signifikante Stelle)
+# write('build/Tabelle_Salz_vgl_texformat.tex', make_full_table(
+#     caption = 'Vergleich der Verhältnisse.',
+#     label = 'table:A10',
+#     source_table = 'build/Tabelle_Salz_vgl.tex',
+#     stacking = [],              # Hier aufpassen: diese Zahlen bezeichnen diejenigen resultierenden Spaltennummern, die Multicolumns sein sollen
+#     units = [
+#     r'$Miller_{S}$',
+#     r'$\left(\frac{m_i}{m_1}\right)_{S}$',
+#     r'$|Abw_{S}|\:/\: \si{\percent}$',
+#     r'$Miller_{C}$',
+#     r'$\left(\frac{m_i}{m_1}\right)_{C}$',
+#     r'$|Abw_{C}|\:/\: \si{\percent}$',
+#     r'$\frac{d_1}{d_i}$'],
+#     replaceNaN = True,                      # de\fault = false
+#     replaceNaNby = 'not a number'))         # default = '-'
+
+caesium_vgl=np.array([1,1.414113562,1.732050808,2,2.236067977,2.449489743,2.828427125,2.915475947,3.16227766,3.240370349,3.535533906,3.674234614,3.807886553,4,4.062019202,4.183300133])
+caesium_vgl_miller=np.array([110,200,211,220,310,222,400,410,420,421,430,511,432,440,522,531])
 caesium_vgl_ver=abs(noms((1-caesium_vgl/d_verhaeltnis)*100))
+caesium_vgl_art=['stark','stark','stark','stark','schwach','stark','stark','schwach','stark','schwach','schwach','schwach','schwach','stark','schwach','schwach']
 
-write('build/Tabelle_Salz_vgl.tex', make_table([steinsalz_vgl_miller,steinsalz_vgl,steinsalz_vgl_ver,caesium_vgl_miller,caesium_vgl,caesium_vgl_ver,d_verhaeltnis],[2,2,2,2,2,2,2]))     # fehlerbehaftete arrays (uarrays) sollten rechts eine 1 bekommen (1 signifikante Stelle)
+
+write('build/Tabelle_Salz_vgl.tex', make_table([caesium_vgl_miller,caesium_vgl,d_verhaeltnis,caesium_vgl_ver,caesium_vgl_art],[0,2,2,2,0]))     # fehlerbehaftete arrays (uarrays) sollten rechts eine 1 bekommen (1 signifikante Stelle)
 write('build/Tabelle_Salz_vgl_texformat.tex', make_full_table(
-    caption = 'Vergleich der Verhältnisse.',
+    caption = 'Vergleich mit der Chaesiumchloridstruktur.',
     label = 'table:A10',
     source_table = 'build/Tabelle_Salz_vgl.tex',
     stacking = [],              # Hier aufpassen: diese Zahlen bezeichnen diejenigen resultierenden Spaltennummern, die Multicolumns sein sollen
     units = [
-    r'$Miller_{S}$',
-    r'$\left(\frac{m_i}{m_1}\right)_{S}$',
-    r'$|Abw_{S}|\:/\: \si{\percent}$',
-    r'$Miller_{C}$',
-    r'$\left(\frac{m_i}{m_1}\right)_{C}$',
-    r'$|Abw_{C}|\:/\: \si{\percent}$',
-    r'$\frac{d_1}{d_i}$'],
+    r'$Miller$',
+    r'$\left(\frac{m_i}{m_1}\right)$',
+    r'$\frac{d_1}{d_i}$',
+    r'$|Abw|\:/\: \si{\percent}$',
+    r'$Art$'],
     replaceNaN = True,                      # de\fault = false
     replaceNaNby = 'not a number'))         # default = '-'
 
-steinsalz_vgl_mittel=np.mean(steinsalz_vgl_ver)
-steinsalz_vgl_stds=np.std(steinsalz_vgl_ver)
 
 
-caesium_vgl_mittel=np.mean(caesium_vgl_ver)
-caesium_vgl_stds=np.std(caesium_vgl_ver)
+caesium_vgl=np.array([1.000,1.414,1.732,2.000,2.236,2.449,2.828,3.000,3.162,3.317,3.606,3.742,3.841,4.330,4.123,4.243])
+caesium_vgl_miller=np.array([200,220,222,400,420,422,440,442,620,622,640,642,553,555,644,660])
+caesium_vgl_ver=abs(noms((1-caesium_vgl/d_verhaeltnis)*100))
+caesium_vgl_art=['stark','stark','stark','stark','stark','stark','stark','stark','stark','stark','stark','stark','schwach','schwach','stark','stark']
 
-Mittelwerte=np.array([steinsalz_vgl_mittel,caesium_vgl_mittel])
-standardabw=np.array([steinsalz_vgl_stds,caesium_vgl_stds])
-namen=['Steinsalz/Fluorit', 'Cäsiumchlorid']
-write('build/Tabelle_Salz_mittel.tex', make_table([namen,Mittelwerte,standardabw],[0,2,2]))     # fehlerbehaftete arrays (uarrays) sollten rechts eine 1 bekommen (1 signifikante Stelle)
-write('build/Tabelle_Salz_mittel_texformat.tex', make_full_table(
-    caption = 'Vergleich der Mittelwerte und Standardabweichungen.',
-    label = 'table:A11',
-    source_table = 'build/Tabelle_Salz_mittel.tex',
+write('build/Tabelle_Salz_vgl_1.tex', make_table([caesium_vgl_miller,caesium_vgl,d_verhaeltnis,caesium_vgl_ver,caesium_vgl_art],[0,2,2,2,0]))     # fehlerbehaftete arrays (uarrays) sollten rechts eine 1 bekommen (1 signifikante Stelle)
+write('build/Tabelle_Salz_vgl_1_texformat.tex', make_full_table(
+    caption = 'Vergleich mit der Steinsalzstruktur.',
+    label = 'table:A70',
+    source_table = 'build/Tabelle_Salz_vgl_1.tex',
     stacking = [],              # Hier aufpassen: diese Zahlen bezeichnen diejenigen resultierenden Spaltennummern, die Multicolumns sein sollen
-    units = ['Strukturen',
-    r'$\text{Mittelwert}\:/\: \si{\percent}$',
-    r'$\text{Standardabweichung}\:/\: \si{\percent}$'],
+    units = [
+    r'$Miller$',
+    r'$\left(\frac{m_i}{m_1}\right)$',
+    r'$\frac{d_1}{d_i}$',
+    r'$|Abw|\:/\: \si{\percent}$',
+    r'$Art$'],
     replaceNaN = True,                      # de\fault = false
     replaceNaNby = 'not a number'))         # default = '-'
 
-m_C=np.array([])
-for i in range(len(caesium_vgl_miller)):
-    h=int(list(str(caesium_vgl_miller[i]))[0])
-    k=int(list(str(caesium_vgl_miller[i]))[1])
-    l=int(list(str(caesium_vgl_miller[i]))[2])
-    x=np.sqrt((h**2)+(k**2)+(l**2))
-    m_C=np.append(m_C,[x])
+
+# steinsalz_vgl_mittel=np.mean(steinsalz_vgl_ver)
+# steinsalz_vgl_stds=np.std(steinsalz_vgl_ver)
 
 
-m_S=np.array([])
-for i in range(len(steinsalz_vgl_miller)):
-    h=int(list(str(steinsalz_vgl_miller[i]))[0])
-    k=int(list(str(steinsalz_vgl_miller[i]))[1])
-    l=int(list(str(steinsalz_vgl_miller[i]))[2])
-    x=np.sqrt((h**2)+(k**2)+(l**2))
-    m_S=np.append(m_S,[x])
+# caesium_vgl_mittel=np.mean(caesium_vgl_ver)
+# caesium_vgl_stds=np.std(caesium_vgl_ver)
 
-a=noms(d*m_C)
-x=noms((unp.cos(theta))**2)
-params = ucurve_fit(reg_linear, x, a*10**10)             # linearer Fit
-t_plot = np.linspace(0, 1, 2)
-plt.plot(t_plot, reg_linear(t_plot, *noms(params)), 'b-', label='Fit')
-plt.plot(x, a*10**10, 'rx', label='Messdaten')
-plt.xlabel(r"$\cos^2{\theta}$")
-plt.ylabel(r"a in $10^{10} m$")
-plt.legend(loc='best')
-plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
-plt.savefig('build/Salz_2.pdf')
-plt.clf()
+# Mittelwerte=np.array([steinsalz_vgl_mittel,caesium_vgl_mittel])
+# standardabw=np.array([steinsalz_vgl_stds,caesium_vgl_stds])
+# namen=['Steinsalz/Fluorit', 'Cäsiumchlorid']
+# write('build/Tabelle_Salz_mittel.tex', make_table([namen,Mittelwerte,standardabw],[0,2,2]))     # fehlerbehaftete arrays (uarrays) sollten rechts eine 1 bekommen (1 signifikante Stelle)
+# write('build/Tabelle_Salz_mittel_texformat.tex', make_full_table(
+#     caption = 'Vergleich der Mittelwerte und Standardabweichungen.',
+#     label = 'table:A11',
+#     source_table = 'build/Tabelle_Salz_mittel.tex',
+#     stacking = [],              # Hier aufpassen: diese Zahlen bezeichnen diejenigen resultierenden Spaltennummern, die Multicolumns sein sollen
+#     units = ['Strukturen',
+#     r'$\text{Mittelwert}\:/\: \si{\percent}$',
+#     r'$\text{Standardabweichung}\:/\: \si{\percent}$'],
+#     replaceNaN = True,                      # de\fault = false
+#     replaceNaNby = 'not a number'))         # default = '-'
 
-write('build/a_Salz2.tex', make_SI(params[1], r'\angstrom', figures=2))
-write('build/b_Salz2.tex', make_SI(params[0], r'\angstrom', figures=2))
-
-a=noms(d*m_S)
-x=noms((unp.cos(theta))**2)
-plt.plot(x, a*10**10, 'rx', label='Messdaten')
-plt.plot(x[6], a[6]*10**10, 'gx', label='Messdaten')
-a=np.delete(a, 6)
-x=np.delete(x, 6)
-params = ucurve_fit(reg_linear, x, a*10**10)             # linearer Fit
-t_plot = np.linspace(0, 1, 2)
-plt.plot(t_plot, reg_linear(t_plot, *noms(params)), 'b-', label='Fit')
-plt.xlabel(r"$\cos^2{\theta}$")
-plt.ylabel(r"a in $10^{10} m$")
-plt.legend(loc='best')
-plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
-plt.savefig('build/Salz_3.pdf')
-plt.clf()
-
-write('build/a_Salz3.tex', make_SI(params[1], r'\angstrom', figures=2))
-write('build/b_Salz3.tex', make_SI(params[0], r'\angstrom', figures=2))
-save=params[1]
-# write('build/a_Metall.tex', make_SI(params[1], r'\angstrom', figures=2))
-# write('build/b_Metall.tex', make_SI(params[0], r'\angstrom', figures=2))
-
-######################################################################################
-#Die folgenden Sachen sind den Tabellen entnommen
-
-Miller_chlorid_excel=np.array([110,200,211,310,222,400,330,420,332,510,440,530,442])
-d_chlorid_excel=np.array([3.2418,2.3082,1.8943,1.4746,1.3433,1.1628,1.0993,1.0409,0.9914,0.9111,0.8809,0.7995,0.7771])
-d_chlorid_excel=d_chlorid_excel*10**(-10)
-m_chlorid_excel=np.array([])
-for i in range(len(Miller_chlorid_excel)):
-    h=int(list(str(Miller_chlorid_excel[i]))[0])
-    k=int(list(str(Miller_chlorid_excel[i]))[1])
-    l=int(list(str(Miller_chlorid_excel[i]))[2])
-    x=np.sqrt((h**2)+(k**2)+(l**2))
-    m_chlorid_excel=np.append(m_chlorid_excel,[x])
-
-a=(d_chlorid_excel*m_chlorid_excel)
-x=((np.cos(theta))**2)
-plt.plot(x, a*10**10, 'rx', label='Messdaten')
-plt.plot(x[10], a[10]*10**10, 'gx', label='Messdaten')
-a=np.delete(a, 10)
-x=np.delete(x, 10)
-params = ucurve_fit(reg_linear, x, a*10**10)    
-t_plot = np.linspace(0, 1, 2)
-plt.plot(t_plot, reg_linear(t_plot, *noms(params)), 'b-', label='Fit')
-plt.xlabel(r"$\cos^2{\theta}$")
-plt.ylabel(r"a in $10^{10} m$")
-# plt.xlabel(r'$z \:/\: \si{\milli\meter}$')
-# plt.ylabel(r'$B \:/\: \si{\milli\tesla}$')
-plt.legend(loc='best')
-plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
-plt.savefig('build/Salz.pdf')
-plt.clf()
-
-write('build/a_Salz.tex', make_SI(params[1], r'\angstrom', figures=2))
-write('build/b_Salz.tex', make_SI(params[0], r'\angstrom', figures=2))
+# m_C=np.array([])
+# for i in range(len(caesium_vgl_miller)):
+#     h=int(list(str(caesium_vgl_miller[i]))[0])
+#     k=int(list(str(caesium_vgl_miller[i]))[1])
+#     l=int(list(str(caesium_vgl_miller[i]))[2])
+#     x=np.sqrt((h**2)+(k**2)+(l**2))
+#     m_C=np.append(m_C,[x])
 
 
-print('llllllllll')
-print(save)
+# m_S=np.array([])
+# for i in range(len(steinsalz_vgl_miller)):
+#     h=int(list(str(steinsalz_vgl_miller[i]))[0])
+#     k=int(list(str(steinsalz_vgl_miller[i]))[1])
+#     l=int(list(str(steinsalz_vgl_miller[i]))[2])
+#     x=np.sqrt((h**2)+(k**2)+(l**2))
+#     m_S=np.append(m_S,[x])
 
-lit_wert=6.29
-prozent=1-save/lit_wert
-write('build/prozent_salz.tex', make_SI(prozent*100, r'\percent', figures=1))
-print(prozent)
+# a=noms(d*m_C)
+# x=noms((unp.cos(theta))**2)
+# params = ucurve_fit(reg_linear, x, a*10**10)             # linearer Fit
+# t_plot = np.linspace(0, 1, 2)
+# plt.plot(t_plot, reg_linear(t_plot, *noms(params)), 'b-', label='Fit')
+# plt.plot(x, a*10**10, 'rx', label='Messdaten')
+# plt.xlabel(r"$\cos^2{\theta}$")
+# plt.ylabel(r"a in $10^{10} m$")
+# plt.legend(loc='best')
+# plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
+# plt.savefig('build/Salz_2.pdf')
+# plt.clf()
+
+# write('build/a_Salz2.tex', make_SI(params[1], r'\angstrom', figures=2))
+# write('build/b_Salz2.tex', make_SI(params[0], r'\angstrom', figures=2))
+
+# a=noms(d*m_S)
+# x=noms((unp.cos(theta))**2)
+# plt.plot(x, a*10**10, 'rx', label='Messdaten')
+# plt.plot(x[6], a[6]*10**10, 'gx', label='Messdaten')
+# a=np.delete(a, 6)
+# x=np.delete(x, 6)
+# params = ucurve_fit(reg_linear, x, a*10**10)             # linearer Fit
+# t_plot = np.linspace(0, 1, 2)
+# plt.plot(t_plot, reg_linear(t_plot, *noms(params)), 'b-', label='Fit')
+# plt.xlabel(r"$\cos^2{\theta}$")
+# plt.ylabel(r"a in $10^{10} m$")
+# plt.legend(loc='best')
+# plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
+# plt.savefig('build/Salz_3.pdf')
+# plt.clf()
+
+# write('build/a_Salz3.tex', make_SI(params[1], r'\angstrom', figures=2))
+# write('build/b_Salz3.tex', make_SI(params[0], r'\angstrom', figures=2))
+# save=params[1]
+# # write('build/a_Metall.tex', make_SI(params[1], r'\angstrom', figures=2))
+# # write('build/b_Metall.tex', make_SI(params[0], r'\angstrom', figures=2))
+
+# ######################################################################################
+# #Die folgenden Sachen sind den Tabellen entnommen
+
+# Miller_chlorid_excel=np.array([110,200,211,310,222,400,330,420,332,510,440,530,442])
+# d_chlorid_excel=np.array([3.2418,2.3082,1.8943,1.4746,1.3433,1.1628,1.0993,1.0409,0.9914,0.9111,0.8809,0.7995,0.7771])
+# d_chlorid_excel=d_chlorid_excel*10**(-10)
+# m_chlorid_excel=np.array([])
+# for i in range(len(Miller_chlorid_excel)):
+#     h=int(list(str(Miller_chlorid_excel[i]))[0])
+#     k=int(list(str(Miller_chlorid_excel[i]))[1])
+#     l=int(list(str(Miller_chlorid_excel[i]))[2])
+#     x=np.sqrt((h**2)+(k**2)+(l**2))
+#     m_chlorid_excel=np.append(m_chlorid_excel,[x])
+
+# a=(d_chlorid_excel*m_chlorid_excel)
+# x=((np.cos(theta))**2)
+# plt.plot(x, a*10**10, 'rx', label='Messdaten')
+# plt.plot(x[10], a[10]*10**10, 'gx', label='Messdaten')
+# a=np.delete(a, 10)
+# x=np.delete(x, 10)
+# params = ucurve_fit(reg_linear, x, a*10**10)    
+# t_plot = np.linspace(0, 1, 2)
+# plt.plot(t_plot, reg_linear(t_plot, *noms(params)), 'b-', label='Fit')
+# plt.xlabel(r"$\cos^2{\theta}$")
+# plt.ylabel(r"a in $10^{10} m$")
+# # plt.xlabel(r'$z \:/\: \si{\milli\meter}$')
+# # plt.ylabel(r'$B \:/\: \si{\milli\tesla}$')
+# plt.legend(loc='best')
+# plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
+# plt.savefig('build/Salz.pdf')
+# plt.clf()
+
+# write('build/a_Salz.tex', make_SI(params[1], r'\angstrom', figures=2))
+# write('build/b_Salz.tex', make_SI(params[0], r'\angstrom', figures=2))
+
+
+# print('llllllllll')
+# print(save)
+
+# lit_wert=6.29
+# prozent=1-save/lit_wert
+# write('build/prozent_salz.tex', make_SI(prozent*100, r'\percent', figures=1))
+# print(prozent)
 ################################ FREQUENTLY USED CODE ################################
 #
 ########## IMPORT ##########

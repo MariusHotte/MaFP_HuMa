@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018/Arch Linux)  (format=lualatex 2018.7.3)  9 JUL 2018 17:19
+This is LuaTeX, Version 1.07.0 (TeX Live 2018/Arch Linux)  (format=lualatex 2018.7.3)  2 AUG 2018 19:55
  restricted system commands enabled.
 **Protokoll.tex
 (./Protokoll.tex
@@ -22,7 +22,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.151 seconds
+luaotfload | main : initialization completed in 0.146 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (./header.tex (/usr/share/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2018/03/30 v3.25 KOMA-Script document class (article)
@@ -729,22 +729,22 @@ luatex-hyphen: using data file: /usr/share/texmf-dist/tex/generic/config/languag
 Lua module: polyglossia 2013/05/11 1.3 Polyglossia) (/usr/share/texmf-dist/tex/latex/polyglossia/gloss-german.ldf
 File: gloss-german.ldf polyglossia: module for german
 Module polyglossia Info: Language data for german
-(polyglossia)            hyphenation	
 (polyglossia)            righthyphenmin	2
 (polyglossia)            lefthyphenmin	2
-(polyglossia)            patterns	hyph-de-1901.pat.txt
-(polyglossia)            synonyms	table: 0x55be3bf544c0
 (polyglossia)            loader	loadhyph-de-1901.tex
+(polyglossia)            synonyms	table: 0x560394cf72f0
+(polyglossia)            patterns	hyph-de-1901.pat.txt
+(polyglossia)            hyphenation	
 (polyglossia)            patterns: hyph-de-1901.pat.txt on input line 6
 Module polyglossia Info: Language german was not yet loaded; created with id 4 on input line 6
 Module polyglossia Info: Language german already loaded; id is 4 on input line 6
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            hyphenation	
 (polyglossia)            righthyphenmin	2
 (polyglossia)            lefthyphenmin	2
-(polyglossia)            patterns	hyph-de-1996.pat.txt
-(polyglossia)            synonyms	table: 0x55be3bf54690
 (polyglossia)            loader	loadhyph-de-1996.tex
+(polyglossia)            synonyms	table: 0x560394cf74c0
+(polyglossia)            patterns	hyph-de-1996.pat.txt
+(polyglossia)            hyphenation	
 (polyglossia)            patterns: hyph-de-1996.pat.txt on input line 68
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 8 on input line 68
 Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 68
@@ -2523,19 +2523,18 @@ File: build/Metall.pdf Graphic file (type pdf)
 <use build/Metall.pdf>
 Package luatex.def Info: build/Metall.pdf  used on input line 48.
 (luatex.def)             Requested size: 346.89513pt x 260.17136pt.
- (./build/b_Metall.tex) (./build/a_Metall.tex) (./build/b_Metall.tex) (./build/a_Metall.tex) (./build/prozent_metall.tex) [12] [13<./build/Metall.pdf>] (./build/Tabelle_Salz_Rohdaten_texformat.tex (./build/Tabelle_Salz_Rohdaten.tex)) [14] (./build/Tabelle_Salz_vgl_texformat.tex (./build/Tabelle_Salz_vgl.tex)) (./build/Tabelle_Salz_mittel_texformat.tex (./build/Tabelle_Salz_mittel.tex))
-<build/Salz_2.pdf, id=252, 462.52798pt x 346.89601pt>
-File: build/Salz_2.pdf Graphic file (type pdf)
-<use build/Salz_2.pdf>
-Package luatex.def Info: build/Salz_2.pdf  used on input line 108.
+ (./build/b_Metall.tex) (./build/a_Metall.tex) (./build/b_Metall.tex) (./build/a_Metall.tex) (./build/prozent_metall.tex) [12] [13<./build/Metall.pdf>]
+Overfull \hbox (19.35933pt too wide) in paragraph at lines 68--76
+ [][] 
+ []
+
+(./build/Tabelle_Salz_Rohdaten_texformat.tex (./build/Tabelle_Salz_Rohdaten.tex)) [14] (./build/Tabelle_Salz_vgl_texformat.tex (./build/Tabelle_Salz_vgl.tex)) (./build/Tabelle_Salz_vgl_1_texformat.tex (./build/Tabelle_Salz_vgl_1.tex))
+<build/Salz_lasttry.pdf, id=249, 462.52798pt x 346.89601pt>
+File: build/Salz_lasttry.pdf Graphic file (type pdf)
+<use build/Salz_lasttry.pdf>
+Package luatex.def Info: build/Salz_lasttry.pdf  used on input line 137.
 (luatex.def)             Requested size: 346.89513pt x 260.17136pt.
- (./build/b_Salz2.tex) (./build/a_Salz2.tex) (./build/b_Salz2.tex) (./build/a_Salz2.tex)
-<build/Salz_3.pdf, id=254, 462.52798pt x 346.89601pt>
-File: build/Salz_3.pdf Graphic file (type pdf)
-<use build/Salz_3.pdf>
-Package luatex.def Info: build/Salz_3.pdf  used on input line 123.
-(luatex.def)             Requested size: 346.89513pt x 260.17136pt.
- (./build/b_Salz3.tex) (./build/a_Salz3.tex) (./build/b_Salz3.tex) (./build/a_Salz3.tex) [15] [16<./build/Salz_2.pdf><./build/Salz_3.pdf>] (./build/prozent_salz.tex)) [17] (./content/diskussion.tex (./build/prozent_metall.tex) (./build/prozent_salz.tex)) [18
+ (./build/b_Salz2.tex) (./build/a_Salz2.tex) (./build/b_Salz2.tex) (./build/a_Salz2.tex) (./build/prozent_salz.tex)) [15] [16<./build/Salz_lasttry.pdf>] (./content/diskussion.tex (./build/prozent_metall.tex)) [17
 
 ]
 
@@ -2564,10 +2563,10 @@ Package biblatex Warning: No driver for entry type 'software'.
 Package biblatex Warning: Month out of range or not an integer
 (biblatex)                at entry 'skript' on input line 37.
 
-[19
+[18
 
 ] (./content/anhang.tex
-<ressources/Steinsalz.png, id=370, 274.02374pt x 679.78969pt>
+<ressources/Steinsalz.png, id=322, 274.02374pt x 679.78969pt>
 File: ressources/Steinsalz.png Graphic file (type png)
 <use ressources/Steinsalz.png>
 Package luatex.def Info: ressources/Steinsalz.png  used on input line 18.
@@ -2576,12 +2575,12 @@ Package luatex.def Info: ressources/Steinsalz.png  used on input line 18.
 
 LaTeX Warning: Float too large for page by 51.4577pt on input line 21.
 
-<ressources/Steinsalz2.png, id=373, 277.035pt x 473.51906pt>
+<ressources/Steinsalz2.png, id=325, 277.035pt x 473.51906pt>
 File: ressources/Steinsalz2.png Graphic file (type png)
 <use ressources/Steinsalz2.png>
 Package luatex.def Info: ressources/Steinsalz2.png  used on input line 25.
 (luatex.def)             Requested size: 277.03432pt x 473.51788pt.
-<ressources/Caesium.png, id=374, 273.27094pt x 678.28406pt>
+<ressources/Caesium.png, id=326, 273.27094pt x 678.28406pt>
 File: ressources/Caesium.png Graphic file (type png)
 <use ressources/Caesium.png>
 Package luatex.def Info: ressources/Caesium.png  used on input line 32.
@@ -2589,12 +2588,12 @@ Package luatex.def Info: ressources/Caesium.png  used on input line 32.
 
 LaTeX Warning: Float too large for page by 49.95207pt on input line 35.
 
-<ressources/Caesium2.png, id=377, 273.27094pt x 92.59593pt>
+<ressources/Caesium2.png, id=329, 273.27094pt x 92.59593pt>
 File: ressources/Caesium2.png Graphic file (type png)
 <use ressources/Caesium2.png>
 Package luatex.def Info: ressources/Caesium2.png  used on input line 39.
 (luatex.def)             Requested size: 273.27025pt x 92.59569pt.
-<ressources/Zinkblende.png, id=378, 279.29344pt x 681.29532pt>
+<ressources/Zinkblende.png, id=330, 279.29344pt x 681.29532pt>
 File: ressources/Zinkblende.png Graphic file (type png)
 <use ressources/Zinkblende.png>
 Package luatex.def Info: ressources/Zinkblende.png  used on input line 46.
@@ -2602,14 +2601,14 @@ Package luatex.def Info: ressources/Zinkblende.png  used on input line 46.
 
 LaTeX Warning: Float too large for page by 52.96333pt on input line 49.
 
-<ressources/Zinkblende2.png, id=381, 279.29344pt x 482.55281pt>
+<ressources/Zinkblende2.png, id=333, 279.29344pt x 482.55281pt>
 File: ressources/Zinkblende2.png Graphic file (type png)
 <use ressources/Zinkblende2.png>
 Package luatex.def Info: ressources/Zinkblende2.png  used on input line 53.
 (luatex.def)             Requested size: 279.29276pt x 482.55162pt.
 )
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 43.
- [20<./ressources/Steinsalz.png>] [21<./ressources/Steinsalz2.png>] [22<./ressources/Caesium.png>] [23<./ressources/Caesium2.png>] [24<./ressources/Zinkblende.png>] [25<./ressources/Zinkblende2.png>]
+ [19<./ressources/Steinsalz.png>] [20<./ressources/Steinsalz2.png>] [21<./ressources/Caesium.png>] [22<./ressources/Caesium2.png>] [23<./ressources/Zinkblende.png>] [24<./ressources/Zinkblende2.png>]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 43.
  (./build/Protokoll.aux
 Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 26
@@ -2617,28 +2616,28 @@ Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 43.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 43.
 Package rerunfilecheck Info: File `Protokoll.aux' has not changed.
-(rerunfilecheck)             Checksum: 3A3688F3F085FA3D55F968A56BEF9D6A;17595.
+(rerunfilecheck)             Checksum: B7C45E9F878F2C421419246BE7C52AF1;17564.
 Package rerunfilecheck Info: File `Protokoll.toc' has not changed.
-(rerunfilecheck)             Checksum: F7ABDF7D034255ECFE4C627F179055E5;1513.
+(rerunfilecheck)             Checksum: 32400249DBE44CC09D94C930C94194FB;1513.
 Package logreq Info: Writing requests to 'Protokoll.run.xml'.
 
 \openout1 = Protokoll.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 55117 strings out of 494413
+ 55058 strings out of 494413
  100000,1977958 words of node,token memory allocated
  674 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 24 attribute, 78 glue_spec, 24 attribute_list, 2 write nodes
-   avail lists: 1:2,2:3783,3:142,4:60,5:647,6:38,7:5553,8:107,9:1118,10:19,11:368
- 57106 multiletter control sequences out of 65536+600000
- 153 fonts using 55667031 bytes
+   avail lists: 1:2,2:3861,3:143,4:59,5:643,6:38,7:5553,8:107,9:1118,10:19,11:351
+ 57099 multiletter control sequences out of 65536+600000
+ 153 fonts using 55666335 bytes
  72i,17n,107p,9106b,3125s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/share/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on Protokoll.pdf (25 pages, 1288794 bytes).
+Output written on Protokoll.pdf (24 pages, 1280270 bytes).
 
-PDF statistics: 548 PDF objects out of 1000 (max. 8388607)
- 389 compressed objects within 4 object streams
- 100 named destinations out of 1000 (max. 131072)
+PDF statistics: 501 PDF objects out of 1000 (max. 8388607)
+ 365 compressed objects within 4 object streams
+ 96 named destinations out of 1000 (max. 131072)
  152 words of extra memory for PDF output out of 10000 (max. 100000000)
 

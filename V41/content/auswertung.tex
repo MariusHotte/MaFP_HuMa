@@ -59,18 +59,18 @@ Die Gitterkonstante und die vorliegende bcc-Struktur weißt nach \cite{gitter} a
 $a=\SI{3.30}{\angstrom}$ beträgt $\input{build/prozent_metall.tex}$.
 
 \subsection{Salzprobe 5}
-Die Salzprobe muss eine Gitterstruktur aufweisen, die aus zwei verschiedenen Elementen besteht. Nach \cite{skript} werden somit die Zinkblenden-, die Steinsalz, die Cäsiumchlorid- und die Fluoritstruktur im folgenden untersucht. Dafür werden mit Gleichung \eqref{streu} alle aufkommenden Reflexe ermittelt. Da das Material unbekannt ist, lässt sich keine Aussagen über den Atomformfaktor $f$ treffen. Somit kann nur durch starke bzw. schwache Reflexe zwischen den Gitterstrukturen unterschieden werden. In Tabelle \ref{tbl:beispieltabelle} sind die im Folgenden verwendeten Auswahlregeln zusammengefasst.
+Die Salzprobe muss eine Gitterstruktur aufweisen, die aus zwei verschiedenen Elementen besteht. Nach \cite{skript} werden somit die Zinkblenden-, die Steinsalz, die Cäsiumchlorid- und die Fluoritstruktur im folgenden untersucht. Zuerst werden mit Gleichung \eqref{streu} alle aufkommenden Reflexe ermittelt. Da das Material unbekannt ist, lässt sich keine exakte Aussagen über den Atomformfaktor $f$ treffen, weshalb abgeschätzt werden muss, welcher der Atomfaktoren dominiert. Somit kann nur durch starke bzw. schwache Reflexe zwischen den Gitterstrukturen unterschieden werden. In Tabelle \ref{tbl:beispieltabelle} sind die im Folgenden verwendeten Auswahlregeln zusammengefasst.
 
    \begin{table}
      \centering
-     \caption{Auswahlregeln für verschiedene Gitterstrukturen mit Stärke der Intensität}
+     \caption{Auswahlregeln für verschiedene Gitterstrukturen unterteilt in Reflexe mit hoher und niedriger Intensität. Für die Steinsalz- und die Flouritstruktur gilt zusätzlich die Grundanforderung alle h,k,l gerade oder ungerade.}
      \label{tbl:beispieltabelle}
      \begin{tabular}{cc}
        \hline
        \textbf{Gittertyp}  & \textbf{Braggreflexe} \\
        \hline
-       Steinsalz           & alle h,k,l gerade (hohe Intensität) oder ungerade (niedrige Intensität)             \\
-       Fluorit             & alle h,k,l gerade (hohe Intensität) oder ungerade (niedrige Intensität)              \\
+       Steinsalz           & alle h,k,l ungerade und $\sum$ = 2n+1 (niedrige Intensität), sonst (hohe Intensität)     \\
+       Fluorit             & alle h,k,l gerade und $\sum$ =8n+4 (niedrige Intensität), sonst (hohe Intensität)              \\
        Cäsiumchlorid       & h\:+\:k\:+\:l gerade (hohe Intensität) oder ungerade (niedrige Intensität)              \\
      \end{tabular}
 
@@ -78,6 +78,27 @@ Die Salzprobe muss eine Gitterstruktur aufweisen, die aus zwei verschiedenen Ele
      % Verweis im Text mittels \ref{tbl:beispieltabelle}
 
    \end{table}
+
+
+
+   % \begin{table}
+   %   \centering
+   %   \caption{Auswahlregeln für verschiedene Gitterstrukturen mit Stärke der Intensität}
+   %   \label{tbl:beispieltabelle}
+   %   \begin{tabular}{cc}
+   %     \hline
+   %     \textbf{Gittertyp}  & \textbf{Braggreflexe} \\
+   %     \hline
+   %     Steinsalz           & alle h,k,l gerade (hohe Intensität) oder ungerade (niedrige Intensität)             \\
+   %     Fluorit             & alle h,k,l gerade (hohe Intensität) oder ungerade (niedrige Intensität)              \\
+   %     Cäsiumchlorid       & h\:+\:k\:+\:l gerade (hohe Intensität) oder ungerade (niedrige Intensität)              \\
+   %   \end{tabular}
+
+
+   %   % Verweis im Text mittels \ref{tbl:beispieltabelle}
+
+   % \end{table}
+
 
 Für die nicht aufgeführte Zinkblendenstruktur bestehen keine Auswahlregeln, weshalb die Intensitäten der zuvor bestimmten Reflexe rein rechnerisch ermittelt wird.
 
@@ -92,20 +113,28 @@ Zur Identifizierung der Gitterstruktur werden wie in Kapitel \ref{sec:Metallprob
 
 \input{build/Tabelle_Salz_Rohdaten_texformat.tex}
 
-Da die Reflexe auf dem Filmstreifen nicht exakt zu den schwachen oder den starken Reflexen zugeordnet werden können, wird das Verhältnis $\frac{m_i}{m_1}$ auf zwei verschiedene Reflexe normiert. Dabei wird zu einen der erste starke Reflex und zum anderen der erste schwache Reflex verwendet. Die Ergebnisse der unterschiedlichen Normierungen, sowie die Markierung der starken und schwachen Reflexe sind in Abbildung \ref{fig:Anhang1} - \ref{fig:Anhang6} aufgelistet. Der schlussendliche Vergleich mit den experimentell bestimmen Werten zeigt, dass die geringste Abweichung bei den Strukturen Steinsalz/Fluorit (S) und Cäsiumchlorid (C) zu verzeichnen ist (auf den starken Reflex normiert). Zum genaueren Vergleich sind die Verhältnisse mit den absoluten Abweichungen bzgl. der gemessenen Werte in Tabelle \ref{table:A10} zusammengefasst.
+% Da die Reflexe auf dem Filmstreifen nicht exakt zu den schwachen oder den starken Reflexen zugeordnet werden können, wird das Verhältnis $\frac{m_i}{m_1}$ auf zwei verschiedene Reflexe normiert. Dabei wird zu einen der erste starke Reflex und zum anderen der erste schwache Reflex verwendet. Die Ergebnisse der unterschiedlichen Normierungen, sowie die Markierung der starken und schwachen Reflexe sind in Abbildung \ref{fig:Anhang1} - \ref{fig:Anhang6} aufgelistet. Der schlussendliche Vergleich mit den experimentell bestimmen Werten zeigt, dass die geringste Abweichung bei den Strukturen Steinsalz/Fluorit (S) und Cäsiumchlorid (C) zu verzeichnen ist (auf den starken Reflex normiert). Zum genaueren Vergleich sind die Verhältnisse mit den absoluten Abweichungen bzgl. der gemessenen Werte in Tabelle \ref{table:A10} zusammengefasst.
+Zum Vergleich der experimentell bestimmten Reflexe mit der Theorie wird das in Kapitel \ref{sec:Metallprobe9} beschriebene Verfahren verwendet. Die Ergebnisse dieses Vergleichs sind in Tabelle \ref{table:A10} und \ref{table:A70} für die Steinsalzstruktur und die Chäsiumchloridstruktur dargestellt, da diese die kleinsten Abweichungen aufweisen.
+
+% \input{build/Tabelle_Salz_vgl_texformat.tex}
+
+% Da die Abweichungen in ähnlich kleinen Intervallen liegen, ist für eine genaue Aussage in Tabelle \ref{table:A10} der Mittelwert der absoluten Abweichungen sowie die Standardabweichung dargestellt. Auf Grundlage dieser Ergebnisse wird vorerst angenommen, dass die Probe eine Cäsiumchlorid-Struktur besitzt. 
+
+% \input{build/Tabelle_Salz_mittel_texformat.tex}
 
 \input{build/Tabelle_Salz_vgl_texformat.tex}
 
-Da die Abweichungen in ähnlich kleinen Intervallen liegen, ist für eine genaue Aussage in Tabelle \ref{table:A10} der Mittelwert der absoluten Abweichungen sowie die Standardabweichung dargestellt. Auf Grundlage dieser Ergebnisse wird vorerst angenommen, dass die Probe eine Cäsiumchlorid-Struktur besitzt. 
+\input{build/Tabelle_Salz_vgl_1_texformat.tex}
 
-\input{build/Tabelle_Salz_mittel_texformat.tex}
+Die obigen Tabellen zeigen, dass für beiden Strukturen die Abweichungen in den selben Größenordnungen liegen, jedoch unter Verwendung der Steinsalzstruktur fast ausschließlich starke Reflexe nachgewiesen werden konnten. Dies lässt drauf schließen, dass die Salzprobe eine Steinsalzstruktur besitzt.
 
-Wie in Kapitel \ref{sec:Metallprobe9} wird die Gitterkonstante $a$ mit Hilfe von Gleichung \eqref{gitti} bestimmt und in Abbildung \ref{fig:SalzC} aufgetragen. Die Fitparameter der verwendeten Ausgleichsfunktion (siehe \ref{eq:FIT}) lauten:
+
+Wie in Kapitel \ref{sec:Metallprobe9} wird im folgenden die Gitterkonstante $a$ mit Hilfe von Gleichung \eqref{gitti} bestimmt und in Abbildung \ref{fig:SalzC} aufgetragen. Die Fitparameter der verwendeten Ausgleichsfunktion (siehe \ref{eq:FIT}) lauten:
 
 
 \begin{figure}
   \centering
-  \includegraphics[scale=0.75]{build/Salz_2.pdf}
+  \includegraphics[scale=0.75]{build/Salz_lasttry.pdf}
   \caption{Messdaten und Fitergebnis unter der Annahme einer Cäsiumchlorid-Struktur.}
   \label{fig:SalzC}
 \end{figure}
@@ -116,22 +145,23 @@ Wie in Kapitel \ref{sec:Metallprobe9} wird die Gitterkonstante $a$ mit Hilfe von
 	c&= \input{build/a_Salz2.tex}
 \end{align}
 
-Der nicht lineare Verlauf der Messdaten lässt auf einen Irrtum in der Zuweisung der Struktur schließen. Wird die Gitterkonstante $a$ mit der Annahme bestimmt, dass eine Steinsalz/Fluorit-Struktur vorliegt, besteht wie in Abbildung \ref{fig:SalzC2} zu sehen der erwartete linearer Zusammenhang. Die dazugehörigen Fitparameter lauten:
+% Der nicht lineare Verlauf der Messdaten lässt auf einen Irrtum in der Zuweisung der Struktur schließen. Wird die Gitterkonstante $a$ mit der Annahme bestimmt, dass eine Steinsalz/Fluorit-Struktur vorliegt, besteht wie in Abbildung \ref{fig:SalzC2} zu sehen der erwartete linearer Zusammenhang. Die dazugehörigen Fitparameter lauten:
 
-\begin{figure}
-  \centering
-  \includegraphics[scale=0.75]{build/Salz_3.pdf}
-  \caption{Messdaten und Fitergebnis unter der Annahme einer Steinsalz/Fluorit-Struktur.}
-  \label{fig:SalzC2}
-\end{figure}
+% \begin{figure}
+%   \centering
+%   \includegraphics[scale=0.75]{build/Salz_3.pdf}
+%   \caption{Messdaten und Fitergebnis unter der Annahme einer Steinsalz/Fluorit-Struktur.}
+%   \label{fig:SalzC2}
+% \end{figure}
 
-\begin{align}
-	b&= \input{build/b_Salz3.tex} \\
-	c&= \input{build/a_Salz3.tex}
-\end{align}
+% \begin{align}
+% 	b&= \input{build/b_Salz3.tex} \\
+% 	c&= \input{build/a_Salz3.tex}
+% \end{align}
 
-Der in der Abbildung grün markierte Messpunkt wird als zufälliger Ausreißer behandelt und geht somit nicht in die lineare Ausgleichsrechnung mit ein.
-Unter der Annahme, dass die Probe eine Steinsalz/Flourit-Struktur besitzt, ergibt sich eine Abweichung der Gitterkonstante von $\input{build/prozent_salz.tex}$ zum Literaturwert \cite{Kaliumchlorid} von Kaliumchlorid.
+Der in der Abbildung grün markierte Messpunkt wird als zufälliger Ausreißer behandelt und geht somit nicht in die lineare Ausgleichsrechnung mit ein. Die Ursache für diesen Messwert könnte beispielsweise eine Verunreinigung in der Salzprobe sein oder ein nicht korrekt zugeordneter Reflex. Schon in Tabelle \ref{table:A10} ist dieser Messwert auffällig, da diese eine Abweichung von \SI{9.18}{\percent} aufweist.
+
+Unter der Annahme, dass die Probe eine Steinsalz besitzt, ergibt sich eine Abweichung der Gitterkonstante von $\input{build/prozent_salz.tex}$ zum Literaturwert \cite{Kaliumchlorid} von Kaliumchlorid.
 
 
 

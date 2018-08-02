@@ -16,5 +16,5 @@
 \contentsline {subsection}{\numberline {6.1}Allgemeine Auswertung der Filmstreifen}{11}{subsection.6.1}
 \contentsline {subsection}{\numberline {6.2}Metallprobe 9}{11}{subsection.6.2}
 \contentsline {subsection}{\numberline {6.3}Salzprobe 5}{14}{subsection.6.3}
-\contentsline {section}{\numberline {7}Diskussion}{18}{section.7}
-\contentsline {section}{\nonumberline Literatur}{19}{section*.17}
+\contentsline {section}{\numberline {7}Diskussion}{17}{section.7}
+\contentsline {section}{\nonumberline Literatur}{18}{section*.16}

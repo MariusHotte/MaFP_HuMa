@@ -16,5 +16,73 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{diff}{article}{}
+      \name{author}{3}{}{%
+        {{hash=af35a191677e42e8c1078f90e29ab93d}{%
+           family={Easteal},
+           familyi={E\bibinitperiod},
+           given={Allan\bibnamedelima J.},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=bc08e9865fdceedba25e9a1710be2824}{%
+           family={Price},
+           familyi={P\bibinitperiod},
+           given={William\bibnamedelima E.},
+           giveni={W\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=4cc4eac29c02ab42b201d36161082ad3}{%
+           family={Woolf},
+           familyi={W\bibinitperiod},
+           given={Lawrence\bibnamedelima A.},
+           giveni={L\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {The Royal Society of Chemistry}%
+      }
+      \strng{namehash}{8958aefad21d80af46cca871c8a292f2}
+      \strng{fullhash}{8958aefad21d80af46cca871c8a292f2}
+      \strng{bibnamehash}{8958aefad21d80af46cca871c8a292f2}
+      \strng{authorbibnamehash}{8958aefad21d80af46cca871c8a292f2}
+      \strng{authornamehash}{8958aefad21d80af46cca871c8a292f2}
+      \strng{authorfullhash}{8958aefad21d80af46cca871c8a292f2}
+      \field{sortinit}{E}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{A modified diaphragm cell for diffusion measurements at high temperatures is described. It has been used to obtain tracer diffusion coefficients for HHO and HO in water from 298 to 363 K. Where comparisons are available{,} the results are in good agreement with literature data. The data have been converted to self-diffusion coefficients of water and combined with existing data to provide a series of equations covering the temperature range 242–498 K.}
+      \field{issue}{5}
+      \field{journaltitle}{J. Chem. Soc.{,} Faraday Trans. 1}
+      \field{title}{Diaphragm cell for high-temperature diffusion measurements. Tracer Diffusion coefficients for water to 363 K}
+      \field{volume}{85}
+      \field{year}{1989}
+      \field{pages}{1091\bibrangedash 1097}
+      \range{pages}{7}
+      \verb{doi}
+      \verb 10.1039/F19898501091
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1039/F19898501091
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1039/F19898501091
+      \endverb
+    \endentry
+    \entry{visko}{online}{}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{labeltitlesource}{title}
+      \field{month}{Mai}
+      \field{title}{Tabbelsammlung Chemie}
+      \field{year}{2017}
+      \verb{urlraw}
+      \verb https://de.wikibooks.org/wiki/Tabellensammlung_Chemie/_Stoffdaten_Wasser
+      \endverb
+      \verb{url}
+      \verb https://de.wikibooks.org/wiki/Tabellensammlung_Chemie/_Stoffdaten_Wasser
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 

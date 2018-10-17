@@ -454,6 +454,10 @@ write('build/Tabelle_Salz_vgl_1_texformat.tex', make_full_table(
     replaceNaN = True,                      # de\fault = false
     replaceNaNby = 'not a number'))         # default = '-'
 
+save=params[1]
+lit_wert=6.29
+prozent=1-save/lit_wert
+write('build/prozent_salz.tex', make_SI(prozent*100, r'\percent', figures=1))
 
 # steinsalz_vgl_mittel=np.mean(steinsalz_vgl_ver)
 # steinsalz_vgl_stds=np.std(steinsalz_vgl_ver)

@@ -143,9 +143,18 @@ plt.clf()
 #plt.plot(x_range_plot, values, ".k")
 #plt.savefig("build/paraschäter.pdf")
 #plt.clf()
-
-
-
+d=0.0044
+t=0.000117
+gamma=42580000
+G=8.8/(d*gamma*t)
+print(G,"G")
+#*100 weil dann si
+D=12*params_3[2]*1000/((gamma**2)*(G**2))
+print("D",D)
+T=300
+K=1.38064852*10**-23
+r=(K*T)/(6*3.141592*D*0.0009)
+print(r,"R")
 
 #Print der Parameter T1
 print("Parameter der Fits, für die T1 Bestimmung")

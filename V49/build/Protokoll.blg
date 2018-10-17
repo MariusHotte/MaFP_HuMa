@@ -1,23 +1,17 @@
 [0] Config.pm:302> INFO - This is Biber 2.11
 [0] Config.pm:305> INFO - Logfile is 'build/Protokoll.blg'
-[40] biber:313> INFO - === Fri Jun 29, 2018, 09:26:36
-[61] Biber.pm:371> INFO - Reading 'build/Protokoll.bcf'
-[140] Biber.pm:857> INFO - Found 3 citekeys in bib section 0
-[154] Biber.pm:3976> INFO - Processing section 0
-[164] Biber.pm:4136> INFO - Looking for bibtex format file 'Quellen.bib' for section 0
-[165] bibtex.pm:1500> INFO - LaTeX decoding ...
-[172] bibtex.pm:1316> INFO - Found BibTeX data source 'Quellen.bib'
-[173] Utils.pm:193> WARN - Duplicate entry key: 'visko' in file 'Quellen.bib', skipping ...
-[173] Biber.pm:4136> INFO - Looking for bibtex format file 'programme.bib' for section 0
-[174] bibtex.pm:1500> INFO - LaTeX decoding ...
-[180] bibtex.pm:1316> INFO - Found BibTeX data source 'programme.bib'
-[181] Utils.pm:193> WARN - I didn't find a database entry for '.' (section 0)
-[181] Utils.pm:193> WARN - I didn't find a database entry for 'z' (section 0)
-[181] Utils.pm:193> WARN - I didn't find a database entry for 'u' (section 0)
-[188] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[30] biber:313> INFO - === Tue Jul 17, 2018, 11:33:12
+[53] Biber.pm:371> INFO - Reading 'build/Protokoll.bcf'
+[132] Biber.pm:857> INFO - Found 2 citekeys in bib section 0
+[146] Biber.pm:3976> INFO - Processing section 0
+[158] Biber.pm:4136> INFO - Looking for bibtex format file 'Quellen.bib' for section 0
+[160] bibtex.pm:1500> INFO - LaTeX decoding ...
+[169] bibtex.pm:1316> INFO - Found BibTeX data source 'Quellen.bib'
+[178] Utils.pm:193> WARN - month field 'Mai' in entry 'visko' is not an integer - this will probably not sort properly.
 [188] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[188] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
 [188] Biber.pm:3804> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
 [188] Biber.pm:3810> INFO - No sort tailoring available for locale 'de-DE'
-[189] bbl.pm:617> INFO - Writing 'build/Protokoll.bbl' with encoding 'UTF-8'
-[189] bbl.pm:720> INFO - Output to build/Protokoll.bbl
-[189] Biber.pm:110> INFO - WARNINGS: 4
+[196] bbl.pm:617> INFO - Writing 'build/Protokoll.bbl' with encoding 'UTF-8'
+[198] bbl.pm:720> INFO - Output to build/Protokoll.bbl
+[198] Biber.pm:110> INFO - WARNINGS: 1

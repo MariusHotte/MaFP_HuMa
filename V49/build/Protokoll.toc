@@ -23,3 +23,4 @@
 \contentsline {subsection}{\numberline {4.5}Ermittlung der Diffusionskonstante mit dem Spin-Echo Verfahren}{14}{subsection.4.5}
 \contentsline {subsection}{\numberline {4.6}Bestimmung der Viskosität und des Molekülradius von Wasser}{15}{subsection.4.6}
 \contentsline {section}{\numberline {5}Diskussion}{18}{section.5}
+\contentsline {section}{\nonumberline Literatur}{19}{section*.12}

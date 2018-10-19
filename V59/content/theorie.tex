@@ -1,6 +1,102 @@
 \section{Theorie}
 \label{sec:Theorie}
 
+Damit eine elektromagnetische Welle zur Informationsübertragung verwendet werden kann, wird einer hochfrequenten Trägerspannung mit einer niedefrequenten Modulationsspannung kombiniert. Diese Kombination kann zum einen durch die Modulierung der Frequenz oder zum anderen durch die Modulierung der Amplitude beider Spannung erzeugt werden. Unter Verwendung mehrerer Trägerspannungen ist es möglich verschiedene Informationen gleichzeitig zu übertragem, wie z.B. bei den Funkkanälen des Radios. Zur Extraktion der Information der Welle am Empfangsort wird die Demodulations angewand. Die Grundlagen der zuvor angesprochenen Frequenz- und Amplitudenmodulation bzw. Demodulation werden im Kapitel XXX erläutert.
+
+\section{Amplitudenmodulation}
+\label{sec:Amplitudenmodulation}
+
+Bei dieser Methode der Modulation führt die Amplutude einer hochfrequenten Trägerspannung Schwingungen im Rhytmus der niederfrequenten Modulationsspannung, die die Informationen enthält, aus. Beschrieben werden die beiden verwendeten Spannungen durch Gleichungen 
+\begin{align}
+	U_T(t)=\hat{U}_T\cos{(\omega_Tt)} \;\; \text{und} \;\; U_M(t)=\hat{U}_M\cos{(\omega_Mt)}\; ,
+\end{align}
+dabei bezeichnet $U_T$ die Trägerspannung, $U_M$ die Modulationsspannung, $\omega_T$ die Trägerfrequenz und $\omega_M$ die Modulationsfrequenz. Durch die Kombination der Spannungen ergibt sich
+\begin{align}
+	U(t)=\hat{U}_T(1+m\cos{(\omega_M)})\cos{(\omega_Tt)}\;.
+\end{align}
+
+Der mit $m$ bezeichnete Modulatiosgrad und ist über die Amplitude der Modulationsspannung wie folgt definiert:
+\begin{align}
+	m=\gamma\hat{U}_M \;\; \text{mit} \;\; m= [0,1]
+\end{align}
+Wie in Abbildung XXX zu sehen, ergibt sich unter Betrachtung der Extremwerte 
+\begin{align}
+	\hat{U}_T(1-m) \;\; \text{und} \;\; \hat{U}_T(1+m)\;,
+\end{align}
+die abgebildete amplitudenmodulierte Spannung des Signals. 
+
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=0.55\textwidth]{ressources/kubies.png}
+%     \caption{Abbildung eines bcc-Gitters (links) und eines fcc-Gitters\cite{skript}.}
+%     \label{bcc}
+% \end{figure}
+
+Um das Frequenzspektrum dieser Schwingung zu ermitteln, wird Gleichung XXX mittels trigonometrischen Beziehungen zu
+\begin{align}
+	U(t)=\hat{U}_T\left(\cos{(\omega_Tt)+\frac{1}{2}m\cos{(\omega_T+\omega_M)t}}+\frac{1}{2}m\cos{(\omega_T-\omega_M)t})\right)
+\end{align}
+vereinfacht. Somit besteht das Frequenzspektrum aus den drei Frequenzen
+\begin{align}
+	\omega_T-\omega_M,\quad\omega,\quad\omega_T+\omega_M\;.
+\end{align}
+In Abbildung XXX sind die zuvor beschriebenen Kreisfrequenzen gegen die Spannung aufgetragen.
+
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=0.55\textwidth]{ressources/kubies.png}
+%     \caption{Abbildung eines bcc-Gitters (links) und eines fcc-Gitters\cite{skript}.}
+%     \label{bcc}
+% \end{figure}
+
+Bei Betrachtung des Spektrums ist zu beachten, dass, wie auch in Abbildung XXX zu sehen, die äußeren beiden Frequenzen, die sogenannten Seitenbänder, identische Informationen enthalten. Im Gegensatz enthält die Frequnez $\omega_T$, die sogenannte Trägerabstrahlung, durch die fehlende Abhängigkeit von $\omega_M$ keine Information. Besteht der Umstand, dass $\omega_M$ nicht nur aus einer sondern aus einer Kombination mehrerer Frequenzen besteht, verbreitern die die Seitenbändeer in Abbildung XXX. Nachteile der Amplitudenmodulation sind unteranderem die geringe Störsicherheit und die geringe Verzerrungsfreiheit. Beispielsweise kann es in engen Schaltkreise mit mangelder Abschirmung zur Induktion einer Fremdspannung kommen, wodurch die Amplitude der Modulation beeinflusst wird. Unbeeinflusst bleibt die Frequenz, weshalb im Folgenden die Frequenzmodulation beschrieben wird.
+
+\section{Frequenzmodulation}
+\label{sec:Frequenzmodulation}
+Bei der Frequenzmodulation entsteht eine Änderung der Trägerfrequenz verursacht durch ein Modulationssignal. Dabei ist zu betonen, dass nur die Frequenz eine Variation erfährt und die Amplitude konstant bleibt. Die modulierte Spannung kann wie folgt dargestellt werden:
+\begin{align}
+	U(t)=\hat{U}\sin{\left(\omega_Tt+m\frac{\omega_T}{\omega_M}\cos{(\omega_Mt)}\right)}
+\end{align}
+Die Momentanfrequenz wird dabei beschrieben durch
+\begin{align}
+	f(t)=\frac{\omega_T}{2\pi}(1-m\sin{(\omega_Mt)})\;.
+\end{align}
+Mit dem Frequenzhub
+\begin{align}
+	\Delta f=\frac{m\omega_T}{2\pi}
+\end{align}
+wird die Variationsbreite, also ein Maß für die Variation der Frequenz definiert. In Abbildung XXX ist beispielhaft eine Frequenzmodulierte Schwingung skizziert.
+
+% \begin{figure}
+%     \centering
+%     \includegraphics[width=0.55\textwidth]{ressources/kubies.png}
+%     \caption{Abbildung eines bcc-Gitters (links) und eines fcc-Gitters\cite{skript}.}
+%     \label{bcc}
+% \end{figure}
+
+Anhand einer sogenannten Schmalband-Frequenzmodulation, bei der gilt 
+\begin{align}
+	m\frac{\omega_T}{\omega_M}<<1,
+\end{align}
+soll im folgende grundlegende Eigenschafte der Frequenzmodulation verdeutlicht werden. Mittels trigonometrischer Funktionen wird Gleichung XXX umgeformt zu
+\begin{align}
+	U(t)=\hat{U}\left(\sin{(\omega_Tt)}\cos{\left(m\frac{\omega_T}{\omega_M}\cos{(\omega_Mt)}\right)} + \cos{(\omega_Tt)}\sin{\left(m\frac{\omega_T}{\omega_M}\cos{(\omega_Mt)}\right)}\right) \:.
+\end{align}
+Mit einer Reihenentwicklung der Sinus- und Cosinustherme, bei der nur Therme erster Ordung betrachtet werden und  unter Berücksichtigung von Gleichung XXX, entsteht die Gleichung
+\begin{align}
+	U(t)=\hat{U}\left(\sin{(\omega_Tt)+\frac{1}{2}m\frac{\omega_T}{\omega_M}\cos{(\omega_T+\omega_M)t}}+\frac{1}{2}m\frac{\omega_T}{\omega_M}\cos{(\omega_T-\omega_M)t})\right)\;,
+\end{align}
+die sehr große Ähnlichkeit zur amplitudenmodulierten Spannung aufweißt, da auch hier das Frequenzspektrum aus den drei Frequenzen
+\begin{align}
+	\omega_T-\omega_M,\quad\omega,\quad\omega_T+\omega_M\;
+\end{align}
+besteht. Der wesentliche Unterschied besteht jedoch in der Trägerschwingung, da diese durch den Sinus um $90\circ\text{C}$ Phasenverschoben wird.
+Unter Berücksichtigung höherer Therme in der Reihenentwicklung ergibt sich 
+\begin{align}
+	U(t)=\hat{U}\sum_{n=-\infty}^{\infty} J_n\left(m\frac{\omega_T}{\omega_M}\right)\sin{(\omega_T+n\omega_M)}t\;. 
+\end{align}
+Der Ausdruck $J_n(x)$ steht dabei für die Besselfunktion n-ter Ordnung. Bei der Betrachtung von Gleichung XXX fällt auf, dass der Iterator der Summe in der Sinusfunktion ein beliebig großes Frequenzspektrum ermöglicht. Da jedoch die Besselfunktion für steigende $n$ gegen Null strebt müssen nur Frequenzen nahe der Trägerfrequenz $\omega_T$ berücksichtigt werden.
+
 
 % 2x2 Plot
 % \begin{figure*}

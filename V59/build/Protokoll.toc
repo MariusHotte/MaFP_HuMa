@@ -1,0 +1,24 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {german}
+\contentsline {section}{\numberline {1}Theorie}{3}{section.1}
+\contentsline {section}{\numberline {2}Amplitudenmodulation}{3}{section.2}
+\contentsline {section}{\numberline {3}Frequenzmodulation}{4}{section.3}
+\contentsline {section}{\numberline {4}Fehlerrechnung}{6}{section.4}
+\contentsline {section}{\numberline {5}Versuchsaufbau}{7}{section.5}
+\contentsline {subsection}{\numberline {5.1}Modulation}{7}{subsection.5.1}
+\contentsline {subsubsection}{\numberline {5.1.1}Primitive Modulatorschaltung mittels Diode}{7}{subsubsection.5.1.1}
+\contentsline {subsubsection}{\numberline {5.1.2}Ringmodulator}{7}{subsubsection.5.1.2}
+\contentsline {subsubsection}{\numberline {5.1.3}Frequenzmodulator mit geringem Frequenzhub}{7}{subsubsection.5.1.3}
+\contentsline {subsection}{\numberline {5.2}Demodulation}{8}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Demodulation amplitudenmodulieter Schwingungen}{8}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Demodulator-Schaltung mit einer Gleichrichter-Diode}{8}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Demodulation frequenzmodulieter Schwingungen}{8}{subsection.5.5}
+\contentsline {section}{\numberline {6}Durchführung}{9}{section.6}
+\contentsline {subsection}{\numberline {6.1}Amplitudenmodulierte Schwingungen}{9}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Frequenzmodulierte Schwingungen}{9}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Gleichrichtereigenschaften des Ringmodulators}{9}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Demodulation einer amplitudenmodulierten Schwingung}{9}{subsection.6.4}
+\contentsline {subsection}{\numberline {6.5}Demodulation einer frequenzmodulierten Schwingung}{10}{subsection.6.5}
+\contentsline {section}{\numberline {7}Auswertung}{11}{section.7}
+\contentsline {section}{\numberline {8}Diskussion}{12}{section.8}

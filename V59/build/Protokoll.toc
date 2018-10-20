@@ -2,23 +2,25 @@
 \defcounter {refsection}{0}\relax 
 \select@language {german}
 \contentsline {section}{\numberline {1}Theorie}{3}{section.1}
-\contentsline {section}{\numberline {2}Amplitudenmodulation}{3}{section.2}
-\contentsline {section}{\numberline {3}Frequenzmodulation}{4}{section.3}
-\contentsline {section}{\numberline {4}Fehlerrechnung}{6}{section.4}
-\contentsline {section}{\numberline {5}Versuchsaufbau}{7}{section.5}
-\contentsline {subsection}{\numberline {5.1}Modulation}{7}{subsection.5.1}
-\contentsline {subsubsection}{\numberline {5.1.1}Primitive Modulatorschaltung mittels Diode}{7}{subsubsection.5.1.1}
-\contentsline {subsubsection}{\numberline {5.1.2}Ringmodulator}{7}{subsubsection.5.1.2}
-\contentsline {subsubsection}{\numberline {5.1.3}Frequenzmodulator mit geringem Frequenzhub}{7}{subsubsection.5.1.3}
-\contentsline {subsection}{\numberline {5.2}Demodulation}{8}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Demodulation amplitudenmodulieter Schwingungen}{8}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Demodulator-Schaltung mit einer Gleichrichter-Diode}{8}{subsection.5.4}
-\contentsline {subsection}{\numberline {5.5}Demodulation frequenzmodulieter Schwingungen}{8}{subsection.5.5}
-\contentsline {section}{\numberline {6}Durchführung}{9}{section.6}
-\contentsline {subsection}{\numberline {6.1}Amplitudenmodulierte Schwingungen}{9}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Frequenzmodulierte Schwingungen}{9}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Gleichrichtereigenschaften des Ringmodulators}{9}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Demodulation einer amplitudenmodulierten Schwingung}{9}{subsection.6.4}
-\contentsline {subsection}{\numberline {6.5}Demodulation einer frequenzmodulierten Schwingung}{10}{subsection.6.5}
-\contentsline {section}{\numberline {7}Auswertung}{11}{section.7}
-\contentsline {section}{\numberline {8}Diskussion}{12}{section.8}
+\contentsline {subsection}{\numberline {1.1}Amplitudenmodulation}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Frequenzmodulation}{4}{subsection.1.2}
+\contentsline {section}{\numberline {2}Fehlerrechnung}{6}{section.2}
+\contentsline {section}{\numberline {3}Versuchsaufbau}{7}{section.3}
+\contentsline {subsection}{\numberline {3.1}Modulation}{7}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Primitive Modulatorschaltung mittels Diode}{7}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}Ringmodulator}{7}{subsubsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.3}Frequenzmodulator mit geringem Frequenzhub}{8}{subsubsection.3.1.3}
+\contentsline {subsubsection}{\numberline {3.1.4}Phasenempfindlichkeit der Gleichrichterdiode}{8}{subsubsection.3.1.4}
+\contentsline {subsection}{\numberline {3.2}Demodulation}{9}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Demodulation amplitudenmodulierter Schwingungen}{9}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Demodulator-Schaltung mit einer Gleichrichter-Diode}{9}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}Demodulation frequenzmodulierter Schwingungen}{10}{subsubsection.3.2.3}
+\contentsline {section}{\numberline {4}Durchführung}{12}{section.4}
+\contentsline {subsection}{\numberline {4.1}Amplitudenmodulierte Schwingungen}{12}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Frequenzmodulierte Schwingungen}{12}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Gleichrichtereigenschaften des Ringmodulators}{12}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Demodulation einer amplitudenmodulierten Schwingung}{12}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Demodulation einer frequenzmodulierten Schwingung}{13}{subsection.4.5}
+\contentsline {section}{\numberline {5}Auswertung}{14}{section.5}
+\contentsline {section}{\numberline {6}Diskussion}{15}{section.6}
+\contentsline {section}{\nonumberline Literatur}{16}{section*.15}

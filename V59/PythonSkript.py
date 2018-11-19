@@ -1,7 +1,7 @@
 ##################################################### Import system libraries ######################################################
 import matplotlib as mpl
-mpl.rcdefaults()
-mpl.rcParams.update(mpl.rc_params_from_file('meine-matplotlibrc'))
+#mpl.rcdefaults()
+#mpl.rcParams.update(mpl.rc_params_from_file('meine-matplotlibrc'))
 import matplotlib.pyplot as plt
 import numpy as np
 import scipy.constants as const
@@ -19,6 +19,7 @@ import os, sys, inspect
 cmd_folder = os.path.realpath(os.path.abspath(os.path.split(inspect.getfile( inspect.currentframe() ))[0]))
 if cmd_folder not in sys.path:
     sys.path.insert(0, cmd_folder)
+from scipy.optimize import curve_fit
 
  # use this if you want to include modules from a subfolder
 cmd_subfolder = os.path.realpath(os.path.abspath(os.path.join(os.path.split(inspect.getfile( inspect.currentframe() ))[0],"python_custom_scripts")))
@@ -49,8 +50,78 @@ from utility import(
     constant
 )
 ################################################ Finish importing custom libraries #################################################
+a=45.75
+b=83.75
+
+m=(b-a)/(a+b)
+print(m, "Modulationsgrad")
+
+ut=2.88
+mf=0.17197
+x=np.array([-3,-2,-1,0,1,2,3])
+print(x)
+for i in x:
+    ux=ut-x[i]*mf
+    print(ux)
+fak=10
+P1=10**(-19.85/fak)
+P2=10**(-32.78/fak)
+P3=10**(-32.86/fak)
+print("Leistungen", P1, P2, P3)
+mp=2*np.sqrt((P2)/P1)
+mm=2*((P3)/P1)**(1/2)
+print(mp, mm ,"Modulationsgrad mp mm")
+
+nut=1.26*10**6
+num=190*10**3
+deltat=ufloat(238*10**(-9), 10*10**(-9))
+
+mod=-(3.1415923565/4*num*deltat)+  ((3.141592**2/16*nut**2 * deltat**2 )+3.141592**2/4)**(-0.5)
+print(mod)
+print("Frequenthub", mod*nut)
 
 
+P11=10**(-3.403/fak)
+P21=10**(-14.21/fak)
+P31=10**(-14.29/fak)
+mod1=2*np.sqrt(P21/P11)#*(num/nut)
+mod2=2*np.sqrt(P31/P11)#*(num/nut)
+print(num/nut,"num/nut")
+print(mod1,mod2,"Modulationsgerade freq.")
+
+f,U,UE = np.genfromtxt("messdaten/daten.txt", unpack=True)
+
+T=0.290
+phi= 2*np.pi*f*T
+print(phi)
+#print(len(phi),len(U))
+UN=U/UE
+def fitfunction(phi, U0, b, poff, Uoff):
+     return U0*np.cos(b*phi+ poff)+Uoff
+
+params_3, covariance_1 = curve_fit( fitfunction, phi, UN , maxfev=900000000)
+errors_3 = np.sqrt(np.diag(covariance_1))
+x_range=np.linspace(min(phi),max(phi),10000)
+plt.plot(phi,U/UE, " k x", label="Messwerte")
+plt.grid()
+plt.xlabel(" Phasendifferenz in rad")
+plt.ylabel(" Normierte Spannung")
+plt.plot(x_range, fitfunction(x_range, *params_3), "r-", label="Fit")
+plt.legend()
+plt.savefig("build/plot.pdf")
+
+plt.clf()
+
+print("Parameter der Fits von D")
+print("U0", params_3[0], "±", errors_3[0])
+print("b", params_3[1], "±", errors_3[1])
+print("poff", params_3[2], "±", errors_3[2])
+print("Uoff", params_3[3], "±", errors_3[3])
+
+
+
+
+#Berchnung der Phasendifferenz
 
 
 

@@ -1,0 +1,9 @@
+[0] Config.pm:302> INFO - This is Biber 2.11
+[0] Config.pm:305> INFO - Logfile is 'build/Protokoll.blg'
+[43] biber:313> INFO - === Sun Nov 11, 2018, 19:32:33
+[74] Biber.pm:371> INFO - Reading 'build/Protokoll.bcf'
+[179] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
+[187] Utils.pm:193> WARN - The file 'build/Protokoll.bcf' does not contain any citations!
+[196] bbl.pm:617> INFO - Writing 'build/Protokoll.bbl' with encoding 'UTF-8'
+[196] bbl.pm:720> INFO - Output to build/Protokoll.bbl
+[196] Biber.pm:110> INFO - WARNINGS: 1

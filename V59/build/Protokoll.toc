@@ -22,5 +22,12 @@
 \contentsline {subsection}{\numberline {4.4}Demodulation einer amplitudenmodulierten Schwingung}{12}{subsection.4.4}
 \contentsline {subsection}{\numberline {4.5}Demodulation einer frequenzmodulierten Schwingung}{13}{subsection.4.5}
 \contentsline {section}{\numberline {5}Auswertung}{14}{section.5}
-\contentsline {section}{\numberline {6}Diskussion}{15}{section.6}
-\contentsline {section}{\nonumberline Literatur}{16}{section*.15}
+\contentsline {subsection}{\numberline {5.1}Erzeugung von amplitudenmodulierten Schwingungen mit Hilfe eines Ringmodulators}{14}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Erzeugung amplitudenmodulierter Schwingungen mit Hilfe einer Diode}{14}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Erzeugung einer frequenzmodulierten Schwingung}{16}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Phasenabhängigkeit der Ringmodulatorspannung}{20}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Demodulation einer amplitudenmodulierten Schwingung mit Hilfe eines Ringmodulators}{20}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.6}Demodulation mit amplitudenmodulierten Spannung mit einer Gleichrichterdiode}{22}{subsection.5.6}
+\contentsline {subsection}{\numberline {5.7}Demodulation einer frequenzmodulierten Schwingung}{22}{subsection.5.7}
+\contentsline {section}{\numberline {6}Diskussion}{26}{section.6}
+\contentsline {section}{\nonumberline Literatur}{27}{section*.31}

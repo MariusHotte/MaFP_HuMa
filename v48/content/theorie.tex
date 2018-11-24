@@ -24,9 +24,12 @@ Zeit die ein Dipol braucht, bis zwei Umorientierungen stattfinden bezeichnet man
 als Relaxationzeit. Diese hängt davon ab wieviel des Gesamtdipolmomentes die Energie
 $W$ bestitzt um die Potentialschwelle zu überwinden. Diese Größe ist
 Boltzmann verteilt. Die Relaxationszeit ist gegeben durch:
-$$
+
+
+\begin{equation}
+    \label{Formel1}
 \tau(T)=\tau_0 \exp(\frac{W}{k_\text{B}T})
-$$
+\end{equation}
 Das $\tau_0$ wird als charakteristische Relaxationszeit bezeichnet und
 gibt das Verhalten der Relaxationszeit im unendlichen an, sie ist
 definiert als $\tau_0=\tau(\infty)$. Nach Definition der zu bestimmenden
@@ -49,9 +52,47 @@ Für das durchgeführte Experiment kann die Näherung getroffen werden das
 $$pE \ll KT$$
 sodass sich für die Langevin-Funktion ergibt:
 $$y(T)=\frac{pE}{3kT}$$
-Zusätzlich muss angenommen werden, dass Dipole lange gegenüber der
+Zusätzlich muss angenommen werden, dass Dipole sich lange gegenüber der
 Relaxationzeit im E-Feld aufhalten. Damit die obenstehende Gleichung
-gilt.
+gilt.\\
+Es wird nun der Strom betrachtet der entsteht wenn sich die Dipole ausrichten,
+dieser ist proportional zum Anteil der bei der Polarisationstemperatur $T_p$
+ polarisierten Diople, zum Probenquerschnitt $F$ und der relaxierenden Diope $\text{d}N/\text{d}t (t)$.
+ Es folgt:
+$$ j(T)=y(T_p)F \frac{\text{d}N}{\text{d}t}(T)$$
+Der Ausdruck $\frac{\text{d}N}{\text{d}t}(T)$ lässt sich Nähern, sodass gilt:
+$$j(T)\approx y(T_p)\frac{F N_p}{\tau_o} \exp{\frac{-W}{k_bT}}$$
+$$j(T)\frac{\tau_0}{F_p N_p y(T_p)}\approx \exp{\frac{-W}{k_bT}} $$
+Sodass schließlich näherungsweise ein Zusammenhang zwischen der Aktivierungsenergie $W$ herstellen lässt:
+\begin{equation}
+    \label{Formel5}
+    \ln (\frac{j(T)}{1\,\text{A}})+ \ln(\text{const}.)=\frac{-W}{k_bT}
+\end{equation}
+Alternativ kann man beginnend mit einer Betrachtung der Probenpolarisation
+$$ \frac{ \text{d}P}{\text{d}t}= - \frac{P}{\tau (T)}$$
+Die Polarisation lässt sich als ein Integral über die Stromdichte darstellen.
+$$P(t=\infty)-P(t(T))= \int_{t(T)}^{\infty} j(t')\text{d}t'$$
+Der Term $P(t=\infty)$ verschwindet, da nach beliebig langer Zeit alle Dipole
+relaxiert sind. Des Weiteren wird erneut die konstate Heizrate $b=\text{d}T/\text{d}t$
+angenommen, sodass folgt:
+$$ \tau(T)=\int_T^\infty j(T')\text{d}T' \frac{1}{j(T)b}$$
+Mit Hilfe der Gleichung \eqref{Formel1} lässt sich $\tau(T)$ ersetzen:
+\begin{equation}
+    \label{Formel7}
+\ln(\int_T^\infty j(T')\text{t}T')-\ln(j(T)\tau_0 b)=\frac{W}{k_BT}
+\end{equation}
+Für die folgenden Umformungen wird die obere Integralgrenze
+des ungeigentlichen Integrals auf eine Temperatur gesetzt, bei der der Strom
+verschwindet. Zur Berechnung der charakteristischen Relaxationszeit
+$\tau_0$ wird das Maximum der Stromdichte gesucht.
+$$ \frac{\text{d}j}{\text{d}T}\left|_{T=T_\text{max}} \right.$$
+Mit Hilfe des Maximierungsproblems lässt sich die Formel für das $\tau_0$
+gewinnen:
+\begin{equation}
+    \label{Formel8}
+    \tau_0=b^{-1}\exp \left(-\frac{W}{k_b T_{\text{max}}}\right)
+            \frac{k_BT^2_\text{max}}{W}.
+\end{equation}
 
 \begin{figure}
 \centering
@@ -59,6 +100,7 @@ gilt.
 \caption{Darstellung eines Ionenkristallgitters mit einem ausgebildeten Dipol}
 \label{theo1}
 \end{figure}
+
 
 
 % 2x2 Plot

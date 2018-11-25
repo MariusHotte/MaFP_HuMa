@@ -8,4 +8,11 @@
 \contentsline {section}{\numberline {4}Versuchsaufbau und Durchführung}{7}{section.4}
 \contentsline {section}{\numberline {5}Durchführung}{8}{section.5}
 \contentsline {section}{\numberline {6}Auswertung}{9}{section.6}
-\contentsline {section}{\numberline {7}Diskussion}{10}{section.7}
+\contentsline {subsection}{\numberline {6.1}Messdaten der ersten Heizrate}{9}{subsection.6.1}
+\contentsline {subsubsection}{\numberline {6.1.1}Bestimmung von $W$ mit der "Flanken"-Methode}{10}{subsubsection.6.1.1}
+\contentsline {subsubsection}{\numberline {6.1.2}Bestimmung von $W$ mit der "Vollpeak"-Methode}{11}{subsubsection.6.1.2}
+\contentsline {subsection}{\numberline {6.2}Messdaten der zweiten Heizrate}{12}{subsection.6.2}
+\contentsline {subsubsection}{\numberline {6.2.1}Bestimmung von $W$ mit der "Flanken"-Methode}{14}{subsubsection.6.2.1}
+\contentsline {subsubsection}{\numberline {6.2.2}Bestimmung von $W$ mit der "Vollpeak"-Methode}{14}{subsubsection.6.2.2}
+\contentsline {section}{\numberline {7}Diskussion}{17}{section.7}
+\contentsline {section}{\nonumberline Literatur}{18}{section*.17}

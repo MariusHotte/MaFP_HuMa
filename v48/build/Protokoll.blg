@@ -1,9 +1,18 @@
 [0] Config.pm:302> INFO - This is Biber 2.11
 [0] Config.pm:305> INFO - Logfile is 'build/Protokoll.blg'
-[30] biber:313> INFO - === Sat Nov 24, 2018, 01:07:03
-[51] Biber.pm:371> INFO - Reading 'build/Protokoll.bcf'
-[132] Biber.pm:857> INFO - Found 0 citekeys in bib section 0
-[143] Utils.pm:193> WARN - The file 'build/Protokoll.bcf' does not contain any citations!
-[151] bbl.pm:617> INFO - Writing 'build/Protokoll.bbl' with encoding 'UTF-8'
-[151] bbl.pm:720> INFO - Output to build/Protokoll.bbl
-[152] Biber.pm:110> INFO - WARNINGS: 1
+[22] biber:313> INFO - === So Nov 25, 2018, 14:59:59
+[39] Biber.pm:371> INFO - Reading 'build/Protokoll.bcf'
+[95] Biber.pm:857> INFO - Found 2 citekeys in bib section 0
+[104] Biber.pm:3976> INFO - Processing section 0
+[112] Biber.pm:4136> INFO - Looking for bibtex format file 'Quellen.bib' for section 0
+[112] bibtex.pm:1500> INFO - LaTeX decoding ...
+[116] bibtex.pm:1316> INFO - Found BibTeX data source 'Quellen.bib'
+[116] Biber.pm:4136> INFO - Looking for bibtex format file 'programme.bib' for section 0
+[117] bibtex.pm:1500> INFO - LaTeX decoding ...
+[121] bibtex.pm:1316> INFO - Found BibTeX data source 'programme.bib'
+[140] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[140] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[140] Biber.pm:3804> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[140] Biber.pm:3810> INFO - No sort tailoring available for locale 'de-DE'
+[147] bbl.pm:617> INFO - Writing 'build/Protokoll.bbl' with encoding 'UTF-8'
+[148] bbl.pm:720> INFO - Output to build/Protokoll.bbl

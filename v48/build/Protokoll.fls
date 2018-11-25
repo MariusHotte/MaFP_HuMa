@@ -520,8 +520,6 @@ INPUT ./content/versuchsaufbau.tex
 INPUT ./content/versuchsaufbau.tex
 INPUT ./ressources/photo5458414829602712357.jpg
 INPUT ./ressources/photo5458414829602712357.jpg
-INPUT ./content/durchfuehrung.tex
-INPUT ./content/durchfuehrung.tex
 INPUT ./content/auswertung.tex
 INPUT ./content/auswertung.tex
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm

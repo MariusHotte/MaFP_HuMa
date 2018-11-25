@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018/Arch Linux)  (format=lualatex 2018.10.21)  25 NOV 2018 16:43
+This is LuaTeX, Version 1.07.0 (TeX Live 2018/Arch Linux)  (format=lualatex 2018.10.21)  25 NOV 2018 16:55
  restricted system commands enabled.
 **Protokoll.tex
 (./Protokoll.tex
@@ -22,7 +22,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.099 seconds (./header.tex (/usr/share/texmf-dist/tex/latex/koma-script/scrartcl.cls
+luaotfload | main : initialization completed in 0.106 seconds (./header.tex (/usr/share/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2018/03/30 v3.25 KOMA-Script document class (article)
 (/usr/share/texmf-dist/tex/latex/koma-script/scrkbase.sty
 Package: scrkbase 2018/03/30 v3.25 KOMA-Script package (KOMA-Script-dependent basics and keyval usage)
@@ -738,22 +738,22 @@ luatex-hyphen: using data file: /usr/share/texmf-dist/tex/generic/config/languag
 Lua module: polyglossia 2013/05/11 1.3 Polyglossia) (/usr/share/texmf-dist/tex/latex/polyglossia/gloss-german.ldf
 File: gloss-german.ldf polyglossia: module for german
 Module polyglossia Info: Language data for german
-(polyglossia)            hyphenation	
+(polyglossia)            righthyphenmin	2
 (polyglossia)            loader	loadhyph-de-1901.tex
 (polyglossia)            patterns	hyph-de-1901.pat.txt
-(polyglossia)            righthyphenmin	2
 (polyglossia)            lefthyphenmin	2
-(polyglossia)            synonyms	table: 0x556ed07661d0
+(polyglossia)            hyphenation	
+(polyglossia)            synonyms	table: 0x55b4da3dd190
 (polyglossia)            patterns: hyph-de-1901.pat.txt on input line 6
 Module polyglossia Info: Language german was not yet loaded; created with id 4 on input line 6
 Module polyglossia Info: Language german already loaded; id is 4 on input line 6
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            hyphenation	
+(polyglossia)            righthyphenmin	2
 (polyglossia)            loader	loadhyph-de-1996.tex
 (polyglossia)            patterns	hyph-de-1996.pat.txt
-(polyglossia)            righthyphenmin	2
 (polyglossia)            lefthyphenmin	2
-(polyglossia)            synonyms	table: 0x556ed07663a0
+(polyglossia)            hyphenation	
+(polyglossia)            synonyms	table: 0x55b4da3dd360
 (polyglossia)            patterns: hyph-de-1996.pat.txt on input line 68
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 8 on input line 68
 Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 68
@@ -2477,13 +2477,13 @@ Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 
  [2
 
 ] (./content/einleitung.tex) (./content/theorie.tex(load luc: /home/marius/.texlive/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc)(load luc: /home/marius/.texlive/texmf-var/luatex-cache/generic/fonts/otl/lmroman5-regular.luc)
-<ressources/ionengitter.png, id=57, 760.8425pt x 530.98375pt>
+<ressources/ionengitter.png, id=55, 760.8425pt x 530.98375pt>
 File: ressources/ionengitter.png Graphic file (type png)
 <use ressources/ionengitter.png>
 Package luatex.def Info: ressources/ionengitter.png  used on input line 13.
 (luatex.def)             Requested size: 364.19667pt x 254.17252pt.
  [3<./ressources/ionengitter.png>] [4]
-<ressources/stromfluss.png, id=75, 771.88374pt x 563.10374pt>
+<ressources/stromfluss.png, id=76, 771.88374pt x 563.10374pt>
 File: ressources/stromfluss.png Graphic file (type png)
 <use ressources/stromfluss.png>
 Package luatex.def Info: ressources/stromfluss.png  used on input line 99.
@@ -2491,46 +2491,44 @@ Package luatex.def Info: ressources/stromfluss.png  used on input line 99.
 ) [5<./ressources/stromfluss.png>] (./content/fehlerrechnung.tex) [6
 
 ] (./content/versuchsaufbau.tex
-<ressources/photo5458414829602712357.jpg, id=95, 1284.8pt x 963.6pt>
+<ressources/photo5458414829602712357.jpg, id=98, 1284.8pt x 963.6pt>
 File: ressources/photo5458414829602712357.jpg Graphic file (type jpg)
 <use ressources/photo5458414829602712357.jpg>
 Package luatex.def Info: ressources/photo5458414829602712357.jpg  used on input line 17.
 (luatex.def)             Requested size: 364.19667pt x 273.14381pt.
 ) [7
 
-<./ressources/photo5458414829602712357.jpg>] (./content/durchfuehrung.tex) [8
-
-] (./content/auswertung.tex
-<build/1_Temp_Time.pdf, id=108, 417.7206pt x 258.0039pt>
+<./ressources/photo5458414829602712357.jpg>] (./content/auswertung.tex
+<build/1_Temp_Time.pdf, id=107, 417.7206pt x 258.0039pt>
 File: build/1_Temp_Time.pdf Graphic file (type pdf)
 <use build/1_Temp_Time.pdf>
 Package luatex.def Info: build/1_Temp_Time.pdf  used on input line 14.
 (luatex.def)             Requested size: 227.62206pt x 140.58768pt.
 (load luc: /home/marius/.texlive/texmf-var/luatex-cache/generic/fonts/otl/lmroman9-regular.luc)(load luc: /home/marius/.texlive/texmf-var/luatex-cache/generic/fonts/otl/lmroman9-bold.luc)
-<build/1_Temp_current.pdf, id=109, 417.7206pt x 258.0039pt>
+<build/1_Temp_current.pdf, id=108, 417.7206pt x 258.0039pt>
 File: build/1_Temp_current.pdf Graphic file (type pdf)
 <use build/1_Temp_current.pdf>
 Package luatex.def Info: build/1_Temp_current.pdf  used on input line 20.
 (luatex.def)             Requested size: 227.62206pt x 140.58768pt.
-<build/1_Temp_current_background_peak_withoutfit.pdf, id=112, 417.7206pt x 258.0039pt>
+<build/1_Temp_current_background_peak_withoutfit.pdf, id=111, 417.7206pt x 258.0039pt>
 File: build/1_Temp_current_background_peak_withoutfit.pdf Graphic file (type pdf)
 <use build/1_Temp_current_background_peak_withoutfit.pdf>
 Package luatex.def Info: build/1_Temp_current_background_peak_withoutfit.pdf  used on input line 40.
 (luatex.def)             Requested size: 227.62206pt x 140.58768pt.
-<build/1_Temp_current_background_peak.pdf, id=113, 417.7206pt x 258.0039pt>
+<build/1_Temp_current_background_peak.pdf, id=112, 417.7206pt x 258.0039pt>
 File: build/1_Temp_current_background_peak.pdf Graphic file (type pdf)
 <use build/1_Temp_current_background_peak.pdf>
 Package luatex.def Info: build/1_Temp_current_background_peak.pdf  used on input line 46.
 (luatex.def)             Requested size: 227.62206pt x 140.58768pt.
- (./build/1_peak1_untergrundparams_a.tex) (./build/1_peak1_untergrundparams_b.tex) (./build/1_peak1_untergrundparams_c.tex) (./build/1_peak1_untergrundparams_a.tex) (./build/1_peak1_untergrundparams_b.tex) (./build/1_peak1_untergrundparams_c.tex) [9
+ (./build/1_peak1_untergrundparams_a.tex) (./build/1_peak1_untergrundparams_b.tex) (./build/1_peak1_untergrundparams_c.tex) (./build/1_peak1_untergrundparams_a.tex) (./build/1_peak1_untergrundparams_b.tex) (./build/1_peak1_untergrundparams_c.tex) [8
 
 <./build/1_Temp_Time.pdf><./build/1_Temp_current.pdf><./build/1_Temp_current_background_peak_withoutfit.pdf><./build/1_Temp_current_background_peak.pdf>]
-<build/1_Temp_current_peak.pdf, id=263, 417.7206pt x 258.0039pt>
+<build/1_Temp_current_peak.pdf, id=262, 417.7206pt x 258.0039pt>
 File: build/1_Temp_current_peak.pdf Graphic file (type pdf)
 <use build/1_Temp_current_peak.pdf>
 Package luatex.def Info: build/1_Temp_current_peak.pdf  used on input line 68.
 (luatex.def)             Requested size: 227.62206pt x 140.58768pt.
-<build/1_Temp_current_peak2.pdf, id=264, 417.7206pt x 258.0039pt>
+<build/1_Temp_current_peak2.pdf, id=263, 417.7206pt x 258.0039pt>
 File: build/1_Temp_current_peak2.pdf Graphic file (type pdf)
 <use build/1_Temp_current_peak2.pdf>
 Package luatex.def Info: build/1_Temp_current_peak2.pdf  used on input line 74.
@@ -2544,23 +2542,23 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 82.
 
-<build/1_Temp_current_peak_log_fit.pdf, id=267, 417.7206pt x 258.0039pt>
+<build/1_Temp_current_peak_log_fit.pdf, id=266, 417.7206pt x 258.0039pt>
 File: build/1_Temp_current_peak_log_fit.pdf Graphic file (type pdf)
 <use build/1_Temp_current_peak_log_fit.pdf>
 Package luatex.def Info: build/1_Temp_current_peak_log_fit.pdf  used on input line 91.
 (luatex.def)             Requested size: 227.62206pt x 140.58768pt.
-<build/1_Temp_current_peak2_log_fit.pdf, id=268, 417.7206pt x 258.0039pt>
+<build/1_Temp_current_peak2_log_fit.pdf, id=267, 417.7206pt x 258.0039pt>
 File: build/1_Temp_current_peak2_log_fit.pdf Graphic file (type pdf)
 <use build/1_Temp_current_peak2_log_fit.pdf>
 Package luatex.def Info: build/1_Temp_current_peak2_log_fit.pdf  used on input line 97.
 (luatex.def)             Requested size: 227.62206pt x 140.58768pt.
-(./build/1_Energie_peak1_variante1.tex) (./build/1_Energie_peak2_variante1.tex) (./build/1_Energie_peak1_variante1.tex) (./build/1_Energie_peak2_variante1.tex) [10<./build/1_Temp_current_peak.pdf><./build/1_Temp_current_peak2.pdf><./build/1_Temp_current_peak_log_fit.pdf><./build/1_Temp_current_peak2_log_fit.pdf>] (./build/1_Heizrate_peak1.tex) (./build/1_Heizrate_peak2.tex) (./build/1_Heizrate_peak1.tex) (./build/1_Heizrate_peak2.tex)
-<build/1_Temp_Time_Peak1.pdf, id=411, 417.7206pt x 258.0039pt>
+(./build/1_Energie_peak1_variante1.tex) (./build/1_Energie_peak2_variante1.tex) (./build/1_Energie_peak1_variante1.tex) (./build/1_Energie_peak2_variante1.tex) [9<./build/1_Temp_current_peak.pdf><./build/1_Temp_current_peak2.pdf><./build/1_Temp_current_peak_log_fit.pdf><./build/1_Temp_current_peak2_log_fit.pdf>] (./build/1_Heizrate_peak1.tex) (./build/1_Heizrate_peak2.tex) (./build/1_Heizrate_peak1.tex) (./build/1_Heizrate_peak2.tex)
+<build/1_Temp_Time_Peak1.pdf, id=410, 417.7206pt x 258.0039pt>
 File: build/1_Temp_Time_Peak1.pdf Graphic file (type pdf)
 <use build/1_Temp_Time_Peak1.pdf>
 Package luatex.def Info: build/1_Temp_Time_Peak1.pdf  used on input line 122.
 (luatex.def)             Requested size: 227.62206pt x 140.58768pt.
-<build/1_Temp_Time_Peak2.pdf, id=412, 417.7206pt x 258.0039pt>
+<build/1_Temp_Time_Peak2.pdf, id=411, 417.7206pt x 258.0039pt>
 File: build/1_Temp_Time_Peak2.pdf Graphic file (type pdf)
 <use build/1_Temp_Time_Peak2.pdf>
 Package luatex.def Info: build/1_Temp_Time_Peak2.pdf  used on input line 128.
@@ -2574,39 +2572,39 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 150.
 
-<build/1_Temp_current_peak_log_3.pdf, id=415, 417.7206pt x 258.0039pt>
+<build/1_Temp_current_peak_log_3.pdf, id=414, 417.7206pt x 258.0039pt>
 File: build/1_Temp_current_peak_log_3.pdf Graphic file (type pdf)
 <use build/1_Temp_current_peak_log_3.pdf>
 Package luatex.def Info: build/1_Temp_current_peak_log_3.pdf  used on input line 166.
 (luatex.def)             Requested size: 227.62206pt x 140.58768pt.
-<build/1_Temp_current_peak2_log_3.pdf, id=416, 417.7206pt x 258.0039pt>
+<build/1_Temp_current_peak2_log_3.pdf, id=415, 417.7206pt x 258.0039pt>
 File: build/1_Temp_current_peak2_log_3.pdf Graphic file (type pdf)
 <use build/1_Temp_current_peak2_log_3.pdf>
 Package luatex.def Info: build/1_Temp_current_peak2_log_3.pdf  used on input line 172.
 (luatex.def)             Requested size: 227.62206pt x 140.58768pt.
-(./build/1_Energie_peak1_variante2.tex) (./build/1_Energie_peak2_variante2.tex) (./build/1_Energie_peak1_variante2.tex) (./build/1_Energie_peak2_variante2.tex) [11<./build/1_Temp_Time_Peak1.pdf><./build/1_Temp_Time_Peak2.pdf>] (./build/1_tau_peak1_variante2.tex) (./build/1_tau_peak2_variante2.tex) (./build/1_tau_peak1_variante2.tex) (./build/1_tau_peak2_variante2.tex)
-<build/2_Temp_Time.pdf, id=475, 417.7206pt x 258.0039pt>
+(./build/1_Energie_peak1_variante2.tex) (./build/1_Energie_peak2_variante2.tex) (./build/1_Energie_peak1_variante2.tex) (./build/1_Energie_peak2_variante2.tex) [10<./build/1_Temp_Time_Peak1.pdf><./build/1_Temp_Time_Peak2.pdf>] (./build/1_tau_peak1_variante2.tex) (./build/1_tau_peak2_variante2.tex) (./build/1_tau_peak1_variante2.tex) (./build/1_tau_peak2_variante2.tex)
+<build/2_Temp_Time.pdf, id=473, 417.7206pt x 258.0039pt>
 File: build/2_Temp_Time.pdf Graphic file (type pdf)
 <use build/2_Temp_Time.pdf>
 Package luatex.def Info: build/2_Temp_Time.pdf  used on input line 200.
 (luatex.def)             Requested size: 227.62206pt x 140.58768pt.
-<build/2_Temp_current.pdf, id=476, 417.7206pt x 258.0039pt>
+<build/2_Temp_current.pdf, id=474, 417.7206pt x 258.0039pt>
 File: build/2_Temp_current.pdf Graphic file (type pdf)
 <use build/2_Temp_current.pdf>
 Package luatex.def Info: build/2_Temp_current.pdf  used on input line 206.
 (luatex.def)             Requested size: 227.62206pt x 140.58768pt.
- [12<./build/1_Temp_current_peak_log_3.pdf><./build/1_Temp_current_peak2_log_3.pdf><./build/2_Temp_Time.pdf><./build/2_Temp_current.pdf>] (./build/1_peak1_untergrundparams_a.tex) (./build/1_peak1_untergrundparams_b.tex) (./build/1_peak1_untergrundparams_c.tex) (./build/1_peak1_untergrundparams_a.tex) (./build/1_peak1_untergrundparams_b.tex) (./build/1_peak1_untergrundparams_c.tex)
-<build/2_Temp_current_background_peak.pdf, id=596, 417.7206pt x 258.0039pt>
+ [11<./build/1_Temp_current_peak_log_3.pdf><./build/1_Temp_current_peak2_log_3.pdf><./build/2_Temp_Time.pdf><./build/2_Temp_current.pdf>] (./build/1_peak1_untergrundparams_a.tex) (./build/1_peak1_untergrundparams_b.tex) (./build/1_peak1_untergrundparams_c.tex) (./build/1_peak1_untergrundparams_a.tex) (./build/1_peak1_untergrundparams_b.tex) (./build/1_peak1_untergrundparams_c.tex)
+<build/2_Temp_current_background_peak.pdf, id=595, 417.7206pt x 258.0039pt>
 File: build/2_Temp_current_background_peak.pdf Graphic file (type pdf)
 <use build/2_Temp_current_background_peak.pdf>
 Package luatex.def Info: build/2_Temp_current_background_peak.pdf  used on input line 224.
 (luatex.def)             Requested size: 417.71957pt x 258.00327pt.
-<build/2_Temp_current_peak.pdf, id=598, 417.7206pt x 258.0039pt>
+<build/2_Temp_current_peak.pdf, id=597, 417.7206pt x 258.0039pt>
 File: build/2_Temp_current_peak.pdf Graphic file (type pdf)
 <use build/2_Temp_current_peak.pdf>
 Package luatex.def Info: build/2_Temp_current_peak.pdf  used on input line 236.
 (luatex.def)             Requested size: 227.62206pt x 140.58768pt.
-<build/2_Temp_current_peak2.pdf, id=599, 417.7206pt x 258.0039pt>
+<build/2_Temp_current_peak2.pdf, id=598, 417.7206pt x 258.0039pt>
 File: build/2_Temp_current_peak2.pdf Graphic file (type pdf)
 <use build/2_Temp_current_peak2.pdf>
 Package luatex.def Info: build/2_Temp_current_peak2.pdf  used on input line 242.
@@ -2620,24 +2618,24 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 250.
 
-[13<./build/2_Temp_current_background_peak.pdf><./build/2_Temp_current_peak.pdf><./build/2_Temp_current_peak2.pdf>]
-<build/2_Temp_current_peak_log_fit.pdf, id=723, 417.7206pt x 258.0039pt>
+[12<./build/2_Temp_current_background_peak.pdf><./build/2_Temp_current_peak.pdf><./build/2_Temp_current_peak2.pdf>]
+<build/2_Temp_current_peak_log_fit.pdf, id=722, 417.7206pt x 258.0039pt>
 File: build/2_Temp_current_peak_log_fit.pdf Graphic file (type pdf)
 <use build/2_Temp_current_peak_log_fit.pdf>
 Package luatex.def Info: build/2_Temp_current_peak_log_fit.pdf  used on input line 258.
 (luatex.def)             Requested size: 227.62206pt x 140.58768pt.
-<build/2_Temp_current_peak2_log_fit.pdf, id=724, 417.7206pt x 258.0039pt>
+<build/2_Temp_current_peak2_log_fit.pdf, id=723, 417.7206pt x 258.0039pt>
 File: build/2_Temp_current_peak2_log_fit.pdf Graphic file (type pdf)
 <use build/2_Temp_current_peak2_log_fit.pdf>
 Package luatex.def Info: build/2_Temp_current_peak2_log_fit.pdf  used on input line 264.
 (luatex.def)             Requested size: 227.62206pt x 140.58768pt.
  (./build/2_Energie_peak1_variante1.tex) (./build/2_Energie_peak2_variante1.tex) (./build/2_Energie_peak1_variante1.tex) (./build/2_Energie_peak2_variante1.tex) (./build/2_Heizrate_peak1.tex) (./build/2_Heizrate_peak2.tex) (./build/2_Heizrate_peak1.tex) (./build/2_Heizrate_peak2.tex)
-<build/2_Temp_Time_Peak1.pdf, id=727, 417.7206pt x 258.0039pt>
+<build/2_Temp_Time_Peak1.pdf, id=726, 417.7206pt x 258.0039pt>
 File: build/2_Temp_Time_Peak1.pdf Graphic file (type pdf)
 <use build/2_Temp_Time_Peak1.pdf>
 Package luatex.def Info: build/2_Temp_Time_Peak1.pdf  used on input line 288.
 (luatex.def)             Requested size: 227.62206pt x 140.58768pt.
-<build/2_Temp_Time_Peak2.pdf, id=728, 417.7206pt x 258.0039pt>
+<build/2_Temp_Time_Peak2.pdf, id=727, 417.7206pt x 258.0039pt>
 File: build/2_Temp_Time_Peak2.pdf Graphic file (type pdf)
 <use build/2_Temp_Time_Peak2.pdf>
 Package luatex.def Info: build/2_Temp_Time_Peak2.pdf  used on input line 294.
@@ -2651,17 +2649,17 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 312.
 
-<build/2_Temp_current_peak_log_3.pdf, id=733, 417.7206pt x 258.0039pt>
+<build/2_Temp_current_peak_log_3.pdf, id=732, 417.7206pt x 258.0039pt>
 File: build/2_Temp_current_peak_log_3.pdf Graphic file (type pdf)
 <use build/2_Temp_current_peak_log_3.pdf>
 Package luatex.def Info: build/2_Temp_current_peak_log_3.pdf  used on input line 320.
 (luatex.def)             Requested size: 227.62206pt x 140.58768pt.
-<build/2_Temp_current_peak2_log_3.pdf, id=734, 417.7206pt x 258.0039pt>
+<build/2_Temp_current_peak2_log_3.pdf, id=733, 417.7206pt x 258.0039pt>
 File: build/2_Temp_current_peak2_log_3.pdf Graphic file (type pdf)
 <use build/2_Temp_current_peak2_log_3.pdf>
 Package luatex.def Info: build/2_Temp_current_peak2_log_3.pdf  used on input line 326.
 (luatex.def)             Requested size: 227.62206pt x 140.58768pt.
-(./build/2_Energie_peak1_variante2.tex) (./build/2_Energie_peak2_variante2.tex) (./build/2_Energie_peak1_variante2.tex) (./build/2_Energie_peak2_variante2.tex) [14<./build/2_Temp_current_peak_log_fit.pdf><./build/2_Temp_current_peak2_log_fit.pdf>] [15<./build/2_Temp_Time_Peak1.pdf><./build/2_Temp_Time_Peak2.pdf><./build/2_Temp_current_peak_log_3.pdf><./build/2_Temp_current_peak2_log_3.pdf>] (./build/2_tau_peak1_variante2.tex) (./build/2_tau_peak2_variante2.tex) (./build/2_tau_peak1_variante2.tex) (./build/2_tau_peak2_variante2.tex)) [16] (./content/diskussion.tex (./build/unterschied.tex)) [17
+(./build/2_Energie_peak1_variante2.tex) (./build/2_Energie_peak2_variante2.tex) (./build/2_Energie_peak1_variante2.tex) (./build/2_Energie_peak2_variante2.tex) [13<./build/2_Temp_current_peak_log_fit.pdf><./build/2_Temp_current_peak2_log_fit.pdf>] [14<./build/2_Temp_Time_Peak1.pdf><./build/2_Temp_Time_Peak2.pdf><./build/2_Temp_current_peak_log_3.pdf><./build/2_Temp_current_peak2_log_3.pdf>] (./build/2_tau_peak1_variante2.tex) (./build/2_tau_peak2_variante2.tex) (./build/2_tau_peak1_variante2.tex) (./build/2_tau_peak2_variante2.tex)) [15] (./content/diskussion.tex (./build/unterschied.tex)) [16
 
 ]
 
@@ -2673,7 +2671,11 @@ Package biblatex Warning: No driver for entry type 'software'.
 Package biblatex Warning: No driver for entry type 'software'.
 (biblatex)                Using fallback driver on input line 38.
 
-[18
+
+Package biblatex Warning: Month out of range or not an integer
+(biblatex)                at entry 'skript' on input line 38.
+
+[17
 
 ] (./content/anhang.tex)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 44.
@@ -2684,9 +2686,9 @@ Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 44.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 44.
 Package rerunfilecheck Info: File `Protokoll.aux' has not changed.
-(rerunfilecheck)             Checksum: AC113D686048FFA03A9B27F9C9F3428A;18592.
+(rerunfilecheck)             Checksum: 846E0EF295F5873B376D16B053F59A88;18400.
 Package rerunfilecheck Info: File `Protokoll.toc' has not changed.
-(rerunfilecheck)             Checksum: AFAC441872E739B3E1DFF9A0339DF604;1487.
+(rerunfilecheck)             Checksum: FF921C53A672170A97648CB15A86C233;1418.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -2697,19 +2699,19 @@ Package logreq Info: Writing requests to 'Protokoll.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 56652 strings out of 494412
+ 56642 strings out of 494412
  100000,1977958 words of node,token memory allocated
  718 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 35 attribute, 78 glue_spec, 35 attribute_list, 2 write nodes
-   avail lists: 1:3,2:1046,3:219,4:75,5:282,6:51,7:2868,8:119,9:393,10:31,11:294
+   avail lists: 1:2,2:1047,3:219,4:69,5:284,6:51,7:2868,8:119,9:393,10:29,11:290
  58278 multiletter control sequences out of 65536+600000
  200 fonts using 71949455 bytes
- 72i,19n,107p,9106b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 72i,19n,107p,9106b,3122s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman9-bold.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman5-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/share/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on Protokoll.pdf (18 pages, 4072058 bytes).
+Output written on Protokoll.pdf (17 pages, 4073427 bytes).
 
-PDF statistics: 1057 PDF objects out of 1200 (max. 8388607)
- 807 compressed objects within 9 object streams
- 83 named destinations out of 1000 (max. 131072)
- 136 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 1053 PDF objects out of 1200 (max. 8388607)
+ 802 compressed objects within 9 object streams
+ 82 named destinations out of 1000 (max. 131072)
+ 128 words of extra memory for PDF output out of 10000 (max. 100000000)
 

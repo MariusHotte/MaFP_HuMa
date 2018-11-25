@@ -5,13 +5,13 @@ Eigenschaften diese haben. Dazu betrachte man die Abbildung \ref{theo1}, es ist
 ein Ionengitter mit einwertigen Ionen abgebildet (CsJ). Zur Erzeugung
 der Dipole wird dieses Gitter mit $\text{Sr}^{2+}$ dotiert. Da der Kristall
 elektrisch neutral ist, hat dieses eine Leerstelle zufolge. Es bildet
-sich ein Dipol zuwischen dem dotierten Ion ($\text{Sr}^{2+})$ und der Leerstelle
+sich ein Dipol zwischen dem dotierten Ion ($\text{Sr}^{2+})$ und der Leerstelle
 mit einer Vorzugrichtung aus. Die so entstehenden Richtungen sind aufgrund
 des Kristall diskretisiert.
 \begin{figure}
 \centering
 \includegraphics[width=0.8\textwidth]{ressources/ionengitter.png}
-\caption{Darstellung eines Ionenkristallgitters mit einem ausgebildeten Dipol}
+\caption{Darstellung eines Ionenkristallgitters mit einem ausgebildeten Dipol. \cite{skript}}
 \label{theo1}
 \end{figure}
 Das Verhalten dieser Dipole hängt von der Temperatur des Kristalls ab. Für
@@ -19,10 +19,10 @@ Temperaturen unter $500°$C wird eine Änderung des Dipols nur über eine
 Leerstellendiffusion erzeugt.
 Diese kann nur statt finden, wenn eine materialspezifische Aktivierungsenergie
 aufgebracht werden kann. Diese wird benötigt um die Änderung des Gitterpotentials
-,welches durch die neue Konfiguration ensteht, zu ermöglichen. Die mittlere
+,welches durch die neue Konfiguration entsteht, zu ermöglichen. Die mittlere
 Zeit die ein Dipol braucht, bis zwei Umorientierungen stattfinden bezeichnet man
-als Relaxationzeit. Diese hängt davon ab wieviel des Gesamtdipolmomentes die Energie
-$W$ bestitzt um die Potentialschwelle zu überwinden. Diese Größe ist
+als Relaxationszeit. Diese hängt davon ab wie viel des Gesamtdipolmoments die Energie
+$W$ besitzt um die Potentialschwelle zu überwinden. Diese Größe ist
 Boltzmann verteilt. Die Relaxationszeit ist gegeben durch:
 
 
@@ -35,7 +35,7 @@ gibt das Verhalten der Relaxationszeit im unendlichen an, sie ist
 definiert als $\tau_0=\tau(\infty)$. Nach Definition der zu bestimmenden
 Größen wird nun eine Betrachtung des Messverfahren durchgeführt.
 \subsection{Messverfahren}
-Zur Untersuchung der Dipole wird ein Plattenkondesator mit
+Zur Untersuchung der Dipole wird ein Plattenkondensator mit
 Dielektrikum verwendet. Das Dielektrikum besitzt Dipole  die sich
 ausrichten können. Hierzu wird ein elektrisches
 Feld der Feldstärke $E$ angelegt. Dies führt zur einer Ausrichtung der
@@ -53,11 +53,11 @@ $$pE \ll KT$$
 sodass sich für die Langevin-Funktion ergibt:
 $$y(T)=\frac{pE}{3kT}$$
 Zusätzlich muss angenommen werden, dass Dipole sich lange gegenüber der
-Relaxationzeit im E-Feld aufhalten. Damit die obenstehende Gleichung
+Relaxationszeit im E-Feld aufhalten. Damit die obenstehende Gleichung
 gilt.\\
 Es wird nun der Strom betrachtet der entsteht wenn sich die Dipole ausrichten,
 dieser ist proportional zum Anteil der bei der Polarisationstemperatur $T_p$
- polarisierten Diople, zum Probenquerschnitt $F$ und der relaxierenden Diope $\text{d}N/\text{d}t (t)$.
+ polarisierten Dipole, zum Probenquerschnitt $F$ und der relaxierenden Dipole $\text{d}N/\text{d}t (t)$.
  Es folgt:
 $$ j(T)=y(T_p)F \frac{\text{d}N}{\text{d}t}(T)$$
 Der Ausdruck $\frac{\text{d}N}{\text{d}t}(T)$ lässt sich Nähern, sodass gilt:
@@ -73,16 +73,16 @@ $$ \frac{ \text{d}P}{\text{d}t}= - \frac{P}{\tau (T)}$$
 Die Polarisation lässt sich als ein Integral über die Stromdichte darstellen.
 $$P(t=\infty)-P(t(T))= \int_{t(T)}^{\infty} j(t')\text{d}t'$$
 Der Term $P(t=\infty)$ verschwindet, da nach beliebig langer Zeit alle Dipole
-relaxiert sind. Des Weiteren wird erneut die konstate Heizrate $b=\text{d}T/\text{d}t$
+relaxiert sind. Des Weiteren wird erneut die konstante Heizrate $b=\text{d}T/\text{d}t$
 angenommen, sodass folgt:
 $$ \tau(T)=\int_T^\infty j(T')\text{d}T' \frac{1}{j(T)b}$$
 Mit Hilfe der Gleichung \eqref{Formel1} lässt sich $\tau(T)$ ersetzen:
 \begin{equation}
     \label{Formel7}
-\ln(\int_T^\infty j(T')\text{t}T')-\ln(j(T)\tau_0 b)=\frac{W}{k_BT}
+\ln(\int_T^\infty j(T')\text{d}T')-\ln(j(T)\tau_0 b)=\frac{W}{k_BT}
 \end{equation}
 Für die folgenden Umformungen wird die obere Integralgrenze
-des ungeigentlichen Integrals auf eine Temperatur gesetzt, bei der der Strom
+des uneigentlichen Integrals auf eine Temperatur gesetzt, bei der der Strom
 verschwindet. Zur Berechnung der charakteristischen Relaxationszeit
 $\tau_0$ wird das Maximum der Stromdichte gesucht.
 $$ \frac{\text{d}j}{\text{d}T}\left|_{T=T_\text{max}} \right.$$
@@ -97,7 +97,7 @@ gewinnen:
 \begin{figure}
 \centering
 \includegraphics[width=0.8\textwidth]{ressources/stromfluss.png}
-\caption{Darstellung eines Ionenkristallgitters mit einem ausgebildeten Dipol}
+\caption{Darstellung des Stromverlaufs bei steigender Temperatur. \cite{skript}}
 \label{theo1}
 \end{figure}
 

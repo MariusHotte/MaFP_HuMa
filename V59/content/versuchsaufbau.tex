@@ -13,11 +13,11 @@ Zur Realisierung einer Amplitudenmodulation wird eine Schaltung benötigt, die d
     \label{fig_10}
 \end{figure}
 
-Durch die nicht lineare Diodenkennlinie entstehen während der Multiplikation durch die Potenzreihenentwicklung unerwünschte Therme höherer Ordnung der Träger- und Modulationsspannung. Dessen Frequenzen liegen außerhalb des Intervalls $[\omega_T-\omega_M, \omega_T+\omega_M]$ und können somit durch Bandfilter unterdrückt werden.
+Durch die nicht lineare Diodenkennlinie entstehen während der Multiplikation durch die Potenzreihenentwicklung neben dem benötigten Term $U_T \cdot U_M$ im zweiten Glied auch unerwünschte Therme höherer Ordnung der Träger- und Modulationsspannung. Dessen Frequenzen liegen außerhalb des Intervalls $[\omega_T-\omega_M, \omega_T+\omega_M]$ und können somit durch Bandfilter unterdrückt werden.
 
 \subsubsection{Ringmodulator}
 \label{sec:Ringmodulator}
-Durch den sogenannten Ringmodulator, siehe Abbildung \ref{fig_02}, sind die bei der Schaltung im vorherigen Kapitel unerwünscht enstandenen Komponenten zu vermeiden. Wie in Abbildung \ref{fig_02} dargestellt, sind die vier Dioden der Hauptbestandteil der Schaltung. 
+Durch den sogenannten Ringmodulator, siehe Abbildung \ref{fig_02}, werden die bei der Schaltung im vorherigen Kapitel unerwünscht entstandenen Komponenten vermieden. Wie in Abbildung \ref{fig_02} dargestellt, sind die vier Dioden der Hauptbestandteil der Schaltung. 
 
 \begin{figure}
     \centering
@@ -26,7 +26,7 @@ Durch den sogenannten Ringmodulator, siehe Abbildung \ref{fig_02}, sind die bei 
     \label{fig_02}
 \end{figure}
 
-Durch diese wird eine Spannungsteiler an den Punkten $\alpha$ und $\beta$ realisiert, wodurch, bei baugleichen Dioden und ohne anliegender Modulationsspannung, keine Potentialdifferenz zwischen dem beiden besagten Punkten auftritt. Erst durch das anlegen einer Modulationsspannung $U_M$ wird das Gleichgewicht gestört und die Teilungsverhältnisse der Dioden schwingen im Rhythmus von $U_M(t)$. Bei idealen Verhältnissen ist somit das Produkt der Eingangsspannungen proportional zur Ausgangsspannung. Zusätzlich entsteht bei dem Ringmodulator keine Trägerabstrahlung, weshalb nur die Seitenbänder entstehen.
+Durch diese wird eine Spannungsteiler an den Punkten $\alpha$ und $\beta$ realisiert, wodurch, bei baugleichen Dioden und ohne anliegender Modulationsspannung, keine Potentialdifferenz zwischen dem beiden besagten Punkten auftritt. Erst durch das Anlegen einer Modulationsspannung $U_M$ wird das Gleichgewicht gestört und die Teilungsverhältnisse der Dioden schwingen im Rhythmus von $U_M(t)$. Bei idealen Verhältnissen ist somit das Produkt der Eingangsspannungen proportional zur Ausgangsspannung. Aus diesem Grund entsteht bei dem Ringmodulator keine Trägerabstrahlung, weshalb nur die Seitenbänder entstehen.
 
 \subsubsection{Frequenzmodulator mit geringem Frequenzhub}
 \label{sec:Frequenzmodulator_mit_geringem_Frequenzhub}
@@ -39,9 +39,9 @@ Grundlage ist hierfür der in Kapitel \ref{sec:Ringmodulator} beschriebene Ringm
     \label{fig_03}
 \end{figure}
 
-Um die gewünschte Phasenverschiebung zu erhalten, kann über die gegebene Periodendauer die benötigte Frequenz bestimmt werden.
+Um die gewünschte Phasenverschiebung zu erhalten, kann über die zuvor passend eingestellte Periodendauer die benötigte Frequenz bestimmt werden.
 
-\subsubsection{Phasenempfindlichkeit der Gleichrichterdiode}
+\subsubsection{Phasenempfindlichkeit des Ringmodulators}
 \label{sec:Phasenempfindlichkeit_der_Gleichrichterdiode}
 Mit der folgenden Schaltung in Abbildung \ref{fig_11} wird durch die Variation der Frequenz und einem Laufzeitkabel die Phasenverschiebung erzeugt. 
 \begin{figure}
@@ -50,7 +50,7 @@ Mit der folgenden Schaltung in Abbildung \ref{fig_11} wird durch die Variation d
     \caption{Darstellung einer Ringdiodenschaltung in Verbindung mit einem Laufzeitkabel und einem Amperemeter zu Überprüfung der Phasendifferenz \cite{skript}.}
     \label{fig_11}
 \end{figure}
-Über das Voltmeter nach dem Tiefpass kann diese Phasenverschiebung in Abhängigkeit der Frequenz dargestellt werden.
+Über das Voltmeter wird die Spannung in Abhängigkeit der Frequenz dargestellt, wodurch die Proportionalität $U\approx\cos{(\phi)}$ überprüft wird. Hierfür wird die Abhängigkeit der Phase von der Frequenz verwendet.
 
 \subsection{Demodulation}
 
@@ -65,11 +65,11 @@ Zur Demodulation wird ebenfalls ein Ringmodulator verwendet. Wie in Abbildung \r
     \label{fig_04}
 \end{figure}
 
-Da die Frequenz der Eingänge addiert und subtrahiert werden ergeben sich aus den angelegten Frequenzen $\omega_T\pm\omega_M$ (Eingang L) und $\omega_T$ (Eingang R) am Ausgang X die Frequenzen $2\omega_T\pm\omega_M$ und $\omega_M$.
+Da die Frequenzen der Eingänge addiert und subtrahiert werden, ergeben sich aus den angelegten Frequenzen $\omega_T\pm\omega_M$ (Eingang L) und $\omega_T$ (Eingang R) am Ausgang X die Frequenzen $2\omega_T\pm\omega_M$ und $\omega_M$.
 
 \subsubsection{Demodulator-Schaltung mit einer Gleichrichter-Diode}
 \label{DSmeGD}
-Ein weiteres Verfahren zur Demodulation einer Amplitudenmodulation besteht in der Verwendung einer Gleichrichterdiode mit geeignetem Tiefpass. Diese Schaltung findet Anwendung wenn die ursprüngliche Trägerspannung nicht zur Demodulation zur Verfügung steht. Wie in Abbildung \ref{fig_05} dargestellt, werden durch die Diode sämtliche negativen Halbwellen der Signalspannung entfernt.
+Ein weiteres Verfahren zur Demodulation einer Amplitudenmodulation besteht in der Verwendung einer Gleichrichterdiode mit geeignetem Tiefpass. Diese Schaltung findet Anwendung, wenn die ursprüngliche Trägerspannung nicht zur Demodulation zur Verfügung steht. Wie in Abbildung \ref{fig_05} dargestellt, werden durch die Diode sämtliche negativen Halbwellen der Signalspannung entfernt.
 
 \begin{figure}
     \centering
@@ -78,7 +78,7 @@ Ein weiteres Verfahren zur Demodulation einer Amplitudenmodulation besteht in de
     \label{fig_05}
 \end{figure}
 
-Die in Abbildung \ref{fig_06} dargestellte Spannung am Punkt A enthält zu diesem Zeitpunkt hochfrequente Anteile der Form $\omega_T$, $2\omega_T$, $4\omega_T$ u.s.w. und $\omega_M$. Da die Beziehung $\omega_T>>\omega_M$ weiterhin gilt, kann die hohe Trägerfrequenz und deren vielfache durch einen Tiefpass unterdrückt werden, sodass die in Abbildung \ref{fig_07} dargestellte Modulationsfrequenz extrahiert werden kann. 
+Die in Abbildung \ref{fig_06} dargestellte Spannung am Punkt A enthält zu diesem Zeitpunkt hochfrequente Anteile der Form $\omega_T$, $2\omega_T$, $4\omega_T$ u.s.w. und $\omega_M$. Da die Beziehung $\omega_T>>\omega_M$ weiterhin gilt, kann die hohe Trägerfrequenz und deren Vielfache durch einen Tiefpass unterdrückt werden, sodass die in Abbildung \ref{fig_07} dargestellte Modulationsfrequenz extrahiert werden kann. 
 
 \begin{figure}
     \centering
@@ -94,7 +94,7 @@ Die in Abbildung \ref{fig_06} dargestellte Spannung am Punkt A enthält zu diese
     \label{fig_07}
 \end{figure}
 
-In der Realität ist die erhaltene Frequenz jedoch verzerrt gegenüber der ursprünglichen Modulationsfrequenz, da die Diode eine annähernd exponentiellen Kennlinienverlauf aufweist. Wird jedoch eine sehr kleine Modulationsfrequenz gewählt, kann die Kennlinie der Diode linear genähert werden und so eine Verzerrung vermindert werden.
+In der Realität ist die erhaltene Frequenz jedoch gegenüber der ursprünglichen Modulationsfrequenz verzerrt, da die Diode einen annähernd exponentiellen Kennlinienverlauf aufweist. Wird jedoch eine sehr kleine Modulationsfrequenz gewählt, kann die Kennlinie der Diode linear genähert werden und so eine Verzerrung vermindert werden.
 
 \subsubsection{Demodulation frequenzmodulierter Schwingungen}
 \label{sec:Demodulation_frequenzmodulieter_Schwingungen}
@@ -108,7 +108,7 @@ Im ersten Teil der Demodulation findet die Umwandlung in eine amplitudenmodulier
 \end{figure}
 
 
-Aus diesem Grund ist die Resonanzfrequenz der Schaltung so gewählt, dass Trägerfrequenz auf der Flanke der Resonanzkurve liegt (siehe Abbildung \ref{fig_08}). Ändert sich Momentanfrequenz der Schwingung, so entsteht am Ausgang der Schaltung eine hochfrequente Spannung, die keine konstante Amplitude mehr aufweist sondern deren Amplitude im Rhythmus der Modulationsfrequenz schwingt. Im zweiten Schritt ist die Demodulation der amplitudenmodulierten Schwingung durch die in Kapitel \ref{sec:Demodulation_amplitudenmodulieter_Schwingungen} oder \ref{DSmeGD} vorgestellte Methoden durchzuführen. 
+Aus diesem Grund ist die Resonanzfrequenz der Schaltung so gewählt, dass die Trägerfrequenz auf der Flanke der Resonanzkurve liegt (siehe Abbildung \ref{fig_08}). Ändert sich Momentanfrequenz der Schwingung, so entsteht am Ausgang der Schaltung eine hochfrequente Spannung, die keine konstante Amplitude mehr aufweist, sondern deren Amplitude im Rhythmus der Modulationsfrequenz schwingt. Im zweiten Schritt ist die Demodulation der amplitudenmodulierten Schwingung durch die in Kapitel \ref{sec:Demodulation_amplitudenmodulieter_Schwingungen} oder \ref{DSmeGD} vorgestellte Methoden durchzuführen. 
 
 \begin{figure}
     \centering

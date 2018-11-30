@@ -36,7 +36,7 @@ dargestellt.
 
 Um das Frequenzspektrum dieser Schwingung zu ermitteln, wird Gleichung \eqref{eq:1} mittels trigonometrischen Beziehungen zu
 \begin{align}
-	U(t)=\hat{U}_T\left(\cos{(\omega_Tt)+\frac{1}{2}m\cos{(\omega_T+\omega_M)t}}+\frac{1}{2}m\cos{(\omega_T-\omega_M)t}\right)
+	U(t)=\hat{U}_T\left(\cos{(\omega_Tt)+\frac{1}{2}m\cos{\big((\omega_T+\omega_M)t\big)}}+\frac{1}{2}m\cos{\big((\omega_T-\omega_M)t\big)}\right)
 \end{align}
 vereinfacht. Somit besteht das Frequenzspektrum aus den drei Frequenzen
 \begin{align}
@@ -87,7 +87,7 @@ soll im folgende grundlegende Eigenschaften der Frequenzmodulation verdeutlicht 
 \end{align}
 Mit einer Reihenentwicklung der Sinus- und Cosinustherme, bei der nur Therme erster Ordnung betrachtet werden, entsteht die folgende Gleichung
 \begin{align}
-	U(t)=\hat{U}\left(\sin{(\omega_Tt)+\frac{1}{2}m\frac{\omega_T}{\omega_M}\cos{(\omega_T+\omega_M)t}}+\frac{1}{2}m\frac{\omega_T}{\omega_M}\cos{(\omega_T-\omega_M)t}\right)\;,
+	U(t)=\hat{U}\left(\sin{(\omega_Tt)+\frac{1}{2}m\frac{\omega_T}{\omega_M}\cos{\big((\omega_T+\omega_M)t\big)}}+\frac{1}{2}m\frac{\omega_T}{\omega_M}\cos{\big((\omega_T-\omega_M)t\big)}\right)\;,
 \end{align}
 die sehr große Ähnlichkeit zur amplitudenmodulierten Spannung aufweist, da auch hier das Frequenzspektrum aus den drei Frequenzen
 \begin{align}
@@ -97,7 +97,7 @@ besteht. Der wesentliche Unterschied besteht jedoch in der Trägerschwingung, da
 Unter Berücksichtigung höherer Therme in der Reihenentwicklung ergibt sich 
 , daraus resultiert eine Phasenverschiebung um $90^{\circ}$ der Sinusfunktion
 \begin{align}
-	U(t)=\hat{U}\sum_{n=-\infty}^{\infty} J_n\left(m\frac{\omega_T}{\omega_M}\right)\sin{(\omega_T+n\omega_M)}t\;. 
+	U(t)=\hat{U}\sum_{n=-\infty}^{\infty} J_n\left(m\frac{\omega_T}{\omega_M}\right)\sin{\big((\omega_T+n\omega_M)t\big)}\;. 
 	\label{eq:3}
 \end{align}
 Der Ausdruck $J_n(x)$ steht dabei für die Besselfunktion n-ter Ordnung. Bei der Betrachtung von Gleichung \eqref{eq:3} fällt auf, dass der Iterator der Summe in der Sinusfunktion ein beliebig großes Frequenzspektrum ermöglicht. Da jedoch die Besselfunktion für steigende $n$ gegen Null strebt, müssen nur Frequenzen nahe der Trägerfrequenz $\omega_T$ berücksichtigt werden.

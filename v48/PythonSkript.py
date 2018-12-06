@@ -101,7 +101,7 @@ def background(T, a, b, c):
 params = ucurve_fit(background, background_Temp, background_Strom, p0=[13 * 10**(-15), 0.03, 225])   # p0 bezeichnet die Startwerte der zu fittenden Parameter
 
 write('build/1_peak1_untergrundparams_a.tex', make_SI(params[0] * 10**12, r'\pico\ampere', figures=2))
-write('build/1_peak1_untergrundparams_b.tex', make_SI(params[1], r'\kelvin', figures=2))
+write('build/1_peak1_untergrundparams_b.tex', make_SI(params[1], r'\per\kelvin', figures=2))
 write('build/1_peak1_untergrundparams_c.tex', make_SI(params[2] * 10**9, r'\nano\ampere', figures=2))
 #######################################################################################################
 
@@ -116,8 +116,8 @@ Strom_peak2 = Strom_all[41:len(Temp) - 3]
 
 plt.plot(Temp, Strom, 'rx', label='Messdaten')
 plt.plot(background_Temp, np.abs(background_Strom), 'yx', label='Untergrund')
-plt.plot(Temp_peak1, noms(Strom_peak1), 'gx', label='Peak1')
-plt.plot(Temp_peak2, noms(Strom_peak2), 'mx', label='Peak2')
+plt.plot(Temp_peak1, noms(Strom_peak1), 'gx', label='1.Maximum')
+plt.plot(Temp_peak2, noms(Strom_peak2), 'mx', label='2.Maximum')
 plt.xlabel(r'$Temp \:/\: \: [K]$')
 plt.ylabel(r'$I \:/\: [A]$')
 plt.legend(loc='best')
@@ -127,11 +127,11 @@ plt.clf()
 
 
 t_plot = np.linspace(213.15, 333.15, 1000)
-plt.plot(t_plot, background(t_plot, *noms(params)), 'b-', label='Fit')
+plt.plot(t_plot, background(t_plot, *noms(params)), 'b-', label='Ausgleichsrechnung')
 plt.plot(Temp, Strom, 'rx', label='Messdaten')
 plt.plot(background_Temp, np.abs(background_Strom), 'yx', label='Untergrund')
-plt.plot(Temp_peak1, noms(Strom_peak1), 'gx', label='Peak1')
-plt.plot(Temp_peak2, noms(Strom_peak2), 'mx', label='Peak2')
+plt.plot(Temp_peak1, noms(Strom_peak1), 'gx', label='1.Maximum')
+plt.plot(Temp_peak2, noms(Strom_peak2), 'mx', label='2.Maximum')
 plt.xlabel(r'$Temp \:/\: \: [K]$')
 plt.ylabel(r'$I \:/\: [A]$')
 plt.legend(loc='best')
@@ -150,7 +150,7 @@ for i in range(len(Temp_peak1)):
 for i in range(len(Temp_peak2)):
     Strom_peak2[i] = Strom_peak2[i] - background(Temp_peak2[i], *params)
 
-plt.errorbar(Temp_peak1, noms(Strom_peak1), fmt='rx', yerr=stds(Strom_peak1), label='Peak 1')
+plt.errorbar(Temp_peak1, noms(Strom_peak1), fmt='rx', yerr=stds(Strom_peak1), label='1.Maximum')
 plt.xlabel(r'$Temp \:/\: \: [K]$')
 plt.ylabel(r'$I \:/\: [A]$')
 plt.legend(loc='best')
@@ -197,7 +197,7 @@ def gerade(t, a, b):
 time = np.linspace(0, len(Temp_peak1), len(Temp_peak1))
 params_temp_peak1 = ucurve_fit(gerade, time, Temp_peak1)
 t_plot = np.linspace(0, 16, 10)
-plt.plot(t_plot, gerade(t_plot, *noms(params_temp_peak1)), 'b-', label='Fit')
+plt.plot(t_plot, gerade(t_plot, *noms(params_temp_peak1)), 'b-', label='Ausgleichsrechnung')
 plt.plot(time, Temp_peak1, 'rx', label='Messdaten')
 plt.xlabel(r'$t \:/\: \: [min]$')
 plt.ylabel(r'$Temp \:/\: [K]$')
@@ -229,8 +229,9 @@ def gerade(invT, a, b):
 
 params = ucurve_fit(gerade, 1 / (Temp_peak1[0:10]), noms(Strom_peak1_log[0:10]))   # p0 bezeichnet die Startwerte der zu fittenden Parameter
 t_plot = np.linspace(0.0038, 0.0041, 10)
-plt.plot(t_plot, gerade(t_plot, *noms(params)), 'b-', label='Fit')
-plt.errorbar(1 / (Temp_peak1[0:10]), noms(Strom_peak1_log[0:10]), fmt='rx', yerr=stds(Strom_peak1_log[0:10]), label='Peak1')
+plt.plot(t_plot, gerade(t_plot, *noms(params)), 'b-', label='Ausgleichsrechnung')
+#plt.errorbar(1 / (Temp_peak1[0:10]), noms(Strom_peak1_log[0:10]), fmt='rx', yerr=stds(Strom_peak1_log[0:10]), label='1.Maximum')
+plt.plot(1 / (Temp_peak1[0:10]), noms(Strom_peak1_log[0:10]), 'rx', label='1.Maximum')
 plt.xlabel(r'$Temp \:/\: \: [1/K]$')
 plt.ylabel(r'$ln(I \:/\: [A])$')
 plt.legend(loc='best')
@@ -239,11 +240,12 @@ plt.savefig('build/1_Temp_current_peak_log_fit.pdf')
 plt.clf()
 
 tau_0 = (1 / params_temp_peak1[0]) * unp.exp(-params[0] / (k_B * Temp_peak1[10])) * k_B * Temp_peak1[10]**2 / params[0]
-write('build/1_tau_peak1_variante1.tex', make_SI(tau_0 * 10**15, r'\pico\second', figures=2))       # type in Anz. signifikanter Stellen
+write('build/1_tau_peak1_variante1.tex', make_SI(tau_0 * 10**15, r'\femto\second', figures=2))       # type in Anz. signifikanter Stellen
 write('build/1_tau_peak1_variante1_temp.tex', make_SI(Temp_peak1[10], r'\kelvin', figures=2))       # type in Anz. signifikanter Stellen
 
 write('build/1_Energie_peak1_variante1.tex', make_SI(params[0], r'\electronvolt', figures=2))       # type in Anz. signifikanter Stellen
-
+tau_heiz1_variante1 = tau_0
+energie_heiz1_variante1 = params[0]
 
 params = ucurve_fit(gerade, 1 / (Temp_peak2[0:15]), noms(Strom_peak2_log[0:15]))   # p0 bezeichnet die Startwerte der zu fittenden Parameter
 t_plot = np.linspace(0.003173, 0.0035, 10)
@@ -257,11 +259,12 @@ plt.savefig('build/1_Temp_current_peak2_log_fit.pdf')
 plt.clf()
 
 tau_0 = (1 / params_temp_peak2[0]) * unp.exp(-params[0] / (k_B * Temp_peak2[15])) * k_B * Temp_peak2[15]**2 / params[0]
-write('build/1_tau_peak2_variante1.tex', make_SI(tau_0 * 10**15, r'\pico\second', figures=2))       # type in Anz. signifikanter Stellen
+write('build/1_tau_peak2_variante1.tex', make_SI(tau_0 * 10**15, r'\femto\second', figures=2))       # type in Anz. signifikanter Stellen
 write('build/1_tau_peak2_variante1_temp.tex', make_SI(Temp_peak2[15], r'\kelvin', figures=2))       # type in Anz. signifikanter Stellen
 
 write('build/1_Energie_peak2_variante1.tex', make_SI(params[0], r'\electronvolt', figures=2))       # type in Anz. signifikanter Stellen
 a = params[0]
+
 
 # plt.plot(Temp_peak1, Strom_peak1, 'gx', label='Peak')
 # plt.xlabel(r'$Temp \:/\: \: [K]$')
@@ -316,8 +319,9 @@ def gerade(T, a, b):
 
 params_peak1 = ucurve_fit(gerade, Temp_peak1[0:len(Temp_peak1) - 1], ln_Strom_peak1_mod)   # p0 bezeichnet die Startwerte der zu fittenden Parameter
 t_plot = np.linspace(243, 273, 10)
-plt.plot(t_plot, gerade(t_plot, *noms(params_peak1)), 'b-', label='Fit')
-plt.errorbar(Temp_peak1[0:len(Temp_peak1) - 1], noms(ln_Strom_peak1_mod), fmt='rx', yerr=stds(ln_Strom_peak1_mod), label='Peak1')
+plt.plot(t_plot, gerade(t_plot, *noms(params_peak1)), 'b-', label='Ausgleichsrechnung')
+#plt.errorbar(Temp_peak1[0:len(Temp_peak1) - 1], noms(ln_Strom_peak1_mod), fmt='rx', yerr=stds(ln_Strom_peak1_mod), label='Peak1')
+plt.plot(Temp_peak1[0:len(Temp_peak1) - 1], noms(ln_Strom_peak1_mod), 'rx', label='1.Maximum')
 plt.xlabel(r'$Temp \:/\: \: [K]$')
 plt.ylabel(r'$\Omega$')
 plt.legend(loc='best')
@@ -339,13 +343,16 @@ plt.clf()
 t_0 = (unp.exp(params_peak1[1]) / params_temp_peak1[0])
 write('build/1_tau_peak1_variante2.tex', make_SI(t_0 * 10**18, r'\atto\second', figures=2))       # type in Anz. signifikanter Stellen
 write('build/1_Energie_peak1_variante2.tex', make_SI(params_peak1[0], r'\electronvolt', figures=2))       # type in Anz. signifikanter Stellen
-
+tau_heiz1_variante2 = t_0
+energie_heiz1_variante2 = params_peak1[0]
 
 t_0 = (unp.exp(params_peak2[1]) / params_temp_peak2[0])
 write('build/1_tau_peak2_variante2.tex', make_SI(t_0 * 10**18, r'\atto\second', figures=2))       # type in Anz. signifikanter Stellen
 write('build/1_Energie_peak2_variante2.tex', make_SI(params_peak2[0], r'\electronvolt', figures=2))       # type in Anz. signifikanter Stellen
 b = params_peak2[0]
 write('build/unterschied.tex', make_SI(1 - a / b, r'\percent', figures=2))       # type in Anz. signifikanter Stellen
+write('build/delta_tau_heiz1.tex', make_SI(100 * (1 - tau_heiz1_variante1 / tau_heiz1_variante2), r'\percent', figures=2))       # type in Anz. signifikanter Stellen
+write('build/delta_E_heiz1.tex', make_SI(100 * (1 - energie_heiz1_variante1 / energie_heiz1_variante2), r'\percent', figures=2))       # type in Anz. signifikanter Stellen
 #####################################################################################################################################################################
 #####################################################################################################################################################################
 Temp, Strom = np.genfromtxt('messdaten/zweite.txt', unpack=True)
@@ -373,9 +380,9 @@ plt.clf()
 
 
 plt.plot(Temp, Strom, 'rx', label='Messdaten')
-plt.plot(background_Temp, background_Strom, 'bx', label='Background')
-plt.plot(Temp[20:42], Strom[20:42], 'gx', label='Peak1')
-plt.plot(Temp[55:], Strom[55:], 'yx', label='Peak2')
+# plt.plot(background_Temp, background_Strom, 'bx', label='Background')
+# plt.plot(Temp[20:42], Strom[20:42], 'gx', label='Peak1')
+# plt.plot(Temp[55:], Strom[55:], 'yx', label='Peak2')
 plt.xlabel(r'$Temp \:/\: \: [K]$')
 plt.ylabel(r'$I \:/\: [A]$')
 plt.legend(loc='best')
@@ -393,7 +400,7 @@ def background(T, a, b, c):
 params = ucurve_fit(background, background_Temp, background_Strom, p0=[13 * 10**(-15), 0.03, 225])   # p0 bezeichnet die Startwerte der zu fittenden Parameter
 
 write('build/2_peak1_untergrundparams_a.tex', make_SI(params[0] * 10**12, r'\pico\ampere', figures=2))
-write('build/2_peak1_untergrundparams_b.tex', make_SI(params[1], r'\kelvin', figures=2))
+write('build/2_peak1_untergrundparams_b.tex', make_SI(params[1], r'\per\kelvin', figures=2))
 write('build/2_peak1_untergrundparams_c.tex', make_SI(params[2] * 10**9, r'\nano\ampere', figures=2))
 
 Temp_peak1 = Temp[20:42]
@@ -403,11 +410,11 @@ Strom_peak2 = Strom_all[47:len(Temp) - 3]
 
 
 t_plot = np.linspace(213.15, 333.15, 1000)
-plt.plot(t_plot, background(t_plot, *noms(params)), 'b-', label='Fit')
+plt.plot(t_plot, background(t_plot, *noms(params)), 'b-', label='Ausgleichsrechnung')
 plt.plot(Temp, Strom, 'rx', label='Messdaten')
 plt.plot(background_Temp, np.abs(background_Strom), 'yx', label='Untergrund')
-plt.plot(Temp_peak1, noms(Strom_peak1), 'gx', label='Peak1')
-plt.plot(Temp_peak2, noms(Strom_peak2), 'mx', label='Peak2')
+plt.plot(Temp_peak1, noms(Strom_peak1), 'gx', label='1.Maximum')
+plt.plot(Temp_peak2, noms(Strom_peak2), 'mx', label='2.Maximum')
 plt.xlabel(r'$Temp \:/\: \: [K]$')
 plt.ylabel(r'$I \:/\: [A]$')
 plt.legend(loc='best')
@@ -426,7 +433,8 @@ for i in range(len(Temp_peak1)):
 for i in range(len(Temp_peak2)):
     Strom_peak2[i] = Strom_peak2[i] - background(Temp_peak2[i], *params)
 
-plt.errorbar(Temp_peak1, noms(Strom_peak1), fmt='rx', yerr=stds(Strom_peak1), label='Peak1')
+#plt.errorbar(Temp_peak1, noms(Strom_peak1), fmt='rx', yerr=stds(Strom_peak1), label='Peak1')
+plt.plot(Temp_peak1, noms(Strom_peak1), 'rx', label='1.Maximum')
 plt.xlabel(r'$Temp \:/\: \: [K]$')
 plt.ylabel(r'$I \:/\: [A]$')
 plt.legend(loc='best')
@@ -508,8 +516,9 @@ def gerade(invT, a, b):
 
 params = ucurve_fit(gerade, 1 / (Temp_peak1[0:12]), noms(Strom_peak1_log[0:12]))   # p0 bezeichnet die Startwerte der zu fittenden Parameter
 t_plot = np.linspace(0.003854, 0.00415, 10)
-plt.plot(t_plot, gerade(t_plot, *noms(params)), 'b-', label='Fit')
-plt.errorbar(1 / (Temp_peak1[0:12]), noms(Strom_peak1_log[0:12]), fmt='rx', yerr=stds(Strom_peak1_log[0:12]), label='Peak1')
+plt.plot(t_plot, gerade(t_plot, *noms(params)), 'b-', label='Ausgleichsrechnung')
+#plt.errorbar(1 / (Temp_peak1[0:12]), noms(Strom_peak1_log[0:12]), fmt='rx', yerr=stds(Strom_peak1_log[0:12]), label='Peak1')
+plt.plot(1 / (Temp_peak1[0:12]), noms(Strom_peak1_log[0:12]), 'rx', label='1.Maximum')
 plt.xlabel(r'$Temp \:/\: \: [1/K]$')
 plt.ylabel(r'$ln(I \:/\: [A])$')
 plt.legend(loc='best')
@@ -518,11 +527,13 @@ plt.savefig('build/2_Temp_current_peak_log_fit.pdf')
 plt.clf()
 
 tau_0 = (1 / params_temp_peak1[0]) * unp.exp(-params[0] / (k_B * Temp_peak1[12])) * k_B * Temp_peak1[12]**2 / params[0]
-write('build/2_tau_peak1_variante1.tex', make_SI(tau_0 * 10**15, r'\pico\second', figures=1))       # type in Anz. signifikanter Stellen
+write('build/2_tau_peak1_variante1.tex', make_SI(tau_0 * 10**15, r'\femto\second', figures=1))       # type in Anz. signifikanter Stellen
 write('build/2_tau_peak1_variante1_temp.tex', make_SI(Temp_peak1[12], r'\kelvin', figures=1))       # type in Anz. signifikanter Stellen
 
 write('build/2_Energie_peak1_variante1.tex', make_SI(params[0], r'\electronvolt', figures=2))       # type in Anz. signifikanter Stellen
 
+tau_heiz2_variante1 = tau_0
+energie_heiz2_variante1 = params[0]
 
 params = ucurve_fit(gerade, 1 / (Temp_peak2[0:22]), noms(Strom_peak2_log[0:22]))   # p0 bezeichnet die Startwerte der zu fittenden Parameter
 t_plot = np.linspace(0.003175, 0.00355, 10)
@@ -537,7 +548,7 @@ plt.clf()
 
 
 tau_0 = (1 / params_temp_peak2[0]) * unp.exp(-params[0] / (k_B * Temp_peak2[22])) * k_B * Temp_peak2[22]**2 / params[0]
-write('build/2_tau_peak2_variante1.tex', make_SI(tau_0 * 10**15, r'\pico\second', figures=1))       # type in Anz. signifikanter Stellen
+write('build/2_tau_peak2_variante1.tex', make_SI(tau_0 * 10**15, r'\femto\second', figures=1))       # type in Anz. signifikanter Stellen
 write('build/2_tau_peak2_variante1_temp.tex', make_SI(Temp_peak2[22], r'\kelvin', figures=1))       # type in Anz. signifikanter Stellen
 
 write('build/2_Energie_peak2_variante1.tex', make_SI(params[0], r'\electronvolt', figures=2))       # type in Anz. signifikanter Stellen
@@ -593,8 +604,9 @@ def gerade(T, a, b):
 
 params_peak1 = ucurve_fit(gerade, Temp_peak1[0:len(Temp_peak1) - 1], ln_Strom_peak1_mod)   # p0 bezeichnet die Startwerte der zu fittenden Parameter
 t_plot = np.linspace(241, 273, 10)
-plt.plot(t_plot, gerade(t_plot, *noms(params_peak1)), 'b-', label='Fit')
-plt.errorbar(Temp_peak1[0:len(Temp_peak1) - 1], noms(ln_Strom_peak1_mod), fmt='rx', yerr=stds(ln_Strom_peak1_mod), label='Peak1')
+plt.plot(t_plot, gerade(t_plot, *noms(params_peak1)), 'b-', label='Ausgleichsrechnung')
+#plt.errorbar(Temp_peak1[0:len(Temp_peak1) - 1], noms(ln_Strom_peak1_mod), fmt='rx', yerr=stds(ln_Strom_peak1_mod), label='Peak1')
+plt.plot(Temp_peak1[0:len(Temp_peak1) - 1], noms(ln_Strom_peak1_mod), 'rx', label='1.Maximum')
 plt.xlabel(r'$Temp \:/\: \: [K]$')
 plt.ylabel(r'$ln(I) \:/\: [A]$')
 plt.legend(loc='best')
@@ -647,10 +659,15 @@ t_0 = (unp.exp(params_peak1[1]) / params_temp_peak1[0])
 write('build/2_tau_peak1_variante2.tex', make_SI(t_0 * 10**18, r'\atto\second', figures=1))       # type in Anz. signifikanter Stellen
 write('build/2_Energie_peak1_variante2.tex', make_SI(params_peak1[0], r'\electronvolt', figures=2))       # type in Anz. signifikanter Stellen
 
+tau_heiz2_variante2 = t_0
+energie_heiz2_variante2 = params_peak1[0]
 
 t_0 = (unp.exp(params_peak2[1]) / params_temp_peak2[0])
 write('build/2_tau_peak2_variante2.tex', make_SI(t_0 * 10**18, r'\atto\second', figures=1))       # type in Anz. signifikanter Stellen
 write('build/2_Energie_peak2_variante2.tex', make_SI(params_peak2[0], r'\electronvolt', figures=2))       # type in Anz. signifikanter Stellen
+
+write('build/delta_tau_heiz2.tex', make_SI(100 * (1 - tau_heiz2_variante1 / tau_heiz2_variante2), r'\percent', figures=2))       # type in Anz. signifikanter Stellen
+write('build/delta_E_heiz2.tex', make_SI(100 * (1 - energie_heiz2_variante1 / energie_heiz2_variante2), r'\percent', figures=2))       # type in Anz. signifikanter Stellen
 
 ########## IMPORT ###################################################################################################################################################
 # t, U, U_err = np.genfromtxt('messdaten/data.txt', unpack=True)

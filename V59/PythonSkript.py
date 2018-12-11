@@ -77,7 +77,7 @@ num=190*10**3
 deltat=ufloat(238*10**(-9), 10*10**(-9))
 
 mod=-(3.1415923565/4*num*deltat)+  ((3.141592**2/16*nut**2 * deltat**2 )+3.141592**2/4)**(-0.5)
-print(mod)
+print(mod, "Mod freq")
 print("Frequenthub", mod*nut)
 
 
@@ -118,6 +118,10 @@ print("b", params_3[1], "±", errors_3[1])
 print("poff", params_3[2], "±", errors_3[2])
 print("Uoff", params_3[3], "±", errors_3[3])
 
+print("Werte der Korrektrur")
+umin=ufloat( 45.750 , 0.05)
+umax=ufloat( 83.750 , 0.05)
+print((umax-umin)/(umin+umax), "modgrad")
 
 
 

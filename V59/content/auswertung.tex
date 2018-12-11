@@ -21,11 +21,11 @@ Frequenz von 2.87$\,$MHz
 verwendet, die Modulationsspannung betrug 38$\,$mV mit einer Frequenz von
 172.12$\,$kHz. Zusätzlich zu
 dem modulierten Spannungsverlauf wurde das Frequenzspektrum des
-Signal aufgenommen. Aus dieser Spektrum, vgl.\ref{spek1} lassen
+Signal aufgenommen. Aus diesem Spektrum, vgl. Abbildung \ref{spek1}, lassen sich
 die Frequenzen $\nu_\text{T},\nu_\text{L}=\nu_\text{T}-\nu_\text{M}$ und
 $\nu_\text{R}=\nu_\text{T}+\nu_\text{M}$ bestimmen.
 Die zentrale Frequenz $\nu_\text{z}=2.879\,$MHz, welches Peak 3 des
-Frequenzspektrums \ref{spek1} entspricht, lässt sich als Trägerfrequenz interpretieren.
+Frequenzspektrums entspricht, lässt sich als Trägerfrequenz interpretieren.
 Die Frequenzen $\nu_\text{L}$ und $\nu_\text{R}$ entsprechen den Frequenzen
 $\nu_\text{T}-\nu_\text{M}$ und $\nu_\text{T}+\nu_\text{R}$ und können den
 Peak 1/2 im Frequenzspektrum zugeordnet werden. Was zusätzlich auffällt ist das
@@ -52,10 +52,15 @@ Die maximal und minimal Werte der Spannungen wurden mit Hilfe der Coursor
 ausgelesen werden, sie werden unten rechts im aufgenommenen Bild \ref{fig:plot2}
 angezeigt.
 \begin{equation}
-    U_\text{min}=45.750\,\text{mV} \quad \quad
-    U_\text{max}=83.750\,\text{mV}
+    U_\text{unten}=(45.750\pm 0.05)\,\text{mV} \quad \quad
+    U_\text{max}=(83.750 \pm 0.05) \,\text{mV}
 \end{equation}
-Es ergibt sich für den Modulationsgrad m=0.2934
+Die angenommenen Unsicherheiten sind durch die endliche Ungenauigkeit des Oszilloskop gegeben.
+Der resultierende Modulationsgrad liegt bei
+\begin{equation}
+    \label{mod1}
+ m=0.2934 \pm 0.0006.
+\end{equation}
 \begin{figure}
   \centering
   \includegraphics[width=0.7\linewidth]{ressources/scope_453.png}
@@ -63,11 +68,10 @@ Es ergibt sich für den Modulationsgrad m=0.2934
   \label{fig:plot2}
 \end{figure}
 Des Weiteren wurde das Signal des Frequenzspektrum aufgenommen, welches in
-Abbildung \ref{spek2} zusehen ist. Die ersten 6 Maxima können deutlich als
+Abbildung \ref{spek2} zusehen ist. Die ersten 5 Maxima können deutlich als
 solche identifiziert werden und sind in der Tabelle \ref{Tab1} aufgelistet.
 Es werden die gemessenen Frequenzen mit den theoretisch bestimmten verglichen
 und die Abweichung in $\%$  angegeben.
-Tabelle mit Messdaten
  \begin{table}
    \centering
    \caption{Die entnommenen Werte des Frequenzspektrums \ref{spek2}, zusätzlich
@@ -78,12 +82,11 @@ Tabelle mit Messdaten
      \toprule
 $\text{Peak Nr.}$& $\nu_\text{gem}$ in Mhz & $\nu_\text{theo}$ in Mhz & Abweichug in \% \\
      \midrule
-     1  & 2.879 &2.88 & 0.3\% \\
-     2  & 3.050 & 3.051 & 0.03\% \\
-     3  & 2.707  & 2.708 & 0.03\%\\
-     4  & 3.222 & 3.224  & 0.06 \% \\
-     5  & 2.536 & 2.536  & 0\%  \\
-     6  & 3.335 & 3.395  &  1.8\%  \\
+     1  & 2.879 &$\nu_\text{T}=$2.88 & 0.3\% \\
+     2  & 3.050 &$\nu_\text{T}+\nu_\text{M}$= 3.051 & 0.03\% \\
+     3  & 2.707  & $\nu_\text{T}-\nu_\text{M}=$2.708 & 0.03\%\\
+     4  & 3.222 &$\nu_\text{T}+2\nu_\text{M}$= 3.224  & 0.06 \% \\
+     5  & 2.536 & $\nu_\text{T}-2\nu_\text{M}$=2.536  & 0\%  \\
      \bottomrule
    \end{tabular}
  \end{table}
@@ -92,25 +95,33 @@ bestimmt werden. Dafür muss zuerst die Amplitude in Leistung umgerechnet werden
 hierfür wurde die folgende Formel verwendet
 
 \begin{align}
- P= 10\cdot ^{\frac{L}{10 \text{dBm}}}1\, \text{mW}.
+ P= 10\cdot ^{\frac{L}{10 \text{dBm}}}1\,\cdot  \text{mW}.
 \label{watt}
 \end{align}
 Die Amplitude $L$ ist in Dezibel Milliwatt angegeben und die resulierende Leistung
 ist folglich in Watt angegeben. Der Modulationsgrad kann über
 die Beziehung $U^2= PR$ und einem konstanten Widerstand und bekannter
 Leistung berechnet werden. Es ergibt sich eine Beziehung für den Modulationsgrad
-$$m_{\pm} = 2 \sqrt{ \frac{ P_{\omega_\text{T}\pm \omega_\text{M}}}{P_{\omega_{\text{T}}}} }$$
+$$m_{\pm} = 2 \sqrt{ \frac{ P_{\omega_\text{T}\pm \omega_\text{M}}}{P_{\omega_{\text{T}}}} }=
+2\sqrt{ \frac{10 \frac{L_{\omega_\text{T}\pm \omega_\text{M}}}{10\,\text{dBm}}\,1\cdot \text{mW}}{ 10 \frac{L_{\omega_\text{T}}}{10\,\text{dBm}}\,1\cdot \text{mW}} }.$$
 Mit den Amplituden aus den Frequenzspektrum.
 
 
 \begin{align}
+     \nonumber
     L_1=L_{\omega_{\text{T}}}=-19.85 \, \text{dBm}\\
+    \nonumber
     L_2=L_{\omega_{\text{T}}-\omega_{\text{M}}}=-32.78 \, \text{dBm}\\
-    L_3=L_{\omega_{\text{T}}+\omega_{\text{M}}}=-32.86 \, \text{dBm}\\
+    \nonumber
+    L_3=L_{\omega_{\text{T}}+\omega_{\text{M}}}=-32.86 \, \text{dBm}
 \end{align}
 ergeben sich folgende Werte für die Modulationsgerade:
-$$ m_{\omega_{\text{T}}-\omega_{\text{M}}}=0.45 \quad \quad m_{\omega_{\text{T}}+\omega_{\text{M}}}=0.44.$$
-$$ \rightarrow m=0.45 \pm 0.01$$
+$$m_{\omega_{\text{T}}-\omega_{\text{M}}}=0.45 \quad \quad m_{\omega_{\text{T}}+\omega_{\text{M}}}=0.44.$$
+
+\begin{equation}
+        \label{mod2}
+        m=0.45 \pm 0.01
+\end{equation}
 \begin{figure}
   \centering
   \includegraphics[width=0.7\linewidth]{ressources/photo5384285734183217711.jpg}
@@ -120,8 +131,8 @@ $$ \rightarrow m=0.45 \pm 0.01$$
 
 
 \subsection{Erzeugung einer frequenzmodulierten Schwingung}
-Zur Modulierung wird nun frequenzmodulierten Schwingungen betrachtet, das Trägersignal
-hat eine Spannung von $U_\text{T}=  410.925\,\text{mV}$ und einer Frequenz von
+Zur Modulierung des Signals wird nun frequenzmodulierten Schwingungen betrachtet, das Trägersignal
+hat eine Spannung von $U_\text{T}=(410.925\pm 0.025)\,\text{mV}$ und einer Frequenz von
 $\nu_\text{T}=1.26 \, \text{MHz}$. Das Modulationssignal hat eine Spannung von
 $U_\text{M}=350\,$mV und eine Frequenz von $\nu_\text{M}=125\,$kHz.
 Das so modulierte Signal ist in Abbildung \ref{sig1} zu sehen, für die
@@ -143,7 +154,7 @@ hier ist die Verschmierung genauer zu sehen.\\
   Cursor kennzeichnen die Breite der Verschmierung.}
   \label{sig2}
 \end{figure}
-Ziel ist es mit Hilfe der Verschmierung und der Frequenz des Trägersignals
+Ziel ist es, mit Hilfe der Verschmierung und der Frequenz des Trägersignals
 einen Zusammmenhang zum Modulationsgrad herzuleiten. Dafür wird zuerst
 die Verschmierung genauer Vermessen. Mit Hilfe der Cursor wurde die
 Verschmierung zu
@@ -158,7 +169,7 @@ $$\bar{\nu}(\phi_0)=\frac{2}{T} \int_0^{T/2} \frac{\omega_\text{T}}{2\pi}
 [1-m\cdot \sin (\omega_\text{M}t+ \phi_0)]=\frac{\omega_\text{T}}{2\pi}-
 \frac{\omega_\text{T}\cdot m}{\pi^2}\cos(\phi_0)$$
 
-Aufgrund des $\cos(\phi_0)$ gibt es einen Bereich die die
+Aufgrund des $\cos(\phi_0)$ gibt es einen Bereich, der die
 gemittelte Frequenzen aus der Frequenzmodulation annehmen können. Es lässt
 sich jedoch eine maximale und minimale Frequenz angeben:
 \begin{align}
@@ -170,15 +181,19 @@ Der Modulationsgrad lässt sich nun über die Beziehung
 
 
 \begin{align}
+    \nonumber
 \Delta T'=T_\text{max}-T_\text{min}=\frac{1}{\nu_\text{min}}-\frac{1}{\nu_\text{max}}\\
+\nonumber
 =\frac{1}{\frac{\omega T}{2\pi}-\frac{\omega \cdot m}{\pi^2}}-
+\nonumber
  \frac{1}{\frac{\omega T}{2\pi}+\frac{\omega \cdot m}{\pi^2}}\\
+ \nonumber
  \Leftrightarrow m^2+ \frac{2\pi^2}{\omega_\text{T} \Delta T'}m-\frac{\pi^2}{4}=0\\
-\rightarrow m_\pm=-\frac{\pi}{4\nu_\text{M}\Delta T}\pm\sqrt{\frac{\pi^2}{16\nu_\text{T}^2 \Delta T^2} +\frac{\pi^2}{4}}.
+ m_\pm=-\frac{\pi}{4\nu_\text{M}\Delta T}\pm\sqrt{\frac{\pi^2}{16\nu_\text{M}^2 \Delta T^2} +\frac{\pi^2}{4}}.
 \end{align}
 bestimmen. Dabei muss berücksichtig werden, dass nur positive Werte für den
-Modulationsgrad sinnvoll sind. Des Weiteren ist $\Delta T'=2\nu_\text{M}\/ \nu_\text{T}\Delta T$
-die mittlere Verschmierung pro halbe Schwingung. Setzt man nun die Werte ein ergibt
+Modulationsgrad sinnvoll sind. Des Weiteren ist $\Delta T'=2\nu_\text{M}/ \nu_\text{T}\Delta T$
+die mittlere Verschmierung pro halb Schwingung. Setzt man nun die Werte ein, ergibt
 sich für den Modulationsgrad
 $$m= 0.606 \pm 0.002$$
 Mit Hilfe des Modulationsgrades kann nun der Frequnezhub berechnet werden.

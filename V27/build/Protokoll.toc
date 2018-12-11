@@ -1,0 +1,15 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\defcounter {refsection}{0}\relax 
+\select@language {german}
+\contentsline {section}{\numberline {1}Theorie}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}Aufspaltung der Energieniveaus im homogenen Magnetfeld}{4}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Auswahlregeln}{5}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}normaler Zeeman-Effekt}{5}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}anomaler Zeeman-Effekt}{6}{subsection.1.4}
+\contentsline {section}{\numberline {2}Fehlerrechnung}{8}{section.2}
+\contentsline {section}{\numberline {3}Versuchsaufbau}{9}{section.3}
+\contentsline {subsection}{\numberline {3.1}Lummer-Gehrcke-Platte}{9}{subsection.3.1}
+\contentsline {section}{\numberline {4}Durchführung}{11}{section.4}
+\contentsline {section}{\numberline {5}Auswertung}{12}{section.5}
+\contentsline {section}{\numberline {6}Diskussion}{13}{section.6}
+\contentsline {section}{\nonumberline Literatur}{14}{section*.7}

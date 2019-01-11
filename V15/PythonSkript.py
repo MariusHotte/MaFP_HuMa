@@ -519,63 +519,63 @@ def function(x, a, b, c, d, e):
     return a * x**4 + b * x**3 + c * x**2 + d * x + e
 
 
-f = open('messdaten/19_01_07_Kaiser_Hoetting/Cluster_adc_entries.txt', 'r')
-l = []
-l = [line.split() for line in f]
-ADC = []
-for i in range(1, len(l)):
-    y = []
-    for item in l[i]:
-        y.append(float(item))
-    ADC.append(y)
+# f = open('messdaten/19_01_07_Kaiser_Hoetting/Cluster_adc_entries.txt', 'r')
+# l = []
+# l = [line.split() for line in f]
+# ADC = []
+# for i in range(1, len(l)):
+#     y = []
+#     for item in l[i]:
+#         y.append(float(item))
+#     ADC.append(y)
 
 
-for i in range(len(ADC)):
-    x = 0
-    for j in range(len(ADC[i])):
-        ADC[i][j] = 3.6 * (function(ADC[i][j], *noms(Params_Umrechnung)))
+# for i in range(len(ADC)):
+#     x = 0
+#     for j in range(len(ADC[i])):
+#         ADC[i][j] = 3.6 * (function(ADC[i][j], *noms(Params_Umrechnung)))
 
 
-ADC_sum = []
-for i in range(len(ADC)):
-    x = 0
-    for j in range(len(ADC[i])):
-        x = x + ADC[i][j]
-    ADC_sum.append(x)
+# ADC_sum = []
+# for i in range(len(ADC)):
+#     x = 0
+#     for j in range(len(ADC[i])):
+#         x = x + ADC[i][j]
+#     ADC_sum.append(x)
 
-Energie_mean = np.mean(ADC_sum)
-Energie_max = max(ADC_sum)
+# Energie_mean = np.mean(ADC_sum)
+# Energie_max = max(ADC_sum)
 
-print(Energie_max)
-print(Energie_mean)
-Cluster = np.linspace(0, 1215230, 400000)
-Cluster_Result = np.zeros(len(Cluster))
-ADC_sum.sort()
-print(ADC_sum[0:10])
-# for i in range(len(ADC_sum)):
-#     for j in range(len(Cluster) - 1):
-#         if Cluster[j] < ADC_sum[i] and Cluster[j + 1] > ADC_sum[i]:
-#             Cluster_Result[j] = Cluster_Result[j] + 1
-#             break
+# print(Energie_max)
+# print(Energie_mean)
+# Cluster = np.linspace(0, 1215230, 400000)
+# Cluster_Result = np.zeros(len(Cluster))
+# ADC_sum.sort()
+# print(ADC_sum[0:10])
+# # for i in range(len(ADC_sum)):
+# #     for j in range(len(Cluster) - 1):
+# #         if Cluster[j] < ADC_sum[i] and Cluster[j + 1] > ADC_sum[i]:
+# #             Cluster_Result[j] = Cluster_Result[j] + 1
+# #             break
 
-# for i in range(len(Cluster)):
-#     Cluster[i] = Cluster[i] / 1000
-# item = 0
-# Cluster_Result_max = max(Cluster_Result)
-# for i in range(len(Cluster_Result)):
-#     if Cluster_Result[i] == Cluster_Result_max:
-#         item = i
-#         break
+# # for i in range(len(Cluster)):
+# #     Cluster[i] = Cluster[i] / 1000
+# # item = 0
+# # Cluster_Result_max = max(Cluster_Result)
+# # for i in range(len(Cluster_Result)):
+# #     if Cluster_Result[i] == Cluster_Result_max:
+# #         item = i
+# #         break
 
-# plt.axvline(x=Energie_mean / 1000, ymin=0, ymax=9000, color='c', linestyle='--', label='Mittelwert')
-# plt.axvline(x=Cluster[i], ymin=0, ymax=9000, color='m', linestyle='--', label='MPV')
-# plt.axvline(x=function(250,*noms(Params_Umrechnung)), ymin=0, ymax=9000, color='r', linestyle='--', label='Grenzwert')
-# plt.plot(Cluster, Cluster_Result, 'bx')
-# plt.xlabel('Energie pro Cluster in keV')
-# plt.ylabel('Häufigkeit')
-# plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
-# plt.savefig('build/Quellenmessung_Cluster.pdf')
-# plt.clf()
+# # plt.axvline(x=Energie_mean / 1000, ymin=0, ymax=9000, color='c', linestyle='--', label='Mittelwert')
+# # plt.axvline(x=Cluster[i], ymin=0, ymax=9000, color='m', linestyle='--', label='MPV')
+# # plt.axvline(x=function(250,*noms(Params_Umrechnung)), ymin=0, ymax=9000, color='r', linestyle='--', label='Grenzwert')
+# # plt.plot(Cluster, Cluster_Result, 'bx')
+# # plt.xlabel('Energie pro Cluster in keV')
+# # plt.ylabel('Häufigkeit')
+# # plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
+# # plt.savefig('build/Quellenmessung_Cluster.pdf')
+# # plt.clf()
 # ################################ FREQUENTLY USED CODE ################################
 #
 ########## IMPORT ##########

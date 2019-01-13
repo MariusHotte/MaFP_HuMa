@@ -1,2 +1,32 @@
 \section{Diskussion}
 \label{sec:Diskussion}
+
+\subsection{Depletionsspannung}
+In diesem Versuch wurde auf drei verschiedene Weisen die Depletionsspannung $U_{dep}$ bestimmt. Zuerst konnte durch die IV-Kurve eine grobe Abschätzung gewonnen werden und anschließend aussagekräftigere Ergebnisse durch die CCE des Lasers und der $\beta$-Quelle gemessen werden. Die Ergebnisse werden im Folgenden vergleichen.
+ 
+\begin{align}
+	U_{dep, IV-Kurve} \sim \SI{70}{\volt}\\
+	U_{dep, Laser} &= \input{build/CCEL_UDep.tex}\\
+	U_{dep, \beta -Quelle} &= \input{build/CCEQ_UDep.tex}
+\end{align} 
+
+Obwohl die Ausgleichsrechnung in Abbildung \ref{fig:CEE_fit} und \ref{fig:CEEQ_fit} sehr gut die Messerergebnisse widerspiegeln. Trotzdem besteht eine großer Unterschied in den Ergebnissen untereinander als auch zum Schätzwert. Für den Sensor liegt nach \cite{skript} die Depletionsspannung im Bereich von $60-\SI{80}{\volt}$. In diesem Bereich befindet sich nur der von der IV-Kurve abgeschätzte Wert. Die Ursache für eine so große Abweichung könnte darin liegen, dass nicht lange genug zwischen dem ändern der Spannung und des Startens der nächsten Messung gewartet wurden. Für eine genaue Messung und ein verlässliches Ergebnis sollte eine CV-Messung durchgeführt werden.
+
+\subsection{Abmessung des Sensors und Kenngrößen des Lasers}
+Mit Hilfe von Abbildung \ref{fig:laserscan_pos} ist die Streifenbreite, der Streifenabstand und die Spotgröße des Lasers abgeschätzt worden. Diese Abschätzung ergab:
+
+\begin{align}
+	\text{Breite} &= \SI{70}{\micro\meter}\\
+	\text{Abstand} &= \SI{90}{\micro\meter}\\
+	\text{Spotdurchmesser} &= \SI{20}{\micro\meter}
+\end{align} 
+
+Nach \cite{skript} weißt der Sensor einen Pitch von $\SI{160}{\micro\meter}$ auf. Um einen Vergleich ziehen zu können, wird der Pitch aus den berechneten werden ermittelt. Da der Pitch den Abstand zwischen zwei Streifen beschreibt, ausgehend von der Mitte jedes Streifens, ist der Pitch durch Addition der Breite und dem Abstand zu bestimmen. Der berechnete Pitch stimmt mit dem aus \cite{skript} überein, wobei zu betonen ist, dass Anhand von Abbildung \ref{fig:laserscan_pos} die Breite und der Abstand nur abgeschätzt werden können. Genauere Ergebnisse können durch ein kleinschrittigeres Vorgehen erreicht werden.
+
+Die Spotgröße des Lasers ist nach \cite{skript} mit $\SI{20}{\micro\meter}$ angegeben, wodurch auch hier der abgeschätzte Wert übereinstimmt.
+
+In Kapitel \label{sec:CCE} ist die Eindringtiefe mit Hilfe der CCE bestimmt worden. Die Literatur(\cite{skript}) gibt an, dass bei einer Wellenlänge von $\lambda=\SI{920}{\nano\meter}$ bzw. $\lambda=\SI{1073}{\nano\meter}$ eine Eindringtiefe von $a=\SI{74}{\micro\meter}$ bzw. $\lambda=\SI{380}{\micro\meter}$ besteht. Der genaue Zusammenhang zwischen der Wellenlänge und der Eindringtiefe ist nicht bekannt,  da sich der gemessene Wert ($a=\input{build/CCEL_a.tex} $) mit einer Wellenlänge von $\lambda=\SI{920}{\nano\meter}$ des verwendeten Lasers, jedoch zwischen den beiden angegebenen Parametern befindet, wird er als plausibel angenommen.
+
+
+\subsection{Mittlere Energiedeposition}
+Für einen theoretischen Vergleichswert, wird der in \cite{skript} berechnete mittlere Energieverlust pro Strecke, der mit Hilfe der Bethe-Blochgleichung berechnet worden ist, verwendet. Multipliziert mit der Dicke des Sensors, errechnet sich aus dem Energieverlust pro Strecke, die mittlere Energiedeposition im Sensor von $\bar{E}_{theo}=\SI{116.4}{\kilo\eV}$. Der gemessene Wert von $\bar{E}_{exp}=\input{build/average.tex} $ ergibt somit eine Abweichung von $\SI{7.39}{\percent}$.

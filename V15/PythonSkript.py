@@ -55,7 +55,7 @@ from io import StringIO
 ################################################ Finish importing custom libraries #################################################
 U, I = np.genfromtxt('messdaten/IV_kurve.txt', unpack=True)
 
-plt.plot(U, I, 'rx', label='Messdaten')
+plt.plot(U, I, 'bx', label='Messdaten')
 plt.xlabel(r'$U \: /\: [V]$')
 plt.ylabel(r'$I \:/\: [\mu A]$')
 plt.legend(loc='best')
@@ -93,8 +93,13 @@ y_2d, x_2d = np.meshgrid(y_1d, x_1d)
 # z_2d = 1/(x_2d**2 + y_2d**2 + 1) * np.cos(np.pi * x_2d) * np.cos(np.pi * y_2d)
 
 # plt.figure()
-# plt.pcolormesh(x_2d, y_2d, ADC, cmap=plt.get_cmap("plasma"))
-# plt.colorbar()
+# #plt.pcolormesh(x_2d, y_2d, ADC, cmap=plt.get_cmap("plasma"))
+
+# sc = plt.pcolormesh(x_2d, y_2d, ADC, cmap=plt.get_cmap("plasma"))
+# clb = plt.colorbar(sc)
+# clb.set_label('ADC', labelpad=13, y=0.5, rotation=270)
+
+# # plt.colorbar()
 # plt.xlabel('Channels')
 # plt.ylabel('Events')
 # # plt.gca().set_aspect("equal")
@@ -123,26 +128,28 @@ for i in range(len(ADC)):
     Noise.append(np.sqrt((1 / (len(ADC[i]) - 1)) * help))
 
 
-# plt.bar(x_1d, Noise, align='center')
-# plt.xlabel('Channels')
-# plt.ylabel('Noise')
-# # plt.gca().set_aspect("equal")
-# plt.savefig('build/Noise.pdf')
-# plt.clf()
+plt.bar(x_1d, Noise, align='center')
+plt.xlabel('Channels')
+plt.ylabel('Noise')
+plt.ylim(1.5, 2.6)
+# plt.gca().set_aspect("equal")
+plt.savefig('build/Noise.pdf')
+plt.clf()
 
-# plt.bar(x_1d, Pedestals, align='center')
-# plt.xlabel('Channels')
-# plt.ylabel('Pedestals')
-# # plt.gca().set_aspect("equal")
-# plt.savefig('build/Pedestals.pdf')
-# plt.clf()
+plt.bar(x_1d, Pedestals, align='center')
+plt.xlabel('Channels')
+plt.ylabel('Pedestals')
+plt.ylim(500, 519)
+# plt.gca().set_aspect("equal")
+plt.savefig('build/Pedestals.pdf')
+plt.clf()
 
-# plt.bar(y_1d, Common_Mode_Shift, align='center')
-# plt.xlabel('Events')
-# plt.ylabel('CommonModeShift')
-# # plt.gca().set_aspect("equal")
-# plt.savefig('build/Common_Mode_Shift.pdf')
-# plt.clf()
+plt.bar(y_1d, Common_Mode_Shift, align='center')
+plt.xlabel('Common Mode Shift')
+plt.ylabel('normierte Häufigkeit')
+# plt.gca().set_aspect("equal")
+plt.savefig('build/Common_Mode_Shift.pdf')
+plt.clf()
 
 Cluster = np.linspace(-10, 11, 85)
 Cluster_Result = np.zeros(len(Cluster))
@@ -156,9 +163,9 @@ for i in range(len(Cluster_Result)):
 for i in range(len(Cluster_Result)):
     Cluster_Result[i] = Cluster_Result[i] / sum
 
-plt.bar(Cluster, Cluster_Result, align='center')
-plt.xlabel('Häugikeit')
-plt.ylabel('CommonModeShift')
+plt.bar(Cluster, Cluster_Result, width=0.23, align='center')
+plt.xlabel('CommonModeShift')
+plt.ylabel('normierste Häufigkeit')
 # plt.gca().set_aspect("equal")
 plt.savefig('build/CMS_Gauß.pdf')
 plt.clf()
@@ -192,14 +199,13 @@ plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
 plt.savefig('build/Calib.pdf')
 plt.clf()
 
-
-plt.plot(puls[50:100], ADC_CH10[50:100], 'b.', label='Ch10')
 plt.plot(puls[50:100], ADC_CH10_0Volt[50:100], 'r-', label='Ch10 0V')
+plt.plot(puls[50:100], ADC_CH10[50:100], 'b.', label='Ch10')
 plt.plot(puls[50:100], ADC_CH35[50:100], 'g.', label='Ch35')
 plt.plot(puls[50:100], ADC_CH70[50:100], 'm.', label='Ch70')
 plt.plot(puls[50:100], ADC_CH100[50:100], 'y.', label='Ch100')
 plt.plot(puls[50:100], ADC_CH120[50:100], 'c.', label='Ch120')
-plt.plot(puls[50:100], ADC_mean[50:100], 'kx', label='Mean')
+plt.plot(puls[50:100], ADC_mean[50:100], 'kx', label='Mittelwert')
 plt.xlabel('Puls in e')
 plt.ylabel('ADC')
 plt.legend(loc='best')
@@ -221,7 +227,7 @@ params = ucurve_fit(f, ADC_mean[0:150], puls[0:150], p0=[0.001, -0.03, 1, 460, 0
 t_plot = np.linspace(0, 300, 100)
 plt.plot(t_plot, f(t_plot, *noms(params)), 'b-', label='Fit')
 plt.axvline(x=250, ymin=0, ymax=200, color='r', linestyle='--', label='Grenze')
-#plt.axvline(x=150000, ymin=0, ymax=270, color='r', linestyle='--', label='Grenze')
+# plt.axvline(x=150000, ymin=0, ymax=270, color='r', linestyle='--', label='Grenze')
 plt.xlabel('ADC')
 plt.ylabel('Puls in ke')
 plt.legend(loc='best')
@@ -262,11 +268,14 @@ y_2d, x_2d = np.meshgrid(y_1d, x_1d)
 # z_2d = 1/(x_2d**2 + y_2d**2 + 1) * np.cos(np.pi * x_2d) * np.cos(np.pi * y_2d)
 
 plt.figure()
-plt.pcolormesh(x_2d, y_2d, ADC, cmap=plt.get_cmap("plasma"))
-plt.colorbar()
-plt.xlabel('Abstand')
+# plt.pcolormesh(x_2d, y_2d, ADC, cmap=plt.get_cmap("plasma"))
+# plt.colorbar()
+plt.xlabel(r'Abstand  in $\: 10^{-5}m$')
 plt.ylabel('Channels')
-# plt.gca().set_aspect("equal")
+
+sc = plt.pcolormesh(x_2d, y_2d, ADC, cmap=plt.get_cmap("plasma"))
+clb = plt.colorbar(sc)
+clb.set_label('ADC', labelpad=-25, y=1.1, rotation=0)
 plt.savefig('build/Laserscan_komplett.pdf')
 plt.clf()
 
@@ -287,9 +296,12 @@ y_2d, x_2d = np.meshgrid(y_1d, x_1d)
 # z_2d = 1/(x_2d**2 + y_2d**2 + 1) * np.cos(np.pi * x_2d) * np.cos(np.pi * y_2d)
 
 plt.figure()
-plt.pcolormesh(x_2d, y_2d, ADC_zoom4555, cmap=plt.get_cmap("plasma"))
-plt.colorbar()
-plt.xlabel('Abstand')
+# plt.pcolormesh(x_2d, y_2d, ADC_zoom4555, cmap=plt.get_cmap("plasma"))
+# plt.colorbar()
+sc = plt.pcolormesh(x_2d, y_2d, ADC_zoom4555, cmap=plt.get_cmap("plasma"))
+clb = plt.colorbar(sc)
+clb.set_label('ADC', labelpad=-25, y=1.1, rotation=0)
+plt.xlabel(r'Abstand  in $\: 10^{-5}m$')
 plt.ylabel('Channels')
 # plt.gca().set_aspect("equal")
 plt.savefig('build/Laserscan_zoom.pdf')
@@ -313,11 +325,11 @@ plt.axvline(x=4, ymin=0, ymax=160, color='c', linestyle='--', label='Streifenbre
 plt.axvline(x=10.95, ymin=0, ymax=160, color='c', linestyle='--')
 plt.axvline(x=11.05, ymin=0, ymax=160, color='m', linestyle='--', label='Streifenabstand')
 plt.axvline(x=19.95, ymin=0, ymax=160, color='m', linestyle='--')
-plt.axvline(x=20.05, ymin=0, ymax=160, color='c', linestyle='--', label='Streifenbreite')
+plt.axvline(x=20.05, ymin=0, ymax=160, color='c', linestyle='--')
 plt.axvline(x=27, ymin=0, ymax=160, color='c', linestyle='--')
 plt.xlabel(r'Position$\:/\: [10^{-5} m]$')
 plt.ylabel('ADC')
-plt.legend(loc='best')
+plt.legend(loc='upper left')
 plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
 plt.savefig('build/Laserscan_Pos.pdf')
 plt.clf()
@@ -396,13 +408,14 @@ def CCE_function(U, U_depl, a):  # a: mitt. Eindringtiefe
 b = ((0, 0), (200, 300 * 1e-6))
 params = ucurve_fit(CCE_function, CCE_read, signal_50, bounds=b)   # p0 bezeichnet die Startwerte der zu fittenden Parameter
 U_plot = np.linspace(0, 200, 100)
-plt.plot(U_plot, CCE_function(U_plot, *noms(params)), 'b-', label='Fit')
+plt.plot(U_plot, CCE_function(U_plot, *noms(params)), 'r-', label='Fit')
+write('build/CCEL_UDep.tex', make_SI(params[0], r'\volt', figures=1))
+write('build/CCEL_a.tex', make_SI(params[1] * 1e6, r'\micro\meter', figures=1))
+print(noms(params[1]))
 
-# print(params)
-
-plt.plot(CCE_read, signal_50, 'kx', label='Mean')
-plt.xlabel(r'$U \: /\: [V]$')
-plt.ylabel('Intensität')
+plt.plot(CCE_read, signal_50, 'bx', label='Messwerte Ch50')
+plt.xlabel(r'U$ \: /\: [V]$')
+plt.ylabel('normiertes CCE-Signal')
 plt.legend(loc='best')
 plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
 plt.savefig('build/CCE_fit.pdf')
@@ -449,15 +462,16 @@ for i in range(len(CCEQ_mean)):
 
 
 b = ((0, 0), (200, 300 * 1e-6))
-params = ucurve_fit(CCE_function, volt, CCEQ_mean, bounds=b)   # p0 bezeichnet die Startwerte der zu fittenden Parameter
+params = ucurve_fit(CCE_function, volt, CCEQ_mean, bounds=b)   # p0 bezeichnet die Startwerte der zu fittenden Paramete
 U_plot = np.linspace(0, 200, 100)
-plt.plot(U_plot, CCE_function(U_plot, *noms(params)), 'b-', label='Fit')
-
+plt.plot(U_plot, CCE_function(U_plot, *noms(params)), 'r-', label='Fit')
+write('build/CCEQ_UDep.tex', make_SI(params[0], r'\volt', figures=1))
+write('build/CCEQ_a.tex', make_SI(params[1] * 1e-6, r'\micro\meter', figures=1))
 # print(params)
 
-plt.plot(volt, CCEQ_mean, 'kx', label='Mean')
+plt.plot(volt, CCEQ_mean, 'bx', label='Messwerte')
 plt.xlabel(r'$U \: /\: [V]$')
-plt.ylabel('Intensität')
+plt.ylabel('normierte mittlere CCE pro Cluster')
 plt.legend(loc='best')
 plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
 plt.savefig('build/CCEQ_fit.pdf')
@@ -513,38 +527,63 @@ plt.ylabel('normierte Anzahl der Hits')
 plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
 plt.savefig('build/Quellenmessung_hitmap.pdf')
 plt.clf()
+#####################################################################################################
 
 
-def function(x, a, b, c, d, e):
-    return a * x**4 + b * x**3 + c * x**2 + d * x + e
+def func(x, a, b, c, d, e):
+    return (a * x**4 + b * x**3 + c * x**2 + d * x + e) * 3.6
 
 
-# f = open('messdaten/19_01_07_Kaiser_Hoetting/Cluster_adc_entries.txt', 'r')
-# l = []
-# l = [line.split() for line in f]
-# ADC = []
-# for i in range(1, len(l)):
-#     y = []
-#     for item in l[i]:
-#         y.append(float(item))
-#     ADC.append(y)
+f = open('messdaten/19_01_07_Kaiser_Hoetting/Cluster_adc_entries.txt', 'r')
+l = []
+l = [line.split() for line in f]
+ADC = []
+for i in range(1, len(l)):
+    y = []
+    for item in l[i]:
+        y.append(float(item))
+    ADC.append(y)
 
 
-# for i in range(len(ADC)):
-#     x = 0
-#     for j in range(len(ADC[i])):
-#         ADC[i][j] = 3.6 * (function(ADC[i][j], *noms(Params_Umrechnung)))
+for i in range(len(ADC)):
+    x = 0
+    for j in range(len(ADC[i])):
+        ADC[i][j] = (func(ADC[i][j], *noms(Params_Umrechnung)))
 
 
-# ADC_sum = []
-# for i in range(len(ADC)):
-#     x = 0
-#     for j in range(len(ADC[i])):
-#         x = x + ADC[i][j]
-#     ADC_sum.append(x)
+ADC_sum = []
+for i in range(len(ADC)):
+    x = 0
+    for j in range(len(ADC[i])):
+        x = x + ADC[i][j]
+    ADC_sum.append(x)
 
 # Energie_mean = np.mean(ADC_sum)
 # Energie_max = max(ADC_sum)
+
+
+n, bins, patches = plt.hist(ADC_sum, bins=100, color='b', density=True, log=False)
+bin_mid = [(bins[i] + bins[i + 1]) / 2 for i in range(0, len(bins) - 1)]
+bin_width = bins[1] - bins[0]
+most_likely = int(np.where(n == max(n))[0])
+#tb.write('build/mpv.tex', tb.make_SI(ufloat(bin_mid[most_likely], bin_width), r'\kilo\electronvolt', figures=1))
+write('build/most_likely.tex', make_SI(float(bin_mid[most_likely]) * 1e-3, r'\kilo\electronvolt', figures=1))
+
+average = np.mean(ADC_sum)
+print(average)
+#tb.write('build/av_e.tex', tb.make_SI(ufloat(np.mean(charges), np.std(charges) / np.sqrt(len(charges))) * 1e-3, r'\kilo\electronvolt', figures=1))
+write('build/average.tex', make_SI(average * 1e-3, r'\kilo\electronvolt', figures=1))
+plt.axvline(x=func(250, *noms(Params_Umrechnung)), linestyle='dotted', color='r', label='Grenze')
+plt.axvline(x=bin_mid[most_likely], color='g', label='MPV', linewidth=1)
+plt.axvline(x=average, color='c', label='Mittelwert', linewidth=1)
+#plt.xlim(0, max(charges * 1e-3))
+plt.xlabel(r'Energie in eV')
+plt.ylabel('Wahrscheinlichkeit')
+plt.legend()
+plt.tight_layout()
+plt.savefig('build/big_clusterenergie_charge.pdf')
+plt.close()
+
 
 # print(Energie_max)
 # print(Energie_mean)
@@ -552,30 +591,33 @@ def function(x, a, b, c, d, e):
 # Cluster_Result = np.zeros(len(Cluster))
 # ADC_sum.sort()
 # print(ADC_sum[0:10])
-# # for i in range(len(ADC_sum)):
-# #     for j in range(len(Cluster) - 1):
-# #         if Cluster[j] < ADC_sum[i] and Cluster[j + 1] > ADC_sum[i]:
-# #             Cluster_Result[j] = Cluster_Result[j] + 1
-# #             break
+# print('Jetzt gehts los!')
+# for i in range(len(ADC_sum)):
+#     item = 0
+#     for j in range(item, len(Cluster) - 1):
+#         if Cluster[j] < ADC_sum[i] and Cluster[j + 1] > ADC_sum[i]:
+#             Cluster_Result[j] = Cluster_Result[j] + 1
+#             item = j
+#             break
 
-# # for i in range(len(Cluster)):
-# #     Cluster[i] = Cluster[i] / 1000
-# # item = 0
-# # Cluster_Result_max = max(Cluster_Result)
-# # for i in range(len(Cluster_Result)):
-# #     if Cluster_Result[i] == Cluster_Result_max:
-# #         item = i
-# #         break
+# for i in range(len(Cluster)):
+#     Cluster[i] = Cluster[i] / 1000
+# item = 0
+# Cluster_Result_max = max(Cluster_Result)
+# for i in range(len(Cluster_Result)):
+#     if Cluster_Result[i] == Cluster_Result_max:
+#         item = i
+#         break
 
-# # plt.axvline(x=Energie_mean / 1000, ymin=0, ymax=9000, color='c', linestyle='--', label='Mittelwert')
-# # plt.axvline(x=Cluster[i], ymin=0, ymax=9000, color='m', linestyle='--', label='MPV')
-# # plt.axvline(x=function(250,*noms(Params_Umrechnung)), ymin=0, ymax=9000, color='r', linestyle='--', label='Grenzwert')
-# # plt.plot(Cluster, Cluster_Result, 'bx')
-# # plt.xlabel('Energie pro Cluster in keV')
-# # plt.ylabel('Häufigkeit')
-# # plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
-# # plt.savefig('build/Quellenmessung_Cluster.pdf')
-# # plt.clf()
+# plt.axvline(x=Energie_mean / 1000, ymin=0, ymax=9000, color='c', linestyle='--', label='Mittelwert')
+# plt.axvline(x=Cluster[i], ymin=0, ymax=9000, color='m', linestyle='--', label='MPV')
+# plt.axvline(x=(function(250000, *noms(Params_Umrechnung))) / 1000, ymin=0, ymax=9000, color='r', linestyle='--', label='Grenzwert')
+# plt.plot(Cluster, Cluster_Result, 'bx')
+# plt.xlabel('Energie pro Cluster in keV')
+# plt.ylabel('Häufigkeit')
+# plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
+# plt.savefig('build/Quellenmessung_Cluster.pdf')
+# plt.clf()
 # ################################ FREQUENTLY USED CODE ################################
 #
 ########## IMPORT ##########

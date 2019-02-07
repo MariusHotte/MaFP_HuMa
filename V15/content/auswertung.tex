@@ -1,12 +1,12 @@
 \section{Auswertung}
 \label{sec:Auswertung}
-Sämtliche im Folgenden durchgeführten Ausgleichsrechnungen werden mit der \emph{curve fit} Funktion aus dem für \emph{Python} geschriebenen package \emph{NumPy}\cite{scipy} durchgeführt. Fehlerrechnungen werden mit dem für \emph{Python} geschriebenen package \emph{Uncertainties}\cite{uncertainties} ausgeführt.
+Sämtliche im Folgenden durchgeführten Ausgleichsrechnungen werden mit der \emph{curve fit} Funktion aus dem für \emph{Python} geschriebenen Package \emph{NumPy}\cite{scipy} durchgeführt. Fehlerrechnungen werden mit dem für \emph{Python} geschriebenen Package \emph{Uncertainties}\cite{uncertainties} ausgeführt.
 
 Die Auswertung der verschiedenen Messungen folgt in der Reihenfolge wie sie auch aufgenommen wurden (siehe \cite{skript}). Einige der Datensätze wurde von der System-Software \emph{EASy} in dem Format \emph{.h5} gespeichert. Mit einem vom Praktikumsbetreuer zur Verfügung gestellten Python-Skript, wurde eine Vorauswertung durchgeführt und die für die Auswertung relevanten Daten in dem Format \emph{.txt} gespeichert.
 
 \subsection{Strom-Spannungs-Kennlinie}
-\label(sec:IV)
-In Abbildung \ref{fig:IV} ist die IV-Kurve des Silizium-Streifen-Sensors dargestellt. Bei kleinen Spannung ist ein Anstieg des Leckstroms zu beobachten, gefolgt von einem Plateau. Der Übergang in dieses Plateau ist bei $V=\SI{70}{\volt}$ erreicht. Aus diesem Grund wird dieser Wert als Abschätzung für die Depletionsspannung $U_{dep}$ verwendet.
+\label{sec:IV}
+In Abbildung \ref{fig:IV} ist die IV-Kurve des Silizium-Streifen-Sensors dargestellt. Bei kleinen Spannung ist ein Anstieg des Leckstroms zu beobachten, gefolgt von einem Plateau. Der Übergang in dieses Plateau ist bei $V=\SI{70}{\volt}$ erreicht. Aus diesem Grund wird dieser Wert als Abschätzung für die Depletionsspannung $U_{dep}$ verwendet. Für alle folgenden Messungen wird die Spannung $U=\SI{90}{\volt}$ verwendet, da somit sichergestellt ist, dass die Sensor voll depletiert ist.
 
 \begin{figure}[H]
   \centering
@@ -16,17 +16,17 @@ In Abbildung \ref{fig:IV} ist die IV-Kurve des Silizium-Streifen-Sensors dargest
 \end{figure}
 
 \subsection{Pedestal und Noise}
-Für eine Übersicht sind in Abbildung \ref{fig:ADC} die ADC-Counts in Abhängigkeit der Events und der Channel dargestellt. In dieser Darstellung sind die ADC-Counts ein Maß für das Grundrauschen ohne Signal. 
+Für eine Übersicht sind in Abbildung \ref{fig:ADC} die ADC-Counts in Abhängigkeit der Events und der Channel dargestellt. In dieser Darstellung sind die ADC-Counts ein Maß für den Offset ohne Signal.
 
 \begin{figure}[H]
   \centering
-  \includegraphics{build/ADC.pdf}
+  \includegraphics[width=1\textwidth]{build/ADC.pdf}
   \caption{ADC-Counts in Abhängigkeit der Events und der Channel.}
   \label{fig:ADC}
 \end{figure}
 
 
-Es zeigt sich, dass die Channel im Intervall [65,90] ein geringes Rauschen als an den Rändern des Sensors aufweisen. Aus diesem Datensatz wird nach Gleichung XXX das Pedestal und nach Gleichung XXX der Common-Mode-Shift bestimmt. Da nach \cite{skript} der Common-Mode-Shift um 0 Gaußverteilt ist, werden die Messwerte in Bins der Länge 0.25 unterteilt. In Abbildung \ref{fig:pedestals} sind die Pedestals und in \ref{fig:CMS} der Common-Mode-Shift dargestellt. 
+Es zeigt sich, dass die Channel im Intervall [65,90] ein geringeren Offset als an den Rändern des Sensors aufweisen. Aus diesem Datensatz wird nach Gleichung \eqref{peds} das Pedestal und nach Gleichung \eqref{common} der Common-Mode-Shift bestimmt. Da nach \cite{skript} der Common-Mode-Shift um Null Gaußverteilt ist, werden die Messwerte in Bins der Länge 0.25 unterteilt. In Abbildung \ref{fig:pedestals} sind die Pedestals und in Abbildung \ref{fig:CMS} der Common-Mode-Shift dargestellt.
 
 \begin{figure}[H]
   \centering
@@ -35,7 +35,7 @@ Es zeigt sich, dass die Channel im Intervall [65,90] ein geringes Rauschen als a
   \label{fig:pedestals}
 \end{figure}
 
- 
+
 \begin{figure}[H]
   \centering
   \includegraphics{build/CMS_Gauß.pdf}
@@ -43,7 +43,7 @@ Es zeigt sich, dass die Channel im Intervall [65,90] ein geringes Rauschen als a
   \label{fig:CMS}
 \end{figure}
 
-Aus den zuvor beschriebenen Größen wird unter Verwendung von Gleichung XXX die Noise bestimmt, in Abbildung \ref{fig:noise} ist diese dargestellt.
+Aus den zuvor beschriebenen Größen wird unter Verwendung von Gleichung \eqref{noise} die Noise bestimmt, in Abbildung \ref{fig:noise} ist diese dargestellt.
 
 \begin{figure}[H]
   \centering
@@ -74,23 +74,32 @@ Für fünf verschiedene Channel ist eine Kalibrationsmessung mit einem definiert
 \label{fig:calib}
 \end{figure}
 
-Um in späteren Kapitel die Signale in Pulse umrechnen zu können wird mit Hilfe eines Polynoms vierter Ordnung ein mathematischer Zusammenhang zwischen diesen beiden Größen gesucht.
+Um in späteren Kapiteln die Signale in deponierte Ladung umrechnen zu können wird mit Hilfe eines Polynoms vierter Ordnung ein mathematischer Zusammenhang zwischen diesen beiden Größen gesucht.
 Die verwendende Fitfunktion lautet:
 \begin{align}
-	Puls(ADC)=a \cdot ADC^4 + b \cdot ADC^3 + c \cdot ADC^2 + d \cdot ADC + e 
-\end{align} 
-Unter Verwendung dieser Funktion fällt in Abbildung \ref{fig:calib_fit} auf, dass für den fast linearen Anstieg bei kleinen Signalen die Koeffizienten der Therme höherer Ordnung relativ klein sein müssen, jedoch um den annähernd exponentiellen Anstieg beschreiben zu können, werden große Koeffizienten vor den höheren Ordnung benötigt. Da dies einen Widerspruch dargestellt, wird die Ausgleichsfunktion nur mit den Daten im Intervall [0,250] bestimmt. In Abbildung XXX wird diese Grenze graphisch deutlich gemacht, ab der die Ausgleichsrechnung eine große Abweichung zu dem Verlauf der Messwerte aufzeigt.
+	Puls(ADC)=a \cdot ADC^4 + b \cdot ADC^3 + c \cdot ADC^2 + d \cdot ADC + e
+\end{align}
+Unter Verwendung dieser Funktion fällt in Abbildung \ref{fig:calib_fit} auf, dass für den fast linearen Anstieg bei kleinen Signalen die Koeffizienten der Therme höherer Ordnung relativ klein sein müssen, jedoch um den annähernd exponentiellen Anstieg beschreiben zu können, werden große Koeffizienten vor den höheren Ordnung benötigt. Da dies einen Widerspruch dargestellt, wird die Ausgleichsfunktion nur mit den Daten im Intervall [0,250] bestimmt. Diese Begrenzung ist auch physikalisch vertretbar, da ab dieser Grenze die Anzahl der Einträge zu vernachlässigen ist. In Abbildung \ref{fig:calib_fit} wird diese Grenze graphisch deutlich gemacht, ab der die Ausgleichsrechnung eine große Abweichung zu dem Verlauf der Messwerte aufzeigt.
 
 \begin{figure}[H]
   \centering
   \includegraphics{build/Calib_fit.pdf}
   \caption{Ausgleichsrechnung mit den Messdaten im Intervall [0,250].}
-  \label{fig:calib_fit}
+  \label{fig:calib_fit} 
 \end{figure}
+
+Die Fitparameter lauten:
+\begin{align}
+  a &= \input{build/Calib_fit_params_a.tex} \\
+  b &= \input{build/Calib_fit_params_b.tex} \\
+  c &= \input{build/Calib_fit_params_c.tex} \\
+  d &= \input{build/Calib_fit_params_d.tex} \\
+  e &= \input{build/Calib_fit_params_e.tex}
+\end{align}
 
 \subsection{Vermessung der Streifensensoren mittels des Lasers}
 
-Wie in Kapitel XXX beschrieben, werden der Sensor mittels Laser vermessen. Die Messdaten sind in Abbildung \ref{fig:laserscan_komplett} für den kompletten Sensor und in \ref{fig:laserscan_zoom} für die betroffenen Streifen dargestellt. 
+Wie in Kapitel \ref{sec:Durchführung} beschrieben, werden der Sensor mittels Laser vermessen. Die Messdaten sind in Abbildung \ref{fig:laserscan_komplett} für den kompletten Sensor und in \ref{fig:laserscan_zoom} für die betroffenen Streifen dargestellt.
 
 \begin{figure}[H]
 \centering
@@ -121,16 +130,17 @@ Für die Abschätzung der Streifenbreite, des Abstands der Streifen und der Grö
 
 Der plötzliche Einbruch des Signals lässt darauf schließen, dass der Laser sich über einem Streifen befindet, da das Aluminium den Strahl komplett reflektiert. Maximal wird das Signal, wenn der Laserspot sich exakt neben dem Streifen und der Hälfte des Abstand der Streifen untereinander befindet (siehe Abbildung \ref{fig:laserscan_pos} , z.B. bei Abstand \SI{120}{\micro\meter}). Genau zwischen den Streifen wird das durch den Laser verursachte Signal zwischen den beiden nächsten Streifen aufgeteilt (siehe Abbildung \ref{fig:laserscan_pos}, z.B. bei Abstand \SI{150}{\micro\meter}). Die Spotgröße des Lasers kann abgeschätzt werden, indem der Abstand zwischen den Positionen vermessen wird, bei denen das Signal wieder beginnt anzusteigen und bei dem es maximal ist. Mit Hilfe von Abbildung \ref{fig:laserscan_pos} können die Größen nun wie folgt abgeschätzt werden:
 \begin{align}
-	\text{Breite} &= \SI{70}{\micro\meter}\\
-	\text{Abstand} &= \SI{90}{\micro\meter}\\
-	\text{Spotdurchmesser} &= \SI{20}{\micro\meter}
+	\text{Breite} &= \SI{70 \pm 10}{\micro\meter}\\
+	\text{Abstand} &= \SI{90 \pm 10}{\micro\meter}\\
+	\text{Spotdurchmesser} &= \SI{20 \pm 10}{\micro\meter}
 \end{align}
+Aufgrund einer Schrittweite von $\SI{10}{\micro\meter}$ ist dieser Wert als abgeschätzte Unsicherheit angegeben.
 
 \subsection{Charge Collection Efficiency des Lasers}
-label{sec:CCE}
-In Abbildung \ref{fig:CEE_fit} ist die Effizienz des Sensors gegen die Spannung aufgetragen. Da für diese Messung der Laserspot neben Channel 50 platziert worden ist, ist das Sigal in diesem Channel maxmimal und wir deshalb zur Bestimmung der Charge Collection Efficiency (CCE) verwendet. 
+\label{sec:CCE}
+In Abbildung \ref{fig:CEE_fit} ist die Effizienz des Sensors gegen die Spannung aufgetragen. Da für diese Messung der Laserspot neben Channel 50 platziert worden ist, ist das Sigal in diesem Channel maximal und wir deshalb zur Bestimmung der Charge Collection Efficiency (CCE) verwendet.
 
-Ebenfalls wie die IV-Kurve aus Kapitel \ref(sec:IV), geht die CCE ab der Depletionsspannung in ein Plateau über. Da ab dieser Spannung sich die Größe der Depletionszone nicht mehr verändert, kann auch die Effizienz nicht mehr steigen. Mit Hilfe von Gleichung XXX und unter Berücksichtigung von Gleichung XXX ergibt sich die in Abbildung \ref{fig:CEE_fit} die eingezeichnete Ausgleichsrechnung. 
+Ebenfalls wie die IV-Kurve aus Kapitel \ref{sec:IV}, geht die CCE ab der Depletionsspannung in ein Plateau über. Da ab dieser Spannung sich die Größe der Depletionszone nicht mehr verändert, kann auch die Effizienz nicht mehr steigen. Mit Hilfe von Gleichung \ref{CCE} und unter Berücksichtigung von Gleichung \ref{depsu} ergibt sich die in Abbildung \ref{fig:CEE_fit} eingezeichnete Ausgleichsrechnung.
 
 \begin{figure}[H]
   \centering
@@ -143,7 +153,7 @@ Die Fitparameter lauten:
 
 \begin{align}
   U_{dep} &= \input{build/CCEL_UDep.tex} \\
-  a &= \input{build/CCEL_a.tex} 
+  a &= \input{build/CCEL_a.tex}
 \end{align}
 
 \subsection{Charge Collection Efficiency der Sr-Quelle}
@@ -156,10 +166,14 @@ Für eine analoge Darstellung zu Abbildung \ref{fig:CEE_fit} ist in Abbildung \r
   \label{fig:CEEQ_fit}
 \end{figure}
 
-Mit der selben Ausgleichsrechnung wie in Kapitel \ref{sec:CCE} ergibt sich die Depletionsspannung $U_{dep} = \input{build/CCEQ_UDep.tex}$.
+Die Ausgleichsrechnung mit der Funktion
+\begin{align}
+	CCE_{Quelle} = \frac{d_c(U)}{D},
+\end{align} 
+wobei $D$ die Dicke des Sensors beschreibt, ergibt eine Depletionsspannung von $U_{dep} = \input{build/CCEQ_UDep.tex}$.
 
 \subsection{Großer Quellenscan}
-Für den großen Quellenscan, bei dem 1000000 Events abgewartet werden, wird in Abbildung \ref{fig:frequency_channel} die normierte Häufigkeit der Anzahl der Channel pro Event und in Abbildung \ref{fig:frequency_cluster} die normierte Häufigkeit der Anzahl der Cluster pro Event dargestellt. 
+Für den großen Quellenscan, bei dem 1000000 Events abgewartet werden, wird in Abbildung \ref{fig:frequency_channel} die normierte Häufigkeit der Anzahl der Channel pro Cluster und in Abbildung \ref{fig:frequency_cluster} die normierte Häufigkeit der Anzahl der Cluster pro Event dargestellt.
 
 \begin{figure}[H]
 \centering
@@ -179,19 +193,19 @@ Für den großen Quellenscan, bei dem 1000000 Events abgewartet werden, wird in 
 \label{fig:großer_quellenscan_1}
 \end{figure}
 
-Aus den Abbildung folgt, dass im wesentlichen nur ein bis zwei Streifen, also Channel, ein einzelnes Event registrieren. Des weiteren bildet sich in den meisten Fällen nur ein Cluster pro Event. In Abbildung \ref{fig:CEE_fit} ist die normierte Trefferrate eines Channels über den Zeitraum von 1Mio. Events dargestellt.
+Aus den Abbildung folgt, dass im wesentlichen nur ein bis zwei Streifen, also Channel, ein einzelnes Event registrieren. Des weiteren bildet sich in den meisten Fällen nur ein Cluster pro Event. In Abbildung \ref{fig:Hitmap} ist die normierte Trefferrate eines Channels über den Zeitraum von 1Mio. Events dargestellt.
 
 
 \begin{figure}[H]
   \centering
   \includegraphics{build/Quellenmessung_Hitmap.pdf}
   \caption{Trefferrate pro Channel.}
-  \label{fig:CEE_fit}
+  \label{fig:Hitmap}
 \end{figure}
 
-Es ist zu erkennen, dass die Probe mittig über dem Sensor positioniert worden ist, da sich das Maximum bei etwa Channelnummer 65 ausbildet. Die Streifen am Rand des Sensor weisen jedoch auf kein gaußartiges verhalten hin, sondern steigen wieder und könnten eventuell auf lange Sicht eine Plateau bilden. Da die Differenz zwischen Maximum und Hit an den Rändern sich nur um einen Faktor von etwa 0.25 unterscheidet, ist nicht davon auszugehen, dass die Hits am Rand vom Noise überlagert sind.
+Es ist zu erkennen, dass die Probe mittig über dem Sensor positioniert worden ist, da sich das Maximum bei Channel 65 ausbildet. Die Streifen am Rand des Sensor weisen jedoch auf kein gaußartiges verhalten hin. Die Anzahl der Hits steigt zum Rand hin wieder und könnten eventuell auf lange Sicht eine Plateau bilden. Da die Differenz zwischen Maximum und Hit an den Rändern sich nur um einen Faktor von etwa 0.25 unterscheidet, ist nicht davon auszugehen, dass die Hits am Rand vom Noise überlagert sind.
 
-In Abbildung \ref{fig:energy} ist das Energiespektrum der Quellenmessung dargestellt. 
+In Abbildung \ref{fig:energy} ist das Energiespektrum der Quellenmessung dargestellt.
 
 \begin{figure}[H]
   \centering
@@ -200,7 +214,7 @@ In Abbildung \ref{fig:energy} ist das Energiespektrum der Quellenmessung dargest
   \label{fig:energy}
 \end{figure}
 
-Hierfür werden die ACD-Counts mit der Ausgleichsfunktion in Kapitel \ref{sec:CCE} in Pulse umgerechnet. Danach erfolgt die schlussendliche Umrechnung in das Energiespektrum, mit dem Wissen, dass die Erzeugung einen Elektronen-Loch-Paares in Silizium eine Energie von $\SI{3.6}{\eV}$ benötigt. Eingezeichnet sind in der Abbildung die mittlere Energie ($\bar{E}=\input{build/average.tex}$) und die wahrscheinlichste Energie ($MPV=\input{build/most_likely.tex}$). Außerdem ist die Grenze der Umrechnung in das Energiespektrum eingezeichnet, da ab dieser, die Umrechnung nicht korrekt durchführt wird. 
+Hierfür werden die ACD-Counts mit der Ausgleichsfunktion in Kapitel \ref{sec:CCE} in Pulse umgerechnet. Danach erfolgt die schlussendliche Umrechnung in das Energiespektrum, mit dem Wissen, dass die Erzeugung einen Elektronen-Loch-Paares in Silizium eine Energie von $\SI{3.6}{\eV}$ benötigt. Eingezeichnet sind in der Abbildung die mittlere Energie ($\bar{E}=\input{build/average.tex}$) und die wahrscheinlichste Energie ($MPV=\input{build/most_likely.tex}$).
 % % Examples
 % \begin{equation}
 %   U(t) = a \sin(b t + c) + d

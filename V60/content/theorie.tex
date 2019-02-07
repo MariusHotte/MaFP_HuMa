@@ -1,5 +1,34 @@
-\section{Theorie}
-\label{sec:Theorie}
+\section{Grundlagen}
+\label{sec:Grundlagen}
+Seit der ersten theoretischen Beschreibung der stimulierten Emission von Albert Einstein 1916 und dem experimentelle Beweis 1928 von Rudolf Ladenburg wurde er stets weiterentwickelt. Die Anwendungsmöglichkeiten beschränken sich nicht nur auf die verschiedensten Zweige der Wissenschaft sondern findet ebenfalls Verwendung im Alltag. Der letzte große Erfolg wurde 2018 mit einem Nobelpreis ausgezeichnet, da es gelungen war mit Hilfe eines Lasers eine optische Pinzette zu realisieren.
+In den folgenden Kapitel wird zunächst auf die Grundlagen und die essenziellen Bestandteile einen Lasers eingegangen, gefolgt von der Beschreibung des Diodenlasers, welcher in diesem Experiment verwendeten wurde.
+
+\subsection{Laser}
+Wird ein System angeregt kehrt es nach einer gewissen Zeit in seinen Grundzustand zurück. Der Energieunterschied zwischen den beiden Zuständen wird bei der Rückkehr in den Grundzustand in Form eines Photons oder eines Phonons ungewandelt, welches emittiert wird. Die Emission eines Photons kann dabei spontan oder stimuliert entstehen. Der spontane Übergang in ein niedrigeres Niveau ist ein zufälliger, ungetriebener Prozess. Die stimulierte Emission wird Gegensatz dazu, durch ein externes Photon ausgelöst. Weißt dieses Photon genau die Energie der Energiedifferenz zwischen zwei Niveaus aus, geht das System in das niedrigere Niveau über und emittiert dabei ein Photon gleicher Wellenlänge und Phase. Den Zustand, das sowohl die Wellenlänge als auch die Phase überstimmen, wird als Kohärenz bezeichnet und ist die Grundlage jedes Lasers.
+
+\subsection{Bestandteile}
+Jeder Laser benötigte eine Pumpen, ein aktives Medium, einen Resonator und eine Kühlung.
+
+Die Pumpe ist dafür die Elektronen des aktiven Mediums, die sich im Grundzustand befinden, anzuregen, sodass die in einen Zustand höherer Energie übergehen. In Abbildung XXX ist dieser Vorgang an einem Drei-Niveau-System dargestellt. Die Elektronenverteilung wird dabei über die Fermifunktion
+\begin{align}
+	f(E)=\frac{1}{e^{\frac{E-\mu}{k_B T}}+1}
+\end{align}
+beschrieben. Diese ist Abhängig von der Energie der Elektronen $E$, dem chemischen Potential $\mu$, der Bolzmannkonstante und der Temperatur des Systems $T$. Bei fallender Temperatur gehen somit immer mehr Elektronen in der Grundzustand über, bis der Grenzfall erreicht ist und ausschließlich ein Niveau besetzt ist. Im gegenteiligen Grenzfall konvergiert die Funktion gegen $1/2$, wodurch das angeregte Zustand als auch der Grundzustand gleich besetzt sind. 
+
+Für die zuvor angesprochene stimulierte Emission muss eine Besetzungsinversion realisiert werden. Dieses ist mit einem System mit drei oder mehr Energieniveaus möglich. Dabei, wie in Abbildung XXX angedeutet, erfolgt die Relaxation in das zweite Energieniveau wesentlich schneller als die Relaxation vom zweiten Niveau in das erste. Somit befindet sich ein Großteil der Elektronen im zweiten Niveau. Der Abstand der einzelnen Energieniveaus ist über das verwendete aktive Medium definiert. Aus diesem Abstand ergibt sich die Wellenlänge des emittierten Photons. Die Spiegel, die das aktive Medium einschließen, reflektieren die entstanden Photonen und erzeugen stehende Wellen. Hierfür müssen die folgenden Bedingungen erfüllt sein:
+\begin{align}
+	\lambda=\frac{2Ln}{m}\qquad \text{und} \qquad\nu=\frac{cm}{2Ln}\:, \quad \text{mit}  \quad m \in \mathbb{N} 
+\end{align}
+Zwischen den verstärkten Frequenzen besteht ein äquidistanter Abstand von
+\begin{align}
+	\Delta \nu=\frac{c}{2Ln}.
+\end{align}
+Für den Grenzfall $\nu >>\Delta\nu$ besteht ein proportionaler Zusammenhang zwischen der Wellendifferenz
+\begin{align}
+	\Delta \lambda =\lambda_2- \lambda_1=c\left(\frac{1}{\nu_2}-\frac{1}{\nu_1}\right) \approx \frac{c}{\nu^2}\Delta\nu.
+\end{align}
+und der Frequenzunterschied. Einer der verwendeten Spiegel reflektiert nur etwa $\SI{95}{\percent}$, wodurch der entstandene Laserstrahl das aktive Medium verlassen kann.
+
 
 
 % 2x2 Plot

@@ -2,19 +2,26 @@
 \defcounter {refsection}{0}\relax 
 \select@language {german}
 \contentsline {section}{\numberline {1}Theorie}{3}{section.1}
-\contentsline {section}{\numberline {2}Fehlerrechnung}{4}{section.2}
-\contentsline {section}{\numberline {3}Versuchsaufbau}{5}{section.3}
-\contentsline {section}{\numberline {4}Durchführung}{6}{section.4}
-\contentsline {section}{\numberline {5}Auswertung}{7}{section.5}
-\contentsline {subsection}{\numberline {5.1}Strom-Spannungs-Kennlinie}{7}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Pedestal und Noise}{7}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Kalibrationsmessung}{10}{subsection.5.3}
-\contentsline {subsection}{\numberline {5.4}Vermessung der Streifensensoren mittels des Lasers}{11}{subsection.5.4}
-\contentsline {subsection}{\numberline {5.5}Charge Collection Efficiency des Lasers}{12}{subsection.5.5}
-\contentsline {subsection}{\numberline {5.6}Charge Collection Efficiency der Sr-Quelle}{13}{subsection.5.6}
-\contentsline {subsection}{\numberline {5.7}Großer Quellenscan}{14}{subsection.5.7}
-\contentsline {section}{\numberline {6}Diskussion}{17}{section.6}
-\contentsline {subsection}{\numberline {6.1}Depletionsspannung}{17}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Abmessung des Sensors und Kenngrößen des Lasers}{17}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Mittlere Energiedeposition}{18}{subsection.6.3}
-\contentsline {section}{\nonumberline Literatur}{19}{section*.16}
+\contentsline {subsection}{\numberline {1.1}Ziel des Versuches}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Halbleiter}{3}{subsection.1.2}
+\contentsline {subsection}{\numberline {1.3}p- und n- Halbleiter}{3}{subsection.1.3}
+\contentsline {subsection}{\numberline {1.4}Der pn- Übergang}{4}{subsection.1.4}
+\contentsline {subsection}{\numberline {1.5}Pedestals und Noise}{5}{subsection.1.5}
+\contentsline {section}{\numberline {2}Fehlerrechnung}{6}{section.2}
+\contentsline {section}{\numberline {3}Versuchsaufbau}{7}{section.3}
+\contentsline {subsection}{\numberline {3.1}Die Detekoreinheit}{7}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Der Halbleitersensor}{7}{subsection.3.2}
+\contentsline {section}{\numberline {4}Durchführung}{9}{section.4}
+\contentsline {section}{\numberline {5}Auswertung}{10}{section.5}
+\contentsline {subsection}{\numberline {5.1}Strom-Spannungs-Kennlinie}{10}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Pedestal und Noise}{11}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}Kalibrationsmessung}{14}{subsection.5.3}
+\contentsline {subsection}{\numberline {5.4}Vermessung der Streifensensoren mittels des Lasers}{16}{subsection.5.4}
+\contentsline {subsection}{\numberline {5.5}Charge Collection Efficiency des Lasers}{17}{subsection.5.5}
+\contentsline {subsection}{\numberline {5.6}Charge Collection Efficiency der Sr-Quelle}{18}{subsection.5.6}
+\contentsline {subsection}{\numberline {5.7}Großer Quellenscan}{19}{subsection.5.7}
+\contentsline {section}{\numberline {6}Diskussion}{22}{section.6}
+\contentsline {subsection}{\numberline {6.1}Depletionsspannung}{22}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Abmessung des Sensors und Kenngrößen des Lasers}{22}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Mittlere Energiedeposition}{23}{subsection.6.3}
+\contentsline {section}{\nonumberline Literatur}{24}{section*.18}

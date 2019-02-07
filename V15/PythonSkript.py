@@ -1,7 +1,5 @@
 ##################################################### Import system libraries ######################################################
 import matplotlib as mpl
-mpl.rcdefaults()
-mpl.rcParams.update(mpl.rc_params_from_file('meine-matplotlibrc'))
 import matplotlib.pyplot as plt
 import numpy as np
 import scipy.constants as const
@@ -58,7 +56,7 @@ U, I = np.genfromtxt('messdaten/IV_kurve.txt', unpack=True)
 plt.plot(U, I, 'bx', label='Messdaten')
 plt.xlabel(r'$U \: /\: [V]$')
 plt.ylabel(r'$I \:/\: [\mu A]$')
-plt.legend(loc='best')
+plt.legend(loc='lower right')
 plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
 plt.savefig('build/IV_Kurve.pdf')
 plt.clf()
@@ -92,19 +90,19 @@ y_2d, x_2d = np.meshgrid(y_1d, x_1d)
 # # Interessante Daten erzeugen
 # z_2d = 1/(x_2d**2 + y_2d**2 + 1) * np.cos(np.pi * x_2d) * np.cos(np.pi * y_2d)
 
-# plt.figure()
-# #plt.pcolormesh(x_2d, y_2d, ADC, cmap=plt.get_cmap("plasma"))
+plt.figure()
+#plt.pcolormesh(x_2d, y_2d, ADC, cmap=plt.get_cmap("plasma"))
 
-# sc = plt.pcolormesh(x_2d, y_2d, ADC, cmap=plt.get_cmap("plasma"))
-# clb = plt.colorbar(sc)
-# clb.set_label('ADC', labelpad=13, y=0.5, rotation=270)
+sc = plt.pcolormesh(x_2d, y_2d, ADC, cmap=plt.get_cmap("plasma"))
+clb = plt.colorbar(sc)
+clb.set_label('ADC-Counts', labelpad=13, y=0.5, rotation=270)
 
-# # plt.colorbar()
-# plt.xlabel('Channels')
-# plt.ylabel('Events')
-# # plt.gca().set_aspect("equal")
-# plt.savefig('build/ADC.pdf')
-# plt.clf()
+# plt.colorbar()
+plt.xlabel('Channels')
+plt.ylabel('Events')
+# plt.gca().set_aspect("equal")
+plt.savefig('build/ADC.pdf')
+plt.clf()
 
 Pedestals = []
 for i in range(len(ADC)):
@@ -129,7 +127,7 @@ for i in range(len(ADC)):
 
 
 plt.bar(x_1d, Noise, align='center')
-plt.xlabel('Channels')
+plt.xlabel('Channels in ADC-Counts')
 plt.ylabel('Noise')
 plt.ylim(1.5, 2.6)
 # plt.gca().set_aspect("equal")
@@ -138,7 +136,7 @@ plt.clf()
 
 plt.bar(x_1d, Pedestals, align='center')
 plt.xlabel('Channels')
-plt.ylabel('Pedestals')
+plt.ylabel('Pedestals in ADC-Counts')
 plt.ylim(500, 519)
 # plt.gca().set_aspect("equal")
 plt.savefig('build/Pedestals.pdf')
@@ -164,8 +162,8 @@ for i in range(len(Cluster_Result)):
     Cluster_Result[i] = Cluster_Result[i] / sum
 
 plt.bar(Cluster, Cluster_Result, width=0.23, align='center')
-plt.xlabel('CommonModeShift')
-plt.ylabel('normierste Häufigkeit')
+plt.xlabel('Common-Mode-Shift in ADC-Counts')
+plt.ylabel('normierte Häufigkeit')
 # plt.gca().set_aspect("equal")
 plt.savefig('build/CMS_Gauß.pdf')
 plt.clf()
@@ -223,13 +221,20 @@ def f(x, a, b, c, d, e):
 
 plt.plot(ADC_mean[0:210], puls[0:210], 'kx', label='Mean')
 params = ucurve_fit(f, ADC_mean[0:150], puls[0:150], p0=[0.001, -0.03, 1, 460, 0])
+
+write('build/Calib_fit_params_a.tex', make_SI(params[0], r'\elementarycharge', figures=1))
+write('build/Calib_fit_params_b.tex', make_SI(params[1], r'\elementarycharge', figures=1))
+write('build/Calib_fit_params_c.tex', make_SI(params[2], r'\elementarycharge', figures=1))
+write('build/Calib_fit_params_d.tex', make_SI(params[3], r'\elementarycharge', figures=1))
+write('build/Calib_fit_params_e.tex', make_SI(params[4], r'\elementarycharge', figures=1))
+
 # p0=[0.001, -0.03, 1, 460, 0]   # p0 bezeichnet die Startwerte der zu fittenden Parameter
 t_plot = np.linspace(0, 300, 100)
 plt.plot(t_plot, f(t_plot, *noms(params)), 'b-', label='Fit')
 plt.axvline(x=250, ymin=0, ymax=200, color='r', linestyle='--', label='Grenze')
 # plt.axvline(x=150000, ymin=0, ymax=270, color='r', linestyle='--', label='Grenze')
-plt.xlabel('ADC')
-plt.ylabel('Puls in ke')
+plt.xlabel('ADC-Counts')
+plt.ylabel('Puls in e')
 plt.legend(loc='best')
 plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
 plt.savefig('build/Calib_fit.pdf')
@@ -275,7 +280,7 @@ plt.ylabel('Channels')
 
 sc = plt.pcolormesh(x_2d, y_2d, ADC, cmap=plt.get_cmap("plasma"))
 clb = plt.colorbar(sc)
-clb.set_label('ADC', labelpad=-25, y=1.1, rotation=0)
+clb.set_label('ADC-Counts', labelpad=-25, y=1.1, rotation=0)
 plt.savefig('build/Laserscan_komplett.pdf')
 plt.clf()
 
@@ -300,7 +305,7 @@ plt.figure()
 # plt.colorbar()
 sc = plt.pcolormesh(x_2d, y_2d, ADC_zoom4555, cmap=plt.get_cmap("plasma"))
 clb = plt.colorbar(sc)
-clb.set_label('ADC', labelpad=-25, y=1.1, rotation=0)
+clb.set_label('ADC-Counts', labelpad=-25, y=1.1, rotation=0)
 plt.xlabel(r'Abstand  in $\: 10^{-5}m$')
 plt.ylabel('Channels')
 # plt.gca().set_aspect("equal")
@@ -405,6 +410,13 @@ def CCE_function(U, U_depl, a):  # a: mitt. Eindringtiefe
     return func
 
 
+def CCE_Quellen_function(U, U_depl):  # a: mitt. Eindringtiefe
+    dicke = 300 * 1e-6  # Sensordicke 300 micrometer
+    depl_zone = np.array([min([np.sqrt(u / U_depl), 1]) for u in U])  # Dicke der Depletionszone (Gleichung 1 im Protokoll)
+    func = depl_zone
+    return func
+
+
 b = ((0, 0), (200, 300 * 1e-6))
 params = ucurve_fit(CCE_function, CCE_read, signal_50, bounds=b)   # p0 bezeichnet die Startwerte der zu fittenden Parameter
 U_plot = np.linspace(0, 200, 100)
@@ -461,12 +473,12 @@ for i in range(len(CCEQ_mean)):
     CCEQ_mean[i] = CCEQ_mean[i] / maximum
 
 
-b = ((0, 0), (200, 300 * 1e-6))
-params = ucurve_fit(CCE_function, volt, CCEQ_mean, bounds=b)   # p0 bezeichnet die Startwerte der zu fittenden Paramete
+b = (0, 200)
+params = ucurve_fit(CCE_Quellen_function, volt, CCEQ_mean, bounds=b)   # p0 bezeichnet die Startwerte der zu fittenden Paramete bounds=b
 U_plot = np.linspace(0, 200, 100)
-plt.plot(U_plot, CCE_function(U_plot, *noms(params)), 'r-', label='Fit')
+plt.plot(U_plot, CCE_Quellen_function(U_plot, noms(params)), 'r-', label='Fit')
 write('build/CCEQ_UDep.tex', make_SI(params[0], r'\volt', figures=1))
-write('build/CCEQ_a.tex', make_SI(params[1] * 1e-6, r'\micro\meter', figures=1))
+#write('build/CCEQ_a.tex', make_SI(params[1] * 1e-6, r'\micro\meter', figures=1))
 # print(params)
 
 plt.plot(volt, CCEQ_mean, 'bx', label='Messwerte')
@@ -569,13 +581,12 @@ most_likely = int(np.where(n == max(n))[0])
 #tb.write('build/mpv.tex', tb.make_SI(ufloat(bin_mid[most_likely], bin_width), r'\kilo\electronvolt', figures=1))
 write('build/most_likely.tex', make_SI(float(bin_mid[most_likely]) * 1e-3, r'\kilo\electronvolt', figures=1))
 
-average = np.mean(ADC_sum)
+average = ufloat(np.mean(ADC_sum), np.std(ADC_sum))
 print(average)
 #tb.write('build/av_e.tex', tb.make_SI(ufloat(np.mean(charges), np.std(charges) / np.sqrt(len(charges))) * 1e-3, r'\kilo\electronvolt', figures=1))
 write('build/average.tex', make_SI(average * 1e-3, r'\kilo\electronvolt', figures=1))
-plt.axvline(x=func(250, *noms(Params_Umrechnung)), linestyle='dotted', color='r', label='Grenze')
 plt.axvline(x=bin_mid[most_likely], color='g', label='MPV', linewidth=1)
-plt.axvline(x=average, color='c', label='Mittelwert', linewidth=1)
+plt.axvline(x=noms(average), color='c', label='Mittelwert', linewidth=1)
 #plt.xlim(0, max(charges * 1e-3))
 plt.xlabel(r'Energie in eV')
 plt.ylabel('Wahrscheinlichkeit')
@@ -583,8 +594,13 @@ plt.legend()
 plt.tight_layout()
 plt.savefig('build/big_clusterenergie_charge.pdf')
 plt.close()
+abw = ((average * 1e-3) / 116.4) - 1
 
-
+a = ufloat(108, 62)
+b = 166.4
+Lit = (a - b) / b
+print(Lit)
+write('build/average_abw.tex', make_SI(Lit, r'\percent', figures=1))
 # print(Energie_max)
 # print(Energie_mean)
 # Cluster = np.linspace(0, 1215230, 400000)

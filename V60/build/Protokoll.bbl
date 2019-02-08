@@ -16,5 +16,19 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{skript}{misc}{}
+      \field{sortinit}{T}
+      \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{http://129.217.224.2/HOMEPAGE/Anleitung\_FPBSc.html}
+      \field{month}{Mai}
+      \field{title}{TU Dortmund - Fachbereich Physik : Fortgeschrittenenpraktikum Anleitung zu Versuch Nr. 23}
+      \field{year}{2017}
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 

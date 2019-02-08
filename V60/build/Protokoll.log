@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018/Arch Linux)  (format=lualatex 2019.1.25)  7 FEB 2019 13:58
+This is LuaTeX, Version 1.07.0 (TeX Live 2018/Arch Linux)  (format=lualatex 2019.1.25)  8 FEB 2019 19:31
  restricted system commands enabled.
 **Protokoll.tex
 (./Protokoll.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.131 seconds
+luaotfload | main : initialization completed in 0.135 seconds
 (./header.tex (/usr/share/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2018/03/30 v3.25 KOMA-Script document class (article)
 (/usr/share/texmf-dist/tex/latex/koma-script/scrkbase.sty
@@ -377,22 +377,22 @@ luatex-hyphen: using data file: /usr/share/texmf-dist/tex/generic/config/languag
 Lua module: polyglossia 2013/05/11 1.3 Polyglossia) (/usr/share/texmf-dist/tex/latex/polyglossia/gloss-german.ldf
 File: gloss-german.ldf polyglossia: module for german
 Module polyglossia Info: Language data for german
-(polyglossia)            synonyms	table: 0x559b80ff94b0
-(polyglossia)            patterns	hyph-de-1901.pat.txt
-(polyglossia)            righthyphenmin	2
+(polyglossia)            synonyms	table: 0x564a293570f0
+(polyglossia)            lefthyphenmin	2
 (polyglossia)            hyphenation	
 (polyglossia)            loader	loadhyph-de-1901.tex
-(polyglossia)            lefthyphenmin	2
+(polyglossia)            patterns	hyph-de-1901.pat.txt
+(polyglossia)            righthyphenmin	2
 (polyglossia)            patterns: hyph-de-1901.pat.txt on input line 6
 Module polyglossia Info: Language german was not yet loaded; created with id 4 on input line 6
 Module polyglossia Info: Language german already loaded; id is 4 on input line 6
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            synonyms	table: 0x559b80ff9680
-(polyglossia)            patterns	hyph-de-1996.pat.txt
-(polyglossia)            righthyphenmin	2
+(polyglossia)            synonyms	table: 0x564a293572c0
+(polyglossia)            lefthyphenmin	2
 (polyglossia)            hyphenation	
 (polyglossia)            loader	loadhyph-de-1996.tex
-(polyglossia)            lefthyphenmin	2
+(polyglossia)            patterns	hyph-de-1996.pat.txt
+(polyglossia)            righthyphenmin	2
 (polyglossia)            patterns: hyph-de-1996.pat.txt on input line 68
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 8 on input line 68
 Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 68
@@ -1637,6 +1637,10 @@ File: german.lbx 2018/11/02 v3.12 biblatex localization (PK/MW)
 luatex-hyphen: loading patterns and exceptions for: german (\language4)
 luatex-hyphen: info: no hyphenation exceptions for this language
 Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 26
+
+
+LaTeX Warning: Label `theo5' multiply defined.
+
 )
 \openout1 = Protokoll.aux
 
@@ -1827,51 +1831,139 @@ Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 
 \openout5 = Protokoll.toc
  [2
 
-] (./content/theorie.tex [3] [4] [5]) [6] (./content/fehlerrechnung.tex) [7
+] (./content/theorie.tex
+<ressources/Niveau.jpeg, id=56, 536.0025pt x 372.64218pt>
+File: ressources/Niveau.jpeg Graphic file (type jpg)
+<use ressources/Niveau.jpeg>
+Package luatex.def Info: ressources/Niveau.jpeg  used on input line 25.
+(luatex.def)             Requested size: 227.62206pt x 158.24858pt.
+ [3] [4<./ressources/Niveau.jpeg>]
+<ressources/Diode.png, id=81, 478.03593pt x 414.79968pt>
+File: ressources/Diode.png Graphic file (type png)
+<use ressources/Diode.png>
+Package luatex.def Info: ressources/Diode.png  used on input line 64.
+(luatex.def)             Requested size: 227.62206pt x 197.50659pt.
+ [5<./ressources/Diode.png>]
+<ressources/net_gain.png, id=92, 549.55313pt x 397.485pt>
+File: ressources/net_gain.png Graphic file (type png)
+<use ressources/net_gain.png>
+Package luatex.def Info: ressources/net_gain.png  used on input line 82.
+(luatex.def)             Requested size: 364.19667pt x 263.42656pt.
+ [6<./ressources/net_gain.png>]
+<ressources/Temp.png, id=103, 528.47438pt x 392.21532pt>
+File: ressources/Temp.png Graphic file (type png)
+<use ressources/Temp.png>
+Package luatex.def Info: ressources/Temp.png  used on input line 93.
+(luatex.def)             Requested size: 159.33473pt x 118.252pt.
+<ressources/Strom.png, id=104, 511.9125pt x 377.91188pt>
+File: ressources/Strom.png Graphic file (type png)
+<use ressources/Strom.png>
+Package luatex.def Info: ressources/Strom.png  used on input line 99.
+(luatex.def)             Requested size: 159.33473pt x 117.62431pt.
+<ressources/Grating.png, id=109, 556.32843pt x 228.10219pt>
+File: ressources/Grating.png Graphic file (type png)
+<use ressources/Grating.png>
+Package luatex.def Info: ressources/Grating.png  used on input line 113.
+(luatex.def)             Requested size: 0.0pt x 0.0pt.
+<ressources/Mode_Hop.png, id=115, 520.19344pt x 405.76593pt>
+File: ressources/Mode_Hop.png Graphic file (type png)
+<use ressources/Mode_Hop.png>
+Package luatex.def Info: ressources/Mode_Hop.png  used on input line 131.
+(luatex.def)             Requested size: 364.19667pt x 284.08374pt.
+ [7<./ressources/Temp.png><./ressources/Strom.png><./ressources/Grating.png>] [8<./ressources/Mode_Hop.png>]
+<ressources/Spektrum.png, id=135, 583.42969pt x 199.49532pt>
+File: ressources/Spektrum.png Graphic file (type png)
+<use ressources/Spektrum.png>
+Package luatex.def Info: ressources/Spektrum.png  used on input line 150.
+(luatex.def)             Requested size: 364.19667pt x 124.5351pt.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 5.00008pt on input line 151.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
+(Font)              scaled to size 4.99992pt on input line 151.
+<ressources/inkohaerent.jpg, id=141, 521.69907pt x 383.93437pt>
+File: ressources/inkohaerent.jpg Graphic file (type jpg)
+<use ressources/inkohaerent.jpg>
+Package luatex.def Info: ressources/inkohaerent.jpg  used on input line 168.
+(luatex.def)             Requested size: 136.57462pt x 100.506pt.
+<ressources/kohaerent.jpg, id=142, 532.99126pt x 370.38374pt>
+File: ressources/kohaerent.jpg Graphic file (type jpg)
+<use ressources/kohaerent.jpg>
+Package luatex.def Info: ressources/kohaerent.jpg  used on input line 174.
+(luatex.def)             Requested size: 136.57462pt x 94.9072pt.
+ [9<./ressources/Spektrum.png>]
+Missing character: There is no ü (U+00FC) in font cmmi10!
+Missing character: There is no ü (U+00FC) in font cmmi7!
+Missing character: There is no ü (U+00FC) in font cmmi10!
+Missing character: There is no ü (U+00FC) in font cmmi7!
+<ressources/Absorption.jpg, id=152, 1284.8pt x 963.6pt>
+File: ressources/Absorption.jpg Graphic file (type jpg)
+<use ressources/Absorption.jpg>
+Package luatex.def Info: ressources/Absorption.jpg  used on input line 194.
+(luatex.def)             Requested size: 227.62206pt x 170.70569pt.
+ [10<./ressources/inkohaerent.jpg><./ressources/kohaerent.jpg>]
+<ressources/Mode_Hop.jpg, id=162, 765.6103pt x 398.23781pt>
+File: ressources/Mode_Hop.jpg Graphic file (type jpg)
+<use ressources/Mode_Hop.jpg>
+Package luatex.def Info: ressources/Mode_Hop.jpg  used on input line 205.
+(luatex.def)             Requested size: 227.62206pt x 118.3967pt.
+<ressources/Stromanstieg.jpg, id=164, 770.88pt x 407.27156pt>
+File: ressources/Stromanstieg.jpg Graphic file (type jpg)
+<use ressources/Stromanstieg.jpg>
+Package luatex.def Info: ressources/Stromanstieg.jpg  used on input line 214.
+(luatex.def)             Requested size: 227.62206pt x 120.25592pt.
+ [11<./ressources/Absorption.jpg><./ressources/Mode_Hop.jpg>]
+<ressources/Umbau.png, id=174, 630.85687pt x 252.945pt>
+File: ressources/Umbau.png Graphic file (type png)
+<use ressources/Umbau.png>
+Package luatex.def Info: ressources/Umbau.png  used on input line 223.
+(luatex.def)             Requested size: 364.19667pt x 146.0289pt.
+<ressources/final.jpg, id=178, 758.08218pt x 457.71pt>
+File: ressources/final.jpg Graphic file (type jpg)
+<use ressources/final.jpg>
+Package luatex.def Info: ressources/final.jpg  used on input line 232.
+(luatex.def)             Requested size: 227.62206pt x 137.4258pt.
+ [12<./ressources/Stromanstieg.jpg><./ressources/Umbau.png>]) [13<./ressources/final.jpg>]
 
-] (./content/versuchsaufbau.tex) [8
+Package biblatex Warning: Month out of range or not an integer
+(biblatex)                at entry 'skript' on input line 23.
 
-] (./content/durchfuehrung.tex) [9
+[14
 
-] (./content/auswertung.tex) [10
-
-] (./content/diskussion.tex) [11
-
-]
-
-LaTeX Warning: Empty bibliography on input line 37.
-
-(./content/anhang.tex)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 43.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 43.
+] (./content/anhang.tex)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 29.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 29.
  (./build/Protokoll.aux
 Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 26
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 43.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 43.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 29.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 29.
 Package rerunfilecheck Info: File `Protokoll.aux' has not changed.
-(rerunfilecheck)             Checksum: 0AA932F5F3713BADDDAE2998DE7B5B07;6559.
+(rerunfilecheck)             Checksum: 4E13E3EE49B104E940454410CCF206BC;13209.
 Package rerunfilecheck Info: File `Protokoll.toc' has not changed.
-(rerunfilecheck)             Checksum: B610F80B92762E8A15CBB3765124C888;1050.
+(rerunfilecheck)             Checksum: A44880E905BB2706B747807C9E2DB80D;1347.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package logreq Info: Writing requests to 'Protokoll.run.xml'.
 
 \openout1 = Protokoll.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 55658 strings out of 494407
+ 56018 strings out of 494407
  100000,1977958 words of node,token memory allocated
- 665 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 18 attribute, 76 glue_spec, 18 attribute_list, 3 write nodes
-   avail lists: 2:441,3:92,4:58,5:273,6:28,7:3836,8:57,9:306,10:25,11:462
- 57971 multiletter control sequences out of 65536+600000
- 195 fonts using 71607463 bytes
- 72i,13n,107p,9106b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
-</usr/share/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/share/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/share/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on Protokoll.pdf (11 pages, 59818 bytes).
+ 636 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 9 attribute, 78 glue_spec, 9 attribute_list, 2 write nodes
+   avail lists: 1:3,2:568,3:133,4:48,5:226,6:34,7:3483,8:56,9:213,10:22,11:416
+ 58301 multiletter control sequences out of 65536+600000
+ 211 fonts using 76608011 bytes
+ 72i,18n,107p,9106b,3150s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/share/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman9-bold.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/share/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
+Output written on Protokoll.pdf (14 pages, 791980 bytes).
 
-PDF statistics: 196 PDF objects out of 1000 (max. 8388607)
- 157 compressed objects within 2 object streams
- 38 named destinations out of 1000 (max. 131072)
- 112 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 327 PDF objects out of 1000 (max. 8388607)
+ 246 compressed objects within 3 object streams
+ 52 named destinations out of 1000 (max. 131072)
+ 136 words of extra memory for PDF output out of 10000 (max. 100000000)
 

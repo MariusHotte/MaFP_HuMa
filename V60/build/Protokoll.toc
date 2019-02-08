@@ -6,10 +6,13 @@
 \contentsline {subsubsection}{\numberline {1.1.1}Bestandteile}{3}{subsubsection.1.1.1}
 \contentsline {subsection}{\numberline {1.2}Diode}{4}{subsection.1.2}
 \contentsline {subsection}{\numberline {1.3}Dioden Laser}{5}{subsection.1.3}
-\contentsline {section}{\numberline {2}TeachSpin Diodenlaser (Sanyo DL-2140-201S)}{5}{section.2}
-\contentsline {subsection}{\numberline {2.1}Die Wellenlänge}{5}{subsection.2.1}
-\contentsline {section}{\numberline {3}Fehlerrechnung}{7}{section.3}
-\contentsline {section}{\numberline {4}Versuchsaufbau}{8}{section.4}
-\contentsline {section}{\numberline {5}Durchführung}{9}{section.5}
-\contentsline {section}{\numberline {6}Auswertung}{10}{section.6}
-\contentsline {section}{\numberline {7}Diskussion}{11}{section.7}
+\contentsline {section}{\numberline {2}TeachSpin Diodenlaser (Sanyo DL-2140-201S)}{6}{section.2}
+\contentsline {subsection}{\numberline {2.1}Die Wellenlänge}{6}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Interne und externe Moden}{8}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Rubidium}{8}{subsection.2.3}
+\contentsline {section}{\numberline {3}Justage und Durchführung}{9}{section.3}
+\contentsline {subsection}{\numberline {3.1}Stromminimierung}{9}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Lumineszenz von Rubidium}{10}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Absortionsspektrum}{11}{subsection.3.3}
+\contentsline {section}{\numberline {4}Zusammenfassung}{13}{section.4}
+\contentsline {section}{\nonumberline Literatur}{14}{section*.15}

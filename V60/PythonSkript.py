@@ -14,14 +14,16 @@ from uncertainties.unumpy import (
 ################################################ Finish importing system libraries #################################################
 
 ################################################ Adding subfolder to system's path #################################################
-import os, sys, inspect
+import os
+import sys
+import inspect
 # realpath() will make your script run, even if you symlink it :)
-cmd_folder = os.path.realpath(os.path.abspath(os.path.split(inspect.getfile( inspect.currentframe() ))[0]))
+cmd_folder = os.path.realpath(os.path.abspath(os.path.split(inspect.getfile(inspect.currentframe()))[0]))
 if cmd_folder not in sys.path:
     sys.path.insert(0, cmd_folder)
 
  # use this if you want to include modules from a subfolder
-cmd_subfolder = os.path.realpath(os.path.abspath(os.path.join(os.path.split(inspect.getfile( inspect.currentframe() ))[0],"python_custom_scripts")))
+cmd_subfolder = os.path.realpath(os.path.abspath(os.path.join(os.path.split(inspect.getfile(inspect.currentframe()))[0], "python_custom_scripts")))
 if cmd_subfolder not in sys.path:
     sys.path.insert(0, cmd_subfolder)
 ############################################# Finish adding subfolder to system's path #############################################
@@ -50,12 +52,9 @@ from utility import(
 )
 ################################################ Finish importing custom libraries #################################################
 
-u=np.array([0.249, 0.198, 0.37, 0.174, 0.134])
-z=np.array([0.05341 , 0.0643 , 0.05284, 0.0644,0.04912])
-for i in range(0,len(z)):
-    U=ufloat(u[i], 0.02*u[i])
-    I=ufloat(z[i], 0.02*z[i])
-    print(U/I)
+a = [31.1, 31.4]
+print(mean(a))
+print(stds(a))
 ################################ FREQUENTLY USED CODE ################################
 #
 ########## IMPORT ##########
@@ -70,7 +69,7 @@ for i in range(0,len(z)):
 # Rx_mean_with_error = mean(Rx, 0)      # unp.uarray mit Fehler und Fehler des Mittelwertes, die 0 gibt an, dass in einem R^2 array jeweils die Zeilen gemittelt werden sollen
 # Rx_mean_err = MeanError(noms(Rx))     # nur der Fehler des Mittelwertes
 #
-## Relative Fehler zum späteren Vergleich in der Diskussion
+# Relative Fehler zum späteren Vergleich in der Diskussion
 # RelFehler_G = (G_mess - G_lit) / G_lit
 # RelFehler_B = (B_mess - B_lit) / B_lit
 # write('build/RelFehler_G.tex', make_SI(RelFehler_G*100, r'\percent', figures=1))
@@ -101,18 +100,18 @@ for i in range(0,len(z)):
 ########## PLOTTING ##########
 # plt.clf()                   # clear actual plot before generating a new one
 #
-## automatically choosing limits with existing array T1
+# automatically choosing limits with existing array T1
 # t_plot = np.linspace(np.amin(T1), np.amax(T1), 100)
 # plt.xlim(t_plot[0]-1/np.size(T1)*(t_plot[-1]-t_plot[0]), t_plot[-1]+1/np.size(T1)*(t_plot[-1]-t_plot[0]))
 #
-## hard coded limits
+# hard coded limits
 # t_plot = np.linspace(-0.5, 2 * np.pi + 0.5, 1000) * 1e-3
 #
-## standard plotting
+# standard plotting
 # plt.plot(t_plot * 1e3, f(t_plot, *noms(params)) * 1e-3, 'b-', label='Fit')
 # plt.plot(t * 1e3, U * 1e3, 'rx', label='Messdaten')
-## plt.errorbar(B * 1e3, noms(y) * 1e5, fmt='rx', yerr=stds(y) * 1e5, label='Messdaten')        # mit Fehlerbalken
-## plt.xscale('log')                                                                            # logarithmische x-Achse
+# plt.errorbar(B * 1e3, noms(y) * 1e5, fmt='rx', yerr=stds(y) * 1e5, label='Messdaten')        # mit Fehlerbalken
+# plt.xscale('log')                                                                            # logarithmische x-Achse
 # plt.xlim(t_plot[0] * 1e3, t_plot[-1] * 1e3)
 # plt.xlabel(r'$t \:/\: \si{\milli\second}$')
 # plt.ylabel(r'$U \:/\: \si{\kilo\volt}$')
@@ -122,12 +121,12 @@ for i in range(0,len(z)):
 
 
 ########## WRITING TABLES ##########
-### IF THERE IS ONLY ONE COLUMN IN A TABLE (workaround):
-## a=np.array([Wert_d[0]])
-## b=np.array([Rx_mean])
-## c=np.array([Rx_mean_err])
-## d=np.array([Lx_mean*1e3])
-## e=np.array([Lx_mean_err*1e3])
+# IF THERE IS ONLY ONE COLUMN IN A TABLE (workaround):
+# a=np.array([Wert_d[0]])
+# b=np.array([Rx_mean])
+# c=np.array([Rx_mean_err])
+# d=np.array([Lx_mean*1e3])
+# e=np.array([Lx_mean_err*1e3])
 #
 # write('build/Tabelle_b.tex', make_table([a,b,c,d,e],[0, 1, 0, 1, 1]))     # fehlerbehaftete arrays (uarrays) sollten rechts eine 1 bekommen (1 signifikante Stelle)
 # write('build/Tabelle_b_texformat.tex', make_full_table(
@@ -143,12 +142,12 @@ for i in range(0,len(z)):
 #     replaceNaN = True,                      # default = false
 #     replaceNaNby = 'not a number'))         # default = '-'
 #
-## Aufsplitten von Tabellen, falls sie zu lang sind
+# Aufsplitten von Tabellen, falls sie zu lang sind
 # t1, t2 = np.array_split(t * 1e3, 2)
 # U1, U2 = np.array_split(U * 1e-3, 2)
 # write('build/loesung-table.tex', make_table([t1, U1, t2, U2], [3, None, 3, None]))  # type in Nachkommastellen
 #
-## Verschmelzen von Tabellen (nur Rohdaten, Anzahl der Spalten muss gleich sein)
+# Verschmelzen von Tabellen (nur Rohdaten, Anzahl der Spalten muss gleich sein)
 # write('build/Tabelle_b_composed.tex', make_composed_table(['build/Tabelle_b_teil1.tex','build/Tabelle_b_teil2.tex']))
 
 
@@ -166,7 +165,7 @@ for i in range(0,len(z)):
 # np.size(array)                    # Anzahl der Elemente eines Arrays ermitteln
 #
 # np.delte(A,3)                     # liefert ein Array, in dem der Eintrag mit Index 3 des arrays
-                                    # A gelöscht wurde (nachfolgende indices werden aufgerückt)
+# A gelöscht wurde (nachfolgende indices werden aufgerückt)
 
 
 ########## ARRAY INDEXING ##########
@@ -178,7 +177,7 @@ for i in range(0,len(z)):
 # search_replace_within_file('build/Tabelle_test.tex','find me','found you')    # Selbsterklärend
 
 
-## convenience file writing for standard make Files
+# convenience file writing for standard make Files
 f = open('build/.pysuccess', 'w')
 f.write('MarktkraM')
 f.close()

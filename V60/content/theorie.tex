@@ -15,9 +15,17 @@ Die Pumpe regt im Grundzustand befindliche Elektronen an, die dadurch in einen a
 \begin{align}
 	f(E)=\frac{1}{e^{\frac{E-\mu}{k_B T}}+1}
 \end{align}
-beschrieben. Diese ist Abhängig von der Energie der Elektronen $E$, dem chemischen Potential $\mu$, der Bolzmannkonstante und der Temperatur $T$ des Systems. Bei fallender Temperatur gehen somit immer mehr Elektronen in den Grundzustand über, bis der Grenzfall erreicht ist und ausschließlich der Grundzustand besetzt ist. Im gegenteiligen Grenzfall konvergiert die Funktion gegen $1/2$, wodurch der angeregte Zustand als auch der Grundzustand gleich besetzt sind. 
+beschrieben. Diese ist Abhängig von der Energie der Elektronen $E$, dem chemischen Potential $\mu$, der Bolzmannkonstante und der Temperatur $T$ des Systems. Bei fallender Temperatur gehen somit immer mehr Elektronen in den Grundzustand über, bis der Grenzfall erreicht ist und ausschließlich der Grundzustand besetzt ist. Im gegenteiligen Grenzfall konvergiert die Funktion gegen $1/2$, wodurch der angeregte Zustand als auch der Grundzustand gleich besetzt sind. Der beschriebene Verlauf ist in Abbildung \ref{sze1} dargestellt.
 
-Für die zuvor angesprochene stimulierte Emission muss eine Besetzungsinversion realisiert werden. Dieses ist mit einem System mit drei oder mehr Energieniveaus möglich. Dabei, wie in Abbildung \ref{theo1} angedeutet, erfolgt die Relaxation in das zweite Energieniveau wesentlich schneller als die Relaxation vom zweiten in das erste Niveau. 
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{ressources/fermi.png}
+\caption{Darstellung der Fermiverteilung für verschiedene Temperaturen. \cite{SZE}}
+\label{sze1}
+\end{figure}
+
+
+Für die zuvor angesprochene stimulierte Emission muss eine Besetzungsinversion realisiert werden. Dieses ist in einem System mit drei oder mehr Energieniveaus möglich. Dabei, wie in Abbildung \ref{theo1} angedeutet, erfolgt die Relaxation in das zweite Energieniveau wesentlich schneller als die Relaxation vom zweiten in das erste Niveau. 
 
 
 \begin{figure}[H]
@@ -28,7 +36,7 @@ Für die zuvor angesprochene stimulierte Emission muss eine Besetzungsinversion 
 \end{figure}
 
 
-Somit befindet sich ein Großteil der Elektronen im zweiten Niveau, wodurch die geforderte Besetzungsinversion realisiert wird. Die Spiegel, die das aktive Medium einschließen, bilden den sogenannten Resonator und  reflektieren die entstanden Photonen. Damit dabei stehende Wellen im Resonator erzeugt werden,  müssen die folgenden Bedingungen erfüllt sein:
+Somit befindet sich ein Großteil der Elektronen im zweiten Niveau, wodurch die geforderte Besetzungsinversion realisiert wird. Die Spiegel, die das aktive Medium einschließen, bilden den sogenannten Resonator und reflektieren die entstanden Photonen. Die stehende Wellen im Resonator müssen die folgenden Bedingungen erfüllen:
 \begin{align}
 	\lambda=\frac{2Ln}{m}\qquad \text{und} \qquad\nu=\frac{cm}{2Ln}\:, \quad \text{mit}  \quad m \in \mathbb{N} 
 \end{align}
@@ -46,15 +54,39 @@ und dem Frequenzunterschied. Einer der verwendeten Spiegel reflektiert nur etwa 
 \subsection{Diode}
 \label{sec:diode}
 
-Eine Diode ist ein sogenannter Halbleiter. Das bedeutet, dass durch thermische Anregungen Valenzelektronen vom Valenzband in das Leitungsband übergehen. Die Ursache dafür liegt in der Größe der Bandlücke, die sich im Bereich von $\SI{0.4}{\electronvolt}$ und  $\SI{4}{\electronvolt}$ befindet. Außerhalb dieses Bereichs wird das Material als metallischer Leiter oder als Isolator bezeichnet. Im Falle eines elektrischen Leiters überlappen sich die zuvor angesprochenen Bänder, wodurch keine externe Anregung für ein Übergang nötig ist. Im Gegensatz dazu ist die Bandlücke eines Isolators so groß, dass keine externe Anregung ausreicht, um ein Valenzelektron in das Leitungsband zu befördern. 
+Eine Diode ist ein sogenannter Halbleiter. Das bedeutet, dass durch thermische Anregungen Valenzelektronen vom Valenzband in das Leitungsband übergehen. Die Ursache dafür liegt in der Größe der Bandlücke, die sich in der Größenordnung von $\SI{1}{\electronvolt}$ \cite{SZE} befindet. Außerhalb dieses Bereichs wird das Material als metallischer Leiter oder als Isolator bezeichnet, siehe Abbildung \ref{sze2}. Im Falle eines elektrischen Leiters überlappen sich die zuvor angesprochenen Bänder, wodurch keine externe Anregung für ein Übergang nötig ist. Im Gegensatz dazu ist die Bandlücke eines Isolators so groß, dass keine thermische Anregung ausreicht, um ein Valenzelektron in das Leitungsband zu befördern. 
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{ressources/bandgap.png}
+\caption{Schematische Darstellung der Bandlücke eines Leiters (links), eines Halbleiters (mitte) und eines Isolators (rechts). \cite{SZE}}
+\label{sze2}
+\end{figure}
 
 Für ein p-n-Übergang ist es nötigt ein Halbleiter-Material, meist Silizium, zusätzlich zu dotieren. Bei diesem Vorgang werden dem Halbleiter Fremdatome einer höheren oder einer niedrigeren Hauptgruppe hinzugefügt. Somit besitzt n-dotiertes Material einen Überschuss an Elektronen und p-dotiertes Material einen mangel an Elektronen, also effektiv einen Überschuss an Löchern, die als Quasiteilchen behandelt werden. 
 
-Bei Kontakt entsteht der sogenannte p-n-Übergang. Dabei driften Elektronen in das p-dotierte und Löcher in das n-dotierte Halbleitermaterial. Durch die Rekombinationen in der Grenzschicht verbleiben ionisierte Atome, die ein elektrisches Feld entgegengesetzt zur Driftbewegung aufbauen und somit dem Drift weiterer freier Ladungsträger entgegenwirken, bis schlussendlich ein Gleichgewicht entsteht. Die Ausdehnung der Depletionszone kann durch das Anlegen einer externen Spannung sowohl verkleinert also auch vergrößert werden. Bei Anlegen einer positiven Spannung ($V>0$) an die n-dotierte Seite des Halbleiters, werden weitere freie Ladungsträger aus dem Material gezogen, wodurch sich die Depletionszone ausdehnt. Im Gegensatz dazu verkleinert sich die Depletionszone, wenn eine negative Spannung ($V<0$) angelegt wird. Die Depletionstiefe
+Bei Kontakt entsteht der sogenannte p-n-Übergang. Dabei driften Elektronen in das p-dotierte und Löcher in das n-dotierte Halbleitermaterial. Durch die Rekombinationen in der Grenzschicht verbleiben ionisierte Atome, die ein elektrisches Feld entgegengesetzt zur Driftbewegung aufbauen und somit dem Drift weiterer freier Ladungsträger entgegenwirken, bis schlussendlich ein Gleichgewicht entsteht. In Abbildung \ref{sze3} ist die Fermienergie vor und nach Kontakt dargestellt.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.7\textwidth]{ressources/junction.png}
+\caption{Darstellung der verschobenen Fermienergie $E_F$ für ein n- und ein p-dotiertes Material (links) und bei Kontakt der beiden Materialien (rechts). \cite{SZE}}
+\label{sze3}
+\end{figure}
+
+Die Ausdehnung der Depletionszone kann durch das Anlegen einer externen Spannung sowohl verkleinert also auch vergrößert werden. Bei Anlegen einer negative Spannung ($V<0$) an die n-dotierte Seite des Halbleiters, werden weitere freie Ladungsträger aus dem Material gezogen, wodurch sich die Depletionszone ausdehnt. Im Gegensatz dazu verkleinert sich die Depletionszone, wenn eine positive Spannung ($V>0$) angelegt wird. Die Depletionstiefe
 \begin{align}
 	d=\sqrt{\frac{2\epsilon\cdot(U_D-U)(N_D+N_A)}{q\cdot N_D\cdot N_A}}
 \end{align} 
-ist dabei sowohl von der Akzeptor- und Donatorkonzentration $N_{A/D}$, welche die Anzahl an eingebrachten Atomen zur n- und p-Dotierung pro Volumen beschreibt, als auch von der Dielektrizitätskonstante $\epsilon$ und der Elementarladung $q$ abhängig. Der Strahlungsrekombinationsstrom der für die Emission von Photonen verantwortlich ist, steigt proportional zur Spannung, weshalb die Diode für diesen Versuch in Vorwärts-Richtung (V>0) betrieben wird.
+ist dabei sowohl von der Akzeptor- und Donatorkonzentration $N_{A/D}$, welche die Anzahl an eingebrachten Atomen zur n- und p-Dotierung pro Volumen beschreibt, als auch von der Dielektrizitätskonstante $\epsilon$ und der Elementarladung $q$ abhängig. Der Strahlungsrekombinationsstrom, der für die Emission von Photonen verantwortlich ist, steigt proportional zur Spannung. Somit ist es nach Abbildung \ref{sze4} vorgesehen, die Diode für diesen Versuch in Vorwärts-Richtung (V>0) zu betreiben.
+
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.5\textwidth]{ressources/IV.png}
+\caption{Strom-Spannungs-Kennlinie für einen typischen Halbleiter. \cite{SZE}}
+\label{sze4}
+\end{figure}
 
 \subsection{Dioden Laser}
 Die in Kapitel \ref{sec:Bestandteile} angesprochenen essentiellen Komponenten eines Lasers, sind auch bei einem Diodenlaser zu finden. Der Halbleiter mit seinem p-n-Übergang wird als aktives Medium verwendet. Die entstehenden Bandlücke definiert die Wellenlänge der emittierten Photonen. Der angelegte Strom sorgt für den Pump-Prozess, da dieser Elektronen und Löcher einbringt und damit eine Art Besetzungsinversion zwischen dem Leitungsband und dem Valenzband hervorruft. Wie in Abbildung \ref{theo2} dargestellt, dient der Halbleiter selbst als Resonator und bildet einen optischen Wellenleiter. 
@@ -84,7 +116,7 @@ Die endgültige Wellenlänge des Lasers hängt stark von den verwendeten Kompone
 \label{theo3}
 \end{figure}
 
-Das Spektrum des aktiven Mediums ist sehr bereit und weißt eine hohe Ausbeute über einige Wellenlänge auf, ist dabei jedoch stark Temperatur und Stromabhängig. Wie in Abbildung \ref{fig:theo4} dargestellt, kommt es bei einem Temperaturanstieg zu einem Wellenlängenshift. Dieser wird durch eine Verkleinerung der Depletionszone bei hohen Temperaturen verursacht. Die Wellenlänge $\lambda_0$ kann ebenfalls durch eine Änderung des Diodenstroms verschoben werden. Die eingezeichneten Linien haben dabei eine Steigung von $\SI{200}{\mega\hertz\per\milli\volt}$ und spiegeln die umsetzbaren Wellenlängen wieder, da sich im Resonator nur eine diskrete Anzahl von stehende Wellen ausbilden kann. Somit existieren zwei Varianten die Wellenlänge der ursprünglichen Mode des Lasers zu verändern. In der späteren Durchführung wird hierfür der Strom der Diode verwendet, da dieses eine instantane Verschiebung verursacht im Gegensatz zu einer Temperaturänderung.
+Das Spektrum des aktiven Mediums ist sehr breit und weißt eine hohe Ausbeute über einige Wellenlänge auf, ist dabei jedoch stark Temperatur und Stromabhängig. Wie in Abbildung \ref{fig:theo4} dargestellt, kommt es bei einem Temperaturanstieg zu einem Wellenlängenshift. Dieser wird durch eine Verkleinerung der Depletionszone bei hohen Temperaturen verursacht. Die Wellenlänge $\lambda_0$ kann ebenfalls durch eine Änderung des Diodenstroms verschoben werden. Die eingezeichneten Linien haben dabei eine Steigung von $\SI{200}{\mega\hertz\per\milli\volt}$ und spiegeln die umsetzbaren Wellenlängen wieder, da sich im Resonator nur eine diskrete Anzahl von stehende Wellen ausbilden kann. Somit existieren zwei Varianten die Wellenlänge der ursprünglichen Mode des Lasers zu verändern. In der späteren Durchführung wird hierfür der Strom der Diode verwendet, da dieses eine instantane Verschiebung verursacht im Gegensatz zu einer Temperaturänderung.
 
 \begin{figure}
 \centering
@@ -105,12 +137,12 @@ Das Spektrum des aktiven Mediums ist sehr bereit und weißt eine hohe Ausbeute �
 \end{figure}
 
 
-Der Resonator hat eine Länge von $L=\SI{700}{\micro\meter}$ und einen Reflexionskoeffzienten von $n=3.6$. Der Abstand zwischen dem vom Resonator unterstützen Frequenzen wird auch als $free spectral range$ bezeichnet und ist für den verwendeten Laser mit $\Delta\nu_{FSR}=\SI{60}{\giga\hertz}$ angegebenen. Mit Hilfe von Gleichung von \ref{eq:1} ergibt sich somit der Abstand zwischen den Wellenlängen $\Delta\lambda_{FSR}=\SI{0.122}{\nano\meter}$.
+Der Resonator hat eine Länge von $L=\SI{700}{\micro\meter}$ und einen Reflexionskoeffzienten von $n=3.6$. Der Abstand zwischen dem vom Resonator unterstützen Frequenzen wird auch als free spectral range bezeichnet und ist für den verwendeten Laser mit $\Delta\nu_{FSR}=\SI{60}{\giga\hertz}$ angegebenen. Mit Hilfe von Gleichung \ref{eq:1} ergibt sich somit der Abstand zwischen den Wellenlängen $\Delta\lambda_{FSR}=\SI{0.122}{\nano\meter}$.
 
 Der Aufbau des Gitters erfolgt wie in Abbildung \ref{theo5} dargestellt.
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.\textwidth]{ressources/Grating.png}
+\includegraphics[width=0.7\textwidth]{ressources/Grating.png}
 \caption{Positionierung des Gitters, welches die Länge des externen Resonators begrenzt. \cite{skript}}
 \label{theo5}
 \end{figure}
@@ -133,7 +165,7 @@ In Abbildung \ref{theo5} ist erneut die Laserausbeute (Gain) gegen die Wellenlä
 \label{theo5}
 \end{figure}
 
-Die Maxima oder auch Moden des internen Resonators werden als Int0 oder Int1 und die Moden des externen Resonators e0, e1 oder e2 bezeichnet. In Abbildung a) stimmt die Wellenlängen des internen und des externen Resonators überein, wodurch diese Frequenz favorisiert wird. Durch eine Längenänderung des externen Resonators, verursacht durch die Ausdehnung des Piezokristalls, erfolgt eine Verschiebung der Wellenlänge, wie in Abbildung b) zu sehen. Bei dieser Ausrichtung wird keine einzelne Frequenz favorisiert, da sich die Moden e0 und e1 genau zwischen der Mode Int0 befinden. Erfolgt eine weitere Verschiebung der Frequenz wird die nächste Mode (siehe c) ) verstärkt. Dieser Vorgang des "Modenwechselns" wird auch als Mode-Hop bezeichnet. Auch der interne Modenwechsel, verursacht durch eine Änderung der Stromstärke, wird als Mode-hop bezeichnet.
+Die Maxima oder auch Moden des internen Resonators werden als Int0 oder Int1 und die Moden des externen Resonators e0, e1 oder e2 bezeichnet. In Abbildung a) stimmt die Wellenlängen des internen und des externen Resonators überein, wodurch diese Frequenz favorisiert wird. Durch eine Längenänderung des externen Resonators, verursacht durch die Ausdehnung des Piezokristalls, erfolgt eine Verschiebung der Wellenlänge, wie in Abbildung b) zu sehen. Bei dieser Ausrichtung wird keine einzelne Frequenz favorisiert, da sich die Moden e0 und e1 genau zwischen der Mode Int0 befinden. Erfolgt eine weitere Verschiebung der Frequenz wird die nächste Mode (siehe c) ) verstärkt. Dieser Vorgang des "Modenwechselns" wird auch als Mode-Hop bezeichnet. Ebenfalls der internen Modenwechsel wird als Mode-Hop bezeichnet.
 
 Werden sowohl die Stromstärke als auch das Volumen des Piezokristalls simultan verändert, findet für beide Moden eine Wellenlängenverschiebung statt. Mit diesem Vorgehen ist es möglich ein kontinuierliches Frequenzspektrum mit dem Laser zu durchfahren, da kein Mode-Hop verursacht wird. Somit können verschiedene Anregungszustände eines Atoms untersucht werden, welches im folgenden anhand von Rubidium genauer diskutiert wird.
 
@@ -154,7 +186,7 @@ Das Aufspalten der Hyperfeinstruktur für $\ce{^{85}_{}Rb}$ und $\ce{^{87}_{}Rb}
 
 Für beide Isotope wird die Aufspaltung der Orbitale $5S_{1/2}$ und $5S_{3/2}$ betrachtet. Dabei spaltet das S-Orbital in zwei und das P-Orbital in vier Energieniveaus auf. Insgesamt sind vier Absorptionslinie zu beobachte. Der Grund dafür besteht darin, dass der Energieunterschied zwischen den Niveaus im P-Orbital im Gegensatz zum Unterschied im S-Orbital zu vernachlässigen ist. Bei der Betrachtung der Aufspaltung der beiden Grundniveaus fällt zusätzlich auf, dass der Abstand bei $\ce{^{87}_{}Rb}$ um etwa einen Faktor zwei größer ausfällt, als bei $\ce{^{85}_{}Rb}$. Dies hat zur Folge, dass der Übergang 87b im Vergleich zu den anderen Übergängen die niedrigste Frequenz und 87a die höchste Frequenz aufweist. Dazwischen befinden sich, aufgrund der geringeren Aufspaltung, die Übergänge von $\ce{^{85}_{}Rb}$.  
 
-
+\newpage
 \section{Justage und Durchführung}
 In diesem Kapitel werden alle wesentlichen Schritte der Durchführung aufgelistet und die jeweilige Beobachtungen diskutiert. Es ist hier zu erwähnen, dass eine Speicherung eines Screenshots auf einem USB-Stick nicht möglich war, weshalb zur Dokumentation der Ergebnisse der Bildschirm des Oszilloskop mit einem Smartphone abphotographiert worden ist. 
 
@@ -191,7 +223,7 @@ Nach der optimalen Justage wird nun die IR-Indikatorkarte aus dem Strahlengang e
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.5\textwidth]{ressources/Absorption.jpg}
+\includegraphics[width=0.7\textwidth]{ressources/Absorption.jpg}
 \caption{Durch Lumineszenz hervorgerufene Absorptionslinie in Rubidium.}
 \label{theo8}
 \end{figure}
@@ -202,21 +234,21 @@ Das Ziel ist es nun, alle vier Absorptionslinie auf dem Oszilloskop sichtbar zu 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.5\textwidth]{ressources/Mode_Hop.jpg}
+\includegraphics[width=0.7\textwidth]{ressources/Mode_Hop.jpg}
 \caption{Absorptionslinie von $\ce{^{85}_{}Rb}$ und $\ce{^{87}_{}Rb}$ mit Mode-Hops.}
 \label{theo9}
 \end{figure}
 
-Die hellgelbe Linie beschreibt die positive Flanke des Piezokristalls und somit seine lineare Volumenzunahme. Die grüne Linie zeigt zum einen vier Minima und zum anderen einen Mode-hop, der gesondert in der Abbildung gekennzeichnet ist. Zur Vermeidung dieser Mode-Hops wird nun simultan die Länge des externen Resonators und der Laserstrom variiert, sodass ein kontinuierliches Spektrum durchlaufen werden kann. Das dadurch entstandene Messsignal ist in Abbildung \ref{theo10} dargestellt. Es sind deutlich die vier erwarteten Absorptionslinien zu sehen. Ebenfalls zu beobachten ist, dass das Messsignal der Fotodiode außerhalb der Absorptionslinien nicht wie in der vorherigen Abbildung konstant verläuft. Verursacht wird dieser stetige Anstieg durch die Steigerung des Laserstroms bei jeder positiven Flanke. Des weiteren ist eine minimale Oberwelle auf dem Signal zu beobachten, welche der Lichtquelle im Raum geschuldet ist. 
+Die hellgelbe Linie beschreibt die positive Flanke des Piezokristalls und somit seine lineare Volumenzunahme. Die grüne Linie zeigt zum einen vier Minima und zum anderen einen Mode-Hop, der gesondert in der Abbildung gekennzeichnet ist. Zur Vermeidung dieser Mode-Hops wird nun simultan die Länge des externen Resonators und der Laserstrom variiert, sodass ein kontinuierliches Spektrum durchlaufen werden kann. Das dadurch entstandene Messsignal ist in Abbildung \ref{theo10} dargestellt. Es sind deutlich die vier erwarteten Absorptionslinien zu sehen. Ebenfalls zu beobachten ist, dass das Messsignal der Fotodiode außerhalb der Absorptionslinien, nicht wie in der vorherigen Abbildung, konstant verläuft. Verursacht wird dieser stetige Anstieg durch die Steigerung des Laserstroms bei jeder positiven Flanke. Des weiteren ist eine minimale Oberwelle auf dem Signal zu beobachten, welche der Lichtquelle im Raum geschuldet ist. 
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.5\textwidth]{ressources/Stromanstieg.jpg}
+\includegraphics[width=0.7\textwidth]{ressources/Stromanstieg.jpg}
 \caption{Absorptionslinie von $\ce{^{85}_{}Rb}$ und $\ce{^{87}_{}Rb}$ mit Intensitätsanstieg.}
 \label{theo10}
 \end{figure}
 
-Für eine optimales Absorptionsspektrum, ohne Anstieg des Signals, wird dem Aufbau eine weitere Fotodiode hinzugefügt (siehe Abbildung \ref{theo11}). Diese misst, mit Hilfe des 50/50-Spiegels, das Signal direkt vor der Rubidium-Zelle. Somit erfasst die zweite Fotodiode, nur das linear steigende Signal ohne die Absorptionsmaxima. Für ein reines Absorptionssignal werden die beiden Signale von einander dividiert. Realisiert wird dieses mit der folgenden Schaltung
+Für eine optimales Absorptionsspektrum, ohne Anstieg des Signals, wird dem Aufbau eine weitere Fotodiode hinzugefügt (siehe Abbildung \ref{theo11}). Diese misst, mit Hilfe des 50/50-Spiegels, das Signal direkt vor der Rubidium-Zelle. Somit erfasst die zweite Fotodiode, nur das linear steigende Signal ohne die Absorptionsmaxima. Für ein reines Absorptionssignal werden die beiden Signale von einander dividiert. Realisiert wird dieses mit dem folgenden Aufbau
 
 \begin{figure}[H]
 \centering
@@ -225,15 +257,15 @@ Für eine optimales Absorptionsspektrum, ohne Anstieg des Signals, wird dem Aufb
 \label{theo11}
 \end{figure}
 
-Dabei werden die Signal der beiden Fotodioden auf die beiden Eingänge gegeben. Durch die Drehknöpfe, die mit "Balance" beschriftet sind, kann das jeweilige Signal unterdrückt oder komplett hinzu geschaltet werden. Schlussendlich wird das dividierte Signal noch durch einen weiteren Drehknopf verstärkt, bevor es auf das Oszilloskop geführt wird. Auf diesem ist nun, wie in Abbildung \ref{theo12} dargestellt, das reine Absorptionslinien mit den vier Maxima und ohne Mode-Hops deutlich zu erkennen.
+Dabei werden die Signal der beiden Fotodioden auf die beiden Eingänge gegeben. Durch die Drehknöpfe, die mit "Balance" beschriftet sind, kann das jeweilige Signal unterdrückt oder komplett hinzu geschaltet werden. Schlussendlich wird das dividierte Signal noch durch einen weiteren Drehknopf verstärkt, bevor es auf das Oszilloskop geführt wird. Auf diesem ist nun, wie in Abbildung \ref{theo12} dargestellt, das reine Absorptionsspektrum mit den vier Maxima und ohne Mode-Hops deutlich zu erkennen.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=0.5\textwidth]{ressources/final.jpg}
+\includegraphics[width=0.7\textwidth]{ressources/final.jpg}
 \caption{Absorptionslinie von $\ce{^{85}_{}Rb}$ und $\ce{^{87}_{}Rb}$}
 \label{theo12}
 \end{figure}
-
+\newpage
 \section{Zusammenfassung}
 
 Zu Beginn der Durchführung wurde der Laserstrom für eine optimale Ausrichtung minimiert. Anschließend erfolgte eine genauere Justage der Wellenlänge, die mit einer Rubidium-Zelle durch Lumineszenz beobachtet werden konnte. Der Rampengenerator, mit dem die Länge des externen Resonators kontinuierlich variiert wurde, ist eine erste Erfassung des Absorbtionsignals gelungen. Die zu beobachtenden Mode-Hops wurde durch eine Veränderung des Laserstroms im Takt des Rampengenerators umgangen. Als letzter Punkt erfolgte die Bereinigung der Stromabhängigkeit des Signals durch ein zweites Fotodiodensignal, wodurch das reine Absorptionsspektrum von $\ce{^{85}_{}Rb}$ und $\ce{^{87}_{}Rb}$ aufgezeichnet werden konnte.        

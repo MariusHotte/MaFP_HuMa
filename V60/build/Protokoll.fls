@@ -475,6 +475,8 @@ INPUT build/Protokoll.toc
 OUTPUT build/Protokoll.toc
 INPUT ./content/theorie.tex
 INPUT ./content/theorie.tex
+INPUT ./ressources/fermi.png
+INPUT ./ressources/fermi.png
 INPUT ./ressources/Niveau.jpeg
 INPUT ./ressources/Niveau.jpeg
 INPUT /home/marius/.texlive/texmf-var/luatex-cache/generic/fonts/otl/lmroman8-regular.luc
@@ -491,6 +493,16 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT ./ressources/bandgap.png
+INPUT ./ressources/bandgap.png
+INPUT ./ressources/junction.png
+INPUT ./ressources/junction.png
+INPUT /home/marius/.texlive/texmf-var/luatex-cache/generic/fonts/otl/lmroman7-regular.luc
+INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
+INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT ./ressources/IV.png
+INPUT ./ressources/IV.png
 INPUT ./ressources/Diode.png
 INPUT ./ressources/Diode.png
 INPUT ./ressources/net_gain.png
@@ -522,10 +534,6 @@ INPUT ./ressources/Mode_Hop.png
 INPUT ./ressources/Mode_Hop.png
 INPUT ./ressources/Spektrum.png
 INPUT ./ressources/Spektrum.png
-INPUT /home/marius/.texlive/texmf-var/luatex-cache/generic/fonts/otl/lmroman7-regular.luc
-INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmmi5.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
-INPUT /usr/share/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT ./ressources/inkohaerent.jpg
 INPUT ./ressources/inkohaerent.jpg
 INPUT ./ressources/kohaerent.jpg
@@ -540,6 +548,7 @@ INPUT ./ressources/Umbau.png
 INPUT ./ressources/Umbau.png
 INPUT ./ressources/final.jpg
 INPUT ./ressources/final.jpg
+INPUT /home/marius/.texlive/texmf-var/luatex-cache/generic/fonts/otl/lmromancaps10-regular.luc
 INPUT ./content/anhang.tex
 INPUT ./content/anhang.tex
 INPUT build/Protokoll.aux

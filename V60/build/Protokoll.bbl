@@ -19,13 +19,40 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{SZE}{book}{}
+      \name{author}{2}{}{%
+        {{hash=d27476b9886c6dccee45253435ba27e7}{%
+           family={S.Sze},
+           familyi={S\bibinitperiod}}}%
+        {{hash=6a56059cd600f8a65c7fd246fe8dd31e}{%
+           family={M.Lee},
+           familyi={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{d389b39c977ed79eb6934afe79e8a3af}
+      \strng{fullhash}{d389b39c977ed79eb6934afe79e8a3af}
+      \strng{bibnamehash}{d389b39c977ed79eb6934afe79e8a3af}
+      \strng{authorbibnamehash}{d389b39c977ed79eb6934afe79e8a3af}
+      \strng{authornamehash}{d389b39c977ed79eb6934afe79e8a3af}
+      \strng{authorfullhash}{d389b39c977ed79eb6934afe79e8a3af}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780470873670}
+      \field{pagetotal}{XI, 582}
+      \field{title}{Semiconductor Devices, Physics and Technology}
+      \field{year}{2013}
+    \endentry
     \entry{skript}{misc}{}
       \field{sortinit}{T}
       \field{sortinithash}{6f7aff9db9dcfeb7f95fd5bbd2f78df9}
       \field{labeltitlesource}{title}
       \field{howpublished}{http://129.217.224.2/HOMEPAGE/Anleitung\_FPBSc.html}
       \field{month}{Mai}
-      \field{title}{TU Dortmund - Fachbereich Physik : Fortgeschrittenenpraktikum Anleitung zu Versuch Nr. 23}
+      \field{title}{TU Dortmund - Fachbereich Physik : Fortgeschrittenenpraktikum Anleitung zu Versuch Nr. 60}
       \field{year}{2017}
     \endentry
   \enddatalist

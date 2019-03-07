@@ -19,6 +19,31 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{blub}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=4d424f1fb4d0707c856a996ed05fac9d}{%
+           family={al.},
+           familyi={a\bibinitperiod},
+           given={M.J.Berger},
+           giveni={M\bibinitperiod},
+           prefix={et},
+           prefixi={e\bibinitperiod}}}%
+      }
+      \strng{namehash}{4d424f1fb4d0707c856a996ed05fac9d}
+      \strng{fullhash}{4d424f1fb4d0707c856a996ed05fac9d}
+      \strng{bibnamehash}{4d424f1fb4d0707c856a996ed05fac9d}
+      \strng{authorbibnamehash}{4d424f1fb4d0707c856a996ed05fac9d}
+      \strng{authornamehash}{4d424f1fb4d0707c856a996ed05fac9d}
+      \strng{authorfullhash}{4d424f1fb4d0707c856a996ed05fac9d}
+      \field{sortinit}{a}
+      \field{sortinithash}{d77c7cdd82ff690d4c3ef13216f92f0b}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{http://www.nist.gov/pml/xcom-photon.cross-section-database.com}
+      \field{month}{Mai}
+      \field{title}{XCOM: Photon Cross Section Database}
+      \field{year}{2010}
+    \endentry
     \entry{scipy}{software}{}
       \true{moreauthor}
       \true{morelabelname}
@@ -84,6 +109,33 @@
       \verb{url}
       \verb http://pythonhosted.org/uncertainties/
       \endverb
+    \endentry
+    \entry{SZE}{book}{}
+      \name{author}{2}{}{%
+        {{hash=d27476b9886c6dccee45253435ba27e7}{%
+           family={S.Sze},
+           familyi={S\bibinitperiod}}}%
+        {{hash=6a56059cd600f8a65c7fd246fe8dd31e}{%
+           family={M.Lee},
+           familyi={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Wiley}%
+      }
+      \strng{namehash}{d389b39c977ed79eb6934afe79e8a3af}
+      \strng{fullhash}{d389b39c977ed79eb6934afe79e8a3af}
+      \strng{bibnamehash}{d389b39c977ed79eb6934afe79e8a3af}
+      \strng{authorbibnamehash}{d389b39c977ed79eb6934afe79e8a3af}
+      \strng{authornamehash}{d389b39c977ed79eb6934afe79e8a3af}
+      \strng{authorfullhash}{d389b39c977ed79eb6934afe79e8a3af}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9780470873670}
+      \field{pagetotal}{XI, 582}
+      \field{title}{Semiconductor Devices, Physics and Technology}
+      \field{year}{2013}
     \endentry
     \entry{skript}{misc}{}
       \field{sortinit}{T}

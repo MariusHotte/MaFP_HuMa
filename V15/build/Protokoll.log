@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018/Arch Linux)  (format=lualatex 2019.2.28)  7 MAR 2019 14:44
+This is LuaTeX, Version 1.07.0 (TeX Live 2018/Arch Linux)  (format=lualatex 2019.2.28)  8 MAR 2019 09:48
  restricted system commands enabled.
 **Protokoll.tex
 (./Protokoll.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
 Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.068 seconds
+luaotfload | main : initialization completed in 0.071 seconds
 (./header.tex (/usr/share/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2019/02/01 v3.26b KOMA-Script document class (article)
 (/usr/share/texmf-dist/tex/latex/koma-script/scrkbase.sty
@@ -404,22 +404,22 @@ luatex-hyphen: using data file: /usr/share/texmf-dist/tex/generic/config/languag
 Lua module: polyglossia 2013/05/11 1.3 Polyglossia) (/usr/share/texmf-dist/tex/latex/polyglossia/gloss-german.ldf
 File: gloss-german.ldf polyglossia: module for german
 Module polyglossia Info: Language data for german
-(polyglossia)            lefthyphenmin	2
-(polyglossia)            patterns	hyph-de-1901.pat.txt
+(polyglossia)            synonyms	table: 0x565059a0f770
 (polyglossia)            loader	loadhyph-de-1901.tex
-(polyglossia)            righthyphenmin	2
+(polyglossia)            lefthyphenmin	2
 (polyglossia)            hyphenation	
-(polyglossia)            synonyms	table: 0x561d9796ed40
+(polyglossia)            patterns	hyph-de-1901.pat.txt
+(polyglossia)            righthyphenmin	2
 (polyglossia)            patterns: hyph-de-1901.pat.txt on input line 6
 Module polyglossia Info: Language german was not yet loaded; created with id 4 on input line 6
 Module polyglossia Info: Language german already loaded; id is 4 on input line 6
 Module polyglossia Info: Language data for ngerman
-(polyglossia)            lefthyphenmin	2
-(polyglossia)            patterns	hyph-de-1996.pat.txt
+(polyglossia)            synonyms	table: 0x565059a0f940
 (polyglossia)            loader	loadhyph-de-1996.tex
-(polyglossia)            righthyphenmin	2
+(polyglossia)            lefthyphenmin	2
 (polyglossia)            hyphenation	
-(polyglossia)            synonyms	table: 0x561d9796ef10
+(polyglossia)            patterns	hyph-de-1996.pat.txt
+(polyglossia)            righthyphenmin	2
 (polyglossia)            patterns: hyph-de-1996.pat.txt on input line 68
 Module polyglossia Info: Language ngerman was not yet loaded; created with id 8 on input line 68
 Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 68
@@ -1678,6 +1678,9 @@ luatex-hyphen: info: no hyphenation exceptions for this language
 Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 26
 
 
+LaTeX Warning: Label `noise' multiply defined.
+
+
 LaTeX Warning: Label `fig:calib' multiply defined.
 
 
@@ -1883,42 +1886,42 @@ Package luatex.def Info: ressources/bandgap.png  used on input line 15.
 <ressources/IV.png, id=107, 720.44156pt x 426.09187pt>
 File: ressources/IV.png Graphic file (type png)
 <use ressources/IV.png>
-Package luatex.def Info: ressources/IV.png  used on input line 88.
+Package luatex.def Info: ressources/IV.png  used on input line 87.
 (luatex.def)             Requested size: 318.66948pt x 188.46924pt.
 <ressources/beta.png, id=111, 478.03593pt x 316.18124pt>
 File: ressources/beta.png Graphic file (type png)
 <use ressources/beta.png>
-Package luatex.def Info: ressources/beta.png  used on input line 108.
+Package luatex.def Info: ressources/beta.png  used on input line 107.
 (luatex.def)             Requested size: 318.66948pt x 210.77411pt.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 5.00008pt on input line 109.
+(Font)              scaled to size 5.00008pt on input line 108.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 4.99992pt on input line 109.
+(Font)              scaled to size 4.99992pt on input line 108.
  [5<./ressources/IV.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 118--119
+Underfull \hbox (badness 10000) in paragraph at lines 117--118
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--121
+Underfull \hbox (badness 10000) in paragraph at lines 119--120
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 122--123
+Underfull \hbox (badness 10000) in paragraph at lines 121--122
 
  []
 
 [6<./ressources/beta.png>]
-<ressources/Verteilung.png, id=135, 468.24937pt x 461.47406pt>
+<ressources/Verteilung.png, id=136, 468.24937pt x 461.47406pt>
 File: ressources/Verteilung.png Graphic file (type png)
 <use ressources/Verteilung.png>
-Package luatex.def Info: ressources/Verteilung.png  used on input line 137.
+Package luatex.def Info: ressources/Verteilung.png  used on input line 136.
 (luatex.def)             Requested size: 318.66948pt x 314.07281pt.
  [7] [8<./ressources/Verteilung.png>]) [9] (./content/fehlerrechnung.tex) [10
 
@@ -1927,21 +1930,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--12
 
  []
 
-<ressources/sensor.png, id=170, 1098.1025pt x 795.97375pt>
+<ressources/sensor.png, id=173, 1098.1025pt x 795.97375pt>
 File: ressources/sensor.png Graphic file (type png)
 <use ressources/sensor.png>
 Package luatex.def Info: ressources/sensor.png  used on input line 17.
 (luatex.def)             Requested size: 368.74661pt x 267.28746pt.
 [11
 
-<./ressources/sensor.png>]) [12] (./content/durchfuehrung.tex
-
-LaTeX Warning: Reference `nooise' on page 13 undefined on input line 14.
-
-) [13
+<./ressources/sensor.png>]) [12] (./content/durchfuehrung.tex) [13
 
 ] (./content/auswertung.tex
-<build/IV_Kurve.pdf, id=196, 462.52798pt x 346.89601pt>
+<build/IV_Kurve.pdf, id=201, 462.52798pt x 346.89601pt>
 File: build/IV_Kurve.pdf Graphic file (type pdf)
 <use build/IV_Kurve.pdf>
 Package luatex.def Info: build/IV_Kurve.pdf  used on input line 13.
@@ -1954,12 +1953,12 @@ Overfull \hbox (7.28273pt too wide) in paragraph at lines 13--14
 [14
 
 <./build/IV_Kurve.pdf>]
-<build/ADC.pdf, id=246, 462.52798pt x 346.89601pt>
+<build/ADC.pdf, id=251, 462.52798pt x 346.89601pt>
 File: build/ADC.pdf Graphic file (type pdf)
 <use build/ADC.pdf>
 Package luatex.def Info: build/ADC.pdf  used on input line 23.
 (luatex.def)             Requested size: 455.24411pt x 341.44844pt.
-<build/Pedestals.pdf, id=252, 462.52798pt x 346.89601pt>
+<build/Pedestals.pdf, id=257, 462.52798pt x 346.89601pt>
 File: build/Pedestals.pdf Graphic file (type pdf)
 <use build/Pedestals.pdf>
 Package luatex.def Info: build/Pedestals.pdf  used on input line 33.
@@ -1970,7 +1969,7 @@ Overfull \hbox (7.28273pt too wide) in paragraph at lines 33--34
  []
 
 [15<./build/ADC.pdf>]
-<build/CMS_Gauß.pdf, id=297, 462.52798pt x 346.89601pt>
+<build/CMS_Gauß.pdf, id=302, 462.52798pt x 346.89601pt>
 File: build/CMS_Gauß.pdf Graphic file (type pdf)
 <use build/CMS_Gauß.pdf>
 Package luatex.def Info: build/CMS_Gauß.pdf  used on input line 41.
@@ -1981,7 +1980,7 @@ Overfull \hbox (7.28273pt too wide) in paragraph at lines 41--42
  []
 
 [16<./build/Pedestals.pdf>]
-<build/Noise.pdf, id=342, 462.52798pt x 346.89601pt>
+<build/Noise.pdf, id=347, 462.52798pt x 346.89601pt>
 File: build/Noise.pdf Graphic file (type pdf)
 <use build/Noise.pdf>
 Package luatex.def Info: build/Noise.pdf  used on input line 50.
@@ -1992,18 +1991,18 @@ Overfull \hbox (7.28273pt too wide) in paragraph at lines 50--51
  []
 
 [17<./build/CMS_Gauß.pdf>]
-<build/Calib.pdf, id=393, 462.52798pt x 346.89601pt>
+<build/Calib.pdf, id=398, 462.52798pt x 346.89601pt>
 File: build/Calib.pdf Graphic file (type pdf)
 <use build/Calib.pdf>
 Package luatex.def Info: build/Calib.pdf  used on input line 63.
 (luatex.def)             Requested size: 216.24025pt x 162.18364pt.
-<build/Calib_detail.pdf, id=394, 462.52798pt x 346.89601pt>
+<build/Calib_detail.pdf, id=399, 462.52798pt x 346.89601pt>
 File: build/Calib_detail.pdf Graphic file (type pdf)
 <use build/Calib_detail.pdf>
 Package luatex.def Info: build/Calib_detail.pdf  used on input line 69.
 (luatex.def)             Requested size: 216.24025pt x 162.18364pt.
  [18<./build/Noise.pdf><./build/Calib.pdf><./build/Calib_detail.pdf>]
-<build/Calib_fit.pdf, id=519, 462.52798pt x 346.89601pt>
+<build/Calib_fit.pdf, id=524, 462.52798pt x 346.89601pt>
 File: build/Calib_fit.pdf Graphic file (type pdf)
 <use build/Calib_fit.pdf>
 Package luatex.def Info: build/Calib_fit.pdf  used on input line 86.
@@ -2014,7 +2013,7 @@ Overfull \hbox (7.28273pt too wide) in paragraph at lines 86--87
  []
 
 (./build/Calib_fit_params_a.tex) (./build/Calib_fit_params_b.tex) (./build/Calib_fit_params_c.tex) (./build/Calib_fit_params_d.tex) (./build/Calib_fit_params_e.tex) (./build/Calib_fit_params_a.tex) (./build/Calib_fit_params_b.tex) (./build/Calib_fit_params_c.tex) (./build/Calib_fit_params_d.tex) (./build/Calib_fit_params_e.tex)
-<build/Laserscan_komplett.pdf, id=523, 462.52798pt x 346.89601pt>
+<build/Laserscan_komplett.pdf, id=528, 462.52798pt x 346.89601pt>
 File: build/Laserscan_komplett.pdf Graphic file (type pdf)
 <use build/Laserscan_komplett.pdf>
 Package luatex.def Info: build/Laserscan_komplett.pdf  used on input line 108.
@@ -2024,7 +2023,7 @@ Overfull \hbox (11.38179pt too wide) in paragraph at lines 108--109
  [][] 
  []
 
-<build/Laserscan_zoom.pdf, id=524, 462.52798pt x 346.89601pt>
+<build/Laserscan_zoom.pdf, id=529, 462.52798pt x 346.89601pt>
 File: build/Laserscan_zoom.pdf Graphic file (type pdf)
 <use build/Laserscan_zoom.pdf>
 Package luatex.def Info: build/Laserscan_zoom.pdf  used on input line 114.
@@ -2035,7 +2034,7 @@ Overfull \hbox (11.38179pt too wide) in paragraph at lines 114--115
  []
 
 [19<./build/Calib_fit.pdf>]
-<build/Laserscan_Pos.pdf, id=575, 462.52798pt x 346.89601pt>
+<build/Laserscan_Pos.pdf, id=580, 462.52798pt x 346.89601pt>
 File: build/Laserscan_Pos.pdf Graphic file (type pdf)
 <use build/Laserscan_Pos.pdf>
 Package luatex.def Info: build/Laserscan_Pos.pdf  used on input line 126.
@@ -2046,7 +2045,7 @@ Overfull \hbox (7.28273pt too wide) in paragraph at lines 126--127
  []
 
 [20<./build/Laserscan_komplett.pdf><./build/Laserscan_zoom.pdf>] [21<./build/Laserscan_Pos.pdf>]
-<build/CCE_fit.pdf, id=737, 462.52798pt x 346.89601pt>
+<build/CCE_fit.pdf, id=742, 462.52798pt x 346.89601pt>
 File: build/CCE_fit.pdf Graphic file (type pdf)
 <use build/CCE_fit.pdf>
 Package luatex.def Info: build/CCE_fit.pdf  used on input line 147.
@@ -2057,7 +2056,7 @@ Overfull \hbox (7.28273pt too wide) in paragraph at lines 147--148
  []
 
 (./build/CCEL_UDep.tex) (./build/CCEL_a.tex) (./build/CCEL_UDep.tex) (./build/CCEL_a.tex)
-<build/CCEQ_fit.pdf, id=740, 462.52798pt x 346.89601pt>
+<build/CCEQ_fit.pdf, id=745, 462.52798pt x 346.89601pt>
 File: build/CCEQ_fit.pdf Graphic file (type pdf)
 <use build/CCEQ_fit.pdf>
 Package luatex.def Info: build/CCEQ_fit.pdf  used on input line 164.
@@ -2068,18 +2067,18 @@ Overfull \hbox (7.28273pt too wide) in paragraph at lines 164--165
  []
 
 [22<./build/CCE_fit.pdf>] (./build/CCEQ_UDep.tex)
-<build/Quellenmessung_frequeny_channel.pdf, id=801, 462.52798pt x 346.89601pt>
+<build/Quellenmessung_frequeny_channel.pdf, id=806, 462.52798pt x 346.89601pt>
 File: build/Quellenmessung_frequeny_channel.pdf Graphic file (type pdf)
 <use build/Quellenmessung_frequeny_channel.pdf>
 Package luatex.def Info: build/Quellenmessung_frequeny_channel.pdf  used on input line 182.
 (luatex.def)             Requested size: 204.85846pt x 153.6457pt.
-<build/Quellenmessung_frequeny_cluster.pdf, id=802, 462.52798pt x 346.89601pt>
+<build/Quellenmessung_frequeny_cluster.pdf, id=807, 462.52798pt x 346.89601pt>
 File: build/Quellenmessung_frequeny_cluster.pdf Graphic file (type pdf)
 <use build/Quellenmessung_frequeny_cluster.pdf>
 Package luatex.def Info: build/Quellenmessung_frequeny_cluster.pdf  used on input line 188.
 (luatex.def)             Requested size: 204.85846pt x 153.6457pt.
  [23<./build/CCEQ_fit.pdf>]
-<build/Quellenmessung_Hitmap.pdf, id=859, 462.52798pt x 346.89601pt>
+<build/Quellenmessung_Hitmap.pdf, id=864, 462.52798pt x 346.89601pt>
 File: build/Quellenmessung_Hitmap.pdf Graphic file (type pdf)
 <use build/Quellenmessung_Hitmap.pdf>
 Package luatex.def Info: build/Quellenmessung_Hitmap.pdf  used on input line 201.
@@ -2090,7 +2089,7 @@ Overfull \hbox (7.28273pt too wide) in paragraph at lines 201--202
  []
 
 [24<./build/Quellenmessung_frequeny_channel.pdf><./build/Quellenmessung_frequeny_cluster.pdf><./build/Quellenmessung_hitmap.pdf>]
-<build/big_clusterenergie_charge.pdf, id=992, 462.52798pt x 346.89601pt>
+<build/big_clusterenergie_charge.pdf, id=997, 462.52798pt x 346.89601pt>
 File: build/big_clusterenergie_charge.pdf Graphic file (type pdf)
 <use build/big_clusterenergie_charge.pdf>
 Package luatex.def Info: build/big_clusterenergie_charge.pdf  used on input line 212.
@@ -2130,12 +2129,9 @@ Module polyglossia Info: Language ngerman already loaded; id is 8 on input line 
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 44.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 44.
 Package rerunfilecheck Info: File `Protokoll.aux' has not changed.
-(rerunfilecheck)             Checksum: 0BCBDC3A2231D5678CE8D9F0E50C9FC6;23834.
+(rerunfilecheck)             Checksum: 14C99C5E802819BB1512848FAEE871DD;24000.
 Package rerunfilecheck Info: File `Protokoll.toc' has not changed.
 (rerunfilecheck)             Checksum: 47C58AFAD1529B0F462DF0DD6B880DA6;2499.
-
-
-LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -2146,19 +2142,19 @@ Package logreq Info: Writing requests to 'Protokoll.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 57229 strings out of 494383
+ 57228 strings out of 494383
  100000,1977958 words of node,token memory allocated
  751 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 39 attribute, 77 glue_spec, 39 attribute_list, 2 write nodes
-   avail lists: 1:4,2:855,3:233,4:93,5:271,6:60,7:4022,8:74,9:333,10:18,11:409,12:1
- 59182 multiletter control sequences out of 65536+600000
+   avail lists: 1:4,2:855,3:237,4:93,5:271,6:60,7:4022,8:74,9:333,10:18,11:409,12:1
+ 59181 multiletter control sequences out of 65536+600000
  229 fonts using 85260215 bytes
  72i,18n,109p,9106b,3158s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/share/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman9-bold.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></usr/share/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/share/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></usr/share/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on Protokoll.pdf (28 pages, 2735374 bytes).
+Output written on Protokoll.pdf (28 pages, 2736037 bytes).
 
-PDF statistics: 1243 PDF objects out of 1440 (max. 8388607)
- 655 compressed objects within 7 object streams
+PDF statistics: 1248 PDF objects out of 1440 (max. 8388607)
+ 659 compressed objects within 7 object streams
  118 named destinations out of 1000 (max. 131072)
  232 words of extra memory for PDF output out of 10000 (max. 100000000)
 

@@ -1,0 +1,23 @@
+\begin{table}
+    \centering
+    \caption{Messdaten.}
+    \label{tab:Winkel}
+    \sisetup{parse-numbers=false}
+    \begin{tabular}{
+	S[table-format=2.1]
+	S[table-format=2.2]
+	@{${}\pm{}$}
+	S[table-format=1.2, table-number-alignment = left]
+	S[table-format=3.1]
+	S[table-format=1.3]
+	@{${}\pm{}$}
+	S[table-format=1.3, table-number-alignment = left]
+	}
+	\toprule
+	{$Winkel \:/\: \si{\degree}$}		& \multicolumn{2}{c}{$Counts$}		& 
+	{$\Delta t \:/\: \si{\second}$}		& \multicolumn{2}{c}{$\sigma \:/\: 10^{-22} \si{\meter\squared}$}		\\ 
+	\midrule
+    \input{build/Tabelle_t1.tex}
+    \bottomrule
+    \end{tabular}
+    \end{table}

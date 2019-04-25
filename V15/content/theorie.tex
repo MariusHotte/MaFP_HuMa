@@ -22,8 +22,7 @@ Durch thermische Anregung von Elektronen im Valenzband ist es möglich, dass die
  Des Weiteren werden Halbleiter in Element,-
 Verbindungs,- und organische Halbleiter unterteilt. Innerhalb des Versuches wird
 jedoch nur Silizium, also ein Elementhalbleiter, untersucht. Um die Leitfähigkeit
-eines Halbleiters zu erhöhen können Fremdatome eingebracht werden, diesen Vorgang nennt man
-Dotierung.
+eines Halbleiters zu erhöhen können Fremdatome eingebracht werden, diesen Vorgang wird Dotierung genannt.
 
 
 \subsection{p- und n- Halbleiter}
@@ -42,7 +41,7 @@ deswegen werden solche Fremdatome auch als Akzeptoren bezeichnet.
 Die n-Typ Halbleiter zeichnen sich durch eine Dotierung mit Elementen der
 fünften Hauptgruppe aus. Bei einer solchen Dotierung entsteht ein Elektronenüberschuss
 und pro dotiertes Fremdatom kommt es zu einem zusätzlichen Leitungselektron. Aufgrund
-der Abgabe des Leitungselektron an das Gitter spricht man hier von einem Donator.
+der Abgabe des Leitungselektron an das Gitter wird hier von einem Donator gesprochen.
 
 \subsection{Der pn- Übergang}
 An der Grenzfläche zwischen einem n- und einem p-dotierten Halbleiter bildet sich ein sogenannter pn-Übergang.
@@ -69,7 +68,7 @@ sich vereinfachen lässt zu:
     \label{dicke}
     d(U)=\sqrt{ \frac{ 2 \epsilon U }{e N_\text{eff}}}.
 \end{equation}
-Setzt man in diese Gleichung die Spannung $U_\text{dep}$ ein, so lässt sie sich umformen zu
+Durch einsetzen der Spannung $U_\text{dep}$, lässt sie sich umformen zu
 \begin{equation}
     U_\text{dep}=\frac{q}{2 \epsilon} N_\text{eff}D^2 \:.
 \end{equation}
@@ -127,7 +126,7 @@ Bei der Wechselwirkung von geladenen Teilchen, hier Elektronen der $\beta$-Quell
     \label{Bloch}
     \left< -\frac{\text{d}E}{\text{d}x}\right>=Kz^2\frac{Z}{A}\cdot \frac{1}{\beta^2}\left(\frac{1}{2}\ln{\left(\frac{2m_ec^2\beta^2\gamma^2W_{max}}{I^2}\right)}-\beta^2-\frac{\delta(\beta\gamma)}{2}\right)
 \end{equation}
-wird der mittlere Verlust schwerer Teilchen durch Kollision pro Längeneinheit beschrieben, wobei diese nur im Bereich von $0,1 \leq \gamma\beta \leq 1000$ gilt.
+wird der mittlere Verlust schwerer Teilchen durch Kollision pro Längeneinheit beschrieben, wobei diese nur im Bereich von $0,1 \leq \gamma\beta \leq 1000$ gilt. Für die Betrachtung von Elektronen müssen weitere Näherungen vorgenommen werden, siehe \cite{skript}. Mit den spezifischen Parametern des Aufbaus, ergibt sich eine mittlere Energiedeposition von \SI{3.88}{\mega\electronvolt\per\centi\meter}.
 
 \subsection{Energieverteilung im Sensor}
 Infolge des zentrales Grenzwertsatzes folgt der deponierten Energie von Elektronen im Silizium einer Gaußverteilung. Dabei wird davon ausgegangen, dass die Elektronen ihre komplette Energie im Sensor deponieren, welches nur durch eine hinreichende Sensordicke gewährleistet ist. Der in diesem Versuch verwendete Silizium-Streifen-Sensor misst eine Dicke von $\SI{300}{\micro\meter}$ und ist somit nicht ausreichend groß genug, damit eine vollständige Energiedeposition stattfinden kann. Durch diesen Umstand ist der zentrale Grenzwertsatz nicht mehr anwendbar. Durch den Umstand, dass auch die entstehenden Sekundärelektronen nicht komplett abgebremst werden können, entsteht eine asymmetrische Energieverteilung. Diese gleicht einer Landauverteilung. Zusätzlich ist zu beachten, dass die verwendete $\beta$-Quelle kein monoenergetisches Spektrum aufweißt, wodurch eine optimale Beschreibung der Energiedeposition im Silizium durch eine mit einer Gaußverteilung gefalteten Landauverteilung zustande kommt. Diese Verteilung ist für einen dünnen Sensor und typischer Elektronenenergie in Abbildung \ref{Verteilung} dargestellt.
@@ -135,7 +134,7 @@ Infolge des zentrales Grenzwertsatzes folgt der deponierten Energie von Elektron
 \begin{figure}[H]
   \centering
   \includegraphics[width=0.7\textwidth]{ressources/Verteilung.png}
-  \caption{Typische Energieverteilung in einem dünnen Sensor.}
+  \caption{Typische Energieverteilung in einem dünnen Sensor. \cite{skript}}
   \label{Verteilung}
 \end{figure}
 
@@ -145,6 +144,7 @@ Da die Verteilung in ADC Counts angegeben wird, müssen diese zunächst in Energ
 
 
 \subsection{Noise}
+\label{noise}
 Bedingt durch die Ausleseelektronik des Sensors und durch den Sensor selbst entstehen sogenannte Störsignale. Diese verfälschen das benötigte Messsignal oder auch ADC($i$,$k$) Counts genannt. Dabei ist das Signal abhängig von dem betrachteten Streifen ($i$) und dem Eingangssignal ($k$). In Gleichung \ref{ADC} ist der Bezug zwischen dem ursprünglichen Signal und den ADC($i,k$) Counts beschrieben.
 
 \begin{equation}

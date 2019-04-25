@@ -1,0 +1,23 @@
+\begin{table}
+    \centering
+    \caption{Messung der Counts für zwei verschiedene Foliendicken des gleichen Materials}
+    \label{tab:divers}
+    \sisetup{parse-numbers=false}
+    \begin{tabular}{
+	S[table-format=1.1]
+	S[table-format=1.1]
+	@{${}\pm{}$}
+	S[table-format=1.1, table-number-alignment = left]
+	S[table-format=3.1]
+	S[table-format=1.2]
+	@{${}\pm{}$}
+	S[table-format=1.2, table-number-alignment = left]
+	}
+	\toprule
+	{$\text{Foliendicke} \:/\: \si{\micro\meter}$}		& \multicolumn{2}{c}{$\text{Counts}$}		& 
+	{$\Delta t \:/\: \si{\second}$}		& \multicolumn{2}{c}{$\sigma \:/\: 10^{-22} \si{\meter\squared}$}		\\ 
+	\midrule
+    \input{build/Tabelle_t2.tex}
+    \bottomrule
+    \end{tabular}
+    \end{table}

@@ -1,0 +1,101 @@
+\section{Theorie}
+\label{sec:Theorie}
+\subsection{Zielsetzung}
+Ziel des Versuchs ist es, die Streuung von $\alpha$-Teilchen, in Abhängigkeit des Winkels und der Ordnungszahl, an einer dünnen Goldfolie zu untersuchen. 
+
+\subsection{Aktivität}
+
+Die Aktivität $A$ beschreibt die Anzahl der Kernzerfällen eines aktiven Mediums
+pro Zeitintervall. Diese nimmt im Laufe der Zeit exponentiell ab und wird durch
+die Zerfallskonstante $\lambda$ charakterisiert. Die Aktivität kann wie folgt bestimmt werden:
+$$ A(t)=\frac{\text{d}N(t)}{\text{d}t}=A_0\cdot e^{-\lambda t}$$
+
+\subsection{Wechselwirkung mit Materie}
+
+Die Wechselwirkung von $\alpha$-Teilchen mit Materie wird
+maßgeblich durch die Wechselwirkung des $\alpha$-Teilchens mit einem
+Hüllenelektron oder den Kern gekennzeichnet. Der Energieverlust des Teilchens
+kann durch die Bethe-Bloch Formel beschrieben werden.
+Die allgemeine Bethe-Bloch Formel
+
+\begin{equation}
+    \label{betherel}
+    \left<\frac{\text{d}E}{\text{d}x}\right>=\frac{4\pi}{m_e \text{c}^2}\cdot \frac{n z^2ZN}{\beta^2}
+    \left(\frac{e^2}{4\pi \epsilon_0}\right)^2\cdot\ln\left(\frac{2 m_e \text{c}^2\beta^2}{I\cdot(1-\beta)}\right)-\beta^2
+\end{equation}
+
+gibt den Energieverlust pro Strecke für relativistisch Teilchen an. Wobei $\beta=v/$c, $v$
+die momentane Geschwindigkeit des Teilchens, c die Lichtgeschwindigkeit,
+$z$ die Ladungszahl des Teilchens, $n$ die Elektronendichte des Teilchens und $I$ die
+mittlere Anregungsenergie des Materials beschriebt.\\
+Für niedrige Energien der Teilchen, bzw. kleine Teilchengeschwindigkeiten, geht
+$\beta=v/c \rightarrow 0$ und die Bethe-Bloch Formel lässt sich reduzieren auf
+
+\begin{equation}
+    \label{bethe}
+    \left<\frac{\text{d}E}{\text{d}x}\right>=\frac{4\pi n z^2ZN }{m_e v^2}\left(\frac{e^2}{4 \pi \epsilon_0} \right)^2
+    \cdot    \ln\left(\frac{2 m_e v^2}{I}\right)\;.
+\end{equation}
+
+
+Die Wechselwirkung des $\alpha$-Teilchens mit einem Hüllenelektron
+hat keine großen Winkelabweichungen zufolge und ist nicht messbar. Bei
+Wechselwirkungen von $\alpha$-Teilchen den Atomkernen kommt es jedoch zu großen
+Winkeländerungen. Die verursachte Streuung lässt sich mittels der Rutherfordschen Streuformel beschreiben. Diese bestimmt den differentiellen Wirkungsquerschnitt in Abhängigkeit der Ordnungszahl $Z$, der Energie der $\alpha$-Teilchen $E_\alpha$ und des Streuwinkels $\theta$. 
+\begin{equation}
+    \label{wq}
+    \frac{\text{d}\sigma}{\text{d}\Omega}(\Theta)
+    =\frac{1}{(4\pi \epsilon_0)^2}
+    \left( \frac{ z Z e^2}{4E_\alpha}\right)^2 \frac{1}{\sin ^4 \frac{ \Theta} {2}}
+\end{equation}
+
+
+
+
+
+
+
+
+
+
+
+
+
+% 2x2 Plot
+% \begin{figure*}
+%     \centering
+%     \begin{subfigure}[b]{0.475\textwidth}
+%         \centering
+%         \includegraphics[width=\textwidth]{Abbildungen/Schaltung1.pdf}
+%         \caption[]%
+%         {{\small Schaltung 1.}}
+%         \label{fig:Schaltung1}
+%     \end{subfigure}
+%     \hfill
+%     \begin{subfigure}[b]{0.475\textwidth}
+%         \centering
+%         \includegraphics[width=\textwidth]{Abbildungen/Schaltung2.pdf}
+%         \caption[]%
+%         {{\small Schaltung 2.}}
+%         \label{fig:Schaltung2}
+%     \end{subfigure}
+%     \vskip\baselineskip
+%     \begin{subfigure}[b]{0.475\textwidth}
+%         \centering
+%         \includegraphics[width=\textwidth]{Abbildungen/Schaltung4.pdf}    % Zahlen vertauscht ... -.-
+%         \caption[]%
+%         {{\small Schaltung 3.}}
+%         \label{fig:Schaltung3}
+%     \end{subfigure}
+%     \quad
+%     \begin{subfigure}[b]{0.475\textwidth}
+%         \centering
+%         \includegraphics[width=\textwidth]{Abbildungen/Schaltung3.pdf}
+%         \caption[]%
+%         {{\small Schaltung 4.}}
+%         \label{fig:Schaltung4}
+%     \end{subfigure}
+%     \caption[]
+%     {Ersatzschaltbilder der verschiedenen Teilaufgaben.}
+%     \label{fig:Schaltungen}
+% \end{figure*}
